@@ -2,10 +2,13 @@
   "name": "rpio-website",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for rpio-website goes here",
-  "repository": "",
+  "description": "Ember frontend of redpencil.io website",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redpencilio/frontend-redpencil.io.git"
+  },
   "license": "MIT",
-  "author": "",
+  "author": "redpencil.io",
   "directories": {
     "doc": "doc",
     "test": "tests"
