@@ -7,10 +7,10 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('what-we-do');
-  this.route('who');
-  this.route('inspiration');
-  this.route('technologies');
+  // this.route('what-we-do');
+  // this.route('who');
+  // this.route('inspiration');
+  // this.route('technologies');
 });
 
 export default Router;
