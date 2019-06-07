@@ -7,5 +7,5 @@ RUN npm install
 COPY . .
 RUN ember build -prod
 
-FROM socialengine/nginx-spa:latest
+FROM cecemel/ember-fastboot-proxy-service:0.3.0
 COPY --from=builder /app/dist /app
