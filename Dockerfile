@@ -7,5 +7,5 @@ RUN npm install
 COPY . .
 RUN ember build -prod
 
-FROM cecemel/ember-fastboot-proxy-service:0.3.0
+FROM cecemel/ember-fastboot-proxy-service:0.6.0
 COPY --from=builder /app/dist /app
