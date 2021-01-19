@@ -4,22 +4,26 @@ module.exports = {
   theme: {
     colors: {
       white: '#FFFFFF',
+      black: '#000000',
       gray: {
-        darkest: '#151515',
+        darkest: '#141414',
         dark: '#222222',
         DEFAULT: '#505050',
         light: '#C8C8C8',
         lightest: '#f9fafc',
-      }
+      },
+      red: {
+        DEFAULT: '#CC0000'
+      },
     },
     container: {
       center: true,
       padding: {
         DEFAULT: '1rem',
-        sm: '2rem',
-        lg: '4rem',
-        xl: '5rem',
-        '2xl': '6rem',
+        sm: '3rem',
+        lg: '5rem',
+        xl: '6rem',
+        '2xl': '8rem',
       },
     },
     extend: {
