@@ -1,0 +1,12 @@
+<nav class="nav">
+  <div class="nav-inner">
+    <p class="nav-logo {{if @dark "text-white" "text-black"}}">Redpencil<span class="text-red">.</span>io</p>
+    <ul class="nav-list group-row">
+      <li class="nav-list-item {{if @dark "text-white" "text-black"}}"><LinkTo @route="services">Services</LinkTo></li>
+      <li class="nav-list-item {{if @dark "text-white" "text-black"}}"><LinkTo @route="projects">Projects</LinkTo></li>
+      <li class="nav-list-item {{if @dark "text-white" "text-black"}}"><LinkTo @route="who-we-are">Who we are</LinkTo></li>
+      <li class="nav-list-item {{if @dark "text-white" "text-black"}}"><LinkTo @route="contact">Contact</LinkTo></li>
+      <li class="nav-list-item {{if @dark "text-white" "text-black"}}"><LinkTo @route="jobs">Jobs</LinkTo></li>
+    </ul>
+  </div>
+</nav>

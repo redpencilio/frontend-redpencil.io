@@ -1,0 +1,92 @@
+<!--
+  Tailwind UI components require Tailwind CSS v1.8 and the @tailwindcss/ui plugin.
+  Read the documentation to get started: https://tailwindui.com/documentation
+-->
+<footer class="bg-dark-gray">
+  <div class="max-w-screen-xl mx-auto  px-4">
+
+    <div class=" mt-0 col-span-2 py-16">
+
+      <div class="md:grid md:grid-cols-3 md:gap-8">
+        <div class="flex flex-col justify-between">
+          <div>
+            <h4 class="text-sm leading-5 font-semibold text-white tracking-wider uppercase">
+              address
+            </h4>
+            <div class="mt-2 text-base leading-6 text-gray-500">
+              <p>street</p>
+              <p>city</p>
+            </div>
+          </div>
+          <div class="mt-12 md:mt-0">
+            <h4 class="text-sm leading-5 mt-4 font-semibold text-white tracking-wider uppercase">
+              opening
+            </h4>
+            <div class="mt-2 text-base leading-6 text-gray-500">
+              <p>footer.week"</p>
+              <p>hours</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 md:mt-0">
+          <h4 class="text-sm leading-5 font-semibold text-white tracking-wider uppercase">
+            general
+          </h4>
+          <ul class="mt-4 space-y-4">
+            <li>
+              <LinkTo @route="home" class="text-base leading-6 text-gray-500 hover:text-gray-200">
+                home
+              </LinkTo>
+            </li>
+            <li>
+              <LinkTo @route="search" class="text-base leading-6 text-gray-500 hover:text-gray-200">
+                properties
+              </LinkTo>
+            </li>
+            <li>
+              <LinkTo @route="contact" class="text-base leading-6 text-gray-500 hover:text-gray-200">
+                contact
+              </LinkTo>
+            </li>
+            <li>
+              <LinkTo @route="favorites" class="text-base leading-6 text-gray-500 hover:text-gray-200">
+                favorites
+              </LinkTo>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-12 md:mt-0">
+          <h4 class="text-sm leading-5 font-semibold text-white tracking-wider uppercase">
+            legal
+          </h4>
+          <ul class="mt-4 space-y-4">
+            <li>
+              <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-200">
+                terms
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-200">
+                privacy
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-200">
+                cookie
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="py-6 flex justify-between border-t border-gray-800">
+      <p class="text-base leading-6 text-gray-400 xl:text-center">
+        &copy; 2020 Alphabitat
+      </p>
+      <a href="http://ww.iegmedia.be" class="text-base leading-6 text-gray-400 xl:text-center hover:text-white">
+        Developed with &hearts; by IEG
+      </a>
+    </div>
+  </div>
+</footer>
