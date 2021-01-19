@@ -1,5 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+@import "./shared/navbar.css";
+@import "./index.css";
+@import "./about.css";
+@import "./projects.css";
+@import "./shared/breadcrumbs.css";
+@import "./vanilla.css";
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+@layer components {
+
+  .title-primary {
+    @apply font-extrabold text-2xl text-gray-light
+  }
+
+  .title-secondary {
+    @apply font-extrabold text-2xl text-gray-darkest
+  }
+
+  .title-primary--dark {
+    @apply font-bold text-3xl text-gray-light
+  }
+
+  .title-secondary--dark {
+    @apply font-bold text-3xl  text-white
+  }
+
+  .article-text {
+    @apply text-sm text-gray mt-6
+  }
+
+  .article {
+    @apply w-1/2 my-16
+  }
+
+  .title-advantage {
+    @apply text-xl font-bold text-gray mb-2
+  }
+
+  .text-advantage {
+    @apply text-sm text-gray mt-6
+  }
+
+  .card-dark {
+    @apply flex flex-col items-center w-1/2 my-12 bg-gray-darkest shadow-lg rounded-lg py-16
+  }
+
+  .content-illustration {
+    @apply flex justify-end w-5/12
+  }
+
+  .clients {
+    @apply pb-24
+  }
+
+  .clients-title {
+    @apply font-bold text-xl mb-6
+  }
+
+  .clients-list {
+    @apply container flex 
+  }
+
+  .clients-list-item {
+    @apply rounded mx-2 bg-gray-lightest py-6 px-16
+  }
+
+  .group-row {
+    @apply flex items-center
+  }
+
+  .btn-primary {
+    @apply w-48 py-3 rounded bg-red text-white font-medium text-sm border-2 border-red
+  }
+
+  .btn-secondary {
+    @apply w-48 py-3 rounded  text-white font-medium text-sm border-2 border-gray
+  }
+
+
+}
+
+
+
+
+
+

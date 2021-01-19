@@ -1,0 +1,22 @@
+@layer components {
+
+  .nav-inner {
+    @apply container flex items-center justify-between py-5
+  }
+
+  .nav-logo {
+    @apply text-2xl font-bold mr-6 
+  }
+
+  .nav-list {
+    @apply text-gray
+  }
+
+  .nav-action {
+    @apply text-xs px-6 py-3
+  }
+
+  .nav-list-item {
+    @apply mx-8 font-bold text-sm
+  }
+}

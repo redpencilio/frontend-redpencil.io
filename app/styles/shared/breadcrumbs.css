@@ -1,0 +1,27 @@
+
+
+@layer components {
+  .bcrumbs {
+    @apply container flex py-5 mb-12
+  }
+
+  .bcrumbs-dark > *{
+    @apply container flex pt-12 text-white mb-12
+  }
+
+  .bcrumbs-list {
+    @apply flex items-center space-x-2
+  }
+
+  .bcrumbs-item {
+    @apply flex items-center 
+  }
+
+  .bcrumbs-slash {
+    @apply flex-shrink-0 h-3 w-3 
+  }
+
+  .bcrumbs-dark > *{
+    @apply text-white
+  }
+}

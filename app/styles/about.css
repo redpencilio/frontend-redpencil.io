@@ -1,0 +1,5 @@
+@layer components {
+  .about {
+    @apply w-full h-screen flex flex-col justify-between relative
+  }
+}

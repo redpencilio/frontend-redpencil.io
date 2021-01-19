@@ -1,0 +1,22 @@
+@layer components {
+
+  .hero {
+    @apply w-full h-screen flex flex-col justify-between relative
+  }
+
+  .hero-content {
+    @apply py-24 container flex-1 flex items-center justify-between
+  }
+
+  .hero-block{
+    @apply w-2/3
+  }
+
+  .hero-title {
+    @apply text-5xl font-bold mb-6 text-white
+  }
+
+  .hero-text {
+    @apply text-white font-thin text-2xl mb-8
+  }
+}
