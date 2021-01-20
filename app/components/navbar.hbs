@@ -1,6 +1,6 @@
 <nav class="nav">
   <div class="nav-inner">
-    <p class="nav-logo {{if @dark "text-white" "text-black"}}">Redpencil<span class="text-red">.</span>io</p>
+    <LinkTo @route="index" class="nav-logo {{if @dark "text-white" "text-black"}}">Redpencil<span class="text-red">.</span>io</LinkTo>
     <ul class="nav-list group-row">
       <li class="nav-list-item {{if @dark "text-white" "text-black"}}"><LinkTo @route="services">Services</LinkTo></li>
       <li class="nav-list-item {{if @dark "text-white" "text-black"}}"><LinkTo @route="projects">Projects</LinkTo></li>
