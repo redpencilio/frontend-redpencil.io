@@ -11,10 +11,12 @@
 @import "./projects.css";
 @import "./shared/breadcrumbs.css";
 @import "./vanilla.css";
+@import "./shared/card.css";
 
 * {
   font-family: 'Lato', sans-serif;
 }
+
 
 @layer components {
 

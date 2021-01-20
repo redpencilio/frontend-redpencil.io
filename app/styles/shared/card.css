@@ -1,0 +1,19 @@
+
+
+@layer components {
+  .card {
+    @apply w-1/3 p-2 
+  }
+
+  .card-inner {
+    @apply px-8 py-12 space-y-4 border border-gray-light rounded h-full
+  }
+
+  .card-title {
+    @apply font-bold text-xl
+  }
+
+  .card-text {
+    @apply text-sm
+  }
+}
