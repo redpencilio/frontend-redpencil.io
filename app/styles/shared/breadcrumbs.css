@@ -2,11 +2,11 @@
 
 @layer components {
   .bcrumbs {
-    @apply container flex py-5 mb-12
+    @apply container flex my-6
   }
 
   .bcrumbs-dark > *{
-    @apply container flex pt-12 text-white mb-12
+    @apply container flex my-6  text-white
   }
 
   .bcrumbs-list {
