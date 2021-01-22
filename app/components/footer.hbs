@@ -2,7 +2,7 @@
   Tailwind UI components require Tailwind CSS v1.8 and the @tailwindcss/ui plugin.
   Read the documentation to get started: https://tailwindui.com/documentation
 -->
-<footer class="bg-dark-gray">
+<footer class="bg-gray-darkest">
   <div class="max-w-screen-xl mx-auto  px-4">
 
     <div class=" mt-0 col-span-2 py-16">
@@ -13,7 +13,7 @@
             <h4 class="text-sm leading-5 font-semibold text-white tracking-wider uppercase">
               address
             </h4>
-            <div class="mt-2 text-base leading-6 text-gray-500">
+            <div class="mt-2 text-base leading-6 text-gray-light">
               <p>street</p>
               <p>city</p>
             </div>
@@ -22,8 +22,8 @@
             <h4 class="text-sm leading-5 mt-4 font-semibold text-white tracking-wider uppercase">
               opening
             </h4>
-            <div class="mt-2 text-base leading-6 text-gray-500">
-              <p>footer.week"</p>
+            <div class="mt-2 text-base leading-6 text-gray-light">
+              <p>week</p>
               <p>hours</p>
             </div>
           </div>
@@ -34,23 +34,28 @@
           </h4>
           <ul class="mt-4 space-y-4">
             <li>
-              <LinkTo @route="home" class="text-base leading-6 text-gray-500 hover:text-gray-200">
+              <LinkTo @route="index" class="text-base leading-6 text-gray-light hover:text-gray-200">
                 home
               </LinkTo>
             </li>
             <li>
-              <LinkTo @route="search" class="text-base leading-6 text-gray-500 hover:text-gray-200">
-                properties
+              <LinkTo @route="who-we-are" class="text-base leading-6 text-gray-light hover:text-gray-200">
+                Who we are
               </LinkTo>
             </li>
             <li>
-              <LinkTo @route="contact" class="text-base leading-6 text-gray-500 hover:text-gray-200">
+              <LinkTo @route="services" class="text-base leading-6 text-gray-light hover:text-gray-200">
+                Services
+              </LinkTo>
+            </li>
+            <li>
+              <LinkTo @route="projects" class="text-base leading-6 text-gray-light hover:text-gray-200">
+                Projects
+              </LinkTo>
+            </li>
+            <li>
+              <LinkTo @route="contact" class="text-base leading-6 text-gray-light hover:text-gray-200">
                 contact
-              </LinkTo>
-            </li>
-            <li>
-              <LinkTo @route="favorites" class="text-base leading-6 text-gray-500 hover:text-gray-200">
-                favorites
               </LinkTo>
             </li>
           </ul>
@@ -61,17 +66,17 @@
           </h4>
           <ul class="mt-4 space-y-4">
             <li>
-              <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-200">
+              <a href="#" class="text-base leading-6 text-gray-light hover:text-gray-200">
                 terms
               </a>
             </li>
             <li>
-              <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-200">
+              <a href="#" class="text-base leading-6 text-gray-light hover:text-gray-200">
                 privacy
               </a>
             </li>
             <li>
-              <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-200">
+              <a href="#" class="text-base leading-6 text-gray-light hover:text-gray-200">
                 cookie
               </a>
             </li>
@@ -80,13 +85,10 @@
 
       </div>
     </div>
-    <div class="py-6 flex justify-between border-t border-gray-800">
-      <p class="text-base leading-6 text-gray-400 xl:text-center">
-        &copy; 2020 Alphabitat
+    <div class="py-6 flex justify-between border-t border-gray">
+      <p class="text-base leading-6 text-gray xl:text-center">
+        &copy; 2021 Redpencil.io
       </p>
-      <a href="http://ww.iegmedia.be" class="text-base leading-6 text-gray-400 xl:text-center hover:text-white">
-        Developed with &hearts; by IEG
-      </a>
     </div>
   </div>
 </footer>
