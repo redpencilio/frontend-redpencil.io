@@ -13,5 +13,5 @@ Router.map(function() {
   });
   this.route('services');
   this.route('contact');
-  this.route('jobs');
+  this.route('careers');
 });
