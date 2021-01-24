@@ -1,4 +1,4 @@
-<nav class="nav">
+<nav class={{unless @dark "border-b border-gray-lightest"}}>
   <div class="nav-inner">
     <LinkTo @route="index" class="nav-logo {{if @dark "text-white" "text-black"}}">Redpencil<span class="text-red">.</span>io</LinkTo>
     <ul class="nav-list group-row">
