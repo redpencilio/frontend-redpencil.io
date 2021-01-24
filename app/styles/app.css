@@ -1,17 +1,29 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
+
+/* TAILWIND */
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import "./shared/navbar.css";
+
+/* PAGES */
 @import "./index.css";
 @import "./about.css";
 @import "./projects.css";
-@import "./shared/breadcrumbs.css";
+@import "./contact.css";
+
+
+/* COMPONENTS */
+@import "./components/breadcrumbs.css";
+@import "./components/card.css";
+@import "./components/navbar.css";
+
+
+/* OTHER */
 @import "./vanilla.css";
-@import "./shared/card.css";
+
 
 * {
   font-family: 'Lato', sans-serif;
@@ -21,11 +33,11 @@
 @layer components {
 
   .title-primary {
-    @apply font-extrabold text-2xl text-gray-light
+    @apply font-extrabold text-3xl text-gray-light
   }
 
   .title-secondary {
-    @apply font-extrabold text-2xl text-gray-darkest
+    @apply font-extrabold text-3xl text-gray-dark
   }
 
   .title-primary--dark {
@@ -33,7 +45,7 @@
   }
 
   .title-secondary--dark {
-    @apply font-bold text-3xl  text-white
+    @apply font-bold text-3xl text-white
   }
 
   .article-text {
@@ -81,11 +93,11 @@
   }
 
   .btn-primary {
-    @apply w-48 py-3 rounded bg-red text-white font-medium text-sm border-2 border-red
+    @apply w-48 py-3 rounded-full bg-red text-white font-medium text-sm border-2 border-red
   }
 
   .btn-secondary {
-    @apply w-48 py-3 rounded  text-white font-medium text-sm border-2 border-gray
+    @apply w-48 py-3 rounded-full  text-white font-medium text-sm border-2 border-gray
   }
 
 

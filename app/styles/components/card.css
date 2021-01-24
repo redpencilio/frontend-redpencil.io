@@ -2,11 +2,15 @@
 
 @layer components {
   .card {
-    @apply w-1/3 p-2 
+    @apply w-1/3 p-2 mb-6
   }
 
   .card-inner {
-    @apply px-8 py-12 space-y-4 border border-gray-light rounded h-full
+    @apply px-4 space-y-2 h-full
+  }
+
+  .card-img {
+    @apply bg-red w-full h-64
   }
 
   .card-title {

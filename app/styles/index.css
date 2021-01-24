@@ -1,7 +1,7 @@
 @layer components {
 
   .hero {
-    @apply w-full h-screen flex flex-col justify-between relative
+    @apply w-full min-h-screen flex flex-col justify-between relative
   }
 
   .hero-content {
@@ -9,7 +9,7 @@
   }
 
   .hero-block{
-    @apply w-2/3
+    @apply w-1/2
   }
 
   .hero-title {
@@ -17,6 +17,6 @@
   }
 
   .hero-text {
-    @apply text-white font-thin text-2xl mb-8
+    @apply text-gray-light text-2xl mb-8
   }
 }
