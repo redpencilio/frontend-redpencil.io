@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('who-we-are');
   this.route('projects', function() {
     this.route('lblod');
+    this.route('kaleidos');
   });
   this.route('services');
   this.route('contact');
