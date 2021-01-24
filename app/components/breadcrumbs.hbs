@@ -3,29 +3,23 @@
   <ol class="bcrumbs-list">
     <li>
       <div>
-        <a href="#" class="bcrumbs-item">
+        <LinkTo @route="index" class="bcrumbs-item">
           <svg class="bcrumbs-slash" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
             <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
           </svg>
           <span class="sr-only">Home</span>
-        </a>
+        </LinkTo>
       </div>
     </li>
-    <li>
-      <div class="bcrumbs-item">
-        <svg class="bcrumbs-slash" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-          <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
-        </svg>
-        <a href="#" class="ml-4 text-xs font-medium  hover:text-gray-dark">Projects</a>
-      </div>
-    </li>
-    <li>
-      <div class="bcrumbs-item">
-        <svg class="bcrumbs-slash" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-          <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
-        </svg>
-        <a href="#" aria-current="page" class="ml-4 text-xs font-medium hover:text-gray-700">Project Nero</a>
-      </div>
-    </li>
+    {{#each this.breadCrumbs as |breadcrumb|}}
+      <li>
+        <div class="bcrumbs-item">
+          <svg class="bcrumbs-slash" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+            <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+          </svg>
+          <LinkTo @route={{breadcrumb.route}} class="ml-4 text-xs font-medium  hover:text-gray-dark">{{breadcrumb.label}}</LinkTo>
+        </div>
+      </li>
+    {{/each}}
   </ol>
 </nav>
