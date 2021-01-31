@@ -1,147 +1,169 @@
-
-<section class="projects arch-light">
-  <Navbar/>
-  <Breadcrumbs/>
+<section class="about">
+  <Navbar />
+  <Breadcrumbs />
 </section>
 
 <section class="container flex mb-24 items-center space-x-24 h-full">
-  <article class="article h-full">
-    <h2 class="title-primary">Who we are</h2>
-    <h3 class="title-secondary">A brief history</h3>
-    <p class="article-text" >Redpencil was founded by a team of 5 experienced technology
+  <article class="w-full h-full">
+    <h2 class="title-xl">Who we are</h2>
+    <h3 class="title-md-thin mb-12">A brief <span class="font-bold"> history </span></h3>
+    <p class="about-text">Redpencil was founded by a team of 5 experienced technology
       professionals and engineers in 2017 to be a vehicle
       for developing and implementing the semantic.works (previously known as mu.semtech) linked data based microservice
       framework. From our base in Brussels, Belgium, we wish to help build an open, silo-less internet. Our model is to
       make money while improving the state of the internet
     </p>
   </article>
-  <article class="w-1/2 h-96 bg-red">
+  {{!-- <article class="w-1/2 h-96 bg-gray-lightest">
     <img class="h-full" src="" alt="">
-  </article>
+  </article> --}}
 </section>
-<section class="container mb-24">
-        <dl class="grid grid-cols-4 gap-x-2">
-          <div class="bg-gray-lightest p-6">
-            <img class="h-48 w-full bg-gray mb-6" src="" alt="">
-            <dt class="text-base font-medium text-gray-500">Founded</dt>
-            <dd class="text-3xl font-extrabold tracking-tight text-gray-900">2017</dd>
-          </div>
+<section class="container">
+  <dl class="flex space-x-6">
+    <div class="bg-gray-100 p-6 flex-1">
+      <dt class="title-xs">Founded</dt>
+      <dd class="text-3xl font-bold tracking-tight text-gray-900">2017</dd>
+    </div>
 
-          <div class="bg-gray-lightest p-6">
-            <img class="h-48 w-full bg-gray mb-6" src="" alt="">
-            <dt class="text-base font-medium text-gray-500">Repo's</dt>
-            <dd class="text-3xl font-extrabold tracking-tight text-gray-900">156</dd>
-          </div>
+    <div class="bg-gray-100 p-6 flex-1">
+      <dt class="title-xs">Repo's</dt>
+      <dd class="text-3xl font-bold tracking-tight text-gray-900">156</dd>
+    </div>
 
-          <div class="bg-gray-lightest p-6">
-            <img class="h-48 w-full bg-gray mb-6" src="" alt="">
-            <dt class="text-base font-medium text-gray-500">Lines of code</dt>
-            <dd class="text-3xl font-extrabold tracking-tight text-gray-900">10 000</dd>
-          </div>
+    <div class="bg-gray-100 p-6 flex-1">
+      <dt class="title-xs">Lines of code</dt>
+      <dd class="text-3xl font-bold tracking-tight text-gray-900">10 000</dd>
+    </div>
 
-          <div class="bg-gray-lightest p-6">
-            <img class="h-48 w-full bg-gray mb-6" src="" alt="">
-            <dt class="text-base font-medium text-gray-500">Coffees</dt>
-            <dd class="text-3xl font-extrabold tracking-tight text-gray-900">∞</dd>
-          </div>
-        </dl>
+    <div class="bg-gray-100 p-6 flex-1">
+      <dt class="title-xs">Coffees</dt>
+      <dd class="text-3xl font-bold tracking-tight text-gray-900">∞</dd>
+    </div>
+  </dl>
 </section>
 
-<section class=" mb-24 bg-gray-lightest  py-24">
-  <article class="container flex items-center justify-between">
+
+<section class="container min-h-screen flex flex-col justify-center">
+  <div>
+    <article class="flex flex-col mt-12 mb-12 p-2">
+      <h2 class="title-lg">Our values</h2>
+      <h3 class="title-md-thin mb-6">What truly matters to us</h3>
+      <p class="text-gray">Our company has some key values we hold dear. We really want to have an impact and create the
+        #WebWeWant
+      </p>
+    </article>
+    <section class="flex flex-wrap">
+      <article class="w-1/2 p-2">
+        <div class="border px-12 py-8 h-full">
+          <h4 class="text-xl font-bold mb-2">Pro Open-source</h4>
+          <p class="text-sm">The Publica Awards reward the best public projects and in this way put public actors and
+            their partners in the spotlight.</p>
+        </div>
+      </article>
+      <article class="w-1/2 p-2">
+        <div class="border px-12 py-8 h-full">
+          <h4 class="text-xl font-bold mb-2">Community focused</h4>
+          <p class="text-sm">Agoria is the trade association for the Belgian technology industry</p>
+
+        </div>
+      </article>
+      <article class="w-1/2 p-2">
+        <div class="border px-12 py-8 h-full">
+          <h4 class="text-xl font-bold mb-2">Inspirational freedom</h4>
+          <p class="text-sm">Awarded by Belgian computer magazine DataNews</p>
+
+        </div>
+      </article>
+      <article class="w-1/2 p-2">
+        <div class="border px-12 py-8 h-full">
+          <h4 class="text-xl font-bold mb-2">Openness & transparency</h4>
+          <p class="text-sm"></p>
+        </div>
+      </article>
+    </section>
+  </div>
+</section>
+
+
+<section class="mb-48">
+  <article class="container flex items-center justify-between  border-t border-b border-gray-light  py-64   h-full">
     <div>
-      <h2 class="title-primary">Want to join the team?</h2>
-      <h3 class="title-secondary">Check for oppurtunities</h3>
+      <h2 class="title-xl">Want to join the team?</h2>
+      <h3 class="title-md-thin">Check for opportunities</h3>
     </div>
     <div>
-      <button class="bg-gray px-24 py-4 rounded-full text-white">Careers</button>
+      <button class="rounded-full flex justify-between items-center py-2 px-2 bg-gray-100"> <span
+          class="px-16 font-bold"> Start a new experience </span> <span
+          class="rounded-full bg-red-600 text-white py-3 px-10 font-bold"> Careers</span></button>
     </div>
   </article>
 </section>
 
-<section class=" py-24 mb-24">
- <article class="w-full container">
-    <h2 class="title-primary">What we want</h2>
-    <h3 class="title-secondary">Our effort, our passion</h3>
-    <p class="article-text">Redpencil was founded by a team of 5 experienced technology professionals and engineers in
-      2017 to be a vehicle
-      for developing and implementing the semantic.works (previously known as mu.semtech) linked data based microservice
-      framework. From our base in Brussels, Belgium, we wish to help build an open, silo-less internet. Our model is to
-      make money while improving the state of the internet
-    </p>
-  </article>
-</section>
-
-<section class="container bg-gray-darkest bg-white pt-12 pb-24 mb-24">
-  <article class="flex flex-col mt-12 mb-12 p-2">
-    <h2 class="title-primary--dark text-lg">Our values</h2>
-    <h3 class="title-secondary--dark text-3xl">What truly matters to us</h3>
-    <p class="article-text text-lg w-2/3">Our company has some key values we hold dear. We really want to have an impact and create the #WebWeWant
-    </p>
-  </article>
-  <section class="flex flex-wrap">
-    <article class="w-1/2 p-2">
-      <div class=" text-white bg-gray-dark px-12 py-8 h-full">
-        <h4 class="text-xl font-bold mb-2">Pro Open-source</h4>
-        <p class="text-sm">The Publica Awards reward the best public projects and in this way put public actors and
-          their partners in the spotlight.</p>
-      </div>
-    </article>
-    <article class="w-1/2 p-2">
-      <div class=" text-white bg-gray-dark px-12 py-8 h-full">
-        <h4 class="text-xl font-bold mb-2">Community focused</h4>
-        <p class="text-sm">Agoria is the trade association for the Belgian technology industry</p>
-
-      </div>
-    </article>
-    <article class="w-1/2 p-2">
-      <div class=" text-white bg-gray-dark px-12 py-8 h-full">
-        <h4 class="text-xl font-bold mb-2">Inspirational freedom</h4>
-        <p class="text-sm">Awarded by Belgian computer magazine DataNews</p>
-
-      </div>
-    </article>
-    <article class="w-1/2 p-2">
-      <div class=" text-white bg-gray-dark px-12 py-8 h-full">
-        <h4 class="text-xl font-bold mb-2">Openness & transparency</h4>
-        <p class="text-sm"></p>
-      </div>
-    </article>
-  </section>
-</section>
 
 <section class="container mb-48">
-  <div class="text-center py-16">
-    <h2 class="title-primary">The people</h2>
-    <h3 class="title-secondary">The faces behind the effort</h3>
+  <div class=" py-16">
+    <h2 class="title-lg">The people</h2>
+    <h3 class="title-md-thin">The faces behind <span class="font-bold">the effort</span></h3>
   </div>
-  <div class="grid grid-cols-3 gap-24">
-    <div class="h-64">
-      <img src="https://picsum.photos/500/351" alt="">
+  <div class="grid grid-cols-5 gap-12">
+    <div class="flex flex-col items-center">
+      <img class="rounded-full h-48 w-48 mb-3" src="https://picsum.photos/500/350" alt="">
+      <h5 class="font-bold text-center">Aad verstegen</h5>
+      <p class="font-light">Technical futurist</p>
     </div>
-    <div class="h-64">
-      <img src="https://picsum.photos/500/352" alt="">
+    <div class="flex flex-col items-center">
+      <img class="rounded-full h-48 w-48 mb-3" src="https://picsum.photos/500/351" alt="">
+      <h5 class="font-bold text-center">Aad verstegen</h5>
+      <p class="font-light">Technical futurist</p>
     </div>
-    <div class="h-64">
-      <img src="https://picsum.photos/500/353" alt="">
+    <div class="flex flex-col items-center">
+      <img class="rounded-full h-48 w-48 mb-3" src="https://picsum.photos/500/352" alt="">
+      <h5 class="font-bold text-center">Aad verstegen</h5>
+      <p class="font-light">Technical futurist</p>
     </div>
-    <div class="h-64">
-      <img src="https://picsum.photos/500/354" alt="">
+    <div class="flex flex-col items-center">
+      <img class="rounded-full h-48 w-48 mb-3" src="https://picsum.photos/500/353" alt="">
+      <h5 class="font-bold text-center">Aad verstegen</h5>
+      <p class="font-light">Technical futurist</p>
     </div>
-    <div class="h-64">
-      <img src="https://picsum.photos/500/355" alt="">
+    <div class="flex flex-col items-center">
+      <img class="rounded-full h-48 w-48 mb-3" src="https://picsum.photos/500/354" alt="">
+      <h5 class="font-bold text-center">Aad verstegen</h5>
+      <p class="font-light">Technical futurist</p>
     </div>
-    <div class="h-64">
-      <img src="https://picsum.photos/501/350" alt="">
+    <div class="flex flex-col items-center">
+      <img class="rounded-full h-48 w-48 mb-3" src="https://picsum.photos/500/355" alt="">
+      <h5 class="font-bold text-center">Aad verstegen</h5>
+      <p class="font-light">Technical futurist</p>
     </div>
-    <div class="h-64">
-      <img src="https://picsum.photos/502/350" alt="">
+    <div class="flex flex-col items-center">
+      <img class="rounded-full h-48 w-48 mb-3" src="https://picsum.photos/501/351" alt="">
+      <h5 class="font-bold text-center">Aad verstegen</h5>
+      <p class="font-light">Technical futurist</p>
     </div>
-    <div class="h-64">
-      <img src="https://picsum.photos/503/350" alt="">
+    <div class="flex flex-col items-center">
+      <img class="rounded-full h-48 w-48 mb-3" src="https://picsum.photos/502/351" alt="">
+      <h5 class="font-bold text-center">Aad verstegen</h5>
+      <p class="font-light">Technical futurist</p>
     </div>
-    <div class="h-64">
-      <img src="https://picsum.photos/504/350" alt="">
+    <div class="flex flex-col items-center">
+      <img class="rounded-full h-48 w-48 mb-3" src="https://picsum.photos/503/351" alt="">
+      <h5 class="font-bold text-center">Aad verstegen</h5>
+      <p class="font-light">Technical futurist</p>
     </div>
   </div>
+</section>
+
+<section class="banner">
+  <article class="banner-inner">
+    <div class="banner-call">
+      <h2 class="banner-title">Get to know us </h2>
+      <h3 class="banner-text">Book a meeting</h3>
+    </div>
+    <div>
+        <button class="banner-button"> <span
+            class="banner-text-outer"> Start a new experience </span> <span
+            class="banner-text-inner"> Careers</span></button>
+    </div>
+  </article>
 </section>
