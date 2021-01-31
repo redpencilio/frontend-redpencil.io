@@ -1,52 +1,70 @@
-<main class="relative">
-  <section class="hero arch">
-    <Navbar @dark={{true}} />
-    <section class="hero-content">
-      <article class="hero-block">
-        <LinkTo @route="careers"
-          class="inline-flex items-center text-white bg-gray-dark rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200 mb-10">
-          <span
-            class="px-3 py-0.5 text-gray-darkest text-xs font-semibold leading-5 uppercase tracking-wide  bg-gray-lightest  rounded-full">We're
-            hiring</span>
-          <span class="ml-4 text-sm">Visit our careers page</span>
-          <!-- Heroicon name: chevron-right -->
-          <svg class="ml-2 w-5 h-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-            fill="currentColor" aria-hidden="true">
-            <path fill-rule="evenodd"
-              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-              clip-rule="evenodd" />
-          </svg>
-        </LinkTo>
+<Navbar />
+{{!-- <canvas id="frame" {{did-insert this.initNetwork this}}></canvas> --}}
+  <section class="hero ">
+
+    {{!-- <LinkTo @route="careers" class="hero-bubble">
+      <div class="hero-bubble-inner">
+
+        <div class="flex items-center">
+          <span class="hero-bubble-title">
+            <svg class="h-5 my-1 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+              <path
+                d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z">
+              </path>
+            </svg>
+          </span>
+          <span class="hero-bubble-text">Careers opportunities available!</span>
+
+        </div>
+
+        <!-- Heroicon name: chevron-right -->
+        <svg class="hero-bubble-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+          aria-hidden="true">
+          <path fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd" />
+        </svg>
+      </div>
+    </LinkTo> --}}
+      <article class="hero-content">
+
         <h1 class="hero-title">
-          Solutions Based on Open and Linked Data
+          We build solutions Based on Open and Linked Data
         </h1>
         <p class="hero-text">
           We solve complex data problems with rich distributed web applications.
         </p>
-        <div class="group-row space-x-4 py-6 mb-6">
-          <button type="button" class="btn-primary">Book a meeting</button>
+        <div class="hero-buttons">
+          <button type="button" class="btn-primary bg-gradient-to-br from-gray to-black">Book a meeting</button>
           <button type="button" class="btn-secondary">
             Our work
           </button>
         </div>
-        <section class="">
-          <h2 class="text-xl text-white mb-4">They Trust us</h2>
-          <ul class="flex space-between space-x-3">
-            <li class="bg-gray-dark px-16 py-5">logo</li>
-            <li class="bg-gray-dark px-16 py-5">logo</li>
-            <li class="bg-gray-dark px-16 py-5">logo</li>
-          </ul>
-        </section>
+
       </article>
-      <div class="hero-block flex justify-end">
-        <img class="" src="/assets/vector/hero-img-2.svg" alt="">
-      </div>
-    </section>
-
-    <section class="container">
-      <article class="h-52 bg-gray"></article>
-    </section>
-
+      <article class="">
+        <h2 class="text-xl text-white mb-4">They Trust us</h2>
+        <ul class="flex space-between  space-x-6 text-center">
+          <li class="bg-gray-100 flex-1 px-16 py-8">logo</li>
+          <li class="bg-gray-100 flex-1 px-16 py-8">logo</li>
+          <li class="bg-gray-100 flex-1 px-16 py-8">logo</li>
+        </ul>
+      </article>
   </section>
 
-</main>
+  <section class="banner">
+    <article class="banner-inner">
+      <div class="banner-call">
+        <h2 class="banner-title">Get to know us </h2>
+        <h3 class="banner-text">Book a meeting</h3>
+      </div>
+      <div>
+        <button class="banner-button"> <span class="banner-text-outer"> Start a new experience </span> <span
+            class="banner-text-inner"> Careers</span></button>
+      </div>
+    </article>
+  </section>
+
