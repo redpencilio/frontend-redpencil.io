@@ -11,8 +11,11 @@ Router.map(function() {
   this.route('projects', function() {
     this.route('lblod');
     this.route('kaleidos');
+    this.route('toevla');
   });
   this.route('services');
   this.route('contact');
-  this.route('careers');
+  this.route('careers', function() {
+    this.route('full-stack-developer');
+  });
 });
