@@ -1,0 +1,15 @@
+@layer components {
+
+  .projects {
+    @apply w-full flex flex-col justify-between relative mb-12 md:mb-24
+  }
+
+  .projects-header {
+    @apply container flex flex-col justify-between mb-24 xl:mb-32 xl:space-x-16 xl:flex-row
+  }
+
+  .projects-cards {
+    @apply container grid mb-24 gap-16 xl:grid-cols-2 xl:mb-48
+  }
+
+}

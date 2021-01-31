@@ -1,0 +1,33 @@
+@layer components {
+  .banner {
+    @apply bg-gray-50 md:bg-white
+  }
+
+  .banner-inner {
+    @apply container flex flex-col justify-between py-12 xl:flex-row xl:items-center xl:py-0
+  }
+
+  .banner-call {
+    @apply flex flex-col flex-1 h-64 py-12 text-center md:text-left md:justify-center
+  }
+
+  .banner-title {
+    @apply text-4xl font-extrabold md:text-6xl
+  }
+
+  .banner-text {
+    @apply text-2xl font-light
+  }
+
+  .banner-button {
+    @apply flex flex-1 justify-between items-center py-2 px-2 bg-gray-900  md:rounded-full w-full
+  }
+
+  .banner-text-outer {
+    @apply flex-1 py-3 font-bold text-white md:px-16
+  }
+
+  .banner-text-inner {
+    @apply hidden py-3 px-10 bg-gray-800 text-white font-bold md:rounded-full md:block
+  }
+}

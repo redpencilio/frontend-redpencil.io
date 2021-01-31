@@ -1,0 +1,50 @@
+@layer components {
+
+  .hero {
+    @apply container w-full h-screen flex flex-col relative justify-center mb-48
+  }
+
+  .hero-inner {
+    @apply mb-24
+  }
+
+  .hero-bubble{
+    @apply container
+  }
+
+  .hero-bubble-inner {
+    @apply flex items-center bg-green-700  shadow-lg rounded-lg p-1 pr-2 my-3 justify-between
+  }
+
+  .hero-bubble-title {
+    @apply px-6 py-1 text-xs font-bold leading-5 uppercase tracking-wide bg-green-800 rounded text-green-100
+  }
+
+  .hero-bubble-text {
+    @apply ml-4 font-bold text-white
+  }
+
+  .hero-bubble-icon {
+    @apply mx-2 w-6 h-6 text-white
+  }
+
+  .hero-content {
+    @apply flex flex-col items-center justify-between mb-24
+  }
+
+  .hero-title {
+    @apply mb-8 text-black text-5xl font-black
+  }
+
+  .hero-text {
+    @apply mb-6 text-2xl text-gray-500
+  }
+
+  .hero-buttons {
+    @apply space-x-4 py-6 mb-6
+  }
+
+  .hero-illustration {
+    @apply w-1/2 flex justify-end px-12
+  }
+}

@@ -9,98 +9,34 @@
 
 
 /* PAGES */
-@import "./index.css";
-@import "./about.css";
-@import "./projects.css";
-@import "./contact.css";
+@import "./pages/index.css";
+@import "./pages/about.css";
+@import "./pages/projects.css";
+@import "./pages/services.css";
+@import "./pages/contact.css";
+@import "./pages/careers.css";
 
 
 /* COMPONENTS */
 @import "./components/breadcrumbs.css";
 @import "./components/card.css";
 @import "./components/navbar.css";
+@import "./components/buttons.css";
+@import "./components/banners.css";
+
+/* TYPOGRAPHY */
+
+@import "./typography/titles.css";
+@import "./typography/text.css";
 
 
 /* OTHER */
-@import "./vanilla.css";
+@import "./vanilla/backgrounds.css";
+@import "./vanilla/effects.css";
 
 
 * {
   font-family: 'Lato', sans-serif;
-}
-
-
-@layer components {
-
-  .title-primary {
-    @apply font-extrabold text-3xl text-gray-light
-  }
-
-  .title-secondary {
-    @apply font-extrabold text-3xl text-gray-dark
-  }
-
-  .title-primary--dark {
-    @apply font-bold text-3xl text-gray-light
-  }
-
-  .title-secondary--dark {
-    @apply font-bold text-3xl text-white
-  }
-
-  .article-text {
-    @apply text-sm text-gray mt-6
-  }
-
-  .article {
-    @apply w-1/2 my-16
-  }
-
-  .title-advantage {
-    @apply text-xl font-bold text-gray mb-2
-  }
-
-  .text-advantage {
-    @apply text-sm text-gray mt-6
-  }
-
-  .card-dark {
-    @apply flex flex-col items-center w-1/2 my-12 bg-gray-darkest shadow-lg rounded-lg py-16
-  }
-
-  .content-illustration {
-    @apply flex justify-end w-5/12
-  }
-
-  .clients {
-    @apply pb-24
-  }
-
-  .clients-title {
-    @apply font-bold text-xl mb-6
-  }
-
-  .clients-list {
-    @apply container flex 
-  }
-
-  .clients-list-item {
-    @apply rounded mx-2 bg-gray-lightest py-6 px-16
-  }
-
-  .group-row {
-    @apply flex items-center
-  }
-
-  .btn-primary {
-    @apply w-48 py-3 rounded-full bg-red text-white font-medium text-sm border-2 border-red
-  }
-
-  .btn-secondary {
-    @apply w-48 py-3 rounded-full  text-white font-medium text-sm border-2 border-gray
-  }
-
-
 }
 
 

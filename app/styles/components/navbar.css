@@ -1,15 +1,19 @@
 @layer components {
 
+  .nav {
+    @apply w-full fixed shadow-sm glass z-20 bg-white bg-opacity-80 flex flex-col
+  }
+
   .nav-inner {
-    @apply container flex items-center justify-between py-5
+    @apply w-full px-2 flex items-center justify-between py-5 xl:px-6
   }
 
   .nav-logo {
-    @apply text-2xl font-bold mr-6 
+    @apply text-2xl font-bold mr-6
   }
 
   .nav-list {
-    @apply text-gray
+    @apply text-gray-900 flex justify-between items-center
   }
 
   .nav-action {
@@ -17,6 +21,32 @@
   }
 
   .nav-list-item {
-    @apply mx-8 font-bold text-sm
+    @apply hidden mx-8 xl:block tracking-wide
+  }
+
+  .nav-list-button {
+    @apply ml-8 font-bold
+  }
+
+  .nav-list-button-inner {
+    @apply bg-gray-900 text-white px-12 py-3 rounded-md  font-bold
+  }
+
+  .nav-list-menu {
+    @apply ml-8 flex items-center z-50
+  }
+
+  /* FULL SCREEN MENU */
+
+  .fs-menu {
+    @apply w-screen flex-1 z-10 top-0 flex justify-center items-center
+  }
+
+  .fs-menu-inner {
+    @apply w-full container
+  }
+
+  .fs-nav-list-item {
+    @apply text-4xl py-2
   }
 }

@@ -1,23 +1,25 @@
-
-
 @layer components {
   .card {
-    @apply w-1/3 p-2 mb-6
+    @apply w-full
   }
 
   .card-inner {
-    @apply px-4 space-y-2 h-full
+    @apply flex flex-col space-y-2 h-full
+  }
+
+  .card-content {
+    @apply p-6 
   }
 
   .card-img {
-    @apply bg-red w-full h-64
+    @apply w-full h-64 flex flex-col justify-center
   }
 
   .card-title {
-    @apply font-bold text-xl
+    @apply text-2xl mb-6
   }
 
   .card-text {
-    @apply text-sm
+    @apply text-gray-500
   }
 }

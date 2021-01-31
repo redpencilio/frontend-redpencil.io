@@ -1,7 +1,0 @@
-@layer components {
-
-  .projects {
-    @apply w-full flex flex-col justify-between relative mb-24
-  }
-
-}

@@ -1,0 +1,15 @@
+@layer components {
+
+  .contact {
+    @apply w-full flex flex-col justify-between relative mb-12 md:mb-24
+  }
+
+  .contact-header {
+    @apply container mb-24 xl:mb-32
+  }
+
+  .contact-form{
+    @apply w-full lg:w-2/3
+  }
+
+}
