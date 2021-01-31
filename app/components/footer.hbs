@@ -1,94 +1,64 @@
-<!--
-  Tailwind UI components require Tailwind CSS v1.8 and the @tailwindcss/ui plugin.
-  Read the documentation to get started: https://tailwindui.com/documentation
--->
-<footer class="bg-gray-darkest">
-  <div class="max-w-screen-xl mx-auto  px-4">
+<footer class="container">
+  <div class="w-full flex flex-wrap md:border-t py-12">
+    <div class="w-full md:w-1/3 mb-12">
+      <LinkTo @route="index" class="font-bold w-1/3 text-3xl">Redpencil<span class="text-red-600">.</span>io</LinkTo>
+    </div>
+    <div class="w-full md:w-2/3 sm:flex sm:flex-wrap">
 
-    <div class=" mt-0 col-span-2 py-16">
-
-      <div class="md:grid md:grid-cols-3 md:gap-8">
-        <div class="flex flex-col justify-between">
-          <div>
-            <h4 class="text-sm leading-5 font-semibold text-white tracking-wider uppercase">
-              address
-            </h4>
-            <div class="mt-2 text-base leading-6 text-gray-light">
-              <p>street</p>
-              <p>city</p>
-            </div>
-          </div>
-          <div class="mt-12 md:mt-0">
-            <h4 class="text-sm leading-5 mt-4 font-semibold text-white tracking-wider uppercase">
-              opening
-            </h4>
-            <div class="mt-2 text-base leading-6 text-gray-light">
-              <p>week</p>
-              <p>hours</p>
-            </div>
-          </div>
-        </div>
-        <div class="mt-12 md:mt-0">
-          <h4 class="text-sm leading-5 font-semibold text-white tracking-wider uppercase">
-            general
-          </h4>
-          <ul class="mt-4 space-y-4">
-            <li>
-              <LinkTo @route="index" class="text-base leading-6 text-gray-light hover:text-gray-200">
-                home
-              </LinkTo>
-            </li>
-            <li>
-              <LinkTo @route="who-we-are" class="text-base leading-6 text-gray-light hover:text-gray-200">
-                Who we are
-              </LinkTo>
-            </li>
-            <li>
-              <LinkTo @route="services" class="text-base leading-6 text-gray-light hover:text-gray-200">
-                Services
-              </LinkTo>
-            </li>
-            <li>
-              <LinkTo @route="projects" class="text-base leading-6 text-gray-light hover:text-gray-200">
-                Projects
-              </LinkTo>
-            </li>
-            <li>
-              <LinkTo @route="contact" class="text-base leading-6 text-gray-light hover:text-gray-200">
-                contact
-              </LinkTo>
-            </li>
-          </ul>
-        </div>
-        <div class="mt-12 md:mt-0">
-          <h4 class="text-sm leading-5 font-semibold text-white tracking-wider uppercase">
-            legal
-          </h4>
-          <ul class="mt-4 space-y-4">
-            <li>
-              <a href="#" class="text-base leading-6 text-gray-light hover:text-gray-200">
-                terms
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-base leading-6 text-gray-light hover:text-gray-200">
-                privacy
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-base leading-6 text-gray-light hover:text-gray-200">
-                cookie
-              </a>
-            </li>
-          </ul>
-        </div>
-
+      <div class="flex-1 mb-12">
+        <h5 class="text-lg font-bold mb-4">Resources</h5>
+        <ul class="">
+          <li class="mb-2">
+            <a href="#" class="text-gray-700 font-thin">Resource</a>
+          </li>
+          <li class="mb-2">
+            <a href="#" class="text-gray-700 font-thin">Resource name</a>
+          </li>
+          <li class="mb-2">
+            <a href="#" class="text-gray-700 font-thin">Another resource</a>
+          </li>
+          <li class="mb-2">
+            <a href="#" class="text-gray-700 font-thin">Final resource</a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex-1 mb-12">
+        <h5 class="text-lg font-bold mb-4">About</h5>
+        <ul class="">
+          <li class="mb-2">
+            <a href="#" class="text-gray-700 font-thin">Team</a>
+          </li>
+          <li class="mb-2">
+            <a href="#" class="text-gray-700 font-thin">Locations</a>
+          </li>
+          <li class="mb-2">
+            <a href="#" class="text-gray-700 font-thin">Privacy</a>
+          </li>
+          <li class="mb-2">
+            <a href="#" class="text-gray-700 font-thin">Terms</a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex-1 mb-12">
+        <h5 class="text-lg font-bold mb-4">Help</h5>
+        <ul class="">
+          <li class="mb-2">
+            <a href="#" class="text-gray-700 font-thin">Support</a>
+          </li>
+          <li class="mb-2">
+            <a href="#" class="text-gray-700 font-thin">Help Center</a>
+          </li>
+          <li class="mb-2">
+            <a href="#" class="text-gray-700 font-thin">Contact Us</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="py-6 flex justify-between border-t border-gray">
-      <p class="text-base leading-6 text-gray xl:text-center">
+
+    {{!-- <div class="border-t py-6">
+      <div class="sm:w-full px-4 md:w-1/6">
         &copy; 2021 Redpencil.io
-      </p>
-    </div>
+      </div>
+    </div> --}}
   </div>
 </footer>
