@@ -4,4 +4,20 @@
     @apply w-full flex flex-col justify-between relative mb-12 md:mb-24
   }
 
+  .careers-header {
+    @apply container mb-12 md:mb-32
+  }
+
+  .careers-list {
+    @apply container grid grid-cols-3 justify-between
+  }
+
+  .careers-list-item {
+    @apply p-6
+  }
+
+  .job-header {
+    @apply mb-24
+  }
+
 }
