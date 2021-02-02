@@ -17,11 +17,15 @@
   }
 
   .stats-list {
-    @apply grid grid-cols-2 md:grid-cols-4 gap-6
+    @apply grid grid-cols-2 xl:grid-cols-4 gap-6
+  }
+
+  .stats-icon {
+    @apply flex justify-center items-center bg-gray-800 text-gray-100 rounded w-10 h-10
   }
 
   .stats-item {
-    @apply bg-gray-100 p-3 md:p-6
+    @apply flex space-x-6 bg-gray-50 p-3 md:p-6 rounded-lg
   }
 
   .values {
