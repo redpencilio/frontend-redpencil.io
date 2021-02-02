@@ -5,19 +5,51 @@
   }
 
   .careers-header {
-    @apply container mb-12 md:mb-32
+    @apply container mb-6 md:mb-12
   }
 
   .careers-list {
-    @apply container grid grid-cols-3 justify-between
+    @apply container grid grid-cols-3 justify-between mb-48
   }
 
-  .careers-list-item {
-    @apply p-6
+  .job-card {
+    @apply p-6 border rounded
   }
+
+  .job-pill-open{
+    @apply bg-green-100 text-green-700 px-4 py-1 rounded-full font-bold
+  }
+
+  .job-card-header {
+    @apply flex mb-6 justify-between
+  }
+
+  .job-prop-list {
+    @apply flex space-x-6
+  }
+
+  .job-prop-item {
+    @apply flex space-x-2 text-gray-500
+  }
+
+
 
   .job-header {
     @apply mb-24
   }
+
+  .advantages-list {
+    @apply grid grid-cols-4 gap-6
+  }
+
+  .advantages-icon {
+    @apply bg-gray-900 text-white p-3 rounded
+  }
+
+  .advantages-list-item {
+    @apply border bg-gray-50 rounded px-6 py-12 flex flex-col items-center space-y-6 text-xl
+  }
+
+
 
 }
