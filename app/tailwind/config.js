@@ -1,6 +1,9 @@
 module.exports = {
   purge: [],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false,
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
   theme: {
     container: {
       center: true,
