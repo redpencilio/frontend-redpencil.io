@@ -37,11 +37,15 @@
   }
 
   .values-list {
-    @apply grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-6
   }
 
   .values-list-item {
-    @apply p-8 md:p-10 border
+    @apply flex items-center p-4 border rounded-lg space-x-6
+  }
+
+  .values-icon {
+    @apply p-4 bg-gray-800 text-gray-100 rounded-lg
   }
 
   .join {
