@@ -29,11 +29,11 @@
   }
 
   .hero-content {
-    @apply flex flex-col items-center justify-between mb-24
+    @apply flex flex-col justify-between mb-24
   }
 
   .hero-title {
-    @apply mb-8 text-black text-5xl font-black
+    @apply mb-8 text-black text-7xl font-black w-2/3
   }
 
   .hero-text {
