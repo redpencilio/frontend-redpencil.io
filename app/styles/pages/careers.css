@@ -9,7 +9,7 @@
   }
 
   .careers-list {
-    @apply container grid grid-cols-3 justify-between mb-48
+    @apply container grid grid-cols-1 lg:grid-cols-2 justify-between mb-48
   }
 
   .job-card {
@@ -32,14 +32,12 @@
     @apply flex space-x-2 text-gray-500
   }
 
-
-
   .job-header {
     @apply mb-24
   }
 
   .advantages-list {
-    @apply grid grid-cols-4 gap-6
+    @apply grid grid-cols-2 lg:grid-cols-4 gap-6
   }
 
   .advantages-icon {
@@ -47,9 +45,15 @@
   }
 
   .advantages-list-item {
-    @apply  bg-gray-50 rounded px-6 py-12 flex flex-col items-center space-y-6 text-xl
+    @apply  bg-gray-50 rounded px-6 py-12 flex flex-col items-center space-y-6 text-xl text-center
   }
 
+  .resources-list {
+    @apply grid grid-cols-2 lg:grid-cols-4 gap-6
+  }
 
+  .resource-list-item {
+    @apply bg-gray-50 p-6
+  }
 
 }
