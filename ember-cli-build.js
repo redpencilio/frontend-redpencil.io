@@ -10,7 +10,8 @@ module.exports = function(defaults) {
       content: [
         // add extra paths here for components/controllers which include tailwind classes
         './app/index.html',
-        './app/templates/**/*.hbs'
+        './app/templates/**/*.hbs',
+        './app/components/**/*.hbs'
       ],
       defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || []
     }
