@@ -4,7 +4,7 @@
   }
 
   .button-pill--active {
-    @apply border-gray-500 bg-gray-900 rounded-lg text-white
+    @apply border-2 border-gray-500 bg-gray-100 rounded-lg text-gray-900
   }
 
   .dark-button {
@@ -18,6 +18,11 @@
 
   .btn-secondary {
     @apply px-16 py-4 rounded-lg  text-gray-900 font-medium border border-gray-500 font-bold
+  }
+
+
+  .submit-button {
+    @apply flex space-x-6 justify-center items-center w-full py-4 rounded-lg bg-gray-900 text-white font-bold
   }
 
 }
