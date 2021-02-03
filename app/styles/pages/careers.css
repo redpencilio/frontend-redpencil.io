@@ -47,7 +47,7 @@
   }
 
   .advantages-list-item {
-    @apply border bg-gray-50 rounded px-6 py-12 flex flex-col items-center space-y-6 text-xl
+    @apply  bg-gray-50 rounded px-6 py-12 flex flex-col items-center space-y-6 text-xl
   }
 
 
