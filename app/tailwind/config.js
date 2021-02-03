@@ -1,3 +1,6 @@
+
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: [],
   darkMode: false,
@@ -18,6 +21,9 @@ module.exports = {
     extend: {
       gridTemplateColumns: {
         'content': '1fr 100px 1fr',
+      },
+      colors: {
+        gray: colors.warmGray,
       },
     },
     variants: {
