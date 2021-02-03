@@ -61,7 +61,7 @@
   }
 
   .people {
-    @apply container mb-48
+    @apply container mb-24 xl:mb-48
   }
 
   .people-header {

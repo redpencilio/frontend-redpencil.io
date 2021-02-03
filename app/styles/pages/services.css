@@ -1,7 +1,7 @@
 @layer components {
 
   .services {
-    @apply w-full flex flex-col justify-between relative mb-24
+    @apply w-full flex flex-col justify-between relative mb-12 md:mb-24
   }
 
   .services-header {
@@ -9,7 +9,7 @@
   }
 
   .service-card-container {
-    @apply container mb-24
+    @apply container mb-24 xl:mb-48
   }
 
   .service-card {

@@ -9,23 +9,11 @@
   }
 
   .hero-bubble{
-    @apply container
-  }
-
-  .hero-bubble-inner {
-    @apply flex items-center bg-green-700  shadow-lg rounded-lg p-1 pr-2 my-3 justify-between
-  }
-
-  .hero-bubble-title {
-    @apply px-6 py-1 text-xs font-bold leading-5 uppercase tracking-wide bg-green-800 rounded text-green-100
+    @apply rounded-full bg-gray-100 px-12 py-2 mb-6
   }
 
   .hero-bubble-text {
-    @apply ml-4 font-bold text-white
-  }
-
-  .hero-bubble-icon {
-    @apply mx-2 w-6 h-6 text-white
+    @apply  text-gray-900 text-sm font-bold leading-5 uppercase tracking-wide
   }
 
   .hero-content {
@@ -33,11 +21,11 @@
   }
 
   .hero-title {
-    @apply mb-8 text-black text-7xl font-black w-2/3
+    @apply mb-8 text-gray-800 text-6xl font-black
   }
 
   .hero-text {
-    @apply mb-6 text-2xl text-gray-500
+    @apply mb-6 text-2xl font-thin text-gray-900  w-2/3
   }
 
   .hero-buttons {
@@ -46,5 +34,21 @@
 
   .hero-illustration {
     @apply w-1/2 flex justify-end px-12
+  }
+
+  .sp {
+    @apply container
+  }
+
+  .sp-inner {
+    @apply flex flex-col
+  }
+
+  .sp-title {
+    @apply title-lg text-gray-700
+  }
+
+  .sp-text {
+    @apply title-sm-thin text-gray-700
   }
 }
