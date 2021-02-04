@@ -10,7 +10,7 @@
 
 /* PAGES */
 @import "./pages/index.css";
-@import "./pages/about.css";
+@import "./pages/who-we-are.css";
 @import "./pages/projects.css";
 @import "./pages/services.css";
 @import "./pages/contact.css";
@@ -37,6 +37,7 @@
 
 * {
   font-family: 'Lato', sans-serif;
+  transition: all .1s ease-in-out;
 }
 
 
