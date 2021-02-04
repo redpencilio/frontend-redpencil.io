@@ -1,72 +1,88 @@
-<Navbar />
-{{!-- <canvas id="frame" {{did-insert this.initNetwork this}}></canvas> --}}
-  <section class="hero ">
+<section class="hero">
+  <div class="hero-bubble">
+    <LinkTo @route="contact" class="hero-bubble-inner">
+      <span class="hero-bubble-text">We're hiring</span>
+    </LinkTo>
+  </div>
+  <article class="hero-content">
 
-    {{!-- <LinkTo @route="careers" class="hero-bubble">
-      <div class="hero-bubble-inner">
-
-        <div class="flex items-center">
-          <span class="hero-bubble-title">
-            <svg class="h-5 my-1 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
-                clip-rule="evenodd"></path>
-              <path
-                d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z">
-              </path>
-            </svg>
-          </span>
-          <span class="hero-bubble-text">Careers opportunities available!</span>
-
-        </div>
-
-        <!-- Heroicon name: chevron-right -->
-        <svg class="hero-bubble-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-          aria-hidden="true">
-          <path fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd" />
-        </svg>
+    <h1 class="hero-title">
+      Get more from your data
+    </h1>
+    <div>
+      <p class="hero-text">
+        Redpencil creates rich web applications tailored to the data needs of your organization.
+      </p>
+      <div class="hero-button">
+        <button type="button" class="hero-button-inner">
+          <span class="hero-button-text">Book a meeting</span>
+          <svg class="hero-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+              fill="currentColor" />
+          </svg>
+        </button>
       </div>
-    </LinkTo> --}}
-      <article class="hero-content">
+    </div>
+  </article>
+</section>
 
-        <h1 class="hero-title">
-          We build solutions Based on Open and Linked Data
-        </h1>
-        <div>
-          <p class="hero-text">
-            We solve complex data problems with rich distributed web applications.
-          </p>
-          <div class="hero-buttons">
-            <button type="button" class="btn-primary bg-gradient-to-br from-gray to-black">Book a meeting</button>
-            <button type="button" class="btn-secondary">
-              Our work
-            </button>
-          </div>
-        </div>
+<section class="container flex flex-col mb-48">
+  <article class="flex flex-col">
+    <h2 class="title-lg">Why we are different</h2>
+    <h3 class="title-sm-thin mb-6">We build in a special way</h3>
+    <p class="mb-16 text-gray-600 w-2/3">
+      We both use and contribute extensively to open-source projects. Using open source has many advantages
+    </p>
+  </article>
+  <article class="w-full">
+    <ul class="flex space-x-6">
+      <li class="flex-1 bg-gray-50 rounded-lg h-64 p-6 border-2 border-gray-100">
+        <h3 class="title-sm">Linked data</h3>
+      </li>
+      <li class="flex-1 bg-gray-50 rounded-lg h-64 p-6 border-2 border-gray-100">
+         <h3 class="title-sm">Linked data</h3>
+      </li>
+      <li class="flex-1 bg-gray-50 rounded-lg h-64 p-6 border-2 border-gray-100">
+         <h3 class="title-sm">Linked data</h3>
+      </li>
+    </ul>
+  </article>
+</section>
 
-      </article>
-      <article class="">
-        <h2 class="text-xl text-white mb-4">They Trust us</h2>
-        <ul class="flex space-between  space-x-6 text-center">
-          <li class="bg-gray-100 flex-1 px-16 py-8">logo</li>
-          <li class="bg-gray-100 flex-1 px-16 py-8">logo</li>
-          <li class="bg-gray-100 flex-1 px-16 py-8">logo</li>
-        </ul>
-      </article>
-  </section>
+<section class="open-source">
+  <div class="open-source-img">
+    <img class="w-full" src="/assets/vector/open-source.svg" alt="data modeling">
+  </div>
+  <article class="open-source-content">
+    <h2 class="title-lg">We love open source</h2>
+    <h3 class="title-sm-thin mb-6">Part of our DNA</h3>
+    <p class="mb-16 text-gray-600 w-full">
+      We both use and contribute extensively to open-source projects. Using open source has many advantages
+    </p>
+  </article>
 
-  <section class="banner">
-    <article class="banner-inner">
-      <div class="banner-call">
-        <h2 class="banner-title">Get to know us </h2>
-        <h3 class="banner-text">Book a meeting</h3>
-      </div>
-      <div>
-        <button class="banner-button"> <span class="banner-text-outer"> Start a new experience </span> <span
-            class="banner-text-inner"> Careers</span></button>
-      </div>
-    </article>
-  </section>
+</section>
 
+
+
+
+<section class="container flex space-between space-x-12 items-center ">
+  <article class="h-64 w-full bg-red-600 rounded-2xl p-12 text-white">
+    <h2 class="title-lg">We are hiring</h2>
+  </article>
+
+</section>
+
+<section class="banner">
+  <article class="banner-inner">
+    <div class="banner-call">
+      <h2 class="banner-title">Get to know us </h2>
+      <h3 class="banner-text">Book a meeting</h3>
+    </div>
+    <div>
+      <button class="banner-button"> <span class="banner-text-outer"> Start a new experience </span> <span
+          class="banner-text-inner"> Careers</span></button>
+    </div>
+  </article>
+</section>
