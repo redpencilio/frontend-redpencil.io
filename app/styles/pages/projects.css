@@ -8,8 +8,36 @@
     @apply container flex flex-col justify-between mb-24 md:mb-32 xl:space-x-16 xl:flex-row
   }
 
-  .projects-cards {
+  .projects-card-list {
     @apply container grid mb-24 gap-16 xl:grid-cols-2 xl:mb-48
+  }
+
+  .projects-card-item {
+    @apply w-full
+  }
+
+  .projects-card-inner {
+    @apply flex flex-col h-full space-y-6
+  }
+
+  .card-content {
+    @apply p-6
+  }
+
+  .projects-card-bg {
+    @apply w-full h-64 flex flex-col justify-center rounded-lg
+  }
+
+  .projects-card-header {
+    @apply ml-3 w-2/3 bg-gray-900 px-12 py-4 text-white rounded-lg
+  }
+
+  .card-title {
+    @apply text-2xl mb-6
+  }
+
+  .card-text {
+    @apply text-gray-500
   }
 
 }

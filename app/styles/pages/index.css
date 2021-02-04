@@ -9,11 +9,15 @@
   }
 
   .hero-bubble{
-    @apply rounded-full bg-gray-100 px-12 py-2 mb-6
+    @apply inline-flex
+  }
+
+  .hero-bubble-inner{
+    @apply rounded-full bg-gray-50 px-12 py-2 mb-6 border-2 border-gray-200
   }
 
   .hero-bubble-text {
-    @apply  text-gray-900 text-sm font-bold leading-5 uppercase tracking-wide
+    @apply  text-gray-700 text-sm font-bold leading-5 uppercase tracking-wide
   }
 
   .hero-content {
@@ -28,27 +32,35 @@
     @apply mb-6 text-2xl font-thin text-gray-900  w-2/3
   }
 
-  .hero-buttons {
+  .hero-button {
     @apply space-x-4 py-6 mb-6
+  }
+
+  .hero-button-inner {
+    @apply btn-primary bg-gray-900 flex space-x-6 items-center
+  }
+
+  .hero-button-text {
+    @apply leading-none
+  }
+
+  .hero-button-icon {
+    @apply w-6 text-red-600
   }
 
   .hero-illustration {
     @apply w-1/2 flex justify-end px-12
   }
 
-  .sp {
-    @apply container
+  .open-source {
+    @apply container flex space-x-12 items-center mb-48
   }
 
-  .sp-inner {
-    @apply flex flex-col
+  .open-source-img {
+    @apply flex-1 rounded
   }
 
-  .sp-title {
-    @apply title-lg text-gray-700
-  }
-
-  .sp-text {
-    @apply title-sm-thin text-gray-700
+  .open-source-content {
+    @apply flex-1
   }
 }

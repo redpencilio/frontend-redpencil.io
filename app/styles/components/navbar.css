@@ -21,7 +21,7 @@
   }
 
   .nav-list-item {
-    @apply hidden mx-8 xl:block tracking-wide
+    @apply hidden mx-8 font-bold xl:block tracking-wide hover:text-red-600
   }
 
   .nav-list-button {
@@ -29,7 +29,7 @@
   }
 
   .nav-list-button-inner {
-    @apply bg-gray-900 text-white px-12 py-3 rounded-md  font-bold
+    @apply bg-gray-900 text-white px-12 py-3 rounded-md  font-bold hover:bg-red-600 hover:shadow
   }
 
   .nav-list-menu {

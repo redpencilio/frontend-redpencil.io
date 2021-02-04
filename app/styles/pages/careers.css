@@ -13,11 +13,11 @@
   }
 
   .job-card {
-    @apply p-6 border rounded
+    @apply p-6 border rounded hover:shadow hover:bg-gray-50
   }
 
   .job-pill-open{
-    @apply bg-green-100 text-green-700 px-4 py-1 rounded-full font-bold
+    @apply bg-green-100 border-2 border-green-500 text-green-700 px-6 py-1 rounded-full font-bold
   }
 
   .job-card-header {

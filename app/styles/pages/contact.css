@@ -5,11 +5,15 @@
   }
 
   .contact-header {
-    @apply container mb-24 md:mb-32
+    @apply container
   }
 
   .contact-form{
-    @apply w-full lg:w-2/3
+    @apply container mb-48
+  }
+
+  .contact-form-inner {
+    @apply w-full lg:w-2/3 space-y-6
   }
 
   .input-wrapper {
