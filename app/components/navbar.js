@@ -11,13 +11,13 @@ export default class NavbarComponent extends Component {
   constructor(){
     super(...arguments);
     this.router.addObserver('currentRoute', () => {
-      this.toggleActive(false);
+      this.toggleActive("false");
     });
   }
 
   @action toggleActive(state){
-    if(typeof state == String){
-      this.active = state
+    if(state == "false"){
+      this.active = false
     } else {
       this.active = !this.active
     }
