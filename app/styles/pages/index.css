@@ -52,6 +52,50 @@
     @apply w-1/2 flex justify-end px-12
   }
 
+  .what {
+    @apply container flex flex-col justify-center mb-48
+  }
+
+  .what-header {
+    @apply mb-12
+  }
+
+  .what-list {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6
+  }
+
+  .what-list-item {
+    @apply flex flex-col border-2 border-gray-200 rounded-lg
+  }
+
+  .what-illustration {
+    @apply bg-gray-100 text-gray-100 h-64 bg-center bg-no-repeat
+  }
+
+  .what-content {
+    @apply px-6 py-10
+  }
+
+  .why {
+    @apply container flex flex-col justify-center mb-48
+  }
+
+  .why-header {
+    @apply mb-12
+  }
+
+  .why-list {
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-6
+  }
+
+  .why-list-item {
+    @apply flex items-center p-4 border-2 border-gray-200 rounded-lg space-x-6
+  }
+
+  .why-icon {
+    @apply p-4 bg-gray-800 text-gray-100 rounded-lg
+  }
+
   .open-source {
     @apply container flex space-x-12 items-center mb-48
   }
