@@ -13,11 +13,11 @@
   }
 
   .stats {
-    @apply container mb-24 md:mb-48
+    @apply container mb-48
   }
 
   .stats-list {
-    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3 md:gap-6
+    @apply grid grid-cols-2 xl:grid-cols-4 gap-6
   }
 
   .stats-icon {
@@ -29,11 +29,11 @@
   }
 
   .values {
-    @apply container flex flex-col justify-center mb-24 md:mb-48
+    @apply container flex flex-col justify-center mb-48
   }
 
   .values-header {
-    @apply my-12
+    @apply mb-12
   }
 
   .values-list {
