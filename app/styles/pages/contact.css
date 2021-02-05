@@ -9,11 +9,11 @@
   }
 
   .contact-form{
-    @apply container mb-48
+    @apply container mb-24 md:mb-48
   }
 
   .contact-form-inner {
-    @apply w-full lg:w-2/3 space-y-6
+    @apply w-full lg:w-2/3 space-y-3 md:space-y-6
   }
 
   .input-wrapper {
@@ -32,7 +32,29 @@
     @apply focus:ring-gray-500 focus:border-gray-500 block w-full py-4 pl-10 sm:text-sm border-gray-300 rounded-md resize-none bg-gray-50
   }
 
+  .faq {
+    @apply container mx-auto mb-24 md:mb-48
+  }
 
+  .faq-title {
+    @apply title-lg font-extrabold text-gray-900
+  }
+
+  .faq-content {
+    @apply mt-6 border-t border-gray-300 pt-10
+  }
+
+  .faq-list {
+    @apply space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:grid-rows-2 md:gap-x-8 md:gap-y-12
+  }
+
+  .faq-question {
+    @apply text-lg leading-6 font-bold text-gray-900
+  }
+
+  .faq-answer {
+    @apply mt-2 text-base text-gray-600
+  }
 
 
 }
