@@ -1,7 +1,7 @@
 @layer components {
 
   .hero {
-    @apply container w-full h-screen flex flex-col relative justify-center mb-48
+    @apply container w-full flex relative justify-center items-center py-48
   }
 
   .hero-inner {
@@ -21,7 +21,7 @@
   }
 
   .hero-content {
-    @apply flex flex-col justify-between mb-24
+    @apply flex-1 flex flex-col
   }
 
   .hero-title {
@@ -29,7 +29,7 @@
   }
 
   .hero-text {
-    @apply mb-6 text-2xl font-thin text-gray-900  w-2/3
+    @apply mb-6 text-2xl font-thin text-gray-900
   }
 
   .hero-button {
@@ -49,7 +49,7 @@
   }
 
   .hero-illustration {
-    @apply w-1/2 flex justify-end px-12
+    @apply w-1/2 justify-end px-12 hidden  lg:flex
   }
 
   .what {
