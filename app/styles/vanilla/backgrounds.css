@@ -20,10 +20,26 @@
 }
 
 
-.bg-lblod-card{
+.bg-lblod-card {
   background-image: url('/assets/vector/lblod-pattern-small.svg');
 }
 
-.bg-kaleidos-card{
+.bg-kaleidos-card {
   background-image: url('/assets/vector/kaleidos-pattern-small.svg');
+}
+
+.bg-semantic-web {
+  background-image: url('/assets/vector/semantic-web.svg');
+}
+
+.bg-linked-data {
+  background-image: url('/assets/vector/linked-data.svg');
+}
+
+.bg-open-data {
+  background-image: url('/assets/vector/open-data.svg');
+}
+
+.bg-open-standards {
+  background-image: url('/assets/vector/open-standards.svg');
 }
