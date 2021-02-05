@@ -9,7 +9,7 @@
   }
 
   .nav-logo {
-    @apply text-2xl font-bold mr-6
+    @apply text-xl md:text-2xl font-bold mr-6
   }
 
   .nav-list {
@@ -25,7 +25,7 @@
   }
 
   .nav-list-button {
-    @apply ml-8 font-bold
+    @apply hidden md:block ml-8 font-bold
   }
 
   .nav-list-button-inner {
