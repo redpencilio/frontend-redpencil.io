@@ -1,23 +1,290 @@
-<svg width="361" height="254" viewBox="0 0 361 254" fill="none" xmlns="http://www.w3.org/2000/svg">
-<line x1="177.633" y1="127.339" x2="117.633" y2="62.3391" stroke="#E8E8E8"/>
-<line x1="177.506" y1="127.079" x2="163.506" y2="39.0786" stroke="#E8E8E8"/>
-<line x1="177.537" y1="126.81" x2="211.537" y2="43.8105" stroke="#E8E8E8"/>
-<line x1="177.732" y1="126.578" x2="251.732" y2="79.5779" stroke="#E8E8E8"/>
-<line x1="178" y1="126.5" x2="270" y2="126.5" stroke="#E8E8E8"/>
-<line x1="178.287" y1="126.591" x2="252.287" y2="178.591" stroke="#E8E8E8"/>
-<line x1="178.467" y1="126.823" x2="211.467" y2="213.823" stroke="#E8E8E8"/>
-<line x1="178.473" y1="127.163" x2="148.473" y2="214.163" stroke="#E8E8E8"/>
-<line x1="178.287" y1="127.409" x2="104.287" y2="179.409" stroke="#E8E8E8"/>
-<line x1="177.955" y1="127.498" x2="89.9547" y2="119.498" stroke="#E8E8E8"/>
-<ellipse cx="118" cy="62" rx="12" ry="13" fill="#B1B1B1"/>
-<ellipse cx="90.5" cy="119" rx="12.5" ry="13" fill="#393939"/>
-<circle cx="104.5" cy="178.5" r="12.5" fill="#B1B1B1"/>
-<circle cx="148.5" cy="213.5" r="12.5" fill="#393939"/>
-<ellipse cx="211" cy="213.5" rx="13" ry="12.5" fill="#B1B1B1"/>
-<ellipse cx="252" cy="178.5" rx="13" ry="12.5" fill="#393939"/>
-<circle cx="270.5" cy="127.5" r="12.5" fill="#B1B1B1"/>
-<ellipse cx="252" cy="79.5" rx="13" ry="12.5" fill="#393939"/>
-<ellipse cx="212" cy="45.5" rx="13" ry="13.5" fill="#B1B1B1"/>
-<circle cx="164.5" cy="40.5" r="12.5" fill="#393939"/>
-<circle cx="180" cy="127" r="27" fill="#393939"/>
+<svg width="585" height="254" viewBox="0 0 585 254" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="393" cy="128" r="100.5" stroke="#E3E3E3" stroke-dasharray="6 6"/>
+<circle cx="191" cy="128" r="100.5" stroke="#E3E3E3" stroke-dasharray="6 6"/>
+<line x1="143" y1="127.5" x2="192" y2="127.5" stroke="#CECECE" stroke-dasharray="2 2"/>
+<line x1="394" y1="127.5" x2="443" y2="127.5" stroke="#CECECE" stroke-dasharray="2 2"/>
+<circle cx="293" cy="127" r="37.5" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<circle cx="293" cy="127" r="55.5" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<circle cx="293" cy="127" r="91.5" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="291" y1="126.5" x2="383" y2="126.5" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="292.467" y1="126.823" x2="325.467" y2="213.823" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="292.473" y1="127.163" x2="262.473" y2="214.163" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="291.439" y1="128.01" x2="203.091" y2="126.408" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<circle r="15.5" transform="matrix(-1 0 0 1 262.5 213.5)" fill="url(#paint0_linear)"/>
+<circle r="15.5" transform="matrix(-1 0 0 1 203.5 126.5)" fill="url(#paint1_linear)"/>
+<circle r="15.5" transform="matrix(-1 0 0 1 383.5 126.5)" fill="url(#paint2_linear)"/>
+<circle r="6.5" transform="matrix(-1 0 0 1 339.5 158.5)" fill="url(#paint3_linear)"/>
+<circle r="6.5" transform="matrix(-1 0 0 1 339.5 95.5)" fill="url(#paint4_linear)"/>
+<circle r="6.5" transform="matrix(-1 0 0 1 247.5 95.5)" fill="url(#paint5_linear)"/>
+<circle r="6.5" transform="matrix(-1 0 0 1 247.5 160.5)" fill="url(#paint6_linear)"/>
+<circle r="2.5" transform="matrix(-1 0 0 1 236.5 127.5)" fill="url(#paint7_linear)"/>
+<circle r="15.5" transform="matrix(-1 0 0 1 323.5 213.5)" fill="url(#paint8_linear)"/>
+<line y1="-0.5" x2="93.0484" y2="-0.5" transform="matrix(0.354654 -0.934998 -0.934998 -0.354654 292 126)" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line y1="-0.5" x2="92.0272" y2="-0.5" transform="matrix(-0.325991 -0.945373 -0.945373 0.325991 292 126)" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<circle r="15.5" transform="matrix(-1 0 0 1 262.5 39.5)" fill="url(#paint9_linear)"/>
+<circle r="15.5" transform="matrix(-1 0 0 1 323.5 39.5)" fill="url(#paint10_linear)"/>
+<circle r="11" transform="matrix(-1 0 0 1 293 127)" fill="#393939"/>
+<circle r="2.5" transform="matrix(-1 0 0 1 274.5 74.5)" fill="url(#paint11_linear)"/>
+<circle r="2.5" transform="matrix(-1 0 0 1 274.5 179.5)" fill="url(#paint12_linear)"/>
+<circle r="2.5" transform="matrix(-1 0 0 1 312.5 74.5)" fill="url(#paint13_linear)"/>
+<circle r="2.5" transform="matrix(-1 0 0 1 348.5 126.5)" fill="url(#paint14_linear)"/>
+<circle r="2.5" transform="matrix(-1 0 0 1 311.5 178.5)" fill="url(#paint15_linear)"/>
+<circle cx="293" cy="127" r="37.5" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<circle cx="293" cy="127" r="55.5" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<circle cx="293" cy="127" r="91.5" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="291" y1="126.5" x2="383" y2="126.5" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="292.467" y1="126.823" x2="325.467" y2="213.823" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="292.473" y1="127.163" x2="262.473" y2="214.163" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="291.439" y1="128.01" x2="203.091" y2="126.408" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<circle r="15.5" transform="matrix(-1 0 0 1 262.5 213.5)" fill="url(#paint16_linear)"/>
+<circle r="15.5" transform="matrix(-1 0 0 1 203.5 126.5)" fill="url(#paint17_linear)"/>
+<circle r="15.5" transform="matrix(-1 0 0 1 383.5 126.5)" fill="url(#paint18_linear)"/>
+<circle r="6.5" transform="matrix(-1 0 0 1 339.5 158.5)" fill="url(#paint19_linear)"/>
+<circle r="6.5" transform="matrix(-1 0 0 1 339.5 95.5)" fill="url(#paint20_linear)"/>
+<circle r="6.5" transform="matrix(-1 0 0 1 247.5 95.5)" fill="url(#paint21_linear)"/>
+<circle r="6.5" transform="matrix(-1 0 0 1 247.5 160.5)" fill="url(#paint22_linear)"/>
+<circle r="2.5" transform="matrix(-1 0 0 1 236.5 127.5)" fill="url(#paint23_linear)"/>
+<circle r="15.5" transform="matrix(-1 0 0 1 323.5 213.5)" fill="url(#paint24_linear)"/>
+<line y1="-0.5" x2="93.0484" y2="-0.5" transform="matrix(0.354654 -0.934998 -0.934998 -0.354654 292 126)" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line y1="-0.5" x2="92.0272" y2="-0.5" transform="matrix(-0.325991 -0.945373 -0.945373 0.325991 292 126)" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<circle r="15.5" transform="matrix(-1 0 0 1 262.5 39.5)" fill="url(#paint25_linear)"/>
+<circle r="15.5" transform="matrix(-1 0 0 1 323.5 39.5)" fill="url(#paint26_linear)"/>
+<circle r="11" transform="matrix(-1 0 0 1 293 127)" fill="#393939"/>
+<circle r="2.5" transform="matrix(-1 0 0 1 274.5 74.5)" fill="url(#paint27_linear)"/>
+<circle r="2.5" transform="matrix(-1 0 0 1 274.5 179.5)" fill="url(#paint28_linear)"/>
+<circle r="2.5" transform="matrix(-1 0 0 1 312.5 74.5)" fill="url(#paint29_linear)"/>
+<circle r="2.5" transform="matrix(-1 0 0 1 348.5 126.5)" fill="url(#paint30_linear)"/>
+<circle r="2.5" transform="matrix(-1 0 0 1 311.5 178.5)" fill="url(#paint31_linear)"/>
+<circle cx="95.5" cy="126.5" r="18" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<circle cx="495.5" cy="126.5" r="18" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<circle cx="95.5" cy="126.5" r="26" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<circle cx="495.5" cy="126.5" r="27" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<circle cx="95" cy="127" r="43.5" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<circle cx="495" cy="127" r="44.5" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="94" y1="126.5" x2="139" y2="126.5" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="494" y1="126.5" x2="539" y2="126.5" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="95.2501" y1="126.562" x2="111.034" y2="168.174" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="495.243" y1="126.564" x2="511.18" y2="168.579" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="95.2553" y1="126.902" x2="80.9063" y2="168.514" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="495.248" y1="126.904" x2="480.761" y2="168.919" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="94.5096" y1="127.483" x2="52.2528" y2="126.717" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="494.5" y1="127.487" x2="451.834" y2="126.714" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<circle r="7.5" transform="matrix(-1 0 0 1 80.5 168.5)" fill="#C2C2C2"/>
+<circle r="7.5" transform="matrix(-1 0 0 1 480.5 168.5)" fill="#C2C2C2"/>
+<circle r="7.5" transform="matrix(-1 0 0 1 52.5 126.5)" fill="#C2C2C2"/>
+<ellipse rx="7" ry="7.5" transform="matrix(-1 0 0 1 452 126.5)" fill="#C2C2C2"/>
+<circle r="7.5" transform="matrix(-1 0 0 1 138.5 126.5)" fill="#C2C2C2"/>
+<ellipse rx="7" ry="7.5" transform="matrix(-1 0 0 1 539 126.5)" fill="#C2C2C2"/>
+<ellipse rx="3.5" ry="3" transform="matrix(-1 0 0 1 117.5 142)" fill="#C2C2C2"/>
+<ellipse rx="3.5" ry="3" transform="matrix(-1 0 0 1 517.5 142)" fill="#C2C2C2"/>
+<circle r="3.5" transform="matrix(-1 0 0 1 117.5 111.5)" fill="#C2C2C2"/>
+<circle r="3.5" transform="matrix(-1 0 0 1 517.5 111.5)" fill="#C2C2C2"/>
+<circle r="3.5" transform="matrix(-1 0 0 1 73.5 111.5)" fill="#C2C2C2"/>
+<circle r="3.5" transform="matrix(-1 0 0 1 473.5 111.5)" fill="#C2C2C2"/>
+<circle r="3.5" transform="matrix(-1 0 0 1 73.5 142.5)" fill="#C2C2C2"/>
+<ellipse rx="3.5" ry="3" transform="matrix(-1 0 0 1 473.5 143)" fill="#C2C2C2"/>
+<circle r="1" transform="matrix(-1 0 0 1 68 127)" fill="#C2C2C2"/>
+<circle r="1" transform="matrix(-1 0 0 1 468 127)" fill="#C2C2C2"/>
+<ellipse rx="7" ry="7.5" transform="matrix(-1 0 0 1 110 168.5)" fill="#C2C2C2"/>
+<ellipse rx="7" ry="7.5" transform="matrix(-1 0 0 1 510 168.5)" fill="#C2C2C2"/>
+<line y1="-0.5" x2="44.5049" y2="-0.5" transform="matrix(0.354654 -0.934998 -0.934998 -0.354654 94.7826 126.261)" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line y1="-0.5" x2="44.9356" y2="-0.5" transform="matrix(0.354654 -0.934998 -0.934998 -0.354654 494.776 126.259)" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line y1="-0.5" x2="44.0164" y2="-0.5" transform="matrix(-0.325991 -0.945373 -0.945373 0.325991 94.7826 126.261)" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line y1="-0.5" x2="44.4424" y2="-0.5" transform="matrix(-0.325991 -0.945373 -0.945373 0.325991 494.776 126.259)" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<circle r="7.5" transform="matrix(-1 0 0 1 80.5 84.5)" fill="#C2C2C2"/>
+<circle r="7.5" transform="matrix(-1 0 0 1 480.5 84.5)" fill="#C2C2C2"/>
+<ellipse rx="7" ry="7.5" transform="matrix(-1 0 0 1 110 84.5)" fill="#C2C2C2"/>
+<ellipse rx="7" ry="7.5" transform="matrix(-1 0 0 1 510 84.5)" fill="#C2C2C2"/>
+<circle r="5" transform="matrix(-1 0 0 1 95 127)" fill="#393939"/>
+<circle r="5" transform="matrix(-1 0 0 1 495 127)" fill="#393939"/>
+<ellipse rx="1" ry="1.5" transform="matrix(-1 0 0 1 87 101.5)" fill="#C2C2C2"/>
+<ellipse rx="1.5" ry="1" transform="matrix(-1 0 0 1 486.5 101)" fill="#C2C2C2"/>
+<ellipse rx="1" ry="1.5" transform="matrix(-1 0 0 1 104 101.5)" fill="#C2C2C2"/>
+<ellipse rx="1.5" ry="1" transform="matrix(-1 0 0 1 504.5 101)" fill="#C2C2C2"/>
+<ellipse rx="1" ry="1.5" transform="matrix(-1 0 0 1 122 126.5)" fill="#C2C2C2"/>
+<ellipse rx="1" ry="1.5" transform="matrix(-1 0 0 1 522 126.5)" fill="#C2C2C2"/>
+<ellipse rx="1" ry="1.5" transform="matrix(-1 0 0 1 104 151.5)" fill="#C2C2C2"/>
+<ellipse rx="1.5" ry="1" transform="matrix(-1 0 0 1 504.5 152)" fill="#C2C2C2"/>
+<circle cx="95.5" cy="126.5" r="18" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<circle cx="495.5" cy="126.5" r="18" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<circle cx="95.5" cy="126.5" r="26" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<circle cx="495.5" cy="126.5" r="27" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<circle cx="95" cy="127" r="43.5" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<circle cx="495" cy="127" r="44.5" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="94" y1="126.5" x2="139" y2="126.5" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="494" y1="126.5" x2="539" y2="126.5" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="95.2501" y1="126.562" x2="111.034" y2="168.174" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="495.243" y1="126.564" x2="511.18" y2="168.579" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="95.2553" y1="126.902" x2="80.9063" y2="168.514" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="495.248" y1="126.904" x2="480.761" y2="168.919" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="94.5096" y1="127.483" x2="52.2528" y2="126.717" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="494.5" y1="127.487" x2="451.834" y2="126.714" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<circle r="7.5" transform="matrix(-1 0 0 1 80.5 168.5)" fill="#C2C2C2"/>
+<circle r="7.5" transform="matrix(-1 0 0 1 480.5 168.5)" fill="#C2C2C2"/>
+<circle r="7.5" transform="matrix(-1 0 0 1 52.5 126.5)" fill="#C2C2C2"/>
+<ellipse rx="7" ry="7.5" transform="matrix(-1 0 0 1 452 126.5)" fill="#C2C2C2"/>
+<circle r="7.5" transform="matrix(-1 0 0 1 138.5 126.5)" fill="#C2C2C2"/>
+<ellipse rx="7" ry="7.5" transform="matrix(-1 0 0 1 539 126.5)" fill="#C2C2C2"/>
+<ellipse rx="3.5" ry="3" transform="matrix(-1 0 0 1 117.5 142)" fill="#C2C2C2"/>
+<ellipse rx="3.5" ry="3" transform="matrix(-1 0 0 1 517.5 142)" fill="#C2C2C2"/>
+<circle r="3.5" transform="matrix(-1 0 0 1 117.5 111.5)" fill="#C2C2C2"/>
+<circle r="3.5" transform="matrix(-1 0 0 1 517.5 111.5)" fill="#C2C2C2"/>
+<circle r="3.5" transform="matrix(-1 0 0 1 73.5 111.5)" fill="#C2C2C2"/>
+<circle r="3.5" transform="matrix(-1 0 0 1 473.5 111.5)" fill="#C2C2C2"/>
+<circle r="3.5" transform="matrix(-1 0 0 1 73.5 142.5)" fill="#C2C2C2"/>
+<ellipse rx="3.5" ry="3" transform="matrix(-1 0 0 1 473.5 143)" fill="#C2C2C2"/>
+<circle r="1" transform="matrix(-1 0 0 1 68 127)" fill="#C2C2C2"/>
+<circle r="1" transform="matrix(-1 0 0 1 468 127)" fill="#C2C2C2"/>
+<ellipse rx="7" ry="7.5" transform="matrix(-1 0 0 1 110 168.5)" fill="#C2C2C2"/>
+<ellipse rx="7" ry="7.5" transform="matrix(-1 0 0 1 510 168.5)" fill="#C2C2C2"/>
+<line y1="-0.5" x2="44.5049" y2="-0.5" transform="matrix(0.354654 -0.934998 -0.934998 -0.354654 94.7826 126.261)" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line y1="-0.5" x2="44.9356" y2="-0.5" transform="matrix(0.354654 -0.934998 -0.934998 -0.354654 494.776 126.259)" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line y1="-0.5" x2="44.0164" y2="-0.5" transform="matrix(-0.325991 -0.945373 -0.945373 0.325991 94.7826 126.261)" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line y1="-0.5" x2="44.4424" y2="-0.5" transform="matrix(-0.325991 -0.945373 -0.945373 0.325991 494.776 126.259)" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<circle r="7.5" transform="matrix(-1 0 0 1 80.5 84.5)" fill="#C2C2C2"/>
+<circle r="7.5" transform="matrix(-1 0 0 1 480.5 84.5)" fill="#C2C2C2"/>
+<ellipse rx="7" ry="7.5" transform="matrix(-1 0 0 1 110 84.5)" fill="#C2C2C2"/>
+<ellipse rx="7" ry="7.5" transform="matrix(-1 0 0 1 510 84.5)" fill="#C2C2C2"/>
+<circle r="5" transform="matrix(-1 0 0 1 95 127)" fill="#C4C4C4"/>
+<circle r="5" transform="matrix(-1 0 0 1 495 127)" fill="#C4C4C4"/>
+<ellipse rx="1" ry="1.5" transform="matrix(-1 0 0 1 87 101.5)" fill="#C2C2C2"/>
+<ellipse rx="1.5" ry="1" transform="matrix(-1 0 0 1 486.5 101)" fill="#C2C2C2"/>
+<ellipse rx="1" ry="1.5" transform="matrix(-1 0 0 1 87 151.5)" fill="#C2C2C2"/>
+<ellipse rx="1.5" ry="1" transform="matrix(-1 0 0 1 486.5 152)" fill="#C2C2C2"/>
+<ellipse rx="1" ry="1.5" transform="matrix(-1 0 0 1 104 101.5)" fill="#C2C2C2"/>
+<ellipse rx="1.5" ry="1" transform="matrix(-1 0 0 1 504.5 101)" fill="#C2C2C2"/>
+<ellipse rx="1" ry="1.5" transform="matrix(-1 0 0 1 122 126.5)" fill="#C2C2C2"/>
+<ellipse rx="1" ry="1.5" transform="matrix(-1 0 0 1 522 126.5)" fill="#C2C2C2"/>
+<ellipse rx="1" ry="1.5" transform="matrix(-1 0 0 1 104 151.5)" fill="#C2C2C2"/>
+<ellipse rx="1.5" ry="1" transform="matrix(-1 0 0 1 504.5 152)" fill="#C2C2C2"/>
+<defs>
+<linearGradient id="paint0_linear" x1="15.5" y1="0" x2="15.5" y2="31" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="15.5" y1="0" x2="15.5" y2="31" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint2_linear" x1="15.5" y1="0" x2="15.5" y2="31" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint3_linear" x1="6.5" y1="0" x2="6.5" y2="13" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint4_linear" x1="6.5" y1="0" x2="6.5" y2="13" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint5_linear" x1="6.5" y1="0" x2="6.5" y2="13" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint6_linear" x1="6.5" y1="0" x2="6.5" y2="13" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint7_linear" x1="2.5" y1="0" x2="2.5" y2="5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint8_linear" x1="15.5" y1="0" x2="15.5" y2="31" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint9_linear" x1="15.5" y1="0" x2="15.5" y2="31" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint10_linear" x1="15.5" y1="0" x2="15.5" y2="31" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint11_linear" x1="2.5" y1="0" x2="2.5" y2="5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint12_linear" x1="2.5" y1="0" x2="2.5" y2="5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint13_linear" x1="2.5" y1="0" x2="2.5" y2="5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint14_linear" x1="2.5" y1="0" x2="2.5" y2="5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint15_linear" x1="2.5" y1="0" x2="2.5" y2="5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint16_linear" x1="15.5" y1="0" x2="15.5" y2="31" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint17_linear" x1="15.5" y1="0" x2="15.5" y2="31" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint18_linear" x1="15.5" y1="0" x2="15.5" y2="31" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint19_linear" x1="6.5" y1="0" x2="6.5" y2="13" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint20_linear" x1="6.5" y1="0" x2="6.5" y2="13" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint21_linear" x1="6.5" y1="0" x2="6.5" y2="13" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint22_linear" x1="6.5" y1="0" x2="6.5" y2="13" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint23_linear" x1="2.5" y1="0" x2="2.5" y2="5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint24_linear" x1="15.5" y1="0" x2="15.5" y2="31" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint25_linear" x1="15.5" y1="0" x2="15.5" y2="31" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint26_linear" x1="15.5" y1="0" x2="15.5" y2="31" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint27_linear" x1="2.5" y1="0" x2="2.5" y2="5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint28_linear" x1="2.5" y1="0" x2="2.5" y2="5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint29_linear" x1="2.5" y1="0" x2="2.5" y2="5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint30_linear" x1="2.5" y1="0" x2="2.5" y2="5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+<linearGradient id="paint31_linear" x1="2.5" y1="0" x2="2.5" y2="5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF5454"/>
+<stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
+</linearGradient>
+</defs>
 </svg>
