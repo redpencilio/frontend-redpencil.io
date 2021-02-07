@@ -1,7 +1,7 @@
 @layer components {
 
   .hero {
-    @apply container w-full flex relative justify-center items-center py-48  space-x-10
+    @apply container w-full grid grid-cols-2 gap-10 relative justify-center items-center py-24
   }
 
   .hero-inner {
@@ -13,11 +13,11 @@
   }
 
   .hero-bubble-inner{
-    @apply rounded-full bg-gray-50 px-12 py-2 mb-6 border-2 border-gray-200
+    @apply rounded-full bg-gray-100 px-8 py-1 mb-6 border border-gray-200
   }
 
   .hero-bubble-text {
-    @apply  text-gray-700 text-sm font-bold leading-5 uppercase tracking-wide
+    @apply  text-gray-700 text-xs font-bold leading-5 uppercase tracking-wide
   }
 
   .hero-content {
