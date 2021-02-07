@@ -2,7 +2,7 @@
 
   <article class="hero-content">
     <div class="hero-bubble">
-      <LinkTo @route="contact" class="hero-bubble-inner">
+      <LinkTo @route="careers" class="hero-bubble-inner">
         <span class="hero-bubble-text">We're hiring</span>
       </LinkTo>
     </div>
@@ -14,14 +14,16 @@
         Redpencil creates rich web applications tailored to the data needs of your organization.
       </p>
       <div class="hero-button">
-        <button type="button" class="hero-button-inner">
-          <span class="hero-button-text">Book a meeting</span>
-          <svg class="hero-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path fill="none" d="M0 0h24v24H0z" />
-            <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-              fill="currentColor" />
-          </svg>
-        </button>
+        <LinkTo @route="contact">
+          <button type="button" class="hero-button-inner">
+            <span class="hero-button-text">Contact us</span>
+            <svg class="hero-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                fill="currentColor" />
+            </svg>
+          </button>
+        </LinkTo>
       </div>
     </div>
   </article>
@@ -96,6 +98,12 @@
     <p class="mb-16 text-gray-600 w-full">
       We both use and contribute extensively to open-source projects. Using open source has many advantages
     </p>
+    <ul>
+      <li>✅ Advantage</li>
+      <li>✅ Advantage</li>
+      <li>✅ Advantage</li>
+      <li>✅ Advantage</li>
+    </ul>
   </article>
 </section>
 
@@ -106,6 +114,16 @@
     <p class="mb-16 text-gray-600 w-full">
       We both use and contribute extensively to open-source projects. Using open source has many advantages
     </p>
+    <LinkTo @route="projects.lblod">
+      <button type="button" class="hero-button-inner">
+        <span class="hero-button-text">Learn more</span>
+        <svg class="hero-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+            fill="currentColor" />
+        </svg>
+      </button>
+    </LinkTo>
   </article>
   <div class="open-source-img">
     <img class="w-full" src="/assets/vector/award-winning.svg" alt="data modeling">
