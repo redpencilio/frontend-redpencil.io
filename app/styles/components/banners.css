@@ -28,6 +28,6 @@
   }
 
   .banner-text-inner {
-    @apply hidden py-3 px-10 bg-gray-800 text-white font-bold md:rounded-full md:block
+    @apply hidden py-3 px-10 bg-red-600 text-white font-bold md:rounded-full md:block
   }
 }
