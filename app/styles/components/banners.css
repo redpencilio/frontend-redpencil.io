@@ -20,11 +20,11 @@
   }
 
   .banner-button {
-    @apply flex flex-1 justify-between items-center py-2 px-2 bg-gray-900  md:rounded-full w-full
+    @apply flex flex-1 justify-between items-center py-2 px-2 bg-gray-100  md:rounded-full w-full
   }
 
   .banner-text-outer {
-    @apply flex-1 py-3 font-bold text-white md:px-16
+    @apply flex-1 py-3 font-bold text-gray-900 md:px-16
   }
 
   .banner-text-inner {
