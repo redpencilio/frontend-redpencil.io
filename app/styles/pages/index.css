@@ -1,7 +1,7 @@
 @layer components {
 
   .hero {
-    @apply container w-full flex relative justify-center items-center py-48
+    @apply container w-full flex relative justify-center items-center py-48  space-x-10
   }
 
   .hero-inner {
@@ -25,7 +25,7 @@
   }
 
   .hero-title {
-    @apply mb-8 text-gray-800 text-6xl font-black
+    @apply mb-8 text-gray-800 text-5xl font-black
   }
 
   .hero-text {
@@ -49,11 +49,15 @@
   }
 
   .hero-illustration {
-    @apply w-1/2 justify-end px-12 hidden  lg:flex
+    @apply justify-end hidden rounded-lg lg:flex bg-gray-100
   }
 
   .what {
-    @apply container flex flex-col justify-center mb-48
+    @apply container
+  }
+
+  .what-inner {
+    @apply flex flex-col mb-48 py-24 rounded-lg
   }
 
   .what-header {
@@ -61,40 +65,30 @@
   }
 
   .what-list {
-    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6
+    @apply flex-1 grid grid-cols-2 gap-10
   }
 
   .what-list-item {
-    @apply flex flex-col border-2 border-gray-200 rounded-lg
+    @apply flex flex-col rounded-lg  bg-gray-100 text-center p-3
   }
 
   .what-illustration {
-    @apply bg-gray-100 text-gray-100 h-64 bg-center bg-no-repeat
+    @apply flex-1 flex justify-center items-center bg-center bg-no-repeat py-12
   }
 
   .what-content {
-    @apply px-6 py-10
+    @apply p-10 pb-16 rounded-lg
   }
 
-  .why {
-    @apply container flex flex-col justify-center mb-48
+  .what-title {
+    @apply title-md mb-6
   }
 
-  .why-header {
-    @apply mb-12
+  .what-text {
+    @apply text-gray-800
   }
 
-  .why-list {
-    @apply grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-6
-  }
 
-  .why-list-item {
-    @apply flex items-center p-4 border-2 border-gray-200 rounded-lg space-x-6
-  }
-
-  .why-icon {
-    @apply p-4 bg-gray-800 text-gray-100 rounded-lg
-  }
 
   .open-source {
     @apply container flex space-x-12 items-center mb-48
