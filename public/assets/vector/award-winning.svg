@@ -1,15 +1,15 @@
 <svg width="624" height="510" viewBox="0 0 624 510" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="225.154" y="141.664" width="173.691" height="226.646" rx="10" fill="#393939"/>
-<rect x="115.009" y="154.373" width="74.1365" height="90.0229" rx="5" fill="#EEEEEE"/>
-<rect width="74.1365" height="90.0229" rx="5" transform="matrix(-1 0 0 1 508.991 154.373)" fill="#EEEEEE"/>
-<rect x="21.8086" y="215.8" width="74.1365" height="90.0229" rx="5" fill="#EEEEEE"/>
-<rect width="74.1365" height="90.0229" rx="5" transform="matrix(-1 0 0 1 602.192 215.8)" fill="#EEEEEE"/>
-<rect x="116.068" y="264.519" width="74.1365" height="91.082" rx="5" fill="#EEEEEE"/>
-<rect width="74.1365" height="91.082" rx="5" transform="matrix(-1 0 0 1 507.932 264.519)" fill="#EEEEEE"/>
+<rect x="115.009" y="154.373" width="74.1365" height="90.0229" rx="5" fill="#F5F5F4"/>
+<rect width="74.1365" height="90.0229" rx="5" transform="matrix(-1 0 0 1 508.991 154.373)" fill="#F5F5F4"/>
+<rect x="21.8086" y="215.8" width="74.1365" height="90.0229" rx="5" fill="#F5F5F4"/>
+<rect width="74.1365" height="90.0229" rx="5" transform="matrix(-1 0 0 1 602.192 215.8)" fill="#F5F5F4"/>
+<rect x="116.068" y="264.519" width="74.1365" height="91.082" rx="5" fill="#F5F5F4"/>
+<rect width="74.1365" height="91.082" rx="5" transform="matrix(-1 0 0 1 507.932 264.519)" fill="#F5F5F4"/>
 <rect x="265.4" y="387.97" width="37.9508" height="46.4802" rx="5" fill="#EEEEEE"/>
-<rect x="318.531" y="387.97" width="37.9508" height="46.4802" rx="5" fill="#EEEEEE"/>
-<rect x="267.518" y="76" width="34.7113" height="42.7375" rx="5" fill="#EEEEEE"/>
-<rect x="318.593" y="76" width="34.7113" height="42.7375" rx="5" fill="#EEEEEE"/>
+<rect x="318.531" y="387.97" width="37.9508" height="46.4802" rx="5" fill="#F5F5F4"/>
+<rect x="267.518" y="76" width="34.7113" height="42.7375" rx="5" fill="#F5F5F4"/>
+<rect x="318.593" y="76" width="34.7113" height="42.7375" rx="5" fill="#F5F5F4"/>
 <rect x="270.695" y="80.2363" width="8.47274" height="1.05909" rx="0.529546" fill="white"/>
 <rect x="122.422" y="220.037" width="20.1228" height="3.17728" rx="1.58864" fill="white"/>
 <rect width="20.1228" height="3.17728" rx="1.58864" transform="matrix(-1 0 0 1 501.578 220.037)" fill="white"/>
