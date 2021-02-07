@@ -13,7 +13,7 @@
   }
 
   .service-card {
-    @apply flex flex-col space-x-0 md:space-x-8 mb-2 items-center bg-gray-50 md:flex-row rounded-lg p-12
+    @apply flex flex-col space-x-0 md:space-x-8 mb-2 items-center bg-gray-100 md:flex-row rounded-lg p-12
   }
 
   .service-card-header {
