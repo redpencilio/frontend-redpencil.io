@@ -1,0 +1,78 @@
+@layer components {
+
+  .lblod-art {
+    @apply container mb-16 lg:mb-24
+  }
+
+  .lblod-art-inner {
+    @apply w-full h-48 bg-lblod my-6 flex flex-col justify-center rounded-xl md:h-64
+  }
+
+  .lblod-header {
+    @apply inline-block mx-2 md:ml-6
+  }
+
+  .lblod-header-inner {
+    @apply bg-gray-900 px-6 md:px-16 md:px-12 py-4 inline-block rounded-lg
+  }
+
+  .lblod-section {
+    @apply container flex flex-col justify-between items-center mb-24 lg:flex-row lg:space-x-16 lg:mb-48
+  }
+
+  .lblod-article {
+    @apply flex-1 lg:w-1/3
+  }
+
+  .lblod-video {
+    @apply h-96 w-full flex-1
+  }
+
+  .lblod-gif {
+    @apply flex-1
+  }
+
+  .masterpiece {
+    @apply mb-24 lg:mb-48 container
+  }
+
+  .masterpiece-header {
+    @apply flex flex-col p-2
+  }
+
+  .awards-list {
+    @apply grid grid-cols-2 gap-6
+  }
+
+  .awards-list-item {
+    @apply p-8 flex flex-col bg-gray-100 items-start rounded-lg
+  }
+
+  .awards-date {
+    @apply mb-3 text-sm px-3 py-1 bg-gray-200 rounded-full
+  }
+
+  .awards-title {
+    @apply text-2xl font-medium text-gray-900 mb-2
+  }
+
+  .awards-link {
+    @apply flex
+  }
+
+  .lblod-elements {
+    @apply container mb-24 lg:mb-48
+  }
+
+  .lblod-elements-header {
+    @apply mb-16
+  }
+
+  .lblod-elements-list {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-6
+  }
+
+  .lblod-elements-list-item {
+    @apply  flex-1  bg-gray-100 rounded-lg p-10
+  }
+}
