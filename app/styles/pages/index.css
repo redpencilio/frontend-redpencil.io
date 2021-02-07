@@ -99,6 +99,6 @@
   }
 
   .open-source-content {
-    @apply flex-1
+    @apply  w-1/3
   }
 }
