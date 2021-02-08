@@ -1,54 +1,54 @@
 <svg width="585" height="254" viewBox="0 0 585 254" fill="none" xmlns="http://www.w3.org/2000/svg">
-<line y1="-0.5" x2="92.0272" y2="-0.5" transform="matrix(-0.0293204 -0.99957 -0.99957 0.0293204 294.786 128.777)" stroke="#DCDCDC" stroke-dasharray="2 2"/>
-<circle r="15.5" transform="matrix(-0.954525 -0.298132 -0.298132 0.954525 292.416 37.4162)" fill="url(#paint0_linear)"/>
-<line x1="292.406" y1="126.708" x2="346.798" y2="202.202" stroke="#DCDCDC" stroke-dasharray="2 2"/>
-<line x1="292.281" y1="127.28" x2="240.786" y2="203.551" stroke="#DCDCDC" stroke-dasharray="2 2"/>
-<line x1="345.001" y1="203.5" x2="240.372" y2="203.771" stroke="#DCDCDC" stroke-dasharray="2 2"/>
-<circle r="15.5" transform="matrix(-0.965926 -0.258819 -0.258819 0.965926 240.984 202.917)" fill="url(#paint1_linear)"/>
-<circle r="15.5" transform="matrix(-0.965926 0.258819 0.258819 0.965926 344.815 202.4)" fill="url(#paint2_linear)"/>
-<line y1="-0.5" x2="92.0272" y2="-0.5" transform="matrix(-0.0293204 -0.99957 -0.99957 0.0293204 294.786 128.777)" stroke="#DCDCDC" stroke-dasharray="2 2"/>
-<line x1="243.52" y1="202.861" x2="291.608" y2="36.6508" stroke="#DCDCDC" stroke-dasharray="2 2"/>
-<line x1="344.524" y1="203.152" x2="291.612" y2="36.9414" stroke="#DCDCDC" stroke-dasharray="2 2"/>
-<circle r="11" transform="matrix(-1 0 0 1 293 127)" fill="#393939"/>
-<line x1="292.406" y1="126.708" x2="346.798" y2="202.202" stroke="#DCDCDC" stroke-dasharray="2 2"/>
-<circle r="15.5" transform="matrix(-0.954525 -0.298132 -0.298132 0.954525 292.416 37.4162)" fill="url(#paint3_linear)"/>
-<circle r="15.5" transform="matrix(-0.965926 -0.258819 -0.258819 0.965926 240.984 202.917)" fill="url(#paint4_linear)"/>
-<circle r="15.5" transform="matrix(-0.965926 0.258819 0.258819 0.965926 344.815 202.4)" fill="url(#paint5_linear)"/>
-<circle r="44" transform="matrix(-1 0 0 1 293 127)" fill="#393939"/>
-<rect x="50" y="187" width="130" height="25" fill="#EEEEEE"/>
-<rect x="88" y="156" width="92" height="25" fill="#EEEEEE"/>
-<rect x="50" y="125" width="130" height="25" fill="#EEEEEE"/>
-<rect x="50" y="61" width="130" height="25" fill="#EEEEEE"/>
-<rect x="135" y="94" width="45" height="25" fill="#EEEEEE"/>
-<rect x="135" y="28" width="45" height="25" fill="#EEEEEE"/>
-<rect width="130" height="25" transform="matrix(-1 0 0 1 536 187)" fill="#EEEEEE"/>
-<rect width="92" height="25" transform="matrix(-1 0 0 1 498 156)" fill="#EEEEEE"/>
-<rect width="130" height="25" transform="matrix(-1 0 0 1 536 125)" fill="#EEEEEE"/>
-<rect width="130" height="25" transform="matrix(-1 0 0 1 536 61)" fill="#EEEEEE"/>
-<rect width="45" height="25" transform="matrix(-1 0 0 1 451 94)" fill="#EEEEEE"/>
-<rect width="45" height="25" transform="matrix(-1 0 0 1 451 28)" fill="#EEEEEE"/>
+<line y1="-0.5" x2="104.664" y2="-0.5" transform="matrix(-0.0293204 -0.99957 -0.99957 0.0293204 295.032 136.99)" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<circle r="17.6285" transform="matrix(-0.954525 -0.298132 -0.298132 0.954525 292.336 33.0824)" fill="url(#paint0_linear)"/>
+<line x1="292.268" y1="134.676" x2="354.13" y2="220.537" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="292.125" y1="135.248" x2="233.559" y2="221.992" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="352.142" y1="221.905" x2="233.145" y2="222.213" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<circle r="17.6285" transform="matrix(-0.965926 -0.258819 -0.258819 0.965926 233.841 221.31)" fill="url(#paint1_linear)"/>
+<circle r="17.6285" transform="matrix(-0.965926 0.258819 0.258819 0.965926 351.93 220.722)" fill="url(#paint2_linear)"/>
+<line y1="-0.5" x2="104.664" y2="-0.5" transform="matrix(-0.0293204 -0.99957 -0.99957 0.0293204 295.032 136.99)" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="236.791" y1="221.266" x2="291.482" y2="32.2311" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<line x1="351.664" y1="221.556" x2="291.486" y2="32.5217" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<circle r="12.5105" transform="matrix(-1 0 0 1 293 134.968)" fill="#393939"/>
+<line x1="292.268" y1="134.676" x2="354.13" y2="220.537" stroke="#DCDCDC" stroke-dasharray="2 2"/>
+<circle r="17.6285" transform="matrix(-0.954525 -0.298132 -0.298132 0.954525 292.336 33.0824)" fill="url(#paint3_linear)"/>
+<circle r="17.6285" transform="matrix(-0.965926 -0.258819 -0.258819 0.965926 233.841 221.31)" fill="url(#paint4_linear)"/>
+<circle r="17.6285" transform="matrix(-0.965926 0.258819 0.258819 0.965926 351.93 220.722)" fill="url(#paint5_linear)"/>
+<circle r="50.0422" transform="matrix(-1 0 0 1 293 134.968)" fill="#393939"/>
+<rect x="16.6309" y="203.207" width="147.852" height="28.433" fill="#EEEEEE"/>
+<rect x="59.8491" y="167.95" width="104.634" height="28.433" fill="#EEEEEE"/>
+<rect x="16.6309" y="132.693" width="147.852" height="28.433" fill="#EEEEEE"/>
+<rect x="16.6309" y="59.9048" width="147.852" height="28.433" fill="#EEEEEE"/>
+<rect x="113.303" y="97.4364" width="51.1795" height="28.433" fill="#EEEEEE"/>
+<rect x="113.303" y="22.3732" width="51.1795" height="28.433" fill="#EEEEEE"/>
+<rect width="147.852" height="28.433" transform="matrix(-1 0 0 1 569.369 203.207)" fill="#EEEEEE"/>
+<rect width="104.634" height="28.433" transform="matrix(-1 0 0 1 526.151 167.95)" fill="#EEEEEE"/>
+<rect width="147.852" height="28.433" transform="matrix(-1 0 0 1 569.369 132.693)" fill="#EEEEEE"/>
+<rect width="147.852" height="28.433" transform="matrix(-1 0 0 1 569.369 59.9048)" fill="#EEEEEE"/>
+<rect width="51.1795" height="28.433" transform="matrix(-1 0 0 1 472.697 97.4364)" fill="#EEEEEE"/>
+<rect width="51.1795" height="28.433" transform="matrix(-1 0 0 1 472.697 22.3732)" fill="#EEEEEE"/>
 <defs>
-<linearGradient id="paint0_linear" x1="15.5" y1="0" x2="15.5" y2="31" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear" x1="17.6285" y1="0" x2="17.6285" y2="35.257" gradientUnits="userSpaceOnUse">
 <stop stop-color="#FF5454"/>
 <stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
 </linearGradient>
-<linearGradient id="paint1_linear" x1="15.5" y1="0" x2="15.5" y2="31" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint1_linear" x1="17.6285" y1="0" x2="17.6285" y2="35.257" gradientUnits="userSpaceOnUse">
 <stop stop-color="#FF5454"/>
 <stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
 </linearGradient>
-<linearGradient id="paint2_linear" x1="15.5" y1="0" x2="15.5" y2="31" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint2_linear" x1="17.6285" y1="0" x2="17.6285" y2="35.257" gradientUnits="userSpaceOnUse">
 <stop stop-color="#FF5454"/>
 <stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
 </linearGradient>
-<linearGradient id="paint3_linear" x1="15.5" y1="0" x2="15.5" y2="31" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint3_linear" x1="17.6285" y1="0" x2="17.6285" y2="35.257" gradientUnits="userSpaceOnUse">
 <stop stop-color="#FF5454"/>
 <stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
 </linearGradient>
-<linearGradient id="paint4_linear" x1="15.5" y1="0" x2="15.5" y2="31" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint4_linear" x1="17.6285" y1="0" x2="17.6285" y2="35.257" gradientUnits="userSpaceOnUse">
 <stop stop-color="#FF5454"/>
 <stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
 </linearGradient>
-<linearGradient id="paint5_linear" x1="15.5" y1="0" x2="15.5" y2="31" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint5_linear" x1="17.6285" y1="0" x2="17.6285" y2="35.257" gradientUnits="userSpaceOnUse">
 <stop stop-color="#FF5454"/>
 <stop offset="1" stop-color="#BA4F4F" stop-opacity="0.74"/>
 </linearGradient>
