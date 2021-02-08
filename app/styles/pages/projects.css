@@ -1,7 +1,7 @@
 @layer components {
 
   .projects {
-    @apply w-full flex flex-col justify-between relative margin-bottom-large
+    @apply w-full flex flex-col justify-between relative margin-bottom-medium
   }
 
   .projects-header {
