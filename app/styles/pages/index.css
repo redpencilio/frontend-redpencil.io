@@ -65,7 +65,7 @@
   }
 
   .what-list-item {
-    @apply flex flex-col rounded-lg bg-gray-100 text-center p-0 lg:p-3
+    @apply flex flex-col rounded-lg bg-gray-100 text-center px-0 py-6 lg:px-3 lg:py-12
   }
 
   .what-illustration {
