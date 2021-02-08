@@ -1,0 +1,19 @@
+@layer components {
+
+  .margin-bottom-xsmall {
+    @apply mb-3 md:mb-6
+  }
+
+  .margin-bottom-small {
+    @apply mb-6 md:mb-12
+  }
+
+  .margin-bottom-medium {
+    @apply mb-12 md:mb-24
+  }
+
+  .margin-bottom-large {
+    @apply mb-24 md:mb-48
+  }
+
+}
