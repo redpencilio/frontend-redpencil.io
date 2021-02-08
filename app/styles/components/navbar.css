@@ -47,6 +47,6 @@
   }
 
   .fs-nav-list-item {
-    @apply text-4xl py-2
+    @apply text-3xl md:text-5xl py-2
   }
 }
