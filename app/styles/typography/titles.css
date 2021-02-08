@@ -3,50 +3,50 @@
   /* XLarge */
 
   .title-xl {
-    @apply text-4xl sm:text-5xl mb-3 font-bold md:text-6xl
+    @apply text-4xl sm:text-5xl mb-3 font-bold md:text-6xl text-gray-800
   }
 
   .title-xl-thin {
-    @apply text-4xl sm:text-5xl mb-3 font-light md:text-6xl
+    @apply text-4xl sm:text-5xl mb-3 font-light md:text-6xl text-gray-800
   }
 
   /* Large */
 
   .title-lg {
-    @apply text-2xl sm:text-3xl md:text-4xl mb-1 font-bold font-bold
+    @apply text-2xl sm:text-3xl md:text-4xl mb-1 font-bold font-bold text-gray-800
   }
 
   .title-lg-thin {
-    @apply text-2xl sm:text-3xl md:text-4xl mb-1 font-light
+    @apply text-2xl sm:text-3xl md:text-4xl mb-1 font-light text-gray-800
   }
 
   /* Medium */
 
   .title-md {
-    @apply text-lg sm:text-xl md:text-2xl font-bold md:text-3xl md:mb-3
+    @apply text-lg sm:text-xl md:text-2xl font-bold md:text-3xl md:mb-3 text-gray-800
   }
 
   .title-md-thin {
-    @apply text-lg sm:text-xl md:text-2xl font-light md:text-3xl md:mb-3
+    @apply text-lg sm:text-xl md:text-2xl font-light md:text-3xl md:mb-3 text-gray-800
   }
 
   /* Small */
 
   .title-sm {
-    @apply text-base sm:text-lg md:text-xl font-bold
+    @apply text-base sm:text-lg md:text-xl font-bold text-gray-800
   }
 
   .title-sm-thin {
-    @apply sm:text-lg md:text-xl font-light
+    @apply sm:text-lg md:text-xl font-light text-gray-800
   }
 
   /* XSmall */
 
   .title-xs {
-    @apply text-sm sm:text-base md:text-lg font-bold
+    @apply text-sm sm:text-base md:text-lg font-bold text-gray-800
   }
 
   .title-xs-thin {
-    @apply text-sm sm:text-base md:text-lg font-light
+    @apply text-sm sm:text-base md:text-lg font-light text-gray-800
   }
 }
