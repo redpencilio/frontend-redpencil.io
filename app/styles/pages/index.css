@@ -1,11 +1,7 @@
 @layer components {
 
   .hero {
-    @apply container w-full grid grid-cols-1 lg:grid-cols-2 md:gap-10 relative justify-center items-center py-12 md:py-24
-  }
-
-  .hero-inner {
-    @apply mb-6 md:mb-24
+    @apply container w-full grid grid-cols-1 lg:grid-cols-2 md:gap-10 relative justify-center items-center pt-12 md:pt-24 margin-bottom-large
   }
 
   .hero-bubble{
@@ -53,15 +49,15 @@
   }
 
   .what {
-    @apply container
+    @apply container margin-bottom-large
   }
 
   .what-inner {
-    @apply flex flex-col mb-24 md:mb-48 rounded-lg
+    @apply flex flex-col rounded-lg
   }
 
   .what-header {
-    @apply mb-6
+    @apply margin-bottom-small
   }
 
   .what-list {
@@ -81,21 +77,19 @@
   }
 
   .what-title {
-    @apply title-md mb-6
+    @apply title-md margin-bottom-small
   }
 
   .what-text {
     @apply text-gray-800
   }
 
-
-
   .open-source {
-    @apply container flex flex-col lg:flex-row space-x-0 md:space-x-12 items-center mb-24 md:mb-48
+    @apply container flex flex-col lg:flex-row space-x-0 lg:space-x-12 items-center margin-bottom-large
   }
 
   .open-source-img {
-    @apply flex-1 rounded  hidden md:flex
+    @apply flex-1 rounded  hidden lg:flex
   }
 
   .open-source-content {
