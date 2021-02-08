@@ -1,6 +1,6 @@
 @layer components {
   .banner {
-    @apply bg-gray-50 md:bg-white
+    @apply bg-gray-50 md:bg-white hidden
   }
 
   .banner-inner {
