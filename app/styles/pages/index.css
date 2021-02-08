@@ -1,11 +1,11 @@
 @layer components {
 
   .hero {
-    @apply container w-full grid grid-cols-1 lg:grid-cols-2 gap-10 relative justify-center items-center py-24
+    @apply container w-full grid grid-cols-1 lg:grid-cols-2 md:gap-10 relative justify-center items-center py-12 md:py-24
   }
 
   .hero-inner {
-    @apply mb-24
+    @apply mb-6 md:mb-24
   }
 
   .hero-bubble{
@@ -57,11 +57,11 @@
   }
 
   .what-inner {
-    @apply flex flex-col mb-48 py-24 rounded-lg
+    @apply flex flex-col mb-24 md:mb-48 rounded-lg
   }
 
   .what-header {
-    @apply mb-12
+    @apply mb-6
   }
 
   .what-list {
@@ -91,11 +91,11 @@
 
 
   .open-source {
-    @apply container flex flex-col lg:flex-row space-x-12 items-center mb-48
+    @apply container flex flex-col lg:flex-row space-x-0 md:space-x-12 items-center mb-24 md:mb-48
   }
 
   .open-source-img {
-    @apply flex-1 rounded
+    @apply flex-1 rounded  hidden md:flex
   }
 
   .open-source-content {
