@@ -1,7 +1,7 @@
 @layer components {
 
   .lblod-art {
-    @apply container mb-16 lg:mb-24
+    @apply container margin-bottom-medium
   }
 
   .lblod-art-inner {
@@ -17,7 +17,7 @@
   }
 
   .lblod-section {
-    @apply container flex flex-col justify-between items-center mb-24 lg:flex-row lg:space-x-16 lg:mb-48
+    @apply container flex flex-col justify-between items-center lg:flex-row lg:space-x-16 margin-bottom-large
   }
 
   .lblod-article {

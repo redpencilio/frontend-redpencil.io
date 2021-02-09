@@ -17,7 +17,10 @@
   }
 
   .job-pill-open{
-    @apply bg-green-100 border-2 border-green-500 text-green-700 px-6 py-1 rounded-full font-bold
+    @apply flex justify-center items-center space-x-2 bg-green-100  text-green-700 px-6 py-1 rounded-full font-bold
+  }
+  .job-pill-open-circle {
+    @apply h-2 w-2 -ml-2
   }
 
   .job-card-header {
