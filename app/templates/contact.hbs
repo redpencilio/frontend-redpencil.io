@@ -5,21 +5,13 @@
 </div>
 
 {{#if this.showNotification}}
-  {{#if this.success}}
-    <Notification
-      @success={{this.success}}
-      @title="E-mail Successfully Send!"
-      @text="Thank you for your message, we will get back to you as soon as possible"
-      @onClose={{this.close}}
-    />
-  {{else}}
-    <Notification
-      @success={{this.success}}
-      @title="Something went wrong"
-      @text="Please try again later or mail us directly at meettheteam@redpencil.io"
-      @onClose={{this.close}}
-    />
-  {{/if}}
+{{#if this.success}}
+<Notification @success={{this.success}} @title="E-mail Successfully Send!"
+  @text="Thank you for your message, we will get back to you as soon as possible" @onClose={{this.close}} />
+{{else}}
+<Notification @success={{this.success}} @title="Something went wrong"
+  @text="Please try again later or mail us directly at meettheteam@redpencil.io" @onClose={{this.close}} />
+{{/if}}
 {{/if}}
 
 <article class="contact-header">
@@ -38,7 +30,7 @@
 </article> --}}
 
 <section class="contact-form">
-  <form class="contact-form-inner"  {{on 'submit' this.sendEmail}}>
+  <form class="contact-form-inner" {{on 'submit' this.sendEmail}}>
     <div>
       <label for="name" class="sr-only">name </label>
       <div class="input-wrapper">
@@ -63,7 +55,8 @@
               <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
             </svg>
           </div>
-          <Input @type="text" @name="email" @id="email" @value={{this.email}} class="input-box" @placeholder="you@example.com" />
+          <Input @type="text" @name="email" @id="email" @value={{this.email}} class="input-box"
+            @placeholder="you@example.com" />
         </div>
       </div>
       <div class="flex-1">
@@ -77,13 +70,23 @@
               </path>
             </svg>
           </div>
-          <Input @type="text" @name="tel" @id="tel" @value={{this.phone}} class="input-box" @placeholder="+12 345678910" />
+          <Input @type="text" @name="tel" @id="tel" @value={{this.phone}} class="input-box"
+            @placeholder="+12 345678910" />
         </div>
       </div>
     </div>
     <div>
       <label for="message">
-        <Textarea @name="message" class="textarea-box" @placeholder="message" @id="message" @value={{this.message}} @cols="30" @rows="10" />
+        <div class="input-wrapper">
+          <div class="input-icon-wrapper">
+            <svg class="h-4 w-4 text-gray-400 mb-auto mt-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </div>
+          <Textarea @name="message" class="textarea-box" @placeholder="message" @id="message" @value={{this.message}}
+            @cols="30" @rows="10" />
+        </div>
       </label>
     </div>
     <button type="submit" class="submit-button">
@@ -166,4 +169,4 @@
   </article>
 </section> --}}
 
-<Banner/>
+<Banner />
