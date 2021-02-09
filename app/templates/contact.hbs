@@ -21,7 +21,7 @@
 </article> --}}
 
 <section class="contact-form">
-  <form action="" class="contact-form-inner">
+  <form class="contact-form-inner"  {{on 'submit' this.sendEmail}}>
     <div>
       <label for="name" class="sr-only">name </label>
       <div class="input-wrapper">
@@ -31,7 +31,7 @@
             </path>
           </svg>
         </div>
-        <input type="text" name="name" id="name" class="input-box" placeholder="John">
+        <Input @type="text" @name="name" @id="name" @value={{this.name}} class="input-box" @placeholder="John" />
       </div>
     </div>
 
@@ -46,7 +46,7 @@
               <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
             </svg>
           </div>
-          <input type="text" name="email" id="email" class="input-box" placeholder="you@example.com">
+          <Input @type="text" @name="email" @id="email" @value={{this.email}} class="input-box" @placeholder="you@example.com" />
         </div>
       </div>
       <div class="flex-1">
@@ -60,13 +60,13 @@
               </path>
             </svg>
           </div>
-          <input type="text" name="tel" id="tel" class="input-box" placeholder="+12 345678910">
+          <Input @type="text" @name="tel" @id="tel" @value={{this.phone}} class="input-box" @placeholder="+12 345678910" />
         </div>
       </div>
     </div>
     <div>
       <label for="message">
-        <textarea name="message" class="textarea-box" placeholder="message" id="message" cols="30" rows="10"></textarea>
+        <Textarea @name="message" class="textarea-box" @placeholder="message" @id="message" @value={{this.message}} @cols="30" @rows="10" />
       </label>
     </div>
     <button type="submit" class="submit-button">
