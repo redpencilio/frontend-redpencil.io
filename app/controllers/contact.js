@@ -8,6 +8,8 @@ export default class ContactController extends Controller {
   @tracked email;
   @tracked phone;
   @tracked message;
+  @tracked showNotification = false;
+  @tracked success = false;
 
   @action
     async sendEmail(e) {
@@ -27,11 +29,22 @@ export default class ContactController extends Controller {
           folder: mailFolder
         })
         newEmail.save()
+
+        this.email = "";
+        this.phone = "";
+        this.message = "";
+
+        this.success = true
+        this.showNotification = true
+
       } catch(err){
-        console.log(err)
+        this.showNotification = true
+        this.success = false
       }
-
-
-
     }
+
+    @action
+     close(){
+       this.showNotification = false
+     }
 }

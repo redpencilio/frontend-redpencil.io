@@ -4,6 +4,23 @@
   <Breadcrumbs />
 </div>
 
+{{#if this.showNotification}}
+  {{#if this.success}}
+    <Notification
+      @success={{this.success}}
+      @title="E-mail Successfully Send!"
+      @text="Thank you for your message, we will get back to you as soon as possible"
+      @onClose={{this.close}}
+    />
+  {{else}}
+    <Notification
+      @success={{this.success}}
+      @title="Something went wrong"
+      @text="Please try again later or mail us directly at meettheteam@redpencil.io"
+      @onClose={{this.close}}
+    />
+  {{/if}}
+{{/if}}
 
 <article class="contact-header">
   <h1 class="title-xl font-bold">Contact us</h1>
