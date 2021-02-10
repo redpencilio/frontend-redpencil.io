@@ -73,11 +73,11 @@
   }
 
   .what-content {
-    @apply p-10 rounded-lg
+    @apply p-5 md:p-10 rounded-lg
   }
 
   .what-title {
-    @apply title-md margin-bottom-small
+    @apply title-md md:mb-5
   }
 
   .what-text {
