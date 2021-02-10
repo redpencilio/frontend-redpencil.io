@@ -56,7 +56,7 @@
             </svg>
           </div>
           <Input @type="text" @name="email" @id="email" @value={{this.email}} class="input-box"
-            @placeholder="you@example.com" />
+            @placeholder="you@example.com" required/>
         </div>
       </div>
       <div class="flex-1">
@@ -85,7 +85,7 @@
             </svg>
           </div>
           <Textarea @name="message" class="textarea-box" @placeholder="message" @id="message" @value={{this.message}}
-            @cols="30" @rows="10" />
+            @cols="30" @rows="10" required/>
         </div>
       </label>
     </div>

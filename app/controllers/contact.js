@@ -14,6 +14,8 @@ export default class ContactController extends Controller {
   @action
     async sendEmail(e) {
       e.preventDefault()
+      this.showNotification = false;
+
       try {
         const mailFolder = await this.store.findRecord('mail-folder', "786a8cb0-4452-40f5-b8d8-046dd2d63281")
         const newEmail = this.store.createRecord('email', {
