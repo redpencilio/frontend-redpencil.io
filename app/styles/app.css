@@ -16,6 +16,7 @@
 @import "./pages/services.css";
 @import "./pages/contact.css";
 @import "./pages/careers.css";
+@import "./pages/not-found.css";
 
 
 /* UTILITIES */
@@ -42,7 +43,7 @@
 
 * {
   font-family: 'Lato', sans-serif;
-  transition: all .1s ease-in-out;
+  transition: all .05s ease-in-out;
 }
 
 
