@@ -21,11 +21,11 @@
   }
 
   .hero-title {
-    @apply mb-8 text-gray-800 text-5xl font-black
+    @apply mb-4 md:mb-8 text-gray-800 text-3xl md:text-5xl font-black
   }
 
   .hero-text {
-    @apply mb-6 text-2xl font-thin text-gray-900
+    @apply mb-6 text-xl md:text-2xl font-thin text-gray-900
   }
 
   .hero-button {
