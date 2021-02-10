@@ -12,11 +12,11 @@
   }
 
   .bcrumbs-item {
-    @apply flex items-center 
+    @apply flex items-center hover:text-red-600
   }
 
   .bcrumbs-slash {
-    @apply flex-shrink-0 h-3 w-3 
+    @apply flex-shrink-0 h-3 w-3
   }
 
   .bcrumbs-dark > *{
