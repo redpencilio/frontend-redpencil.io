@@ -5,12 +5,12 @@
 </div>
 
 <section class="projects-header">
-  <article class="flex-1">
+  <div class="flex-1">
     <h1 class="title-xl">Our projects</h1>
     <h2 class="title-md-thin mb-12">We take a problem and transform the solution into <span class="font-bold">art</span> </h2>
-</article>
+</div>
 
-  <article class="flex-1 hidden">
+  <div class="flex-1 hidden">
     <button type="button" class="button-pill button-pill--active">All Projects</button>
     <button type="button" class="button-pill">LBLOD</button>
     <button type="button" class="button-pill">Kaleidos</button>
@@ -19,16 +19,16 @@
     <button type="button" class="button-pill">Accessibility</button>
     <button type="button" class="button-pill">Government</button>
     <button type="button" class="button-pill">Open-source</button>
-  </article>
+  </div>
 </section>
 
-<section class="projects-card-list">
+<div class="projects-card-list">
   <LinkTo @route="projects.lblod" class="projects-card-item">
     <article class="projects-card-inner">
       <div class="projects-card-bg bg-lblod">
           <div class="projects-card-header">
-            <h1 class="title-sm text-white">LBLOD</h1>
-            <h2 class="title-xs  text-white">Lokale Besluiten Linked Open Data</h2>
+            <h2 class="title-sm text-white">LBLOD</h2>
+            <h3 class="title-xs  text-white">Lokale Besluiten Linked Open Data</h3>
         </div>
       </div>
       {{!-- <p class="card-text mb-3">Local Decisions as Linked Open Data (Lokale Besluiten als geLinkte Open Data) is a
@@ -39,7 +39,7 @@
     <article class="card-inner space-y-6">
       <div class="projects-card-bg bg-kaleidos">
           <div class="projects-card-header">
-            <h1 class="title-sm text-white">Kaleidos</h1>
+            <h2 class="title-sm text-white">Kaleidos</h2>
         </div>
       </div>
       {{!-- <p class="card-text ">Kaleidos is the digital platform supporting for managing and working on documents related
@@ -50,8 +50,8 @@
     <article class="card-inner space-y-6">
       <div class="projects-card-bg bg-toevla">
           <div class="projects-card-header">
-            <h1 class="title-sm text-white">ToeVla</h1>
-            <h2 class="title-xs  text-white">Toegankelijk Vlaanderen</h2>
+            <h2 class="title-sm text-white">ToeVla</h2>
+            <h3 class="title-xs  text-white">Toegankelijk Vlaanderen</h3>
         </div>
       </div>
       {{!-- <p class="card-text">ToeVla stands for Toegankelijk Vlaanderen.
@@ -70,6 +70,6 @@
       </div>
     </article>
   </LinkTo> --}}
-</section>
+</div>
 
 <Banner/>
