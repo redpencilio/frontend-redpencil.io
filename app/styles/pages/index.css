@@ -1,7 +1,7 @@
 @layer components {
 
   .hero {
-    @apply container w-full grid grid-cols-1 lg:grid-cols-2 md:gap-10 relative justify-center items-center pt-12 md:pt-24 margin-bottom-large
+    @apply container w-full grid grid-cols-1 lg:grid-cols-2 md:gap-12 relative justify-center items-center pt-12 margin-bottom-large
   }
 
   .hero-bubble{
@@ -9,7 +9,7 @@
   }
 
   .hero-bubble-inner{
-    @apply rounded-full bg-gray-100 px-8 py-1 mb-6 border border-gray-200
+    @apply  rounded-full bg-gray-100 px-8 py-1 mb-6 border border-gray-200
   }
 
   .hero-bubble-text {
@@ -21,19 +21,19 @@
   }
 
   .hero-title {
-    @apply mb-8 text-gray-800 text-5xl font-black
+    @apply mb-4 md:mb-8 text-gray-800 text-3xl md:text-5xl font-black
   }
 
   .hero-text {
-    @apply mb-6 text-2xl font-thin text-gray-900
+    @apply mb-6 text-xl md:text-2xl font-thin text-gray-900
   }
 
   .hero-button {
-    @apply space-x-4 py-6 mb-6
+    @apply space-x-4 py-1 mb-6
   }
 
   .hero-button-inner {
-    @apply btn-primary bg-gray-900 flex space-x-6 items-center
+    @apply btn-primary bg-gray-900 flex space-x-6 items-center inline-flex
   }
 
   .hero-button-text {
@@ -73,11 +73,11 @@
   }
 
   .what-content {
-    @apply p-10 rounded-lg
+    @apply p-5 md:p-10 rounded-lg
   }
 
   .what-title {
-    @apply title-md margin-bottom-small
+    @apply title-md md:mb-5
   }
 
   .what-text {

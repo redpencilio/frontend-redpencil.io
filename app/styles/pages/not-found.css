@@ -1,0 +1,10 @@
+@layer components {
+
+  .not-found {
+    @apply w-full flex flex-col justify-between relative mb-12 md:mb-24 relative
+  }
+
+  .not-found-message {
+    @apply container
+  }
+}

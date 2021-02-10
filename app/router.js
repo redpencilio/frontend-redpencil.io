@@ -18,4 +18,5 @@ Router.map(function() {
   this.route('careers', function() {
     this.route('full-stack-developer');
   });
+  this.route('not-found', { path: "/*"});
 });
