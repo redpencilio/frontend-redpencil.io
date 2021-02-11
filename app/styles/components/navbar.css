@@ -9,7 +9,7 @@
   }
 
   .nav-logo {
-    @apply text-xl md:text-2xl font-bold mr-6
+    @apply font-bold mr-6
   }
 
   .nav-list {
