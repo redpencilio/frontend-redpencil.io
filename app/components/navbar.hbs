@@ -1,7 +1,9 @@
 
 <nav class="nav {{if this.active "h-screen"}}">
   <div class="nav-inner z-30 relative">
-    <LinkTo @route="index" class="nav-logo">redpencil<span class="text-red-600">.</span>io</LinkTo>
+    <LinkTo @route="index" class="nav-logo">
+        <img class="h-6" src="/assets/vector/rpio-logo.svg" alt="">
+    </LinkTo>
     <ul class="nav-list">
       <li class="nav-list-item"><LinkTo @route="services">Services</LinkTo></li>
       <li class="nav-list-item"><LinkTo @route="projects">Projects</LinkTo></li>
