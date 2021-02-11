@@ -1,0 +1,52 @@
+@layer components {
+
+  .nav {
+    @apply w-full fixed shadow-sm glass z-20 bg-white flex flex-col
+  }
+
+  .nav-inner {
+    @apply w-full px-2 flex items-center justify-between py-5 xl:px-6
+  }
+
+  .nav-logo {
+    @apply font-bold mr-6
+  }
+
+  .nav-list {
+    @apply text-gray-900 flex justify-between items-center
+  }
+
+  .nav-action {
+    @apply text-xs px-6 py-3
+  }
+
+  .nav-list-item {
+    @apply hidden mx-8 font-bold xl:block tracking-wide hover:text-red-600
+  }
+
+  .nav-list-button {
+    @apply hidden md:block ml-8 font-bold
+  }
+
+  .nav-list-button-inner {
+    @apply bg-gray-900 text-white px-12 py-3 rounded-md  font-bold hover:bg-red-600 hover:shadow
+  }
+
+  .nav-list-menu {
+    @apply ml-8 flex items-center z-50
+  }
+
+  /* FULL SCREEN MENU */
+
+  .fs-menu {
+    @apply w-screen flex-1 z-10 top-0 flex justify-center items-center
+  }
+
+  .fs-menu-inner {
+    @apply w-full container
+  }
+
+  .fs-nav-list-item {
+    @apply text-3xl md:text-5xl py-2
+  }
+}

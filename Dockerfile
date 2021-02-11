@@ -1,5 +1,6 @@
-FROM madnificent/ember:3.5.0 as builder
-LABEL maintainer="info@redpencil.io"
+FROM madnificent/ember:3.22.0 as builder
+
+LABEL maintainer="redpencil"
 
 WORKDIR /app
 COPY package.json .
@@ -7,5 +8,6 @@ RUN npm install
 COPY . .
 RUN ember build -prod
 
-FROM cecemel/ember-fastboot-proxy-service:0.6.0
-COPY --from=builder /app/dist /app
+FROM semtech/static-file-service:0.2.0
+
+COPY --from=builder /app/dist /data

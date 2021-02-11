@@ -1,0 +1,86 @@
+@layer components {
+
+  .about {
+    @apply w-full flex flex-col justify-between relative mb-12 md:mb-24
+  }
+
+  .about-header {
+    @apply container mb-12
+  }
+
+  .about-text {
+    @apply  mb-16 text-gray-600 w-full md:w-2/3
+  }
+
+  .stats {
+    @apply container mb-48
+  }
+
+  .stats-list {
+    @apply grid grid-cols-2 xl:grid-cols-4 gap-6
+  }
+
+  .stats-icon {
+    @apply flex justify-center items-center bg-gray-800 text-gray-100 rounded w-10 h-10
+  }
+
+  .stats-item {
+    @apply flex space-x-6 bg-gray-100 p-3 md:p-6 rounded-lg
+  }
+
+  .values {
+    @apply container flex flex-col justify-center mb-48
+  }
+
+  .values-text {
+    @apply  mb-16 text-gray-600 w-full md:w-2/3
+  }
+
+  .values-header {
+    @apply mb-16
+  }
+
+  .values-list {
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-6
+  }
+
+  .values-list-item {
+    @apply flex flex-col px-8 py-12 items-start rounded-lg border-2 border-gray-100
+  }
+
+  .values-icon {
+    @apply p-5 bg-gray-100 text-gray-100 rounded-lg mb-8
+  }
+
+  .join {
+    @apply container bg-gray-100 flex flex-col xl:flex-row items-center justify-between mb-48 py-24 xl:py-64 rounded-lg
+  }
+
+  .join-header {
+    @apply block text-center xl:text-left mb-6 xl:mb-0
+  }
+
+  .join-button {
+    @apply rounded-full flex justify-between items-center py-2 px-2 bg-white text-gray-900
+  }
+
+  .people {
+    @apply container mb-24 xl:mb-48
+  }
+
+  .people-header {
+    @apply my-12
+  }
+
+  .people-list {
+    @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 lg:gap-12
+  }
+
+  .people-item {
+    @apply flex flex-col items-center
+  }
+
+  .people-img {
+    @apply mb-2
+  }
+}

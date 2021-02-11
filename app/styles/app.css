@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&display=swap');
+
+
+/* TAILWIND */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+/* PAGES */
+@import "./pages/index.css";
+@import "./pages/who-we-are.css";
+@import "./pages/projects.css";
+@import "./pages/projects/lblod.css";
+@import "./pages/services.css";
+@import "./pages/contact.css";
+@import "./pages/careers.css";
+@import "./pages/not-found.css";
+
+
+/* UTILITIES */
+
+@import "./utilities/spacing.css";
+
+/* COMPONENTS */
+@import "./components/breadcrumbs.css";
+@import "./components/card.css";
+@import "./components/navbar.css";
+@import "./components/buttons.css";
+@import "./components/banners.css";
+
+/* TYPOGRAPHY */
+
+@import "./typography/titles.css";
+@import "./typography/text.css";
+
+
+/* OTHER */
+@import "./vanilla/backgrounds.css";
+@import "./vanilla/effects.css";
+
+
+* {
+  font-family: 'Manrope', sans-serif;
+  transition: all .05s ease-in-out;
+}
+
+
+
+
+
+

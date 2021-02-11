@@ -1,43 +1,171 @@
-<section class="banner">
+{{page-title "Welcome to redpencil.io"}}
+
+<section class="hero">
+  <article class="hero-content">
+    <div class="hero-bubble">
+      <LinkTo @route="careers" class="hero-bubble-inner">
+        <span class="hero-bubble-text">We're hiring</span>
+      </LinkTo>
+    </div>
+    <h1 class="hero-title">
+     Rich web applications <span class="text-red-600">—</span> tailored to the data needs of your organization
+
+    </h1>
+    <div>
+      <p class="hero-text">
+        All businesses and organizations are defined by their approach to data — we help you use yours better!
+
+      </p>
+      <div class="hero-button">
+        <LinkTo @route="contact">
+          <button type="button" class="hero-button-inner">
+            <span class="hero-button-text">Contact us</span>
+            <svg class="hero-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                fill="currentColor" />
+            </svg>
+          </button>
+        </LinkTo>
+      </div>
+    </div>
+  </article>
+  <article class="hero-illustration">
+    <img src="/assets/vector/hero-illustration.svg" alt="">
+  </article>
 </section>
 
-<section class="subtitle">
-  <h2>Solving complex data&nbsp;problems<br>with rich distributed web&nbsp;applications</h2>
+<section class="what">
+  <div class="what-inner">
+    <article class="what-header">
+      <h2 class="title-lg">What we do differently</h2>
+      <h3 class="title-sm-thin margin-bottom-xsmall">An improved way of building</h3>
+
+    </article>
+    <ul class="what-list">
+      <li class="what-list-item">
+        <div class="what-illustration">
+          <img class="h-36" src="/assets/vector/semantic-web.svg" alt="linked data">
+        </div>
+        <div class="what-content">
+          <h4 class="what-title">Open standards</h4>
+          <p class="what-text">Make it easy to publish and reuse data with development based on international formats</p>
+        </div>
+      </li>
+      <li class="what-list-item">
+        <div class="what-illustration">
+          <img class="h-36" src="/assets/vector/linked-data.svg" alt="linked data">
+        </div>
+        <div class="what-content">
+          <h4 class="what-title">Powerful single-page applications</h4>
+          <p class="what-text">Microservices and linked data integration makes our applications fast and functional</p>
+        </div>
+      </li>
+      <li class="what-list-item">
+        <div class="what-illustration">
+          <img class="h-36" src="/assets/vector/open-data.svg" alt="linked data">
+        </div>
+        <div class="what-content">
+          <h4 class="what-title">Data-centric architecture
+          </h4>
+          <p class="what-text">By building our software with a ‘data first’ approach we ensure that data silos are
+            eliminated and data management is streamlined
+          </p>
+        </div>
+      </li>
+      <li class="what-list-item">
+        <div class="what-illustration">
+          <img class="h-36" src="/assets/vector/open-standards.svg" alt="linked data">
+        </div>
+        <div class="what-content">
+          <h4 class="what-title">Built for Linked Data
+          </h4>
+          <p class="what-text">Native Linked Data management allows for the construction of powerful semantic knowledge
+            graphs
+
+
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
 </section>
 
-<div class="content">
-  <p>We are a group of data technology engineers with a passion for open distributed solutions. We combine our wealthy expertise with a dose of youthful enthusiasm.  We help in envisioning the future, selecting and wiring a rich set of existing technologies, stakeholder planning, development, as well as project management.</p>
-
-  <p>The best way to work together is to talk. <a href="mailto:info@redpencil.io">Contact us now</a>.</p>
-
-</div>
-
-<section class="highlights row">
-  <div class="col-md-4 highlight">
-    <div class="highlight-icon">
-      <img src="assets/images/icon-model.svg" alt="Data modelling">
-    </div>
-    <h3 class="highlight-title">Data modelling</h3>
-    <div class="highlight-content">
-      Conceptualizing the logic in your data processes, clustering it, and modelling it for generic utilisation in computers using universal ontologies.
-    </div>
+<section class="open-source">
+  <div class="open-source-img">
+    <img class="w-full" src="/assets/vector/open-source.svg" alt="data modeling">
   </div>
-  <div class="col-md-4 highlight">
-    <div class="highlight-icon">
-      <img src="assets/images/icon-architecture.svg" alt="Information architecture">
-    </div>
-    <h3 class="highlight-title">Information architecture</h3>
-    <div class="highlight-content">
-      Envisioning an IT strategy, data policy and application architecture to make data in your organization accessible and reusable.
-    </div>
-  </div>
-  <div class="col-md-4 highlight">
-    <div class="highlight-icon">
-      <img src="assets/images/icon-publication.svg" alt="Data publication">
-    </div>
-    <h3 class="highlight-title">Data publication</h3>
-    <div class="highlight-content">
-      Publication and dissemination of (linked) open data according to international standards for public reuse.
-    </div>
+  <article class="open-source-content">
+    <h2 class="title-lg">We love Open Source</h2>
+    <h3 class="title-sm-thin margin-bottom-xsmall">Part of our DNA</h3>
+    <p class="text-gray-600 w-full margin-bottom-xsmall">
+      We both use and contribute extensively to open-source projects. Using Open Source has many advantages
+    </p>
+    <ul class="flex flex-col space-y-3">
+      <li class="flex border p-3 rounded-lg">
+        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+        <div class="ml-3">
+          <div class="text-lg leading-6 font-medium text-gray-900">
+            No cost
+          </div>
+          <div class="mt-2 text-base text-gray-500">
+            As it is freely available to everyone
+          </div>
+        </div>
+      </li>
+      <li class="flex border p-3 rounded-lg">
+        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+        <div class="ml-3">
+          <div class="text-lg leading-6 font-medium text-gray-900">
+            Robust
+          </div>
+          <div class="mt-2 text-base text-gray-500">
+            Used and vetted by many experienced developers
+          </div>
+        </div>
+      </li>
+      <li class="flex border p-3 rounded-lg">
+        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+        <div class="ml-3">
+          <div class="text-lg leading-6 font-medium text-gray-900">
+            Expandable
+          </div>
+          <div class="mt-2 text-base text-gray-500">
+            Easily customizable as al the source code is available and ready to be edited
+          </div>
+        </div>
+      </li>
+    </ul>
+  </article>
+</section>
+
+<section class="open-source">
+  <article class="open-source-content">
+    <h2 class="title-lg">We offer many services</h2>
+    <h3 class="title-sm-thin margin-bottom-xsmall">Solutions</h3>
+    <LinkTo @route="services">
+      <button type="button" class="hero-button-inner">
+        <span class="hero-button-text">Services</span>
+        <svg class="hero-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+            fill="currentColor" />
+        </svg>
+      </button>
+    </LinkTo>
+  </article>
+  <div class="open-source-img">
+    <img class="w-full" src="/assets/vector/award-winning.svg" alt="data modeling">
   </div>
 </section>
+
+<Banner />

@@ -1,0 +1,31 @@
+@layer components {
+
+  .services {
+    @apply w-full flex flex-col justify-between relative mb-12 md:mb-24
+  }
+
+  .services-header {
+    @apply container mb-24 md:mb-32
+  }
+
+  .service-card-container {
+    @apply container mb-24 xl:mb-48
+  }
+
+  .service-card {
+    @apply flex flex-col space-x-0 md:space-x-8 mb-2 items-center bg-gray-100 md:flex-row rounded-lg p-12
+  }
+
+  .service-card-header {
+    @apply flex-1 text-center md:text-left mb-12 md:mb-0
+  }
+
+  .service-card-title {
+    @apply title-md mb-6 text-gray-900
+  }
+
+  .service-card-illustration {
+    @apply flex-1
+  }
+
+}

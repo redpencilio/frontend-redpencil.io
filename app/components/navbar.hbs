@@ -1,0 +1,42 @@
+
+<nav class="nav {{if this.active "h-screen"}}">
+  <div class="nav-inner z-30 relative">
+    <LinkTo @route="index" class="nav-logo">
+        <img class="h-6" src="/assets/vector/rpio-logo.svg" alt="">
+    </LinkTo>
+    <ul class="nav-list">
+      <li class="nav-list-item"><LinkTo @route="services">Services</LinkTo></li>
+      <li class="nav-list-item"><LinkTo @route="projects">Projects</LinkTo></li>
+      <li class="nav-list-item"><LinkTo @route="who-we-are">Who we are</LinkTo></li>
+      <li class="nav-list-item"><LinkTo @route="contact">Contact</LinkTo></li>
+      <li class="nav-list-button ">
+        <LinkTo class="nav-list-button-inner" @route="careers">Careers</LinkTo>
+      </li>
+      <li class="nav-list-menu">
+        <button type="button" class="text-black" {{on 'click' this.toggleActive}}>
+          <svg class="w-6 h-6 text-black hover:text-red-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 7a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 13a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+           <span class="sr-only">Toggle navigation menu</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+  {{#if this.active}}
+  <section class="fs-menu">
+    <div class="fs-menu-inner">
+      <p>Menu</p>
+      <ul>
+        <li class="fs-nav-list-item"><LinkTo @route="services">Services</LinkTo></li>
+        <li class="fs-nav-list-item"><LinkTo @route="projects">Projects</LinkTo></li>
+        <li class="fs-nav-list-item"><LinkTo @route="who-we-are">Who we are</LinkTo></li>
+        <li class="fs-nav-list-item"><LinkTo @route="contact">Contact</LinkTo></li>
+        <li class="fs-nav-list-item"><LinkTo @route="careers">Careers</LinkTo>
+        </li>
+      </ul>
+    </div>
+  </section>
+  {{/if}}
+</nav>
+
+<div class="h-16 min-w-screen"></div>
+
+
