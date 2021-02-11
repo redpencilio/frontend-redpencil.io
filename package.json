@@ -1,11 +1,11 @@
 {
   "name": "rpio-website",
-  "version": "0.0.0",
+  "version": "0.3.0",
   "private": true,
   "description": "Small description for rpio-website goes here",
   "repository": "",
   "license": "MIT",
-  "author": "",
+  "author": "redpencil.io",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -35,6 +35,9 @@
     "ember-cli-app-version": "^4.0.0",
     "ember-cli-babel": "^7.23.0",
     "ember-cli-dependency-checker": "^3.2.0",
+    "ember-cli-deploy": "^1.0.2",
+    "ember-cli-deploy-build": "^2.0.0",
+    "ember-cli-deploy-ssh-index": "^1.0.0",
     "ember-cli-htmlbars": "^5.3.1",
     "ember-cli-inject-live-reload": "^2.0.2",
     "ember-cli-postcss": "^7.0.0",
