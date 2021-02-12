@@ -23,11 +23,11 @@
   /* Medium */
 
   .title-md {
-    @apply text-lg sm:text-xl md:text-2xl font-bold md:text-3xl md:mb-3 text-gray-800
+    @apply text-lg sm:text-xl md:text-2xl font-bold md:mb-3 text-gray-800
   }
 
   .title-md-thin {
-    @apply text-lg sm:text-xl md:text-2xl font-light md:text-3xl md:mb-3 text-gray-800
+    @apply text-lg sm:text-xl md:text-2xl font-light md:mb-3 text-gray-800
   }
 
   /* Small */
