@@ -2,6 +2,7 @@
 'use strict';
 
 module.exports = function(deployTarget) {
+  process.env.GIT_DISCOVERY_ACROSS_FILESYSTEM=1;
   let ENV = {
     build: {
       environment: 'production'
@@ -10,14 +11,14 @@ module.exports = function(deployTarget) {
       username: 'root',
       host: 'rpio-dev.s.redpencil.io',
       port: 22,
-      remoteDir: '/data/app-redpencil.io-dev/redpencil.io-app',
+      remoteDir: '/data/app-redpencil.io-dev/rpio-app',
       allowOverwrite: true,
       agent: process.env.SSH_AUTH_SOCK
     },
     'rsync': { // copy assets
       host: 'root@rpio-dev.s.redpencil.io',
       port: 22,
-      dest: '/data/app-redpencil.io-dev/redpencil.io-app',
+      dest: '/data/app-redpencil.io-dev/rpio-app',
       delete: false,
       arg:['--verbose']
     }
