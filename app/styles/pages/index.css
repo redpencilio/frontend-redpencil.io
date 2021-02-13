@@ -1,31 +1,19 @@
 @layer components {
 
   .hero {
-    @apply container w-full grid grid-cols-1 lg:grid-cols-2 md:gap-12 relative justify-center items-center pt-12 margin-bottom-large
-  }
-
-  .hero-bubble{
-    @apply inline-flex
-  }
-
-  .hero-bubble-inner{
-    @apply  rounded-full bg-gray-100 px-8 py-1 mb-6 border border-gray-200
-  }
-
-  .hero-bubble-text {
-    @apply text-gray-700 text-xs font-bold leading-5 uppercase tracking-wide
+    @apply container w-full pt-12 margin-bottom-large
   }
 
   .hero-content {
-    @apply flex-1 flex flex-col
+    @apply flex flex-col w-full lg:w-2/3
   }
 
   .hero-title {
-    @apply mb-4 md:mb-8 text-gray-800 text-3xl md:text-5xl font-black
+    @apply mb-4 text-3xl md:text-5xl font-black md:mb-8
   }
 
   .hero-text {
-    @apply mb-6 text-xl md:text-2xl font-thin text-gray-900
+    @apply text-xl md:text-3xl font-thin text-gray-900 margin-bottom-small
   }
 
   .hero-button {
@@ -45,47 +33,36 @@
   }
 
   .hero-illustration {
-    @apply justify-end hidden rounded-lg lg:flex bg-gray-100
+    @apply  hidden justify-end hidden rounded-lg lg:hidden bg-gray-100
   }
 
-  .what {
+  .what-section {
     @apply container margin-bottom-large
   }
 
-  .what-inner {
-    @apply flex flex-col rounded-lg md:px-6 lg:px-32
-  }
-
-  .what-list {
-    @apply flex-1 flex flex-col
-  }
-
-  .what-list-item {
-    @apply flex flex-col lg:flex-row rounded-lg px-6 py-12 border-2 border-gray-100 bg-gray-100
-  }
-
-  .what-list-connector {
-    @apply w-1 h-20 bg-gray-100
-  }
 
   .what-header {
-    @apply margin-bottom-small text-center
+    @apply  margin-bottom-small text-center flex items-center space-x-6
   }
 
   .what-title {
-    @apply title-md
+    @apply title-md text-gray-800 mb-3
+  }
+
+  .what-line {
+    @apply flex-1 h-0.5 bg-gray-100
   }
 
   .what-text {
-    @apply text-gray-800
+    @apply w-full md:w-2/3 text-gray-600 margin-bottom-xsmall
   }
 
   .what-illustration {
-    @apply flex-1 flex justify-center items-center bg-center bg-no-repeat py-6 bg-gray-100 rounded-lg
+    @apply flex-1 flex justify-center items-center bg-center bg-no-repeat rounded-lg
   }
 
   .what-content {
-    @apply p-5 md:p-10 rounded-lg flex-1
+    @apply p-5 rounded-lg flex-1
   }
 
 

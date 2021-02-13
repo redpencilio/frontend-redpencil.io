@@ -1,0 +1,71 @@
+
+  <div class="carousel-item">
+    {{#if (eq this.index 0)}}
+    <div class="carousel-content">
+      <div class="carousel-header">
+        <h4 class="carousel-title">Open standards</h4>
+        <p class="carousel-text">Make it easy to publish and reuse data with development based on
+          international formats</p>
+      </div>
+      <a href="" class="hero-button">
+        <div class="hero-button-inner">
+          learn more
+        </div>
+      </a>
+    </div>
+    <img class="carousel-illustration" src="/assets/vector/open-standards.svg" alt="linked data">
+
+    {{else if (eq this.index 1)}}
+    <div class="carousel-content">
+      <div class="carousel-header">
+        <h4 class="carousel-title">Powerful single-page applications</h4>
+        <p class="carousel-text">Microservices and linked data integration makes our applications fast and functional</p>
+      </div>
+      <a href="" class="hero-button">
+        <div class="hero-button-inner">
+          learn more
+        </div>
+      </a>
+    </div>
+      <img class="carousel-illustration" src="/assets/vector/spa.svg" alt="linked data">
+
+    {{else if (eq this.index 2)}}
+    <div class="carousel-content">
+      <div class="carousel-header">
+        <h4 class="carousel-title">Data-centric architecture</h4>
+        <p class="carousel-text">By building our software with a ‘data first’ approach we ensure that data silos are
+          eliminated and data management is streamlined</p>
+      </div>
+
+      <a href="" class="hero-button">
+        <div class="hero-button-inner">
+          learn more
+        </div>
+      </a>
+    </div>
+      <img class="carousel-illustration" src="/assets/vector/data-centric.svg" alt="linked data">
+
+    {{else if (eq this.index 3)}}
+    <div class="carousel-content">
+      <div class="carousel-header">
+        <h4 class="carousel-title">Built for Linked Data</h4>
+        <p class="carousel-text">Native Linked Data management allows for the construction of powerful semantic knowledge
+          graphs</p>
+      </div>
+      <a href="" class="hero-button">
+        <div class="hero-button-inner">
+          learn more
+        </div>
+      </a>
+    </div>
+      <img class="carousel-illustration" src="/assets/vector/linked-data.svg" alt="linked data">
+    {{/if}}
+
+  </div>
+
+  <div class="carousel-navigation">
+    {{#each this.items as |item|}}
+    <button {{ on 'click' (fn this.setIndex item)}} type="button"
+      class="carousel-nav-link {{if (eq this.index item) "carousel-nav-link--active"}}"></button>
+    {{/each}}
+  </div>

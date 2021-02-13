@@ -1,20 +1,16 @@
 {{page-title "Welcome to redpencil.io"}}
+{{!-- <div class="w-full h-96  bg-gradient-to-b from-gray-50 to-white absolute">
 
-<section class="hero">
+</div> --}}
+<section class="hero relative">
   <article class="hero-content">
-    <div class="hero-bubble">
-      <LinkTo @route="careers" class="hero-bubble-inner">
-        <span class="hero-bubble-text">We're hiring</span>
-      </LinkTo>
-    </div>
     <h1 class="hero-title">
-     Rich web applications <span class="text-red-600">—</span> tailored to the data needs of your organization
-
+      Rich web applications <span class="text-red-600">—</span>
+      <br> tailored to the data needs of your organization
     </h1>
     <div>
       <p class="hero-text">
-        All businesses and organizations are defined by their approach to data — we help you use yours better!
-
+        All businesses and organizations are defined by their approach to data — <span class="font-black">we help you use yours better!</span>
       </p>
       <div class="hero-button">
         <LinkTo @route="contact">
@@ -30,71 +26,15 @@
       </div>
     </div>
   </article>
-  <article class="hero-illustration">
-    <img src="/assets/vector/hero-illustration.svg" alt="">
-  </article>
 </section>
 
-<section class="what">
-  <div class="what-inner">
-    <article class="what-header">
-      <h2 class="title-lg font-black text-gray-800 mb-2">What we do differently</h2>
-      <h3 class="title-sm-thin margin-bottom-xsmall">An improved way of building</h3>
-    </article>
-    <ul class="what-list">
-      <li class="what-list-item">
-        <div class="what-illustration">
-          <img class="h-36" src="/assets/vector/semantic-web.svg" alt="linked data">
-        </div>
-        <div class="what-content">
-          <h4 class="what-title">Open standards</h4>
-          <p class="what-text">Make it easy to publish and reuse data with development based on international formats</p>
-        </div>
-      </li>
-      <div class="flex justify-center">
-        <div class="what-list-connector rounded-full"></div>
-      </div>
-      <li class="what-list-item">
-        <div class="what-content">
-          <h4 class="what-title">Powerful single-page applications</h4>
-          <p class="what-text">Microservices and linked data integration makes our applications fast and functional</p>
-        </div>
-        <div class="what-illustration">
-          <img class="h-36" src="/assets/vector/linked-data.svg" alt="linked data">
-        </div>
-      </li>
-      <div class="flex justify-center">
-        <div class="what-list-connector"></div>
-      </div>
-      <li class="what-list-item">
-        <div class="what-illustration">
-          <img class="h-36" src="/assets/vector/open-data.svg" alt="linked data">
-        </div>
-        <div class="what-content">
-          <h4 class="what-title">Data-centric architecture
-          </h4>
-          <p class="what-text">By building our software with a ‘data first’ approach we ensure that data silos are
-            eliminated and data management is streamlined
-          </p>
-        </div>
-      </li>
-      <div class="flex justify-center">
-        <div class="what-list-connector"></div>
-      </div>
-      <li class="what-list-item">
-        <div class="what-content">
-          <h4 class="what-title">Built for Linked Data
-          </h4>
-          <p class="what-text">Native Linked Data management allows for the construction of powerful semantic knowledge
-            graphs
-          </p>
-        </div>
-        <div class="what-illustration">
-          <img class="h-36" src="/assets/vector/open-standards.svg" alt="linked data">
-        </div>
-      </li>
-    </ul>
+<section class="what-section">
+  <div class="what-header">
+    <h2 class="what-title">What we do differently</h2>
+    <div class="what-line">
+    </div>
   </div>
+  <Hero::Carousel/>
 </section>
 
 <section class="open-source">
