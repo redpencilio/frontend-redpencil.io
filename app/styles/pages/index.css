@@ -65,9 +65,8 @@
     @apply p-5 rounded-lg flex-1
   }
 
-
   .open-source {
-    @apply container flex flex-col lg:flex-row space-x-0 lg:space-x-24 items-center margin-bottom-large
+    @apply container flex flex-col items-center justify-start margin-bottom-large
   }
 
   .open-source-img {
@@ -75,6 +74,19 @@
   }
 
   .open-source-content {
-    @apply flex-1
+    @apply flex flex-col lg:flex-row lg:items-center mb-4 md:mb-0 lg:space-x-12  w-full
   }
+
+  .open-source-list {
+    @apply flex flex-wrap lg:grid lg:grid-cols-5 gap-2 w-auto
+  }
+
+  .open-source-list-item {
+    @apply w-16 h-16  md:w-24 md:h-24 bg-gradient-to-br from-gray-100 to-gray-50 flex justify-center items-center
+  }
+
+  .open-source-list-item-logo {
+    @apply h-5 md:h-8
+  }
+
 }
