@@ -1,7 +1,7 @@
 @layer components {
 
   .nav {
-    @apply w-full fixed shadow-sm glass z-20 bg-white flex flex-col
+    @apply w-full fixed border-b border-gray-100 glass z-20 bg-white flex flex-col
   }
 
   .nav-inner {
