@@ -40,4 +40,16 @@
     @apply text-gray-500
   }
 
+  .future{
+    @apply container flex flex-col
+  }
+
+  .future-header{
+    @apply flex margin-bottom-small items-center
+  }
+
+  .future-title{
+    @apply pr-4 title-md
+  }
+
 }
