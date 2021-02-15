@@ -13,7 +13,7 @@
   }
 
   .job-card {
-    @apply p-6 border rounded hover:shadow hover:bg-gray-50
+    @apply relative p-6 border rounded  bg-white hover:shadow hover:bg-gray-50
   }
 
   .job-pill-open{
