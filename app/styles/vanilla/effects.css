@@ -11,6 +11,10 @@
   backdrop-filter: blur(8px);
 }
 
+.grayscale {
+  filter: grayscale(1)
+}
+
 canvas {
 	position: absolute;
 	top: 0;
