@@ -49,7 +49,7 @@
   }
 
   .future-title{
-    @apply pr-4 title-md
+    @apply pr-4 title-md text-gray-700
   }
 
 }
