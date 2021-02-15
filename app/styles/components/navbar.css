@@ -21,7 +21,7 @@
   }
 
   .nav-list-item {
-    @apply hidden mx-6 text-sm font-bold xl:block tracking-wide text-gray-600 hover:text-red-600
+    @apply hidden mx-6 text-sm font-bold xl:block  text-gray-700 hover:text-red-600
   }
 
   .nav-list-button {
