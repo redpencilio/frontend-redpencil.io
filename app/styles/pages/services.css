@@ -13,19 +13,27 @@
   }
 
   .service-card {
-    @apply flex flex-col space-x-0 md:space-x-8 mb-2 items-center bg-gray-100 md:flex-row rounded-lg p-12
+    @apply flex flex-col mb-2 border-4 border-gray-100 rounded-lg
   }
 
   .service-card-header {
-    @apply flex-1 text-center md:text-left mb-12 md:mb-0
+    @apply flex-1 text-center md:text-left mb-12 md:mb-0 py-8 px-5
   }
 
   .service-card-title {
-    @apply title-md mb-6 text-gray-900
+    @apply title-sm mb-3 text-gray-900
   }
 
   .service-card-illustration {
-    @apply flex-1
+    @apply flex-1 bg-gray-100
+  }
+
+  .service-category{
+    @apply container margin-bottom-medium
+  }
+
+  .service-data-list {
+    @apply grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6
   }
 
 }
