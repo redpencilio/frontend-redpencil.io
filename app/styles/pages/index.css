@@ -1,15 +1,15 @@
 @layer components {
 
-  .hero {
-    @apply  relative container w-full pt-24 margin-bottom-large
+  .hero-section {
+    @apply container pt-24 margin-bottom-large
   }
 
-  .hero-content {
-    @apply flex flex-col w-full lg:w-2/3
+  .hero-inner {
+    @apply flex flex-col lg:w-2/3 items-start
   }
 
   .hero-title {
-    @apply text-3xl md:text-5xl font-black  text-gray-800 margin-bottom-xsmall
+    @apply text-3xl md:text-5xl font-black text-gray-800 margin-bottom-xsmall
   }
 
   .hero-text {
@@ -17,68 +17,55 @@
   }
 
   .hero-button {
-    @apply py-2
-  }
-
-  .hero-button-inner {
-    @apply btn-primary bg-red-600 flex space-x-6 items-center inline-flex
-  }
-
-  .hero-illustration {
-    @apply  hidden justify-end hidden rounded-lg lg:hidden bg-gray-100
+    @apply px-12 py-2 rounded-md bg-red-600 text-white font-bold hover:bg-red-500
   }
 
   .what-section {
     @apply container margin-bottom-large
   }
 
+  .what-hr {
+    @apply border-t border-gray-200 w-full
+  }
 
   .what-header {
-    @apply  margin-bottom-small text-center flex items-center space-x-6
+    @apply margin-bottom-small
   }
 
   .what-title {
-    @apply title-md text-gray-800 mb-3
+    @apply title-lg
   }
 
-  .what-line {
-    @apply flex-1 h-0.5 bg-gray-100
-  }
-
-  .what-text {
-    @apply w-full md:w-2/3 text-gray-600 margin-bottom-xsmall
-  }
-
-  .what-illustration {
-    @apply flex-1 flex justify-center items-center bg-center bg-no-repeat rounded-lg
-  }
-
-  .what-content {
-    @apply p-5 rounded-lg flex-1
-  }
-
-  .open-source {
+  .os-section {
     @apply container flex flex-col items-center justify-start margin-bottom-large
   }
 
-  .open-source-img {
+  .os-img {
     @apply flex-1 rounded  hidden lg:flex
   }
 
-  .open-source-content {
-    @apply flex flex-col lg:flex-row lg:items-center mb-4 md:mb-0 lg:space-x-12  w-full
+  .os-header {
+    @apply flex flex-col lg:flex-row lg:items-center lg:space-x-12  w-full margin-bottom-small
   }
 
-  .open-source-list {
+  .os-list {
     @apply flex flex-wrap lg:grid lg:grid-cols-5 gap-2 w-auto
   }
 
-  .open-source-list-item {
+  .os-list-item {
     @apply w-16 h-16  md:w-24 md:h-24 bg-gradient-to-br from-gray-100 to-gray-50 flex justify-center items-center
   }
 
-  .open-source-list-item-logo {
+  .os-list-item-logo {
     @apply h-5 md:h-8
+  }
+
+  .os-advantage-list {
+    @apply flex-1 flex flex-col space-y-3 w-full
+  }
+
+  .os-advantage-list-item {
+    @apply flex border rounded-lg p-3
   }
 
   .data {
