@@ -48,7 +48,7 @@
   }
 
   .advantages-list-item {
-    @apply  bg-gray-100 rounded px-6 py-12 flex flex-col items-center space-y-6 text-xl text-center
+    @apply bg-gray-100 rounded p-6 flex space-x-6 items-center text-gray-800
   }
 
   .resources-list {

@@ -45,15 +45,15 @@
   }
 
   .values-list-item {
-    @apply flex flex-col px-8 py-12 items-start rounded-lg border-2 border-gray-100
+    @apply flex flex-col p-8 items-start rounded-lg border-2 border-gray-100
   }
 
   .values-icon {
-    @apply p-5 bg-gray-100 text-gray-100 rounded-lg mb-8
+    @apply p-5 bg-gray-100 text-gray-900 rounded-lg mb-8
   }
 
   .join {
-    @apply container bg-gradient-to-tl from-gray-100 to-gray-50 flex flex-col xl:flex-row items-center justify-between mb-48 py-24 xl:py-64 rounded-lg
+    @apply container bg-gray-100 flex flex-col xl:flex-row items-center justify-between mb-48 py-24 xl:py-64 rounded-lg
   }
 
   .join-header {
