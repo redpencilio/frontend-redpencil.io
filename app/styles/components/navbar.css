@@ -29,11 +29,7 @@
   }
 
   .nav-list-button-inner {
-<<<<<<< HEAD
     @apply bg-gray-800 text-sm text-gray-100 px-12 py-2 rounded-md  font-bold hover:bg-gray-700
-=======
-    @apply border-2 border-gray-700 text-sm text-gray-600 px-12 py-2 rounded-md  font-bold hover:text-red-600 hover:shadow
->>>>>>> master
   }
 
   .nav-list-menu {
