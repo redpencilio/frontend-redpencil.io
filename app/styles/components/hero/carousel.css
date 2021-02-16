@@ -1,6 +1,6 @@
 @layer components {
   .carousel-item {
-    @apply relative flex bg-gradient-to-br from-gray-100 to-gray-50 rounded-lg px-6 md:px-12 xl:px-24 margin-bottom-small h-96 items-center
+    @apply relative flex bg-gradient-to-br from-gray-100 to-gray-50 rounded-lg px-6 md:px-12 xl:px-24 margin-bottom-xsmall h-96 items-center
   }
 
   .carousel-content {
@@ -12,11 +12,11 @@
   }
 
   .carousel-title {
-    @apply title-lg mb-3
+    @apply title-lg mb-4
   }
 
   .carousel-text {
-    @apply  text-lg md:text-2xl
+    @apply  text-base
   }
 
   .carousel-tag-list {
