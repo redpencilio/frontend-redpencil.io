@@ -12,11 +12,11 @@
   }
 
   .carousel-title {
-    @apply title-lg mb-3
+    @apply title-lg mb-4
   }
 
   .carousel-text {
-    @apply  text-lg md:text-2xl
+    @apply  text-base
   }
 
   .carousel-tag-list {
