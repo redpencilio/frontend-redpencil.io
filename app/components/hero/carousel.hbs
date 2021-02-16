@@ -1,75 +1,83 @@
-
-  <div class="carousel-item">
-    {{#if (eq this.index 0)}}
-    <div class="carousel-content">
-      <div class="carousel-header">
-        <h4 class="carousel-title">Open standards</h4>
-        <p class="carousel-text">We use existing, publicly available standards - to make data shareable, reusable, and avoid vendor lock-in
-</p>
-      </div>
-      <a href="" class="hero-button">
-        <div class="hero-button-inner">
-          learn more
-        </div>
+<div class="carousel-section">
+  {{#if (eq this.index 0)}}
+  <div class="carousel-slide">
+    <div class="carousel-header">
+      <h4 class="carousel-title">Open standards</h4>
+      <p class="carousel-text">We use existing, publicly available standards - to make data shareable, reusable, and
+        avoid vendor lock-in
+      </p>
+      <a href="" class="carousel-button">
+        learn more
       </a>
     </div>
-    <img class="carousel-illustration" src="/assets/vector/open-standards.svg" alt="linked data">
-
-    {{else if (eq this.index 1)}}
-    <div class="carousel-content">
-      <div class="carousel-header">
-        <h4 class="carousel-title">Powerful single-page applications</h4>
-        <p class="carousel-text">We use the latest frontend technologies to develop web applications that are responsive and powerful 
-          - for a better user experience
-
-</p>
-      </div>
-      <a href="" class="hero-button">
-        <div class="hero-button-inner">
-          learn more
-        </div>
-      </a>
-    </div>
-      <img class="carousel-illustration" src="/assets/vector/spa.svg" alt="linked data">
-
-    {{else if (eq this.index 2)}}
-    <div class="carousel-content">
-      <div class="carousel-header">
-        <h4 class="carousel-title">Data-centric architecture</h4>
-        <p class="carousel-text">We create and build on a domain-specific data infrastructure - this improves data management and eliminates data silos
-
-</p>
-      </div>
-
-      <a href="" class="hero-button">
-        <div class="hero-button-inner">
-          learn more
-        </div>
-      </a>
-    </div>
-      <img class="carousel-illustration" src="/assets/vector/data-centric.svg" alt="linked data">
-
-    {{else if (eq this.index 3)}}
-    <div class="carousel-content">
-      <div class="carousel-header">
-        <h4 class="carousel-title">Native Linked Data integration</h4>
-        <p class="carousel-text">We build applications that natively work with data modelled in semantic knowledge graphs - enabling reasoning and graph analytics
-</p>
-      </div>
-      <a href="" class="hero-button">
-        <div class="hero-button-inner">
-          learn more
-        </div>
-      </a>
-    </div>
-      <img class="carousel-illustration" src="/assets/vector/linked-data.svg" alt="linked data">
-    {{/if}}
-
+    <img class="carousel-illustration" src="/assets/vector/open-standards.svg" alt="open standards">
   </div>
 
-  <div class="carousel-navigation">
-    {{#each this.items as |item|}}
-    <button {{ on 'click' (fn this.setIndex item)}} type="button"
-      class="carousel-nav-link {{if (eq this.index item) "carousel-nav-link--active"}}"></button>
-    {{/each}}
+  {{else if (eq this.index 1)}}
+  <div class="carousel-slide">
+    <div class="carousel-header">
+      <h4 class="carousel-title">Powerful single-page applications</h4>
+      <p class="carousel-text">We use the latest frontend technologies to develop web applications that are responsive
+        and
+        powerful
+        - for a better user experience
+      </p>
+    </div>
+    <a href="" class="carousel-button">
+      learn more
+    </a>
+    <img class="carousel-illustration" src="/assets/vector/spa.svg" alt="single page applications">
   </div>
+
+  {{else if (eq this.index 2)}}
+  <div class="carousel-slide">
+    <div class="carousel-header">
+      <h4 class="carousel-title">Data-centric architecture</h4>
+      <p class="carousel-text">We create and build on a domain-specific data infrastructure - this improves data
+        management and eliminates data silos
+      </p>
+    </div>
+    <a href="" class="carousel-button">
+      learn more
+    </a>
+    <img class="carousel-illustration" src="/assets/vector/data-centric.svg" alt="data-centric">
+  </div>
+
+  {{else if (eq this.index 3)}}
+  <div class="carousel-slide">
+    <div class="carousel-header">
+      <h4 class="carousel-title">Native Linked Data integration</h4>
+      <p class="carousel-text">We build applications that natively work with data modelled in semantic knowledge graphs
+        -
+        enabling reasoning and graph analytics
+      </p>
+    </div>
+          <a href="" class="carousel-button">
+        learn more
+      </a>
+    <img class="carousel-illustration" src="/assets/vector/spa.svg" alt="linked data">
+  </div>
+
+  {{else if (eq this.index 4)}}
+  <div class="carousel-slide">
+    <div class="carousel-header">
+      <h4 class="carousel-title">Built for Linked Data</h4>
+      <p class="carousel-text">We use Semantic Web technologies to model our frameworks with graphs and reasoning.
+        Applications with native linked data capabilities ensure quality data flows. Linked Open Data flows ensures data
+        is visible and reusable.
+      </p>
+    </div>
+          <a href="" class="carousel-button">
+        learn more
+      </a>
+    <img class="carousel-illustration" src="/assets/vector/linked-data.svg" alt="linked data">
+    </div>
+  {{/if}}
+</div>
+
+<div class="carousel-navigation">
+  {{#each this.items as |item|}}
+  <button {{ on 'click' (fn this.setIndex item)}} type="button" class="carousel-nav-link {{if (eq this.index item) "
+    carousel-nav-link--active"}}"></button>
+  {{/each}}
+</div>

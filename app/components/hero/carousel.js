@@ -5,7 +5,7 @@ import { tracked } from '@glimmer/tracking';
 export default class HeroCarouselComponent extends Component {
 
   @tracked index = 0;
-  @tracked items = [0, 1, 2, 3]
+  @tracked items = [0, 1, 2, 3, 4]
 
   @action
   setIndex(position){
