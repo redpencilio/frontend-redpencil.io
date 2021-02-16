@@ -9,19 +9,19 @@
   }
 
   .hero-title {
-    @apply mb-4 text-3xl md:text-5xl font-black md:mb-8 text-gray-800
+    @apply text-3xl md:text-5xl font-black  text-gray-800 margin-bottom-xsmall
   }
 
   .hero-text {
-    @apply text-xl md:text-3xl font-thin text-gray-900 margin-bottom-small
+    @apply text-xl md:text-2xl font-thin text-gray-900 margin-bottom-small
   }
 
   .hero-button {
-    @apply space-x-4 py-2 mb-6
+    @apply py-2
   }
 
   .hero-button-inner {
-    @apply btn-primary bg-red-500 flex space-x-6 items-center inline-flex
+    @apply btn-primary bg-red-600 flex space-x-6 items-center inline-flex
   }
 
   .hero-illustration {
