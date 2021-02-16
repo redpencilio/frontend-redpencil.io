@@ -29,7 +29,7 @@
   }
 
   .service-category{
-    @apply container margin-bottom-medium
+    @apply container margin-bottom-large
   }
 
   .service-data-list {

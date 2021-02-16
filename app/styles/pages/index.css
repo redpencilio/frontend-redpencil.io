@@ -9,7 +9,7 @@
   }
 
   .hero-title {
-    @apply text-3xl md:text-5xl font-black text-gray-800 margin-bottom-xsmall
+    @apply text-3xl md:text-4xl font-black text-gray-800 margin-bottom-xsmall
   }
 
   .hero-text {
@@ -17,7 +17,7 @@
   }
 
   .hero-button {
-    @apply px-12 py-2 rounded-md bg-red-600 text-white font-bold hover:bg-red-500
+    @apply px-16 py-3 rounded-md bg-gray-900 text-white font-bold hover:bg-gray-700
   }
 
   .what-section {

@@ -9,7 +9,7 @@
   }
 
   .careers-list {
-    @apply container grid grid-cols-1 lg:grid-cols-2 justify-between mb-48
+    @apply container grid grid-cols-1 lg:grid-cols-2 justify-between mb-48 gap-5
   }
 
   .job-card {
