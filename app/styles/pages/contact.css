@@ -29,7 +29,7 @@
   }
 
   .textarea-box {
-    @apply focus:ring-gray-500 focus:border-gray-500 block w-full py-4 pl-10 sm:text-sm border-gray-300 rounded-md resize-none bg-gray-50
+    @apply focus:ring-gray-500 focus:border-gray-500 block w-full py-4 pl-10 sm:text-sm  border border-gray-300 rounded-md resize-none bg-gray-50
   }
 
   .faq {
