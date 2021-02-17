@@ -20,7 +20,7 @@
   }
 
   .carousel-button {
-    @apply px-12 py-2 rounded-md bg-red-600 text-white text-sm font-bold hover:bg-red-500 hidden
+    @apply px-12 py-2 rounded-md bg-red-600 text-white text-sm font-bold hover:bg-red-500
   }
 
   .carousel-illustration {
