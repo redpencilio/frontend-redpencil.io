@@ -1,11 +1,11 @@
 @layer components {
 
   .hero-section {
-    @apply container pt-24 margin-bottom-large
+    @apply container margin-bottom-large flex items-center space-x-12 mt-12
   }
 
   .hero-inner {
-    @apply flex flex-col lg:w-2/3 items-start
+    @apply flex-1 flex flex-col lg:w-2/3 items-start
   }
 
   .hero-title {
@@ -18,6 +18,10 @@
 
   .hero-button {
     @apply px-16 py-3 rounded-md bg-gray-900 text-white font-bold hover:bg-gray-700
+  }
+
+  .hero-illustration {
+    @apply flex-1 bg-gray-100 rounded-lg hidden xl:block
   }
 
   .what-section {
