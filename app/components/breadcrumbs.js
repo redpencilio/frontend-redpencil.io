@@ -5,12 +5,12 @@ import { tracked } from '@glimmer/tracking';
 
 export default class BreadcrumbsComponent extends Component {
   @service router;
-  
-  @tracked breadCrumbs 
+
+  @tracked breadCrumbs;
 
   constructor(){
     super(...arguments);
-    const currentRoute = getOwner(this).lookup(`route:${this.router.currentRoute.name}`)
-    this.breadCrumbs = currentRoute.breadCrumbs
+    const currentRoute = getOwner(this).lookup(`route:${this.router.currentRoute.name}`);
+    this.breadCrumbs = currentRoute.breadCrumbs;
   }
 }
