@@ -13,27 +13,35 @@
   }
 
   .service-card {
-    @apply flex flex-col mb-2 border-2 border-gray-100 rounded-lg
+    @apply flex flex-col border border-gray-200 rounded-lg
   }
 
   .service-card-header {
-    @apply flex-1 text-center md:text-left mb-12 md:mb-0 py-8 px-5
+    @apply flex-1 text-left py-6 md:py-8 px-6
   }
 
   .service-card-title {
     @apply title-sm mb-3 text-gray-900
   }
 
+  .service-card-text {
+    @apply text-sm md:text-base text-gray-600
+  }
+
   .service-card-illustration {
-    @apply flex-1 bg-gray-100
+    @apply flex-1 bg-gray-100 hidden md:block
   }
 
   .service-category{
     @apply container margin-bottom-large
   }
 
+  .service-category-title {
+    @apply title-md margin-bottom-small border-b pb-1
+  }
+
   .service-data-list {
-    @apply grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6
+    @apply grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3 md:gap-6
   }
 
 }
