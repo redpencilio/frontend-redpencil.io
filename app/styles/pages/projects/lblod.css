@@ -17,7 +17,7 @@
   }
 
   .lblod-section {
-    @apply container flex flex-col justify-between items-center lg:flex-row lg:space-x-16 margin-bottom-large
+    @apply container flex flex-col items-center lg:flex-row lg:space-x-16 margin-bottom-large
   }
 
   .lblod-article {
@@ -29,7 +29,7 @@
   }
 
   .lblod-gif {
-    @apply flex-1
+    @apply flex-1 border-2 border-gray-100 mb-6 lg:mb-0
   }
 
   .masterpiece {
@@ -41,15 +41,15 @@
   }
 
   .awards-list {
-    @apply grid grid-cols-2 gap-6
+    @apply grid grid-cols-1 md:grid-cols-2 gap-6
   }
 
   .awards-list-item {
-    @apply p-8 flex flex-col bg-gray-100 items-start rounded-lg
+    @apply p-8 flex flex-col border-2 border-gray-100 items-start rounded-lg
   }
 
   .awards-date {
-    @apply mb-3 text-sm px-3 py-1 bg-gray-200 rounded-full
+    @apply mb-3 text-sm px-6 py-1 bg-gray-100 rounded-full
   }
 
   .awards-title {
