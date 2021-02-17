@@ -9,7 +9,7 @@
   }
 
   .projects-card-list {
-    @apply container grid gap-16 xl:grid-cols-2  margin-bottom-large
+    @apply container grid gap-8 md:gap-16 xl:grid-cols-2  margin-bottom-large
   }
 
   .projects-card-item {
@@ -17,11 +17,11 @@
   }
 
   .projects-card-inner {
-    @apply flex flex-col h-full space-y-6
+    @apply flex flex-col h-48 md:h-full space-y-6
   }
 
-  .card-content {
-    @apply p-6
+  .project-card--disabled {
+    @apply grayscale opacity-70
   }
 
   .projects-card-bg {
@@ -32,24 +32,9 @@
     @apply ml-0 md:ml-3 w-full md:w-2/3 bg-gray-900  px-6 md:px-12 py-4 text-white rounded-lg
   }
 
-  .card-title {
-    @apply text-2xl margin-bottom-xsmall
+  .project-under-construction {
+    @apply absolute px-6 py-2 rounded-full bg-gray-900 font-normal text-white right-0 top-0 mr-4 mt-4 text-sm
   }
 
-  .card-text {
-    @apply text-gray-500
-  }
-
-  .future{
-    @apply container flex flex-col
-  }
-
-  .future-header{
-    @apply flex margin-bottom-small items-center
-  }
-
-  .future-title{
-    @apply pr-4 title-md text-gray-700
-  }
 
 }
