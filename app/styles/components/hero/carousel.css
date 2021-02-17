@@ -32,11 +32,11 @@
   }
 
   .carousel-nav-link {
-    @apply w-12 h-5 rounded-full bg-gray-200 focus:outline-white border hover:bg-gray-300
+    @apply w-12 h-5 rounded-full bg-gray-200 focus:outline-white border hover:bg-gray-300 duration-500
   }
 
   .carousel-nav-link--active {
-    @apply w-36 bg-gradient-to-r from-gray-600 to-gray-800
+    @apply w-36 bg-gray-50 duration-500
   }
 
   .carousel-progress{

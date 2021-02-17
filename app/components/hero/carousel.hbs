@@ -74,10 +74,18 @@
     </div>
   {{/if}}
 </div>
+<div class="flex space-between items-center">
+  <div class="carousel-navigation">
+    {{#each this.items as |item|}}
+    <button {{ on 'click' (fn this.setIndex item)}} type="button" class="carousel-nav-link {{if (eq this.index item) "
+      carousel-nav-link--active relative"}}">
+      {{#if (eq this.index item) }}
+      <div class="progress">
 
-<div class="carousel-navigation">
-  {{#each this.items as |item|}}
-  <button {{ on 'click' (fn this.setIndex item)}} type="button" class="carousel-nav-link {{if (eq this.index item) "
-    carousel-nav-link--active"}}"></button>
-  {{/each}}
+      </div>
+      {{/if}}
+      </button>
+    {{/each}}
+  </div>
+
 </div>
