@@ -21,7 +21,7 @@
   }
 
   .project-card--disabled {
-    @apply grayscale opacity-70
+    @apply grayscale opacity-50
   }
 
   .projects-card-bg {

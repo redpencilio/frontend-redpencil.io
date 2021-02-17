@@ -1,7 +1,7 @@
 @layer components {
 
   .about {
-    @apply w-full flex flex-col justify-between relative mb-12 md:mb-24
+    @apply w-full flex flex-col justify-between relative margin-bottom-medium
   }
 
   .about-header {
@@ -9,7 +9,7 @@
   }
 
   .about-text {
-    @apply  margin-bottom-medium text-gray-800 w-full md:w-2/3
+    @apply  margin-bottom-medium text-gray-900 w-full md:w-2/3
   }
 
   .stats {
@@ -17,39 +17,43 @@
   }
 
   .stats-list {
-    @apply grid grid-cols-2 xl:grid-cols-4 gap-6
+    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6
   }
 
   .stats-icon {
-    @apply flex justify-center items-center bg-gray-800 text-gray-100 rounded w-10 h-10
+    @apply flex justify-center items-center bg-gray-100 text-gray-900 rounded w-10 h-10
   }
 
   .stats-item {
-    @apply flex space-x-6 bg-gray-100 p-3 md:p-6 rounded-lg
+    @apply flex space-x-6 border border-gray-200 p-3 md:p-6 rounded-lg
   }
 
   .values {
     @apply container flex flex-col justify-center mb-48
   }
 
+  .values-inner {
+    @apply flex flex-col
+  }
+
   .values-text {
-    @apply  mb-16 text-gray-600 w-full md:w-2/3
+    @apply  text-gray-600 w-full md:w-2/3
   }
 
   .values-header {
-    @apply mb-16
+    @apply  flex-1 margin-bottom-small
   }
 
   .values-list {
-    @apply grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-6
+    @apply grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6
   }
 
   .values-list-item {
-    @apply flex flex-col p-8 items-start rounded-lg border-2 border-gray-100
+    @apply flex flex-col p-8 items-start rounded-lg border border-gray-200
   }
 
   .values-icon {
-    @apply p-5 bg-gray-100 text-gray-900 rounded-lg mb-8
+    @apply p-5 bg-gray-100 text-gray-800 rounded-lg mb-8
   }
 
   .join {

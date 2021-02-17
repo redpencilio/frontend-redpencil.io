@@ -1,7 +1,7 @@
 @layer components {
 
   .contact {
-    @apply w-full flex flex-col justify-between relative mb-12 md:mb-24 relative
+    @apply w-full flex flex-col justify-between relative margin-bottom-medium
   }
 
   .contact-header {

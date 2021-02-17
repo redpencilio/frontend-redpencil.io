@@ -1,15 +1,15 @@
 @layer components {
 
   .careers {
-    @apply w-full flex flex-col justify-between relative mb-12 md:mb-24
+    @apply w-full flex flex-col justify-between relative margin-bottom-medium
   }
 
   .careers-header {
-    @apply container mb-6 md:mb-12
+    @apply container margin-bottom-small
   }
 
   .careers-list {
-    @apply container grid grid-cols-1 lg:grid-cols-2 justify-between mb-48 gap-5
+    @apply container grid grid-cols-1 lg:grid-cols-2 justify-between gap-5 margin-bottom-large
   }
 
   .job-card {
@@ -28,7 +28,7 @@
   }
 
   .job-prop-list {
-    @apply flex space-x-6
+    @apply flex flex-col space-y-2 md:flex-row md:space-x-6 md:space-y-0
   }
 
   .job-prop-item {
@@ -40,7 +40,7 @@
   }
 
   .advantages-list {
-    @apply grid grid-cols-2 lg:grid-cols-4 gap-6
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6
   }
 
   .advantages-icon {
