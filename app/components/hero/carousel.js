@@ -6,6 +6,7 @@ export default class HeroCarouselComponent extends Component {
 
   @tracked index = 0;
   @tracked items = [0, 1, 2, 3, 4]
+  @tracked intervalId;
 
   constructor(){
     super(...arguments);
@@ -15,12 +16,14 @@ export default class HeroCarouselComponent extends Component {
   @action
   setIndex(position){
     this.index = position
+    clearInterval(this.intervalId)
+    this.loopIndex()
   }
 
   loopIndex(){
     const nextIndex = () => {
       this.index = (this.index + 1) % this.items.length
     }
-    setInterval(nextIndex, 7000);
+    this.intervalId = setInterval(nextIndex, 7000);
   }
 }
