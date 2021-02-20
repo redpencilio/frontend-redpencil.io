@@ -12,11 +12,12 @@
 <line x1="164.424" y1="112.001" x2="164.424" y2="150.896" stroke="#EEEEEE" stroke-linecap="round"/>
 <line x1="643.104" y1="399.131" x2="643.104" y2="360.71" stroke="#EEEEEE" stroke-linecap="round"/>
 <line x1="186.896" y1="111.869" x2="186.896" y2="150.289" stroke="#EEEEEE" stroke-linecap="round"/>
-<rect x="302.297" y="122.447" width="225.101" height="264.874" rx="10" fill="#393939"/>
-<path d="M302.297 132.447C302.297 126.924 306.774 122.447 312.297 122.447H332.936C332.936 122.447 332.936 206.981 332.936 264.021C332.936 339.411 361.119 387.321 361.119 387.321H312.297C306.774 387.321 302.297 382.844 302.297 377.321V132.447Z" fill="#313131"/>
-<rect x="320.312" y="247.562" width="189.071" height="22.0211" rx="9.5" fill="#484848" stroke="#A5A5A5"/>
-<rect x="320.312" y="149.676" width="189.071" height="22.0211" rx="9.5" fill="#484848" stroke="#A5A5A5"/>
-<rect x="320.312" y="340.892" width="189.071" height="22.0211" rx="9.5" fill="#484848" stroke="#A5A5A5"/>
+<g filter="url(#filter0_i)">
+<rect x="302.297" y="122.447" width="225.101" height="264.874" rx="10" fill="#414141"/>
+<rect x="320.312" y="247.562" width="189.071" height="22.0211" rx="9.5" fill="#393939" stroke="#A5A5A5"/>
+<rect x="320.312" y="149.676" width="189.071" height="22.0211" rx="9.5" fill="#393939" stroke="#A5A5A5"/>
+<rect x="320.312" y="340.892" width="189.071" height="22.0211" rx="9.5" fill="#393939" stroke="#A5A5A5"/>
+</g>
 <path d="M637.942 433.533H618.644C616.434 433.533 614.644 431.743 614.644 429.533V335.235C614.644 333.026 616.434 331.235 618.644 331.235H631.499C629.966 371.853 631.285 394.139 637.942 433.533Z" fill="#F8F8F8"/>
 <rect x="718.337" y="307.355" width="104.942" height="103.71" rx="4.5" transform="rotate(180 718.337 307.355)" fill="white" stroke="#B2B2B2"/>
 <path d="M637.486 306.672H618.188C615.978 306.672 614.188 304.881 614.188 302.672V208.373C614.188 206.164 615.978 204.373 618.188 204.373H631.043C629.51 244.992 630.829 267.278 637.486 306.672Z" fill="#F8F8F8"/>
@@ -121,4 +122,22 @@
 <rect x="126.465" y="120.792" width="18.0348" height="1.65533" rx="0.827663" fill="white"/>
 <rect x="126.465" y="123.109" width="10.9302" height="1.65533" rx="0.827663" fill="white"/>
 <rect x="126.465" y="138.24" width="25.1394" height="1.95236" rx="0.976178" fill="white"/>
+<circle cx="334.372" cy="161.019" r="5.70931" fill="#F5F5F4" stroke="#A5A5A5"/>
+<circle cx="497.742" cy="161.019" r="5.70931" fill="#F5F5F4" stroke="#A5A5A5"/>
+<circle cx="333.373" cy="258.572" r="4.71036" fill="#F5F5F4" stroke="#A5A5A5"/>
+<circle cx="333.373" cy="351.61" r="4.71036" fill="#F5F5F4" stroke="#A5A5A5"/>
+<circle cx="496.743" cy="258.572" r="4.71036" fill="#F5F5F4" stroke="#A5A5A5"/>
+<circle cx="496.743" cy="351.61" r="4.71036" fill="#F5F5F4" stroke="#A5A5A5"/>
+<defs>
+<filter id="filter0_i" x="302.297" y="122.447" width="226.101" height="265.874" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="4" dy="3"/>
+<feGaussianBlur stdDeviation="0.5"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
+</filter>
+</defs>
 </svg>
