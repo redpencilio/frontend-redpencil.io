@@ -23,7 +23,7 @@ module.exports = {
         'content': '1fr 100px 1fr',
       },
       colors: {
-        gray: colors.warmGray,
+        gray: colors.trueGray,
       },
     },
     variants: {
