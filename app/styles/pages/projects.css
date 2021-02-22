@@ -9,32 +9,78 @@
   }
 
   .projects-card-list {
-    @apply container grid gap-8 md:gap-16 xl:grid-cols-2  margin-bottom-large
+    @apply container grid gap-8 md:gap-16 md:grid-cols-2 xl:grid-cols-3  margin-bottom-medium
   }
 
   .projects-card-item {
-    @apply w-full
+    @apply w-full col-span-3
   }
 
   .projects-card-inner {
-    @apply flex flex-col h-48 md:h-full space-y-6
+    @apply flex flex-col xl:flex-row md:h-full px-12 space-x-4
   }
 
-  .project-card--disabled {
-    @apply grayscale opacity-50
+  .projects-card-img-wrapper{
+    @apply  flex items-end justify-center flex-1 h-full
   }
 
-  .projects-card-bg {
-    @apply w-full h-64 flex flex-col justify-center rounded-lg p-3 md:p-0
+  .projects-card-img {
+    @apply w-full
   }
 
   .projects-card-header {
-    @apply ml-0 md:ml-3 w-full md:w-2/3 bg-gray-900  px-6 md:px-12 py-4 text-white rounded-lg
+    @apply w-full lg:w-2/3 xl:w-1/3  text-gray-900 pt-12 xl:py-24
   }
 
-  .project-under-construction {
-    @apply absolute px-6 py-2 rounded-full bg-gray-900 font-normal text-white right-0 top-0 mr-4 mt-4 text-sm
+  .projects-card-title {
+    @apply title-lg margin-bottom-xsmall
   }
 
+  .projects-card-text {
+    @apply text-sm text-gray-600 font-medium  margin-bottom-xsmall
+  }
 
+  .projects-card-link {
+    @apply text-sm font-medium px-3 py-2 bg-gray-200 rounded
+  }
+
+  .construction {
+    @apply container margin-bottom-large
+  }
+
+  .construction-header {
+    @apply flex justify-between md:border-b pb-1 margin-bottom-xsmall flex-col md:flex-row
+  }
+
+  .construction-title {
+    @apply title-md border-b md:border-none mb-4 md:mb-0
+  }
+
+  .construction-info {
+    @apply p-2 text-sm flex space-x-2 items-center text-gray-600 font-medium bg-gray-50
+  }
+
+  .construction-info-icon {
+    @apply text-blue-600
+  }
+
+  .construction-list {
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-6
+  }
+
+  .construction-list-item {
+    @apply p-8 bg-gray-100 h-full
+  }
+
+  .construction-list-item-header {
+    @apply  margin-bottom-xsmall
+  }
+
+  .construction-list-item-title {
+    @apply title-sm  margin-bottom-xsmall
+  }
+
+  .construction-list-item-text {
+    @apply text-gray-600 text-sm font-medium
+  }
 }

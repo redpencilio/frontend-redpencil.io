@@ -10,109 +10,78 @@
     <h2 class="title-md-thin mb-12">We take a problem and transform the solution into <span class="font-bold">art</span>
     </h2>
   </div>
+</section>
 
-  <div class="flex-1 hidden">
-    <button type="button" class="button-pill button-pill--active">All Projects</button>
-    <button type="button" class="button-pill">LBLOD</button>
-    <button type="button" class="button-pill">Kaleidos</button>
-    <button type="button" class="button-pill">ToeVla</button>
-    <button type="button" class="button-pill">Linked data</button>
-    <button type="button" class="button-pill">Accessibility</button>
-    <button type="button" class="button-pill">Government</button>
-    <button type="button" class="button-pill">Open-source</button>
+<section class="projects-card-list">
+  <h2 class="sr-only">Projects with pages</h2>
+  <div class="projects-card-item bg-gray-100">
+    <article class="projects-card-inner">
+
+      <div class="projects-card-header">
+        <h3 class="projects-card-title">LBLOD</h3>
+        <p class="projects-card-text">Lokale Besluiten als geLinkte Open Data (Local Decisions as Linked Open Data) is a
+          project by the Flemish Agency for Local Government (Agentschap Binnenlands Bestuur - ABB).</p>
+        <LinkTo class="projects-card-link" @route="projects.lblod">Learn more -></LinkTo>
+      </div>
+      <div class="projects-card-img-wrapper">
+        <img class="projects-card-img" src="/assets/pixel/digitaal-loket.png" alt="lblod">
+      </div>
+    </article>
   </div>
 </section>
 
-<div class="projects-card-list">
-  <LinkTo @route="projects.lblod" class="projects-card-item">
-
-    <article class="projects-card-inner">
-      <div class="projects-card-bg bg-lblod">
-        <div class="projects-card-header">
-          <h2 class="title-sm text-white">LBLOD</h2>
-          <small class="title-xs font-normal text-gray-100">Lokale Besluiten Linked Open Data</small>
-        </div>
-      </div>
-    </article>
-  </LinkTo>
-  <div class="projects-card-item project-card--disabled">
-    <div
-      class="project-under-construction">
-      Under construction
+<section class="construction">
+  <div class="construction-header">
+    <h2 class="construction-title">Under construction</h2>
+    <div class="construction-info">
+      <svg class="construction-info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+        <path fill="none" d="M0 0h24v24H0z" />
+        <path
+          d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM11 7h2v2h-2V7zm0 4h2v6h-2v-6z"
+          fill="currentColor" />
+      </svg>
+      <span> Projects that do not have their own pages yet. </span>
     </div>
-    <article class="projects-card-inner">
-      <div class="projects-card-bg bg-toevla">
-        <div class="projects-card-header">
-          <h2 class="title-sm text-white">Kaleidos</h2>
-        </div>
-      </div>
-    </article>
   </div>
-  <div class="projects-card-item project-card--disabled">
-    <div
-      class="project-under-construction">
-      Under construction
-    </div>
-    <article class="projects-card-inner">
-      <div class="projects-card-bg bg-toevla">
-        <div class="projects-card-header">
-          <h2 class="title-xs  text-white">Toegankelijk Vlaanderen</h2>
-        </div>
+  <ul class="construction-list">
+    <li class="construction-list-item">
+      <div class="construction-list-item-header">
+        <h3 class="construction-list-item-title">Kaleidos</h3>
+        <p class="construction-list-item-text">Kaleidos is a digital platform for managing and working on documents related to the Flemish government’s decision-making process</p>
       </div>
-    </article>
-  </div>
-  <div class="projects-card-item project-card--disabled">
-    <div
-      class="project-under-construction">
-      Under construction
-    </div>
-    <article class="projects-card-inner">
-      <div class="projects-card-bg bg-toevla">
-        <div class="projects-card-header">
-          <h2 class="title-sm text-white">Luisterpunt</h2>
-        </div>
+      <div class="construction-list-item-resources">
+        <a class="projects-card-link" href="https://overheid.vlaanderen.be/beleid-en-regelgeving/werking-en-besluitvorming-vlaamse-regering/kaleidos">Learn more -></a>
       </div>
-    </article>
-  </div>
-  <div class="projects-card-item project-card--disabled">
-    <div
-      class="project-under-construction">
-      Under construction
-    </div>
-    <article class="projects-card-inner">
-      <div class="projects-card-bg bg-toevla">
-        <div class="projects-card-header">
-          <h2 class="title-sm text-white">IPFS-search</h2>
-        </div>
+    </li>
+    <li class="construction-list-item">
+      <div class="construction-list-item-header">
+        <h3 class="construction-list-item-title">ToeVla</h3>
+        <p class="construction-list-item-text">Toegankelijk Vlaanderen (accessible Flanders) is a website and database containing reliable information about the accessibility of public buildings in Flanders.</p>
       </div>
-    </article>
-  </div>
-  <div class="projects-card-item project-card--disabled">
-    <div
-      class="project-under-construction">
-      Under construction
-    </div>
-    <article class="projects-card-inner">
-      <div class="projects-card-bg bg-toevla">
-        <div class="projects-card-header">
-          <h2 class="title-sm text-white">Digipolis</h2>
-        </div>
+      <div class="construction-list-item-resources">
+        <a class="projects-card-link" href="https://inter.vlaanderen/toegankelijk-vlaanderen">Learn more -></a>
+        <a class="projects-card-link" href="https://toevla.vlaanderen.be/publiek/nl/register/start">Visit -></a>
       </div>
-    </article>
-
-  </div>
-  <div class="projects-card-item project-card--disabled">
-    <div
-      class="project-under-construction">
-      Under construction
-    </div>
-    <article class="projects-card-inner">
-      <div class="projects-card-bg bg-toevla">
-        <div class="projects-card-header">
-          <h2 class="title-sm text-white">schmdoc</h2>
-        </div>
+    </li>
+    <li class="construction-list-item">
+      <div class="construction-list-item-header">
+        <h3 class="construction-list-item-title">Luisterpunt</h3>
+        <p class="construction-list-item-text">Luisterpunt is a Flemish library for the visual impaired.</p>
       </div>
-    </article>
-  </div>
-</div>
+      <div class="construction-list-item-resources">
+        <a class="projects-card-link" href="https://www.luisterpuntbibliotheek.be/nl/english">Learn more -></a>
+      </div>
+    </li>
+        <li class="construction-list-item">
+      <div class="construction-list-item-header">
+        <h3 class="construction-list-item-title">IPFS-search</h3>
+        <p class="construction-list-item-text">IPFS-search is a decentralized search engine for the Interplanetary Filesystem.</p>
+      </div>
+      <div class="construction-list-item-resources">
+        <a class="projects-card-link" href="https://ipfs-search.com/#/search">Visit -></a>
+        <a class="projects-card-link" href="https://github.com/ipfs-search/ipfs-search">git repo -></a>
+      </div>
+    </li>
+  </ul>
+</section>
 
