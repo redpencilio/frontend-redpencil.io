@@ -6,7 +6,7 @@
 
 {{#if this.showNotification}}
   {{#if this.success}}
-    <Notification @success={{this.success}} @title="E-mail Successfully Send!"
+    <Notification @success={{this.success}} @title="Message successfully sent!"
       @text="Thank you for your message, we will get back to you as soon as possible" @onClose={{this.close}} />
   {{else}}
     <Notification @success={{this.success}} @title="Something went wrong"
