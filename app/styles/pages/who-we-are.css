@@ -45,15 +45,27 @@
   }
 
   .values-list {
-    @apply grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6
+    @apply grid grid-cols-1 md:grid-cols-2  xl:grid-cols-4 gap-3 md:gap-4
   }
 
   .values-list-item {
-    @apply flex flex-col p-8 items-start rounded-lg border border-gray-200
+    @apply flex flex-col items-start rounded-lg border border-gray-200
   }
 
-  .values-icon {
-    @apply p-5 bg-gray-100 text-gray-800 rounded-lg mb-8
+  .values-item-content {
+    @apply p-5
+  }
+
+  .values-item-title {
+    @apply title-xs mb-2
+  }
+
+  .values-item-text {
+    @apply text-sm font-medium text-gray-600
+  }
+
+  .values-img {
+    @apply bg-gray-100 w-full h-40 mb-3
   }
 
   .join {
