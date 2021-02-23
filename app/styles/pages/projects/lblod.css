@@ -41,15 +41,15 @@
   }
 
   .awards-list {
-    @apply grid grid-cols-1 md:grid-cols-2 gap-6
+    @apply flex-col flex-col divide-y
   }
 
   .awards-list-item {
-    @apply p-8 flex flex-col border-2 border-gray-100 items-start rounded-lg
+    @apply py-4 flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4 justify-between  items-start lg:items-center
   }
 
   .awards-date {
-    @apply mb-3 text-sm px-6 py-1 bg-gray-100 rounded-full
+    @apply flex flex-shrink-0 h-8 lg:h-24 bg-gray-100 items-center px-6 font-medium rounded-full lg:rounded-none
   }
 
   .awards-title {
@@ -57,7 +57,7 @@
   }
 
   .awards-link {
-    @apply flex
+    @apply text-sm font-medium px-3 py-2 bg-gray-200 rounded
   }
 
   .lblod-elements {
