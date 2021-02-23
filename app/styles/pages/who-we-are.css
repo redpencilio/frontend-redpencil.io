@@ -79,24 +79,4 @@
   .join-button {
     @apply rounded-full flex justify-between items-center py-2 px-2 bg-white text-gray-900
   }
-
-  .people {
-    @apply container mb-24 xl:mb-48
-  }
-
-  .people-header {
-    @apply my-12
-  }
-
-  .people-list {
-    @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 lg:gap-12
-  }
-
-  .people-item {
-    @apply flex flex-col items-center
-  }
-
-  .people-img {
-    @apply mb-2
-  }
 }
