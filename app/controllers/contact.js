@@ -17,7 +17,6 @@ export default class ContactController extends Controller {
       this.showNotification = false;
 
       try {
-        const mailFolder = await this.store.findRecord('mail-folder', "786a8cb0-4452-40f5-b8d8-046dd2d63281")
         const newEmail = this.store.createRecord('email', {
           to: "meettheteam@redpencil.io",
           subject: "New form submission (rpio-website)",
@@ -28,13 +27,10 @@ export default class ContactController extends Controller {
             phone: ${this.phone}
             message: ${this.message}
           `,
-          folder: mailFolder
+          folder: "http://semantic.works/id/mail-folders/2"
         })
         newEmail.save()
-
-        this.email = "";
-        this.phone = "";
-        this.message = "";
+        this.clearFields()
 
         this.success = true
         this.showNotification = true
@@ -43,6 +39,12 @@ export default class ContactController extends Controller {
         this.showNotification = true
         this.success = false
       }
+    }
+
+    clearFields(){
+      this.email = "";
+      this.phone = "";
+      this.message = "";
     }
 
     @action

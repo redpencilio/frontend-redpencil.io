@@ -5,5 +5,5 @@ export default class EmailModel extends Model {
   @attr('string') from;
   @attr('string') to;
   @attr('string') content;
-  @belongsTo('mail-folder') folder;
+  @attr('string') folder;
 }
