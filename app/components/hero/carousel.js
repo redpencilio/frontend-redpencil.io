@@ -1,8 +1,10 @@
 import Component from '@glimmer/component';
 import { action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
+import { inject as service } from '@ember/service';
 
 export default class HeroCarouselComponent extends Component {
+  @service fastboot;
 
   @tracked index = 0;
   @tracked items = [0, 1, 2, 3, 4]
@@ -10,7 +12,9 @@ export default class HeroCarouselComponent extends Component {
 
   constructor(){
     super(...arguments);
-    this.loopIndex()
+    if(!this.fastboot.isFastBoot){
+      this.loopIndex()
+    }
   }
 
   @action
