@@ -13,11 +13,11 @@
   }
 
   .hero-list {
-    @apply flex w-full space-x-3 margin-bottom-xsmall
+    @apply flex flex-wrap w-full margin-bottom-xsmall
   }
 
   .hero-list-item {
-    @apply text-sm font-medium px-4 py-2 rounded bg-gray-100
+    @apply whitespace-nowrap text-sm font-medium px-4 py-2 mr-2 mb-2 rounded bg-gray-100
   }
 
   .hero-text {
@@ -29,7 +29,7 @@
   }
 
   .hero-illustration {
-    @apply flex-1 rounded-lg invisible
+    @apply flex-1 rounded-lg invisible hidden xl:block
   }
 
   .what-section {
