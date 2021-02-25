@@ -17,14 +17,14 @@
   }
 
   .job-pill-open{
-    @apply flex justify-center items-center space-x-2 bg-green-100  text-green-700 px-6 py-1 rounded-full font-bold
+    @apply absolute top-0 right-0 flex justify-center items-center space-x-2 bg-green-100  text-green-700 px-6 py-1 rounded-full font-bold
   }
   .job-pill-open-circle {
     @apply h-2 w-2 -ml-2
   }
 
   .job-card-header {
-    @apply flex mb-6 justify-between
+    @apply relative flex mb-6 justify-between
   }
 
   .job-prop-list {
