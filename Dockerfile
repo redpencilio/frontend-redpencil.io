@@ -8,6 +8,6 @@ RUN npm install
 COPY . .
 RUN ember build -prod
 
-FROM semtech/static-file-service:0.2.0
+FROM redpencil/fastboot-app-server
 
-COPY --from=builder /app/dist /data
+COPY --from=builder /app/dist /app
