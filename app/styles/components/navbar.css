@@ -21,11 +21,11 @@
   }
 
   .nav-list-item {
-    @apply hidden mx-6 text-sm font-bold xl:block  text-gray-700 hover:text-red-600
+    @apply hidden mx-6 text-sm font-bold lg:block  text-gray-900 hover:text-gray-500
   }
 
   .nav-list-button {
-    @apply hidden md:block ml-8 font-bold
+    @apply hidden lg:block ml-8 font-bold
   }
 
   .nav-list-button-inner {
@@ -33,20 +33,20 @@
   }
 
   .nav-list-menu {
-    @apply ml-8 flex items-center z-50 xl:hidden
+    @apply ml-8 flex items-center z-50 lg:hidden
   }
 
   /* FULL SCREEN MENU */
 
   .fs-menu {
-    @apply w-screen flex-1 z-10 top-0 flex justify-center items-center
+    @apply w-screen flex-1 z-10 top-0 flex pt-12
   }
 
   .fs-menu-inner {
-    @apply w-full container
+    @apply w-full container space-y-3
   }
 
   .fs-nav-list-item {
-    @apply text-3xl md:text-5xl py-2
+    @apply font-medium text-3xl md:text-5xl py-3
   }
 }
