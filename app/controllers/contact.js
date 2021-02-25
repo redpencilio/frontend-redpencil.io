@@ -29,7 +29,7 @@ export default class ContactController extends Controller {
           `,
           folder: "http://semantic.works/id/mail-folders/2"
         })
-        newEmail.save()
+        await newEmail.save()
         this.clearFields()
 
         this.success = true
