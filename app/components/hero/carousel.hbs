@@ -79,9 +79,10 @@
     {{#each this.items as |item|}}
     <button {{ on 'click' (fn this.setIndex item)}} type="button" class="carousel-nav-link {{if (eq this.index item) "
       carousel-nav-link--active relative"}}">
+      <span class="sr-only">slide number {{item}}</span>
       {{#if (eq this.index item) }}
       <div class="progress">
-
+        <span class="sr-only">current slide</span>
       </div>
       {{/if}}
       </button>
