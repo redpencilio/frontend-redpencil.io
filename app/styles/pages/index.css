@@ -85,7 +85,7 @@
   }
 
   .data-title {
-    @apply title-lg margin-bottom-small text-center w-full lg:w-1/2
+    @apply title-lg margin-bottom-small md:text-center w-full lg:w-1/2
   }
 
   .data-content {
