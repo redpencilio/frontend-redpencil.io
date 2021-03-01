@@ -7,7 +7,7 @@ export default class HeroCarouselComponent extends Component {
   @service fastboot;
 
   @tracked index = 0;
-  @tracked items = [0, 1, 2, 3, 4]
+  @tracked items = [0, 1, 2, 3]
   @tracked intervalId;
 
   constructor(){
