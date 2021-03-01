@@ -38,6 +38,7 @@
 /* OTHER */
 @import "./vanilla/backgrounds.css";
 @import "./vanilla/effects.css";
+@import "./vanilla/tooltip.css";
 
 
 * {
