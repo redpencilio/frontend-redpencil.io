@@ -6,7 +6,7 @@ import { inject as service } from '@ember/service';
 export default class NavbarComponent extends Component {
   @service router;
   @tracked active = false;
-  @tracked currentRoute = this.router.currentRouteName
+  @tracked currentRoute = this.router.currentRouteName;
 
   constructor(){
     super(...arguments);
@@ -17,9 +17,9 @@ export default class NavbarComponent extends Component {
 
   @action toggleActive(state){
     if(state == "false"){
-      this.active = false
+      this.active = false;
     } else {
-      this.active = !this.active
+      this.active = !this.active;
     }
   }
 }
