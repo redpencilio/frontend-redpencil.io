@@ -25,7 +25,7 @@
   }
 
   .hero-button {
-    @apply px-16 py-3 rounded-md bg-gray-900 text-white font-bold hover:bg-gray-700
+    @apply inline-flex items-center space-x-3 px-8 py-2 rounded-md bg-gray-900 text-gray-100 font-bold hover:bg-gray-700
   }
 
   .hero-illustration {
