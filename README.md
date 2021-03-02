@@ -1,6 +1,6 @@
 # rpio-website
 
-This README outlines the details of collaborating on this Ember application.
+This README outlines the details of collaborating on this Ember.js application.
 A short introduction of this app could easily go here.
 
 ## Prerequisites
