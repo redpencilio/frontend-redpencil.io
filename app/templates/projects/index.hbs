@@ -14,12 +14,23 @@
   <h2 class="sr-only">Projects with pages</h2>
   <div class="projects-card-item bg-gray-100">
     <article class="projects-card-inner">
-
       <div class="projects-card-header">
         <h3 class="projects-card-title">LBLOD</h3>
         <p class="projects-card-text">Local Decisions as Linked Open Data is a
           project by the Flemish Agency for Local Government</p>
         <LinkTo class="projects-card-link" @route="projects.lblod">Learn more -></LinkTo>
+      </div>
+      <div class="projects-card-img-wrapper">
+        <img class="projects-card-img" src="/assets/pixel/digitaal-loket.png" alt="lblod">
+      </div>
+    </article>
+  </div>
+  <div class="projects-card-item bg-gray-100">
+    <article class="projects-card-inner">
+      <div class="projects-card-header">
+        <h3 class="projects-card-title">Kaleidos</h3>
+        <p class="projects-card-text">Kaleidos is a digital platform for managing and working on documents related to the Flemish government’s decision-making process</p>
+        <LinkTo class="projects-card-link" @route="projects.kaleidos">Learn more -></LinkTo>
       </div>
       <div class="projects-card-img-wrapper">
         <img class="projects-card-img" src="/assets/pixel/digitaal-loket.png" alt="lblod">
@@ -44,17 +55,9 @@
   <ul class="construction-list">
     <li class="construction-list-item">
       <div class="construction-list-item-header">
-        <h3 class="construction-list-item-title">Kaleidos</h3>
-        <p class="construction-list-item-text">Kaleidos is a digital platform for managing and working on documents related to the Flemish government’s decision-making process</p>
-      </div>
-      <div class="construction-list-item-resources">
-        <a class="projects-card-link" href="https://overheid.vlaanderen.be/beleid-en-regelgeving/werking-en-besluitvorming-vlaamse-regering/kaleidos">Learn more -></a>
-      </div>
-    </li>
-    <li class="construction-list-item">
-      <div class="construction-list-item-header">
         <h3 class="construction-list-item-title">ToeVla</h3>
-        <p class="construction-list-item-text">Toegankelijk Vlaanderen (accessible Flanders) is a website and database containing reliable information about the accessibility of public buildings in Flanders</p>
+        <p class="construction-list-item-text">Toegankelijk Vlaanderen (accessible Flanders) is a website and database
+          containing reliable information about the accessibility of public buildings in Flanders</p>
       </div>
       <div class="construction-list-item-resources">
         <a class="projects-card-link" href="https://inter.vlaanderen/toegankelijk-vlaanderen">Learn more -></a>
@@ -70,7 +73,7 @@
         <a class="projects-card-link" href="https://www.luisterpuntbibliotheek.be/nl/english">Learn more -></a>
       </div>
     </li>
-        <li class="construction-list-item">
+    <li class="construction-list-item">
       <div class="construction-list-item-header">
         <h3 class="construction-list-item-title">IPFS-search</h3>
         <p class="construction-list-item-text">A decentralized search engine for the Interplanetary Filesystem</p>
@@ -82,4 +85,3 @@
     </li>
   </ul>
 </section>
-
