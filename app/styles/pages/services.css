@@ -13,7 +13,7 @@
   }
 
   .service-card {
-    @apply flex flex-col border border-gray-200 rounded-lg
+    @apply flex flex-col border border-gray-200 rounded
   }
 
   .service-card-header {
