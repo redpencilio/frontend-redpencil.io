@@ -13,7 +13,7 @@
   }
 
   .job-card {
-    @apply relative p-6 border rounded  bg-white hover:shadow hover:bg-gray-50
+    @apply relative p-6 border rounded  bg-white hover:bg-gray-100
   }
 
   .job-pill-open{
@@ -51,12 +51,17 @@
     @apply bg-gray-100 rounded p-6 flex space-x-6 items-center text-gray-800
   }
 
-  .resources-list {
-    @apply grid grid-cols-2 lg:grid-cols-4 gap-6
+  .resource-list {
+    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3 md:gap-6
   }
 
   .resource-list-item {
-    @apply bg-gray-50 p-6
+    @apply bg-white hover:bg-gray-100 border border-gray-200 px-6 py-3 flex items-center rounded justify-between
+  }
+
+
+  .resource-icon {
+    @apply p-2 rounded-full bg-gray-100  text-gray-800
   }
 
 }
