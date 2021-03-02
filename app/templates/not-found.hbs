@@ -4,8 +4,16 @@
 
 <article class="not-found-message">
   <h1 class="title-xl font-bold"> Page not found</h1>
-  <p class="mb-16 text-gray-600 w-full md:w-1/2">It looks like this page does not exist or has been moved to a different location</p>
-  <LinkTo @route="index" class="btn-primary">Back to the homepage</LinkTo>
+  <p class="mb-16 text-gray-600 w-full md:w-1/2">It looks like this page does not exist or has been moved to a different
+    location</p>
+  <LinkTo @route="index" class=" inline-flex items-center space-x-2 bg-gray-900 hover:bg-gray-700 rounded px-4 py-2 text-sm text-gray-100 font-semibold">
+    <span>Back to the homepage</span>
+    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd"
+        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+        clip-rule="evenodd"></path>
+    </svg>
+  </LinkTo>
 </article>
 <div class="container py-12 margin-bottom-medium">
   <img src="/assets/vector/404.svg" alt="page not found">
