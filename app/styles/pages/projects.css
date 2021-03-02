@@ -9,7 +9,7 @@
   }
 
   .projects-card-list {
-    @apply container grid gap-8 md:gap-16 md:grid-cols-2 xl:grid-cols-3  margin-bottom-medium
+    @apply container flex flex-col space-y-6 margin-bottom-medium
   }
 
   .projects-card-item {
@@ -41,7 +41,7 @@
   }
 
   .projects-card-link {
-    @apply text-sm font-medium px-3 py-2 bg-gray-200 rounded
+    @apply text-sm font-semibold px-6 py-2 bg-gray-900 hover:bg-gray-700 rounded text-gray-100
   }
 
   .construction {
