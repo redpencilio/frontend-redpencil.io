@@ -61,7 +61,7 @@
   }
 
   .os-list {
-    @apply flex flex-wrap lg:grid lg:grid-cols-5 gap-2 w-auto
+    @apply flex flex-wrap lg:grid lg:grid-cols-4 xl:grid-cols-5 gap-2 w-auto
   }
 
   .os-list-item {
