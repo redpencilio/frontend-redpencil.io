@@ -10,8 +10,8 @@ export default class CareersIndexRoute extends Route {
 
   breadCrumbs = [
     {
-      label: "Careers",
-      route: "careers"
-    }
-  ]
+      label: 'Careers',
+      route: 'careers',
+    },
+  ];
 }

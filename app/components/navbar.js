@@ -8,15 +8,15 @@ export default class NavbarComponent extends Component {
   @tracked active = false;
   @tracked currentRoute = this.router.currentRouteName;
 
-  constructor(){
+  constructor() {
     super(...arguments);
     this.router.addObserver('currentRoute', () => {
-      this.toggleActive("false");
+      this.toggleActive('false');
     });
   }
 
-  @action toggleActive(state){
-    if(state == "false"){
+  @action toggleActive(state) {
+    if (state == 'false') {
       this.active = false;
     } else {
       this.active = !this.active;

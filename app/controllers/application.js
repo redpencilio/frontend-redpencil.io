@@ -6,13 +6,13 @@ export default class ApplicationController extends Controller {
   @service router;
   @tracked inTransition;
 
-  constructor(){
+  constructor() {
     super(...arguments);
     this.router.on('routeWillChange', (transition) => {
-      this.inTransition = true
-    })
+      this.inTransition = true;
+    });
     this.router.on('routeDidChange', (transition) => {
-      this.inTransition = false
-    })
+      this.inTransition = false;
+    });
   }
 }

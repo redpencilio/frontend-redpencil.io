@@ -10,12 +10,12 @@ export default class CareersInternshipRoute extends Route {
 
   breadCrumbs = [
     {
-      label: "Careers",
-      route: "careers"
+      label: 'Careers',
+      route: 'careers',
     },
     {
-      label: "Internship",
-      route: "careers.internship"
-    }
-  ]
+      label: 'Internship',
+      route: 'careers.internship',
+    },
+  ];
 }

@@ -10,12 +10,12 @@ export default class ProjectsKaleidosRoute extends Route {
 
   breadCrumbs = [
     {
-      label: "Projects",
-      route: "projects"
+      label: 'Projects',
+      route: 'projects',
     },
     {
-      label: "Kaleidos",
-      route: "projects.kaleidos"
-    }
-  ]
+      label: 'Kaleidos',
+      route: 'projects.kaleidos',
+    },
+  ];
 }

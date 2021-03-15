@@ -1,12 +1,9 @@
-
-const colors = require('tailwindcss/colors')
+const colors = require('tailwindcss/colors');
 
 module.exports = {
   purge: [],
   darkMode: false,
-  plugins: [
-    require('@tailwindcss/forms'),
-  ],
+  plugins: [require('@tailwindcss/forms')],
   theme: {
     container: {
       center: true,
@@ -20,7 +17,7 @@ module.exports = {
     },
     extend: {
       gridTemplateColumns: {
-        'content': '1fr 100px 1fr',
+        content: '1fr 100px 1fr',
       },
       colors: {
         gray: colors.trueGray,
@@ -30,5 +27,5 @@ module.exports = {
       extend: {},
     },
     plugins: [],
-  }
-}
+  },
+};

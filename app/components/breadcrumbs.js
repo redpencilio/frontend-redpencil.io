@@ -8,9 +8,11 @@ export default class BreadcrumbsComponent extends Component {
 
   @tracked breadCrumbs;
 
-  constructor(){
+  constructor() {
     super(...arguments);
-    const currentRoute = getOwner(this).lookup(`route:${this.router.currentRoute.name}`);
+    const currentRoute = getOwner(this).lookup(
+      `route:${this.router.currentRoute.name}`
+    );
     this.breadCrumbs = currentRoute.breadCrumbs;
   }
 }

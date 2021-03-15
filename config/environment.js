@@ -20,7 +20,12 @@ module.exports = function (environment) {
       },
     },
     fastboot: {
-      hostWhitelist: ["redpencil.io", "redpencil.be", "company-website.redpencil.s.redpencil.io", "localhost"]
+      hostWhitelist: [
+        'redpencil.io',
+        'redpencil.be',
+        'company-website.redpencil.s.redpencil.io',
+        'localhost',
+      ],
     },
     APP: {
       // Here you can pass flags/options to your application instance

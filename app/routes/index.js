@@ -7,5 +7,4 @@ export default class IndexRoute extends Route {
   afterModel() {
     this.headData.title = 'Welcome to redpencil.io';
   }
-
 }

@@ -10,8 +10,8 @@ export default class WhoWeAreRoute extends Route {
 
   breadCrumbs = [
     {
-      label: "Who we are",
-      route: "who-we-are"
-    }
-  ]
+      label: 'Who we are',
+      route: 'who-we-are',
+    },
+  ];
 }

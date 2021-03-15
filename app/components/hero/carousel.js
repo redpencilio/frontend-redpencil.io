@@ -7,27 +7,27 @@ export default class HeroCarouselComponent extends Component {
   @service fastboot;
 
   @tracked index = 0;
-  @tracked items = [0, 1, 2, 3]
+  @tracked items = [0, 1, 2, 3];
   @tracked intervalId;
 
-  constructor(){
+  constructor() {
     super(...arguments);
-    if(!this.fastboot.isFastBoot){
-      this.loopIndex()
+    if (!this.fastboot.isFastBoot) {
+      this.loopIndex();
     }
   }
 
   @action
-  setIndex(position){
-    this.index = position
-    clearInterval(this.intervalId)
-    this.loopIndex()
+  setIndex(position) {
+    this.index = position;
+    clearInterval(this.intervalId);
+    this.loopIndex();
   }
 
-  loopIndex(){
+  loopIndex() {
     const nextIndex = () => {
-      this.index = (this.index + 1) % this.items.length
-    }
+      this.index = (this.index + 1) % this.items.length;
+    };
     this.intervalId = setInterval(nextIndex, 7000);
   }
 }
