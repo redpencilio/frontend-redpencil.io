@@ -19,14 +19,6 @@ module.exports = {
   env: {
     browser: true,
   },
-  rules: {
-    "semi": "always",
-    "quotes": "single",
-    "skipBlankLines": true ,
-    "semi-spacing": ["error", {"before": false, "after": false}],
-    "space-before-function-paren": ["error", "always"],
-    "comma-spacing": ["error", { "before": false, "after": true }]
-  },
   overrides: [
     // node files
     {
