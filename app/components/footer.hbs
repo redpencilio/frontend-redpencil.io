@@ -1,36 +1,43 @@
 <footer class="container py-6">
-  <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-12 border-t border-b px-6">
-    <LinkTo @route="index" class="mb-6">
+  <div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 px-6 py-12 border-t border-b space-y-8 lg:space-y-0">
+    <LinkTo @route="index">
       <img class="h-6" src="/assets/vector/rpio-logo.svg" alt="redpencil.io">
     </LinkTo>
-    <div class="flex-1 mb-12">
+    <div class="sm:col-start-1 lg:col-start-2">
       <h2 class="text-lg font-bold mb-4">Work office</h2>
-      <p class="text-gray-700 mb-1">
-          BeCentral campus<br>
-          Cantersteen 10<br>
-          1000 Brussels<br>
-          Belgium
-      </p>
-      <a href="https://www.becentral.org" class="underline text-blue-700">BeCentral campus</a>
+      <div class="text-gray-700 whitespace-no-wrap">
+        <a href="https://www.becentral.org" class="underline">
+          BeCentral campus
+        </a><br>
+        Cantersteen 10<br>
+        1000 Brussels<br>
+        Belgium
+      </div>
     </div>
-    <div class="flex-1 mb-12 md:mb-0">
+    <div class="">
       <h2 class="text-lg font-bold mb-4">Legal</h2>
-      <ul class="">
-        <li class="text-gray-700">
-          VAT BE 0681.569.312
-        </li>
-        <li class="text-gray-700 mb-2">
-          IBAN BE68 7360 4161 9734
-        </li>
-        <li class="text-gray-700 bg-gray-100 p-2">
-          P.P. Rubensstraat 37a <br>
-          1880 Kapelle-op-den-Bos
-        </li>
-      </ul>
+      <div class="space-y-2">
+        <div class="text-gray-700 whitespace-no-wrap">
+          P.P. Rubensstraat 37a<br>
+          1880 Kapelle-op-den-Bos<br>
+          Belgium
+        </div>
+        <div>
+          <div class="text-gray-700 whitespace-no-wrap">
+            VAT BE 0681.569.312
+          </div>
+          <div class="text-gray-700 whitespace-no-wrap">
+            IBAN BE68 7360 4161 9734
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="flex pt-6 flex-wrap justify-between items-center">
-    <span class="py-2">&copy; 2021 Redpencil.io All rights reserved. </span>
+  <div class="mt-4 sm:mt-6 space-y-4 sm:flex sm:flex-wrap sm:justify-between sm:items-center sm:space-y-0">
+    <div class="sm:flex sm:flex-wrap sm:space-x-1 text-sm text-gray-700">
+      <div>&copy; 2021 redpencil.io</div>
+      <div>All rights reserved.</div>
+    </div>
     <Socials/>
   </div>
 </footer>
