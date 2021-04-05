@@ -10,8 +10,8 @@ export default class NotFoundRoute extends Route {
 
   breadCrumbs = [
     {
-      label: "?",
-      route: "index"
-    }
-  ]
+      label: '?',
+      route: 'index',
+    },
+  ];
 }

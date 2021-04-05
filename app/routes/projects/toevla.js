@@ -9,12 +9,12 @@ export default class ProjectsToevlaRoute extends Route {
   }
   breadCrumbs = [
     {
-      label: "Projects",
-      route: "projects"
+      label: 'Projects',
+      route: 'projects',
     },
     {
-      label: "ToeVla",
-      route: "projects.toevla"
-    }
-  ]
+      label: 'ToeVla',
+      route: 'projects.toevla',
+    },
+  ];
 }

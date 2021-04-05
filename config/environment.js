@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function(environment) {
+module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'rpio-website',
     environment,
@@ -16,16 +16,21 @@ module.exports = function(environment) {
       },
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
-        Date: false
-      }
+        Date: false,
+      },
     },
     fastboot: {
-      hostWhitelist: ["redpencil.io", "redpencil.be", "company-website.redpencil.s.redpencil.io", "localhost"]
+      hostWhitelist: [
+        'redpencil.io',
+        'redpencil.be',
+        'company-website.redpencil.s.redpencil.io',
+        'localhost',
+      ],
     },
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
   };
 
   if (environment === 'development') {

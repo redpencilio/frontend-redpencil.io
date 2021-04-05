@@ -10,8 +10,8 @@ export default class ContactRoute extends Route {
 
   breadCrumbs = [
     {
-      label: "Contact",
-      route: "contact"
-    }
-  ]
+      label: 'Contact',
+      route: 'contact',
+    },
+  ];
 }

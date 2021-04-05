@@ -10,8 +10,8 @@ export default class ServicesRoute extends Route {
 
   breadCrumbs = [
     {
-      label: "Services",
-      route: "services"
-    }
-  ]
+      label: 'Services',
+      route: 'services',
+    },
+  ];
 }

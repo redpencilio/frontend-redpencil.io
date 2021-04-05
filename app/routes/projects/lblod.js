@@ -9,12 +9,12 @@ export default class ProjectsLblodRoute extends Route {
   }
   breadCrumbs = [
     {
-      label: "Projects",
-      route: "projects"
+      label: 'Projects',
+      route: 'projects',
     },
     {
-      label: "LBLOD",
-      route: "projects.lblod"
-    }
-  ]
+      label: 'LBLOD',
+      route: 'projects.lblod',
+    },
+  ];
 }
