@@ -14,7 +14,6 @@ export default class NavbarComponent extends Component {
 
   willDestroy(...args) {
     super.willDestroy(...args);
-
     this.router.off('routeWillChange', this.closeMobileMenu);
   }
 
