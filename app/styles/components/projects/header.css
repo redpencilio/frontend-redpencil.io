@@ -1,0 +1,27 @@
+@layer components {
+
+  .project {
+    @apply container mb-10 md:mb-16
+  }
+
+  .project-art {
+    @apply w-full h-48 my-6 flex flex-col justify-center md:h-64
+  }
+
+  .project-header {
+    @apply inline-flex mx-2 md:ml-6
+  }
+
+  .project-header-inner {
+    @apply bg-gray-800 px-6 md:px-10 py-4
+  }
+
+  .project-header-title {
+    @apply text-white text-xl font-bold
+  }
+
+  .project-header-text {
+    @apply text-white text-lg
+  }
+
+}

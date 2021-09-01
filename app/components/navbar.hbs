@@ -27,14 +27,13 @@
         </svg>
         <span class="sr-only">Toggle navigation menu</span>
       </button>
-
     </div>
-    <li class="nav-list-button ">
+    <li class="nav-list-button">
       <LinkTo class="nav-list-button-inner" @route="contact">Contact</LinkTo>
     </li>
   </div>
   {{#if this.active}}
-  <section class="fs-menu">
+  <div class="fs-menu">
     <div class="fs-menu-inner">
       <p>Menu</p>
       <ul>
@@ -55,7 +54,7 @@
         </li>
       </ul>
     </div>
-  </section>
+  </div>
   {{/if}}
 </nav>
 

@@ -1,25 +1,23 @@
 @layer components {
-  .bcrumbs {
-    @apply container flex my-6
-  }
 
-  .bcrumbs-dark > *{
-    @apply container flex my-6  text-white
+  .bcrumbs {
+    @apply container flex my-6 text-gray-700
   }
 
   .bcrumbs-list {
     @apply flex items-center space-x-2
   }
 
-  .bcrumbs-item {
-    @apply flex items-center hover:text-red-600
+  .bcrumbs-list-item {
+    @apply flex items-center space-x-2 font-medium text-xs
   }
 
-  .bcrumbs-slash {
-    @apply flex-shrink-0 h-3 w-3
+  .bcrumbs-link {
+    @apply hover:text-red-600
   }
 
-  .bcrumbs-dark > *{
-    @apply text-white
+  .bcrumbs-icon {
+    @apply h-3 w-3
   }
+
 }
