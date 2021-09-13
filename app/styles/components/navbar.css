@@ -1,48 +1,43 @@
 @layer components {
 
   .nav {
-    @apply fixed flex flex-col w-full border-b z-20 border-gray-100 bg-white
+    @apply hidden container lg:flex items-center justify-between py-5
   }
 
-  .nav-inner {
-    @apply container flex items-center justify-between py-5
+  .nav-ul {
+    @apply flex justify-between items-center
   }
 
-  .nav-logo {
-    @apply mr-6
+  .nav-li {
+    @apply mx-6 text-sm font-medium text-gray-400 hover:text-gray-900
   }
 
-  .nav-list {
-    @apply flex justify-between items-center text-gray-900
+  .nav-button {
+    @apply px-12 py-2 font-medium border border-gray-300 text-sm text-gray-400  hover:bg-gray-800 hover:text-white
   }
 
-  .nav-list-item {
-    @apply hidden mx-6 text-sm font-bold text-gray-900 hover:text-gray-500 lg:block
+  .m-nav {
+    @apply w-full z-50 flex flex-col items-start lg:hidden
   }
 
-  .nav-list-button {
-    @apply hidden ml-8 font-bold lg:block
+  .m-nav-bar {
+    @apply flex w-full items-center justify-between border-b p-3
   }
 
-  .nav-list-button-inner {
-    @apply px-12 py-2 rounded font-bold bg-gray-800 text-sm text-gray-100  hover:bg-gray-700
+  .m-nav-toggle {
+    @apply bg-gray-100 p-1
   }
 
-  .nav-list-menu {
-    @apply flex items-center ml-8 z-50 lg:hidden
+  .m-nav-content {
+    @apply flex-1 flex flex-col justify-between w-full p-3
   }
 
-  /* FULL SCREEN MENU */
-
-  .fs-menu {
-    @apply w-screen flex-1 z-10 top-0 flex pt-12
+  .m-nav-ul {
+    @apply flex flex-col items-center font-medium text-gray-300
   }
 
-  .fs-menu-inner {
-    @apply w-full container space-y-3
+  .m-nav-li {
+    @apply flex w-full text-2xl py-3 text-center
   }
 
-  .fs-nav-list-item {
-    @apply font-medium text-3xl md:text-5xl py-3
-  }
 }
