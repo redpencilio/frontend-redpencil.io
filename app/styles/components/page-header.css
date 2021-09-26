@@ -1,0 +1,25 @@
+@layer components {
+  .page-header {
+    @apply container md:mb-12
+  }
+
+  .page-header-inner {
+    @apply flex items-center py-12
+  }
+
+  .page-header-content {
+    @apply w-full lg:w-2/3
+  }
+
+  .page-header-title {
+    @apply text-4xl lg:text-6xl font-medium mb-3
+  }
+
+  .page-header-text {
+    @apply text-base lg:text-xl font-normal w-full text-gray-500
+  }
+
+  .page-header-illustration{
+    @apply w-1/3
+  }
+}

@@ -1,0 +1,15 @@
+@layer components {
+
+  .career-banner {
+    @apply relative w-full bg-black z-10
+  }
+
+  .career-banner-inner {
+    @apply container flex items-center justify-center
+  }
+
+  .career-banner-link {
+    @apply flex items-center py-3 text-gray-300 font-medium text-center text-xs hover:text-white
+  }
+
+}
