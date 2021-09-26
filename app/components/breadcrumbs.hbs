@@ -1,17 +1,17 @@
-
 <nav class="bcrumbs" aria-label="Breadcrumb">
-  <ol class="bcrumbs-list">
-    <li class="bcrumbs-list-item">
-      <LinkTo @route="index" class="bcrumbs-link">
-        {{svg-jar "home" class="bcrumbs-icon" fill="currentColor"}}
-        <span class="sr-only">Home</span>
-      </LinkTo>
-    </li>
-    {{#each this.breadCrumbs as |breadcrumb|}}
+  <div class="bcrumbs-inner">
+    <ol class="bcrumbs-list">
       <li class="bcrumbs-list-item">
-        {{svg-jar "seperator-slash" class="bcrumbs-icon" fill="currentColor"}}
-        <LinkTo @route={{breadcrumb.route}} class="bcrumbs-link">{{breadcrumb.label}}</LinkTo>
+        <LinkTo @route="index" class="bcrumbs-link">
+          <span>Homepage</span>
+        </LinkTo>
       </li>
-    {{/each}}
-  </ol>
+      {{#each this.breadCrumbs as |breadcrumb|}}
+        <li class="bcrumbs-list-item">
+          {{svg-jar "seperator-slash" class="bcrumbs-icon" fill="currentColor"}}
+          <LinkTo @route={{breadcrumb.route}} class="bcrumbs-link ">{{breadcrumb.label}}</LinkTo>
+        </li>
+      {{/each}}
+    </ol>
+  </div>
 </nav>

@@ -2,7 +2,11 @@
 {{!-- DESKTOP NAV --}}
 <nav class="nav">
   <LinkTo @route="index">
+  {{#if @dark}}
+    <img class="h-6" src="/assets/vector/rpio-logo-light.svg" alt="redpencil.io">
+  {{else}}
     <img class="h-6" src="/assets/vector/rpio-logo.svg" alt="redpencil.io">
+  {{/if}}
   </LinkTo>
   <ul class="nav-ul">
     <li class="nav-li">
@@ -39,6 +43,9 @@
   {{#if this.active}}
     <div class="m-nav-content" {{body-scroll-lock}}>
       <ul class="m-nav-ul">
+        <li class="m-nav-li">
+          <LinkTo class="w-full" @route="index">Homepage</LinkTo>
+        </li>
         <li class="m-nav-li">
           <LinkTo class="w-full" @route="services">Services</LinkTo>
         </li>
