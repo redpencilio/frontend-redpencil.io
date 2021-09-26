@@ -1,63 +1,23 @@
 @layer components {
 
-  .projects {
-    @apply w-full flex flex-col justify-between relative margin-bottom-medium
-  }
-
-  .projects-header {
-    @apply container flex flex-col justify-between margin-bottom-small xl:space-x-16 xl:flex-row
-  }
-
   .projects-card-list {
-    @apply container flex flex-col space-y-6 margin-bottom-medium
-  }
-
-  .projects-card-item {
-    @apply w-full col-span-3
-  }
-
-  .projects-card-inner {
-    @apply flex flex-col xl:flex-row md:h-full px-6 lg:px-12 space-x-4
-  }
-
-  .projects-card-img-wrapper{
-    @apply  flex items-end justify-center flex-1 h-full
-  }
-
-  .projects-card-img {
-    @apply w-full
-  }
-
-  .projects-card-header {
-    @apply w-full lg:w-2/3 xl:w-1/3  text-gray-900 pt-12 xl:py-24
-  }
-
-  .projects-card-title {
-    @apply title-lg margin-bottom-xsmall
-  }
-
-  .projects-card-text {
-    @apply text-sm text-gray-600 font-medium  margin-bottom-xsmall
-  }
-
-  .projects-card-link {
-    @apply text-sm font-semibold px-6 py-2 bg-gray-900 hover:bg-gray-700 rounded text-gray-100
+    @apply container flex flex-col space-y-6 mb-12 md:mb-24 lg:mb-32
   }
 
   .construction {
-    @apply container margin-bottom-large
+    @apply container mb-12 md:mb-24 lg:mb-32
   }
 
   .construction-header {
-    @apply flex justify-between md:border-b pb-1 margin-bottom-xsmall flex-col md:flex-row
+    @apply flex justify-between md:border-b pb-1 mb-4 md:mb-6 flex-col md:flex-row
   }
 
   .construction-title {
-    @apply title-md border-b md:border-none mb-4 md:mb-0
+    @apply text-lg md:text-2xl font-medium border-b md:border-none mb-4 md:mb-0
   }
 
   .construction-info {
-    @apply p-2 text-sm flex space-x-2 items-center text-gray-600 font-medium bg-gray-50
+    @apply p-2 text-xs md:text-sm flex space-x-2 items-center text-blue-800 font-medium bg-blue-50
   }
 
   .construction-info-icon {
@@ -68,19 +28,4 @@
     @apply grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-6
   }
 
-  .construction-list-item {
-    @apply px-6 lg:px-8 p-8 bg-gray-100 h-full
-  }
-
-  .construction-list-item-header {
-    @apply  margin-bottom-xsmall
-  }
-
-  .construction-list-item-title {
-    @apply title-sm  margin-bottom-xsmall
-  }
-
-  .construction-list-item-text {
-    @apply text-gray-600 text-sm font-medium
-  }
 }

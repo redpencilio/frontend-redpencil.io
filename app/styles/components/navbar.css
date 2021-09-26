@@ -1,23 +1,29 @@
 @layer components {
 
   .nav {
-    @apply hidden container lg:flex items-center justify-between py-5
+    @apply hidden relative container lg:flex items-center justify-between py-5 z-10
   }
 
   .nav-ul {
     @apply flex justify-between items-center
   }
 
+  .nav-ul > li {
+    @apply text-gray-400 hover:text-gray-900
+  }
+
   .nav-li {
-    @apply mx-6 text-sm font-medium text-gray-400 hover:text-gray-900
+    @apply mx-6 text-sm font-medium
   }
 
   .nav-button {
     @apply px-12 py-2 font-medium border border-gray-300 text-sm text-gray-400  hover:bg-gray-800 hover:text-white
   }
 
+  /* MOBILE */
+
   .m-nav {
-    @apply w-full z-50 flex flex-col items-start lg:hidden
+    @apply w-full relative z-50 flex flex-col items-start lg:hidden bg-white
   }
 
   .m-nav-bar {
@@ -33,11 +39,15 @@
   }
 
   .m-nav-ul {
-    @apply flex flex-col items-center font-medium text-gray-300
+    @apply flex flex-col items-center text-gray-600 py-6
   }
 
   .m-nav-li {
     @apply flex w-full text-2xl py-3 text-center
+  }
+
+  .active {
+    @apply text-black font-medium
   }
 
 }

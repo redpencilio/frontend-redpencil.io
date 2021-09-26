@@ -5,7 +5,19 @@
   }
 
   .careers-header {
-    @apply container margin-bottom-small
+    @apply container w-full py-12
+  }
+
+  .careers-header-inner {
+    @apply flex flex-col justify-center
+  }
+
+  .careers-header-title {
+    @apply text-center text-4xl md:text-6xl text-gray-900 py-3
+  }
+
+  .careers-header-text {
+    @apply text-sm md:text-base text-center text-gray-600
   }
 
   .careers-list {
@@ -13,18 +25,23 @@
   }
 
   .job-card {
-    @apply relative p-6 border rounded  bg-white hover:bg-gray-100
+    @apply relative p-4 md:p-6 border rounded  bg-white hover:bg-gray-800
+  }
+
+  .job-card-title {
+    @apply font-medium text-base md:text-xl
   }
 
   .job-pill-open{
-    @apply absolute top-0 right-0 flex justify-center items-center space-x-2 bg-green-100  text-green-700 px-6 py-1 rounded-full font-bold
+    @apply absolute top-0 right-0 flex justify-center items-center space-x-2  text-green-400 px-6 py-1 rounded-full font-bold
   }
+
   .job-pill-open-circle {
     @apply h-2 w-2 -ml-2
   }
 
   .job-card-header {
-    @apply relative flex mb-6 justify-between
+    @apply relative flex mb-6 justify-between text-white
   }
 
   .job-prop-list {
@@ -32,7 +49,7 @@
   }
 
   .job-prop-item {
-    @apply flex space-x-2 text-gray-500
+    @apply flex space-x-2 text-gray-300
   }
 
   .job-header {
@@ -48,7 +65,7 @@
   }
 
   .advantages-list-item {
-    @apply bg-gray-100 rounded p-6 flex flex-row md:flex-col items-center md:items-start text-gray-900 md:space-y-4
+    @apply bg-white rounded p-6 flex flex-row md:flex-col items-center md:items-start text-gray-900 md:space-y-4
   }
 
   .resource-list {
@@ -56,12 +73,12 @@
   }
 
   .resource-list-item {
-    @apply bg-white hover:bg-gray-100 border border-gray-200 px-6 py-3 flex items-center rounded justify-between
+    @apply bg-gray-900 hover:bg-gray-800 px-6 py-3 flex items-center justify-between text-white
   }
 
 
   .resource-icon {
-    @apply p-2 rounded-full bg-gray-100  text-gray-800
+    @apply p-2 rounded-full bg-gray-700  text-gray-300
   }
 
 }

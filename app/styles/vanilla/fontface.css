@@ -1,5 +1,15 @@
 @font-face {
   font-family: 'Poppins';
+  src: url('/assets/font/Poppins-Thin.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+
+
+
+@font-face {
+  font-family: 'Poppins';
   src: url('/assets/font/Poppins-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;

@@ -1,91 +1,83 @@
 @layer components {
 
+  .landing {
+    @apply min-h-screen mb-12 md:mb-24 lg:mb-32
+  }
+
   .hero-section {
-    @apply container margin-bottom-large flex items-center space-x-12 mt-12
+    @apply relative z-10 container flex py-20 lg:py-40
   }
 
   .hero-inner {
-    @apply flex-1 flex flex-col lg:w-2/3 items-start
+    @apply w-full sm:w-2/3 xl:w-1/2
   }
 
   .hero-title {
-    @apply text-3xl md:text-4xl text-gray-800 margin-bottom-xsmall
+    @apply text-3xl mb-6 text-black lg:text-5xl lg:mb-12
   }
 
-  .hero-list {
-    @apply flex flex-wrap w-full margin-bottom-xsmall
-  }
-
-  .hero-list-item {
-    @apply whitespace-nowrap text-sm font-medium px-4 py-2 mr-2 mb-2 rounded bg-gray-100
-  }
-
-  .hero-text {
-    @apply text-xl md:text-2xl font-thin text-gray-900 margin-bottom-small
-  }
-
-  .hero-button {
-    @apply inline-flex items-center space-x-3 px-8 py-2 rounded-md bg-gray-900 text-gray-100 font-bold hover:bg-gray-700
-  }
-
-  .hero-illustration {
-    @apply flex-1 rounded-lg invisible hidden xl:block
-  }
-
-  .what-section {
-    @apply container margin-bottom-large
-  }
-
-  .what-hr {
-    @apply border-t border-gray-200 w-full
-  }
-
-  .what-header {
-    @apply margin-bottom-small
-  }
-
-  .what-title {
-    @apply title-lg
+  .hero-link {
+    @apply bg-red-600 text-gray-100 px-12 py-3 font-medium hover:bg-red-700
   }
 
   .os-section {
-    @apply container flex flex-col items-center justify-start margin-bottom-large
+    @apply container mb-12 md:mb-24 lg:mb-32
   }
 
-  .os-img {
-    @apply flex-1 rounded  hidden lg:flex
+  .os-section-inner {
+    @apply  flex space-x-12
   }
 
   .os-header {
     @apply flex flex-col lg:flex-row lg:items-center lg:space-x-12  w-full margin-bottom-small
   }
 
+  .os-title {
+    @apply flex-1 text-2xl md:text-4xl font-medium
+  }
+
+  .os-title-sub {
+    @apply text-gray-700 mb-6
+  }
+
+  .os-text {
+    @apply text-sm md:text-base mb-6 text-gray-700
+  }
+
   .os-list {
-    @apply flex flex-wrap lg:grid lg:grid-cols-4 xl:grid-cols-5 gap-2 w-auto
-  }
-
-  .os-list-item {
-    @apply w-16 h-16  md:w-24 md:h-24 bg-gradient-to-br from-gray-100 to-gray-50 flex justify-center items-center
-  }
-
-  .os-list-item-logo {
-    @apply h-5 md:h-8
-  }
-
-  .os-advantage-list {
     @apply flex-1 flex flex-col space-y-3 w-full
   }
 
-  .os-advantage-list-item {
-    @apply flex border rounded-lg p-3
+  .os-list-item {
+    @apply flex p-3 bg-gray-100
   }
 
-  .data {
-    @apply container margin-bottom-large flex flex-col items-center
+  .os-list-item-title {
+    @apply text-sm md:text-base leading-6 font-medium text-gray-900
+  }
+
+  .os-list-item-text {
+    @apply text-xs md:text-sm text-gray-400
+  }
+
+  .os-illustration-container {
+    @apply flex-1 bg-gradient-to-tr from-gray-900 to-black hidden lg:block
+  }
+
+  .os-illustration {
+    @apply  bg-cover bg-no-repeat bg-top w-full h-full
+  }
+
+  .data-section {
+    @apply md:text-center bg-gray-100 py-6 px-4 md:py-16 md:px-12
+  }
+
+  .data-inner {
+    @apply flex flex-col items-center justify-center max-w-full
   }
 
   .data-title {
-    @apply title-lg margin-bottom-small md:text-center w-full lg:w-1/2
+    @apply text-2xl md:text-4xl md:w-2/3 mb-6
   }
 
   .data-content {
@@ -93,15 +85,11 @@
   }
 
   .data-list {
-    @apply flex-1 flex flex-wrap justify-center md:space-x-3 margin-bottom-small
+    @apply flex flex-wrap items-center md:justify-center
   }
 
   .data-list-item {
-    @apply flex items-center px-8 py-2 border h-12 border-gray-200 rounded-lg mb-3 w-full md:w-auto bg-white
-  }
-
-  .data-list-item-text {
-    @apply font-bold text-gray-500
+    @apply  text-white text-xs md:text-sm px-4 py-2 md:px-6 md:py-3 mr-3 mb-3 bg-gray-800 whitespace-nowrap
   }
 
 }

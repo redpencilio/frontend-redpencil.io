@@ -1,45 +1,34 @@
 @layer components {
-  .carousel-section {
-    @apply relative flex bg-gradient-to-br from-gray-100 to-gray-50 rounded-lg px-6 md:px-12 xl:px-24 margin-bottom-xsmall h-96 items-center
+  .carousel {
+    @apply relative flex bg-gradient-to-r from-black to-gray-900 h-80 items-center
   }
 
   .carousel-slide {
-    @apply lg:w-1/2 z-10
+    @apply z-10 flex items-center justify-between h-full w-full p-3  md:p-6 bg-cover lg:bg-contain bg-no-repeat bg-right-top
   }
 
   .carousel-header {
-    @apply margin-bottom-small
+    @apply w-full md:w-2/3 lg:w-1/2 lg:px-6
   }
 
   .carousel-title {
-    @apply title-lg margin-bottom-xsmall
+    @apply text-xl md:text-2xl font-medium mb-4 text-white
   }
 
   .carousel-text {
-    @apply font-bold text-gray-500
-  }
-
-  .carousel-button {
-    @apply px-12 py-2 rounded-md bg-red-600 text-white text-sm font-bold hover:bg-red-500
-  }
-
-  .carousel-illustration {
-    @apply h-full absolute right-0 bottom-0 opacity-10 lg:opacity-100
+    @apply text-sm md:text-base text-gray-300
   }
 
   .carousel-navigation {
-    @apply flex items-center space-x-2 justify-center
+    @apply relative flex items-center space-x-2 justify-center
   }
 
   .carousel-nav-link {
-    @apply w-10 sm:w-12 h-3 rounded-full bg-gray-200 focus:outline-white border hover:bg-gray-300 duration-500
+    @apply w-10 sm:w-12 h-2 rounded-full bg-gray-200 focus:outline-white border hover:bg-gray-300 duration-500
   }
 
   .carousel-nav-link--active {
     @apply w-28 sm:w-36 bg-gray-50 duration-500
   }
 
-  .carousel-progress{
-    @apply absolute top-0 left-0 w-full h-1 bg-white mt-1 z-10
-  }
 }

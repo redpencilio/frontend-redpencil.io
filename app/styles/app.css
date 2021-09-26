@@ -22,12 +22,18 @@
 @import "./utilities/spacing.css";
 
 /* COMPONENTS */
-@import "./components/hero/carousel.css";
 @import "./components/breadcrumbs.css";
-@import "./components/card.css";
+@import "./components/hero/carousel.css";
+@import "./components/hero/career-banner.css";
+@import "./components/hero/data-cycle.css";
+@import "./components/service-card.css";
+@import "./components/project-card.css";
 @import "./components/navbar.css";
 @import "./components/buttons.css";
+@import "./components/page-header.css";
 @import "./components/projects/header.css";
+@import "./components/projects/section.css";
+
 
 /* TYPOGRAPHY */
 

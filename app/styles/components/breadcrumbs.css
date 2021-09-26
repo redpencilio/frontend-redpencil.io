@@ -1,7 +1,11 @@
 @layer components {
 
   .bcrumbs {
-    @apply container flex my-6 text-gray-700
+    @apply container flex sm:pb-3 text-gray-700 bg-gray-100 sm:bg-transparent
+  }
+
+  .bcrumbs-inner {
+    @apply  w-full p-2 bg-gray-100
   }
 
   .bcrumbs-list {
@@ -13,7 +17,7 @@
   }
 
   .bcrumbs-link {
-    @apply hover:text-red-600
+    @apply hover:text-red-600 px-1 text-xs
   }
 
   .bcrumbs-icon {
