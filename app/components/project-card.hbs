@@ -1,0 +1,25 @@
+
+{{#if @complete}}
+  <div class="projects-card">
+    <article class="projects-card-inner">
+      <div class="projects-card-header">
+        <h3 class="projects-card-title">{{@title}}</h3>
+        <p class="projects-card-text">{{@text}}</p>
+        <LinkTo class="projects-card-link" @route={{@linkTo}}>Learn more</LinkTo>
+      </div>
+      <div class="projects-card-img-wrapper">
+        <img class="projects-card-img" src={{@illustration}} alt={{@title}}>
+      </div>
+    </article>
+  </div>
+{{else}}
+ <li class="construction-card">
+    <div class="construction-card-header">
+      <h3 class="construction-card-title">{{@title}}</h3>
+      <p class="construction-card-text">{{@text}}</p>
+    </div>
+    <div class="construction-card-resources">
+      {{yield}}
+    </div>
+  </li>
+{{/if}}
