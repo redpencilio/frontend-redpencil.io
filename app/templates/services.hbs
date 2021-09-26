@@ -1,107 +1,55 @@
-<div class="services">
-  <Breadcrumbs />
-</div>
+<Navbar />
+<Breadcrumbs />
+<PageHeader
+  @title="Our Services"
+  @text="Software solutions and consulting that transform data into knowledge and
+    knowledge into insight."
+/>
 
-<section>
-  <div class="services-header">
-    <h1 class="title-xl">Our Services</h1>
-    <h2 class="title-md-thin mb-12 w-full lg:w-2/3">Software solutions and consulting that transform data into knowledge - and
-      knowledge into
-      <span class="font-bold"> insight</span>
-    </h2>
-  </div>
+<section class="service-category">
+  <h2 class="service-category-title ">Data strategy & architecture</h2>
+  <div class="service-data-list">
+    <ServiceCard
+      @illustration="/assets/vector/data-modeling.svg"
+      @title="Data modeling"
+      @text="We help you conceptualise and model the vital information for your users and organization using universal ontologies"
+    />
 
-  <section class="service-category">
-    <h2 class="service-category-title">Data strategy & architecture</h2>
-    <div class="service-data-list">
-      <article class="service-card">
-        <div class="service-card-illustration">
-          <img class="h-64 w-full" src="/assets/vector/data-modeling.svg" alt="Data modeling">
-        </div>
-        <div class="service-card-header">
-          <h3 class="service-card-title">Data modeling</h3>
-          <p class="service-card-text">We help you conceptualise and model the vital information for your users and organization using universal ontologies
-          </p>
-        </div>
-      </article>
+    <ServiceCard
+      @illustration="/assets/vector/data-governance.svg"
+      @title="Data strategy"
+      @text="We help you envision a future proof IT and data strategy"
+    />
 
-      <article class="service-card">
-        <div class="service-card-illustration">
-          <img class="h-64 w-full" src="/assets/vector/data-governance.svg" alt="Data strategy">
-        </div>
-        <div class="service-card-header">
-          <h3 class="service-card-title">Data strategy</h3>
-          <p class="service-card-text">We help you envision a future proof IT and data strategy</p>
-        </div>
-      </article>
-
-      <article class="service-card">
-        <div class="service-card-illustration">
-          <img class="h-64 w-full" src="/assets/vector/data-publication.svg" alt="data publication">
-        </div>
-        <div class="service-card-header">
-          <h3 class="service-card-title">Data publication</h3>
-          <p class="service-card-text">We help making your data accessible to both humans and machines
-          </p>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section class="service-category">
-    <h2 class="service-category-title">Application development</h2>
-    <div class="service-data-list">
-      <article class="service-card">
-        <div class="service-card-illustration">
-          <img class="h-64 w-full" src="/assets/vector/rich-web.svg" alt="Rich web application">
-        </div>
-        <div class="service-card-header">
-          <h3 class="service-card-title">Rich web applications</h3>
-          <p class="service-card-text">We help you to get the most out of your data by building rich data-driven web applications</p>
-        </div>
-      </article>
-      <article class="service-card">
-        <div class="service-card-illustration">
-          <img class="h-64 w-full" src="/assets/vector/a-a-f.svg" alt="Productive application frameworks">
-        </div>
-        <div class="service-card-header">
-          <h3 class="service-card-title">Productive application frameworks
-          </h3>
-          <p class="service-card-text">
-            We use cutting edge development by relying on advanced technologies such as Ember.js, Docker and semantic.works
-          </p>
-        </div>
-
-      </article>
-
-      <article class="service-card">
-        <div class="service-card-illustration">
-          <img class="h-64 w-full" src="/assets/vector/l-d-a.svg" alt="Linked data approach">
-        </div>
-        <div class="service-card-header">
-          <h3 class="service-card-title">Native Linked Data approach</h3>
-          <p class="service-card-text">
-            We guarantee your data flows seamlessly through your applications by adopting a native Linked data infrastructure
-          </p>
-        </div>
-
-      </article>
-
-      
-    </div>
-  </section>
-
-  <div class="service-card-container">
-
-
-
-
-
-
-
-
+    <ServiceCard
+      @illustration="/assets/vector/data-publication.svg"
+      @title="Data publication"
+      @text="We help making your data accessible to both humans and machines"
+    />
   </div>
 </section>
 
-{{!--
- --}}
+<section class="service-category">
+  <h2 class="service-category-title">Application development</h2>
+  <div class="service-data-list">
+    <ServiceCard
+      @illustration="/assets/vector/rich-web.svg"
+      @title="Rich web applications"
+      @text="We help you to get the most out of your data by building rich data-driven web applications"
+    />
+
+    <ServiceCard
+      @illustration="/assets/vector/a-a-f.svg"
+      @title="Productive application frameworks"
+      @text="We use cutting edge development by relying on advanced technologies such as Ember.js, Docker and semantic.works"
+    />
+
+    <ServiceCard
+      @illustration="/assets/vector/l-d-a.svg"
+      @title="Native Linked Data approach"
+      @text="We guarantee your data flows seamlessly through your applications by adopting a native Linked data infrastructure"
+    />
+  </div>
+</section>
+
+<Footer/>

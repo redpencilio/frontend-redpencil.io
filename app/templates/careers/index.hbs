@@ -1,25 +1,14 @@
-<div class="careers">
-  <Breadcrumbs />
+<div class="careers-header">
+  <div class="careers-header-inner">
+    <h1 class="careers-header-title">Careers</h1>
+    <p class="careers-header-text">Work with our team of 12 people to create the #WebWeWant</p>
+  </div>
 </div>
 
-<section class="careers-header">
-  <h1 class="title-xl">Careers</h1>
-  <h2 class="title-md-thin">Work with our team of 12 people to create the #WebWeWant</h2>
-  {{!-- <p class="text-lg text-gray">The web is awesome, but it needs a reboot. Our team is actively working towards an
-    open web,with
-    practical end-user projects. <br><br> Join redpencil.io, junior or senior, and help build the#WebWeWant.At
-    redpencil.io we love open source and actively contribute to a number of projects. Join us todevelop applications
-    that open up data towards the web. Use technologies that prevent avendor lock-in. Help us figure out which
-    technologies will have an impact in the future, andwhat is just plain fun to use. <br><br> Experiment together
-    with us in
-    distributed applications with IPFS, image and patternrecognition with TensorFlow, learn from Linked Data experts
-    to master Open Data, and steerthe world towards a more open place.Build real-world applications with end-users
-    in mind, and experiment with the future.</p> --}}
-</section>
 <section class="careers-list">
-  <LinkTo @route="careers.full-stack-developer" class="job-card">
+  <LinkTo @route="careers.full-stack-developer" class="job-card bg-gray-900">
     <div class="job-card-header">
-      <h3 class="title-sm">Full Stack Web Developer</h3>
+      <h3 class="job-card-title">Full Stack Web Developer</h3>
       <div class="job-pill-open">
         <svg class="job-pill-open-circle" fill="currentColor" viewBox="0 0 8 8">
           <circle cx="4" cy="4" r="3" />
@@ -57,9 +46,9 @@
       </li>
     </ul>
   </LinkTo>
-  <LinkTo @route="careers.internship" class="job-card">
+  <LinkTo @route="careers.internship" class="job-card bg-gray-900">
     <div class="job-card-header">
-      <h3 class="title-sm">Internship</h3>
+      <h3 class="job-card-title">Internship</h3>
       <div class="job-pill-open">
         <svg class="job-pill-open-circle" fill="currentColor" viewBox="0 0 8 8">
           <circle cx="4" cy="4" r="3" />
@@ -205,3 +194,4 @@
     </a>
   </div>
 </section>
+
