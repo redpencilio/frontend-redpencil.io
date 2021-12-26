@@ -1,9 +1,8 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-  purge: [],
-  darkMode: false,
-  plugins: [require('@tailwindcss/forms')],
+  // mode: 'jit',
+  purge: ['./app/**/*.{hbs,js,ts}', './tests/**/*.{hbs,js,ts}'],
   theme: {
     container: {
       center: true,
@@ -23,9 +22,6 @@ module.exports = {
         gray: colors.trueGray,
       },
     },
-    variants: {
-      extend: {},
-    },
-    plugins: [],
   },
+  plugins: [require('@tailwindcss/forms')],
 };
