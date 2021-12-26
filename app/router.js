@@ -1,5 +1,5 @@
 import EmberRouter from '@ember/routing/router';
-import config from 'rpio-website/config/environment';
+import config from 'frontend-redpencil/config/environment';
 
 export default class Router extends EmberRouter {
   location = config.locationType;
