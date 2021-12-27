@@ -13,7 +13,7 @@
   /* Large */
 
   .title-lg {
-    @apply text-2xl sm:text-3xl md:text-4xl font-bold font-bold
+    @apply text-2xl sm:text-3xl md:text-4xl font-bold
   }
 
   .title-lg-thin {

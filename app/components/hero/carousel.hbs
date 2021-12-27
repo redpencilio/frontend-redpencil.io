@@ -1,77 +1,82 @@
 <div class="carousel-section">
   {{#if (eq this.index 0)}}
-  <div class="carousel-slide">
-    <div class="carousel-header">
-      <h4 class="carousel-title">Open standards</h4>
-      <p class="carousel-text">We use existing, publicly available standards — to make data shareable, reusable, and
-        avoid vendor lock-in
-      </p>
-    </div>
+    <div class="carousel-slide">
+      <div class="carousel-header">
+        <h4 class="carousel-title">
+          Open standards
+        </h4>
+        <p class="carousel-text">
+          We use existing, publicly available standards
+          &mdash; to make data shareable, reusable, and avoid vendor lock-in
+        </p>
+      </div>
       {{!-- <a href="" class="carousel-button">
-        learn more
+      learn more
       </a> --}}
-    <img class="carousel-illustration" src="/assets/vector/open-standards.svg" alt="open standards">
-  </div>
+      <img class="carousel-illustration" src="/assets/vector/open-standards.svg" alt="open standards">
+    </div>
 
   {{else if (eq this.index 1)}}
-  <div class="carousel-slide">
-    <div class="carousel-header">
-      <h4 class="carousel-title">Powerful single-page applications</h4>
-      <p class="carousel-text">We use the latest frontend technologies to develop web applications that are responsive
-        and
-        powerful
-        — for an outstanding user experience
-      </p>
-    </div>
+    <div class="carousel-slide">
+      <div class="carousel-header">
+        <h4 class="carousel-title">
+          Powerful web apps
+        </h4>
+        <p class="carousel-text">
+          We use the latest frontend technologies to develop responsive and powerful single-page applications
+          &mdash; for an outstanding user experience
+        </p>
+      </div>
       {{!-- <a href="" class="carousel-button">
-        learn more
+      learn more
       </a> --}}
-    <img class="carousel-illustration" src="/assets/vector/spa.svg" alt="single page applications">
-  </div>
+      <img class="carousel-illustration" src="/assets/vector/spa.svg" alt="single page applications">
+    </div>
 
   {{else if (eq this.index 2)}}
-  <div class="carousel-slide">
-    <div class="carousel-header">
-      <h4 class="carousel-title">Data-centric architecture</h4>
-      <p class="carousel-text">We create and build on domain-specific data infrastructures better data — improving data
-        management and eliminating data silos
-      </p>
-    </div>
+    <div class="carousel-slide">
+      <div class="carousel-header">
+        <h4 class="carousel-title">Data-centric architecture</h4>
+        <p class="carousel-text">
+          We build applications on domain-specific data infrastructures better data
+          &mdash; improving data management and eliminating data silos
+        </p>
+      </div>
       {{!-- <a href="" class="carousel-button">
-        learn more
+      learn more
       </a> --}}
-    <img class="carousel-illustration" src="/assets/vector/data-centric.svg" alt="data-centric">
-  </div>
+      <img class="carousel-illustration" src="/assets/vector/data-centric.svg" alt="data-centric">
+    </div>
 
- 
+
 
   {{else if (eq this.index 3)}}
-  <div class="carousel-slide">
-    <div class="carousel-header">
-      <h4 class="carousel-title">Built for Linked Data</h4>
-      <p class="carousel-text">We use Semantic Web technologies to model our frameworks with graphs and reasoning.
-        Applications with native linked data capabilities ensure quality data flows. Linked Open Data flows ensures data
-        is visible and reusable.
-      </p>
-    </div>
+    <div class="carousel-slide">
+      <div class="carousel-header">
+        <h4 class="carousel-title">Built for Linked Data</h4>
+        <p class="carousel-text">We use Semantic Web technologies to model our frameworks with graphs and reasoning.
+          Applications with native linked data capabilities ensure quality data flows. Linked Open Data flows ensures data
+          is visible and reusable.
+        </p>
+      </div>
       {{!-- <a href="" class="carousel-button">
-        learn more
+      learn more
       </a> --}}
-    <img class="carousel-illustration" src="/assets/vector/linked-data.svg" alt="linked data">
+      <img class="carousel-illustration" src="/assets/vector/linked-data.svg" alt="linked data">
     </div>
   {{/if}}
 </div>
 <div class="flex space-between items-center">
   <div class="carousel-navigation">
     {{#each this.items as |item|}}
-    <button {{ on 'click' (fn this.setIndex item)}} type="button" class="carousel-nav-link {{if (eq this.index item) "
-      carousel-nav-link--active relative"}}">
-      <span class="sr-only">slide number {{item}}</span>
-      {{#if (eq this.index item) }}
-      <div class="progress">
-        <span class="sr-only">current slide</span>
-      </div>
-      {{/if}}
+      <button {{ on 'click' (fn this.setIndex item)}} type="button" class="carousel-nav-link {{if (eq this.index item) "
+                                                                                                 carousel-nav-link--active relative"}}">
+        <span class="sr-only">slide number {{item}}</span>
+        {{#if (eq this.index item) }}
+          <div class="progress">
+            <span class="sr-only">current slide</span>
+          </div>
+        {{/if}}
       </button>
     {{/each}}
   </div>

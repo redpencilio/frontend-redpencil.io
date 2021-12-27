@@ -1,168 +1,164 @@
-<section class="hero-section">
-  <div class="hero-inner">
-
-    <h1 class="hero-title">
-      Creating excellent applications, better data, <span class="font-black">and proudly building the <span
-          class="text-red-600">#WebWeWant</span> </span>
-    </h1>
-    <ul class="hero-list">
-      <li class="hero-list-item">Data engineering</li>
-      <li class="hero-list-item">Powerful web applications</li>
-      <li class="hero-list-item">Distributed web specialists</li>
-    </ul>
-    <LinkTo @route="contact" class="hero-button">
-      <span> Contact us </span>
-      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd"
-          d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-          clip-rule="evenodd"></path>
-      </svg>
-    </LinkTo>
-  </div>
-  <div class="hero-illustration">
-    <img src="assets/pixel/hero-illustration.png" alt="connecting data">
-  </div>
-</section>
-
-<section class="what-section">
-  <div class="what-header">
-    <h2 class="what-title">What we do differently</h2>
-  </div>
-  <Hero::Carousel />
-</section>
-
-<section class="os-section">
-  <div class="os-header">
-    <h2 class="flex-1 title-lg">We &lt;3 Open Source</h2>
-    <p class="title-xs flex-1">
-      We use and contribute to Open Source projects
-    </p>
-  </div>
-
-  <div class="w-full flex flex-col lg:flex-row items-start lg:space-x-12">
-    <div class="flex-1 margin-bottom-small">
-      <div class="inline-flex">
-        <ul class="os-list">
-          <li class="tt-wrapper os-list-item">
-            <img class="os-list-item-logo" src="/assets/vector/logos/docker.svg" alt="docker">
-            <div class="tooltip">Docker</div>
-          </li>
-          <li class="tt-wrapper os-list-item">
-            <img class="os-list-item-logo" src="/assets/vector/logos/elixir.svg" alt="elixir">
-            <div class="tooltip">Elixir</div>
-          </li>
-          <li class="tt-wrapper os-list-item">
-            <img class="os-list-item-logo" src="/assets/vector/logos/ember.svg" alt="emberjs">
-            <div class="tooltip">Emberjs</div>
-          </li>
-          <li class="tt-wrapper os-list-item">
-            <img class="os-list-item-logo" src="/assets/vector/logos/kibana.svg" alt="kibana">
-            <div class="tooltip">Kibana</div>
-          </li>
-          <li class="tt-wrapper os-list-item">
-            <img class="os-list-item-logo" src="/assets/vector/logos/elastic.svg" alt="elasticsearch">
-            <div class="tooltip">Elasticsearch</div>
-          </li>
-          <li class="tt-wrapper os-list-item">
-            <img class="os-list-item-logo" src="/assets/vector/logos/compose.svg" alt="docker-compose">
-            <div class="tooltip">Docker compose</div>
-          </li>
-          <li class="tt-wrapper os-list-item">
-            <img class="os-list-item-logo" src="/assets/vector/logos/semantic.svg" alt="semantic-works">
-            <div class="tooltip">Semantic works</div>
-          </li>
-          <li class="tt-wrapper os-list-item">
-            <img class="os-list-item-logo" src="/assets/vector/logos/python.svg" alt="python">
-            <div class="tooltip">Python</div>
-          </li>
-          <li class="tt-wrapper os-list-item">
-            <img class="os-list-item-logo" src="/assets/vector/logos/rdf.svg" alt="rdf">
-            <div class="tooltip">RDF</div>
-          </li>
-          <li class="tt-wrapper os-list-item">
-            <img class="os-list-item-logo" src="/assets/vector/logos/node.svg" alt="nodejs">
-            <div class="tooltip">Nodejs</div>
-          </li>
-          <li class="tt-wrapper os-list-item">
-            <img class="os-list-item-logo" src="/assets/vector/logos/emacs.svg" alt="emacs">
-            <div class="tooltip">Emacs</div>
-          </li>
+<div class="container space-y-24 md:space-y-48 mb-24">
+  <section class="mt-12">
+    <div class="grid lg:grid-cols-3 xl:grid-cols-5 items-center">
+      <div class="lg:col-span-2 xl:col-span-3">
+        <h1 class="text-3xl md:text-4xl text-gray-800">
+          <div>Creating excellent applications,</div>
+          <div>better data,</div>
+          <div class="font-black">
+            and proudly building the <span class="text-red-600">#WebWeWant</span>
+          </div>
+        </h1>
+        <ul class="hidden md:flex md:flex-wrap mt-6">
+          <li class="hero-list-item">Data engineering</li>
+          <li class="hero-list-item">Powerful web apps</li>
+          <li class="hero-list-item">Distributed web specialists</li>
         </ul>
       </div>
+      <div class="hidden lg:block xl:col-span-2">
+        <img src="assets/pixel/hero-illustration.png" alt="Connecting data">
+      </div>
+    </div>
+    <div class="mt-12 md:mt-2">
+      <LinkTo @route="contact" class="inline-flex items-center space-x-3 px-8 py-2 rounded-md bg-gray-900 text-gray-100 font-bold hover:bg-gray-700">
+        <span>Contact us</span>
+        {{svg-jar "arrow-right" class="w-4 h-4"}}
+      </LinkTo>
+    </div>
+  </section>
+
+  <section class="">
+    <h2 class="title-lg margin-bottom-small">
+      What we do differently
+    </h2>
+    <Hero::Carousel />
+  </section>
+
+  <section class="flex flex-col items-start">
+    <div class="margin-bottom-small space-y-2">
+      <h2 class="title-lg">
+        We &lt;3 open source
+      </h2>
+      <p class="title-xs text-gray-500">
+        We use and contribute to open source projects
+      </p>
     </div>
 
-    <ul class="os-advantage-list">
-      <p class="text-sm text-gray-400">Advantages of Open Source</p>
-      <li class="os-advantage-list-item">
-        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
-          viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-        </svg>
-        <div class="ml-3">
-          <div class="text-lg leading-6 font-medium text-gray-900">
-            Open collaboration
+    <div class="grid sm:grid-cols-2 gap-8 md:gap-24">
+      <ul class="grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+        <li class="tt-wrapper os-list-item">
+          <img class="os-list-item-logo" src="/assets/vector/logos/docker.svg" alt="docker">
+          <div class="tooltip">Docker</div>
+        </li>
+        <li class="tt-wrapper os-list-item">
+          <img class="os-list-item-logo" src="/assets/vector/logos/elixir.svg" alt="elixir">
+          <div class="tooltip">Elixir</div>
+        </li>
+        <li class="tt-wrapper os-list-item">
+          <img class="os-list-item-logo" src="/assets/vector/logos/ember.svg" alt="emberjs">
+          <div class="tooltip">Emberjs</div>
+        </li>
+        <li class="tt-wrapper os-list-item">
+          <img class="os-list-item-logo" src="/assets/vector/logos/kibana.svg" alt="kibana">
+          <div class="tooltip">Kibana</div>
+        </li>
+        <li class="tt-wrapper os-list-item">
+          <img class="os-list-item-logo" src="/assets/vector/logos/elastic.svg" alt="elasticsearch">
+          <div class="tooltip">Elasticsearch</div>
+        </li>
+        <li class="tt-wrapper os-list-item">
+          <img class="os-list-item-logo" src="/assets/vector/logos/compose.svg" alt="docker-compose">
+          <div class="tooltip">Docker compose</div>
+        </li>
+        <li class="tt-wrapper os-list-item">
+          <img class="os-list-item-logo" src="/assets/vector/logos/semantic.svg" alt="semantic-works">
+          <div class="tooltip">Semantic works</div>
+        </li>
+        <li class="tt-wrapper os-list-item">
+          <img class="os-list-item-logo" src="/assets/vector/logos/python.svg" alt="python">
+          <div class="tooltip">Python</div>
+        </li>
+        <li class="tt-wrapper os-list-item">
+          <img class="os-list-item-logo" src="/assets/vector/logos/rdf.svg" alt="rdf">
+          <div class="tooltip">RDF</div>
+        </li>
+        <li class="tt-wrapper os-list-item">
+          <img class="os-list-item-logo" src="/assets/vector/logos/node.svg" alt="nodejs">
+          <div class="tooltip">Nodejs</div>
+        </li>
+        <li class="tt-wrapper os-list-item">
+          <img class="os-list-item-logo" src="/assets/vector/logos/emacs.svg" alt="emacs">
+          <div class="tooltip">Emacs</div>
+        </li>
+      </ul>
+
+      <ul class="space-y-8 flex flex-col justify-between sm:py-4">
+        <li class="flex">
+          {{svg-jar "check" class="flex-shrink-0 h-10 w-10 text-red-400"}}
+          <div class="ml-3">
+            <div class="text-lg leading-6 font-medium text-gray-900">
+              Open collaboration
+            </div>
+            <div class="text-base text-gray-500">
+              Driver of innovation
+            </div>
           </div>
-          <div class="text-base text-gray-500">
-            Driver of innovation
+        </li>
+        <li class="flex">
+          {{svg-jar "check" class="flex-shrink-0 h-10 w-10 text-red-400"}}
+          <div class="ml-3">
+            <div class="text-lg leading-6 font-medium text-gray-900">
+              Transparency
+            </div>
+            <div class="text-base text-gray-500">
+              Know what you use
+            </div>
           </div>
-        </div>
-      </li>
-      <li class="os-advantage-list-item">
-        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
-          viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-        </svg>
-        <div class="ml-3">
-          <div class="text-lg leading-6 font-medium text-gray-900">
-            Transparency
+        </li>
+        <li class="flex">
+          {{svg-jar "check" class="flex-shrink-0 h-10 w-10 text-red-400"}}
+          <div class="ml-3">
+            <div class="text-lg leading-6 font-medium text-gray-900">
+              Security & reliability
+            </div>
+            <div class="text-base text-gray-500">
+              Trust what you use
+            </div>
           </div>
-          <div class="text-base text-gray-500">
-            Know what you use
-          </div>
-        </div>
-      </li>
-      <li class="os-advantage-list-item">
-        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none"
-          viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-        </svg>
-        <div class="ml-3">
-          <div class="text-lg leading-6 font-medium text-gray-900">
-            Security & reliability
-          </div>
-          <div class="text-base text-gray-500">
-            Trust what you use
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
-</section>
+        </li>
+      </ul>
+    </div>
+  </section>
 
 
-<section class="data">
-  <h2 class="data-title">We build for the long term ensuring</h2>
-  <div class="data-content">
-    <ul class="data-list">
-      <li class="data-list-item">
-        <span class="data-list-item-text">Improved data quality</span>
-      </li>
-      <li class="data-list-item">
-        <span class="data-list-item-text">Better data analysis</span>
-      </li>
-      <li class="data-list-item">
-        <span class="data-list-item-text">Eliminated data silos</span>
-      </li>
-      <li class="data-list-item">
-        <span class="data-list-item-text">Reusable data </span>
-      </li>
-      <li class="data-list-item">
-        <span class="data-list-item-text">Sustainable data publishing</span>
-      </li>
-      <li class="data-list-item">
-        <span class="data-list-item-text">Data interoperability</span>
-      </li>
-    </ul>
-    <Hero::DataCycle />
-  </div>
-</section>
+  <section class="flex flex-col items-start md:items-center">
+    <h2 class="title-lg margin-bottom-small">
+      We build for the long term
+    </h2>
+    <div class="space-y-8">
+      <ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+        <li class="data-list-item">
+          Improved data quality
+        </li>
+        <li class="data-list-item">
+          Insightful data analysis
+        </li>
+        <li class="data-list-item">
+          Eliminated data silos
+        </li>
+        <li class="data-list-item">
+          Extensive data reuse
+        </li>
+        <li class="data-list-item">
+          Sustainable data publication
+        </li>
+        <li class="data-list-item">
+          Data interoperability
+        </li>
+      </ul>
+      <div class="flex justify-center p-6">
+        <img src="/assets/vector/data-cycle.svg" alt="Collect, analyse, publish, integrate, reuse">
+      </div>
+    </div>
+  </section>
+</div>
