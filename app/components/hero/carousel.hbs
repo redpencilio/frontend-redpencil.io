@@ -1,84 +1,71 @@
-<div class="carousel-section">
+<div class="relative bg-gray-50 rounded-lg py-6 px-6 md:px-12 xl:px-24">
   {{#if (eq this.index 0)}}
-    <div class="carousel-slide">
-      <div class="carousel-header">
-        <h4 class="carousel-title">
-          Open standards
-        </h4>
-        <p class="carousel-text">
-          We use existing, publicly available standards
-          &mdash; to make data shareable, reusable, and avoid vendor lock-in
-        </p>
-      </div>
-      {{!-- <a href="" class="carousel-button">
-      learn more
-      </a> --}}
-      <img class="carousel-illustration" src="/assets/vector/open-standards.svg" alt="open standards">
-    </div>
-
+    <Hero::CarouselSlide>
+      <:title>
+      Open standards
+      </:title>
+      <:text>
+      We use existing, publicly available standards and tools
+      &mdash; to make data shareable, reusable, and avoid vendor lock-in
+      </:text>
+      <:image>
+      <img src="/assets/vector/open-standards.svg" alt="Open standards">
+      </:image>
+    </Hero::CarouselSlide>
   {{else if (eq this.index 1)}}
-    <div class="carousel-slide">
-      <div class="carousel-header">
-        <h4 class="carousel-title">
-          Powerful web apps
-        </h4>
-        <p class="carousel-text">
-          We use the latest frontend technologies to develop responsive and powerful single-page applications
-          &mdash; for an outstanding user experience
-        </p>
-      </div>
-      {{!-- <a href="" class="carousel-button">
-      learn more
-      </a> --}}
-      <img class="carousel-illustration" src="/assets/vector/spa.svg" alt="single page applications">
-    </div>
-
+    <Hero::CarouselSlide>
+      <:title>
+      Powerful web apps
+      </:title>
+      <:text>
+      We use the latest frontend technologies to develop responsive and powerful single-page applications
+      &mdash; for an outstanding user experience
+      </:text>
+      <:image>
+      <img src="/assets/vector/spa.svg" alt="Single page applications">
+      </:image>
+    </Hero::CarouselSlide>
   {{else if (eq this.index 2)}}
-    <div class="carousel-slide">
-      <div class="carousel-header">
-        <h4 class="carousel-title">Data-centric architecture</h4>
-        <p class="carousel-text">
-          We build applications on domain-specific data infrastructures better data
-          &mdash; improving data management and eliminating data silos
-        </p>
-      </div>
-      {{!-- <a href="" class="carousel-button">
-      learn more
-      </a> --}}
-      <img class="carousel-illustration" src="/assets/vector/data-centric.svg" alt="data-centric">
-    </div>
-
-
-
+    <Hero::CarouselSlide>
+      <:title>
+      Data-centric architecture
+      </:title>
+      <:text>
+      We build applications on a domain-specific data infrastructure
+      &mdash; improving data modelling and management
+      </:text>
+      <:image>
+      <img src="/assets/vector/data-centric.svg" alt="Data-centric architecture">
+      </:image>
+    </Hero::CarouselSlide>
   {{else if (eq this.index 3)}}
-    <div class="carousel-slide">
-      <div class="carousel-header">
-        <h4 class="carousel-title">Built for Linked Data</h4>
-        <p class="carousel-text">We use Semantic Web technologies to model our frameworks with graphs and reasoning.
-          Applications with native linked data capabilities ensure quality data flows. Linked Open Data flows ensures data
-          is visible and reusable.
-        </p>
-      </div>
-      {{!-- <a href="" class="carousel-button">
-      learn more
-      </a> --}}
-      <img class="carousel-illustration" src="/assets/vector/linked-data.svg" alt="linked data">
-    </div>
+    <Hero::CarouselSlide>
+      <:title>
+      Built with Linked Data
+      </:title>
+      <:text>
+      We use semantic web technologies to model, store and publish data
+      &mdash; to ensure high-quality data flows and avoid data silos
+      </:text>
+      <:image>
+      <img src="/assets/vector/linked-data.svg" alt="Linked Data">
+      </:image>
+    </Hero::CarouselSlide>
   {{/if}}
 </div>
-<div class="flex space-between items-center">
-  <div class="carousel-navigation">
+<div class="mt-8 flex space-between items-center">
+  <div class="flex items-center space-x-2 justify-center">
     {{#each this.items as |item|}}
-      <button {{ on 'click' (fn this.setIndex item)}} type="button" class="carousel-nav-link {{if (eq this.index item) "
-                                                                                                 carousel-nav-link--active relative"}}">
-        <span class="sr-only">slide number {{item}}</span>
-        {{#if (eq this.index item) }}
+      <button type="button"
+        class="h-3 rounded-full bg-gray-50 focus:outline-white border border-gray-100 hover:bg-gray-200 {{if (eq this.index item) "w-28 sm:w-36 relative" "w-10 sm:w-12"}}"
+        {{on 'click' (fn this.setIndex item)}}>
+        <span class="sr-only">Slide number {{item}}</span>
+        {{#if (eq this.index item)}}
           <div class="progress">
-            <span class="sr-only">current slide</span>
+            <span class="sr-only">Current slide</span>
           </div>
         {{/if}}
       </button>
     {{/each}}
   </div>
-
 </div>

@@ -20,7 +20,6 @@
 @import "./utilities/spacing.css";
 
 /* COMPONENTS */
-@import "./components/hero/carousel.css";
 @import "./components/breadcrumbs.css";
 @import "./components/card.css";
 @import "./components/navbar.css";
@@ -45,4 +44,3 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-

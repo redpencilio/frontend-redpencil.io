@@ -1,0 +1,13 @@
+<div class="h-56 flex justify-center md:grid md:grid-cols-3 xl:grid-cols-2 lg:h-72">
+  <div class="absolute bottom-0 right-0 h-full overflow-hidden opacity-20 lg:opacity-100">
+    {{yield to="image"}}
+  </div>
+  <div class="z-10 md:col-span-2 lg:col-span-1 flex flex-col justify-center space-y-4">
+    <h4 class="title-lg font-medium text-gray-700">
+      {{yield to="title"}}
+    </h4>
+    <p class="text-base font-medium text-gray-500">
+      {{yield to="text"}}
+    </p>
+  </div>
+</div>

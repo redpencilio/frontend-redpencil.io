@@ -6,7 +6,7 @@ import { inject as service } from '@ember/service';
 export default class HeroCarouselComponent extends Component {
   @service fastboot;
 
-  @tracked index = 0;
+  @tracked index = 3;
   @tracked items = [0, 1, 2, 3];
   @tracked intervalId;
 
