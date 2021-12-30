@@ -6,7 +6,8 @@
           <div>Creating excellent applications,</div>
           <div>better data,</div>
           <div class="font-black">
-            and proudly building the <span class="text-red-600">#WebWeWant</span>
+            and proudly building
+            <span class="whitespace-nowrap"> the <span class="text-red-600">#WebWeWant</span></span>
           </div>
         </h1>
         <ul class="hidden md:flex md:flex-wrap mt-6">
@@ -20,7 +21,7 @@
       </div>
     </div>
     <div class="mt-12 md:mt-2">
-      <LinkTo @route="contact" class="inline-flex items-center space-x-3 px-8 py-2 rounded-md bg-gray-900 text-gray-100 font-bold hover:bg-gray-700">
+      <LinkTo @route="contact" class="inline-flex items-center space-x-3 px-8 py-2 rounded-md bg-gray-800 text-gray-100 font-bold hover:bg-gray-700">
         <span>Contact us</span>
         {{svg-jar "arrow-right" class="w-4 h-4"}}
       </LinkTo>
@@ -28,7 +29,7 @@
   </section>
 
   <section class="">
-    <h2 class="title-lg margin-bottom-small">
+    <h2 class="title-lg text-gray-800 margin-bottom-small">
       What we do differently
     </h2>
     <Hero::Carousel />
@@ -36,10 +37,10 @@
 
   <section class="flex flex-col items-start">
     <div class="margin-bottom-small space-y-2">
-      <h2 class="title-lg">
+      <h2 class="title-lg text-gray-800">
         We &lt;3 open source
       </h2>
-      <p class="title-xs text-gray-500">
+      <p class="title-xs font-medium text-gray-500">
         We use and contribute to open source projects
       </p>
     </div>
@@ -132,7 +133,7 @@
 
 
   <section class="flex flex-col items-start md:items-center">
-    <h2 class="title-lg margin-bottom-small">
+    <h2 class="title-lg text-gray-800 margin-bottom-small">
       We build for the long term
     </h2>
     <div class="space-y-8">
@@ -144,16 +145,16 @@
           Insightful data analysis
         </li>
         <li class="data-list-item">
-          Eliminated data silos
-        </li>
-        <li class="data-list-item">
-          Extensive data reuse
-        </li>
-        <li class="data-list-item">
           Sustainable data publication
         </li>
         <li class="data-list-item">
+          Data silos elimination
+        </li>
+        <li class="data-list-item">
           Data interoperability
+        </li>
+        <li class="data-list-item">
+          Extensive data reuse
         </li>
       </ul>
       <div class="flex justify-center p-6">

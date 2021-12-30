@@ -1,7 +1,7 @@
 @layer components {
 
   .hero-list-item {
-    @apply bg-gray-100 text-sm font-medium px-4 py-2 mr-2 mb-2 rounded whitespace-nowrap
+    @apply bg-gray-100 text-sm text-gray-700 font-medium tracking-wide px-4 py-2 mr-2 mb-2 rounded whitespace-nowrap
   }
 
   .os-list-item {
@@ -13,6 +13,6 @@
   }
 
   .data-list-item {
-    @apply flex items-center justify-center px-8 py-4 border border-gray-200 rounded-lg bg-white font-bold text-gray-500
+    @apply flex items-center justify-center px-8 py-4 border border-gray-300 rounded-lg bg-white font-medium text-gray-600
   }
 }
