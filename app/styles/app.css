@@ -6,10 +6,8 @@
 
 /* PAGES */
 @import "./pages/index.css";
-@import "./pages/who-we-are.css";
 @import "./pages/projects.css";
 @import "./pages/projects/lblod.css";
-@import "./pages/services.css";
 @import "./pages/contact.css";
 @import "./pages/careers.css";
 @import "./pages/not-found.css";

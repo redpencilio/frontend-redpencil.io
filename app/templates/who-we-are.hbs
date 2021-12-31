@@ -1,151 +1,110 @@
-<div class="about">
+<div class="margin-bottom-medium">
   <Breadcrumbs />
 </div>
 
-<section class="about-header">
-  <h2 class="title-xl">Who we are</h2>
-  <h3 class="title-md-thin mb-12">Our <span class="font-bold"> story </span></h3>
-  <p class="about-text">We were founded by 5 experienced technology professionals in 2017. The idea was to develop
-    business-critical and user-oriented web-applications that have impact based on open data standards.
+<section class="container margin-bottom-medium">
+  <div class="mb-12 md:mb-16">
+    <h1 class="title-xl text-gray-800">
+      Who we are
+    </h1>
+    <h2 class="title-md-thin text-gray-800 mb-12">
+      Our <span class="font-bold">story</span>
+    </h2>
+  </div>
 
-    <br><br>What users want from data is insights. Insight is gained when knowledge interacts with knowledge: therefore,
-    data should flow freely throughout systems, rather than being stored in ‘data silos’.
-    <br><br>
-    That is why we prefer to work with semantically structured data models, which allow for data reusability, seamless
-    integration, easy sharing, and automatic enrichment. In short, more insight, less waste.
-    <br><br>
-    Since our founding, we have kept growing. Based in the heart of Brussels, we have an international outlook, and our
-    coworkers come from all across Europe.
-
+  <p class="margin-bottom-xsmall text-gray-800 md:w-2/3">
+    We were founded by 5 experienced technology professionals in 2017. The idea was to develop business-critical and user-oriented web-applications that have impact based on open data standards.
+  </p>
+  <p class="margin-bottom-xsmall text-gray-800 md:w-2/3">
+    What users want from data is insights. Insight is gained when knowledge interacts with knowledge: therefore, data should flow freely throughout systems, rather than being stored in ‘data silos’.
+  </p>
+  <p class="margin-bottom-xsmall text-gray-800 md:w-2/3">
+    That is why we prefer to work with semantically structured data models, which allow for data reusability, seamless integration, easy sharing, and automatic enrichment. In short, more insight, less waste.
+  </p>
+  <p class="margin-bottom-xsmall text-gray-800 md:w-2/3">
+    Since our founding, we have kept growing. Based in the heart of Brussels, we have an international outlook, and our coworkers come from all across Europe.
   </p>
 </section>
-<section class="stats">
-  <ul class="stats-list">
-    <li class="stats-item">
-      <div class="stats-icon">
-        <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path fill="none" d="M0 0H24V24H0z" />
-          <path
-            d="M6 3c3.49 0 6.383 2.554 6.913 5.895C14.088 7.724 15.71 7 17.5 7H22v2.5c0 3.59-2.91 6.5-6.5 6.5H13v5h-2v-8H9c-3.866 0-7-3.134-7-7V3h4zm14 6h-2.5c-2.485 0-4.5 2.015-4.5 4.5v.5h2.5c2.485 0 4.5-2.015 4.5-4.5V9zM6 5H4v1c0 2.761 2.239 5 5 5h2v-1c0-2.761-2.239-5-5-5z"
-            fill="currentColor" />
-        </svg>
-      </div>
-      <div>
-        <p class="title-lg">2017</p>
-        <h4 class="title-xs-light mb-1">Founded</h4>
-      </div>
+
+<section class="container margin-bottom-large">
+  <ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+    <FactCard @icon="plant" @title="2017" @description="Founded" />
+    <FactCard @icon="book" @title="+250" @description="Repositories" />
+    <FactCard @icon="code" @title="+15 M" @description="Lines of code" />
+    <FactCard @icon="coffee" @title="∞" @description="Coffees" />
+  </ul>
+</section>
+
+<section class="container margin-bottom-large">
+  <div class="mb-12 md:mb-16">
+    <h1 class="title-lg text-gray-800">
+      What are we all about
+    </h1>
+    <h2 class="title-sm-thin text-gray-500 mb-12">
+      Some of the things we like
+    </h2>
+  </div>
+
+  <ul class="grid sm:grid-cols-2 xl:grid-cols-3 gap-3 md:gap-6">
+    <li class="bg-white h-64 flex items-center justify-center">
+      <img class="h-full" src="/assets/vector/open-source-small.svg" alt="Open source">
     </li>
-
-    <li class="stats-item">
-      <div class="stats-icon">
-        <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path fill="none" d="M0 0h24v24H0z" />
-          <path
-            d="M13 21v2.5l-3-2-3 2V21h-.5A3.5 3.5 0 0 1 3 17.5V5a3 3 0 0 1 3-3h14a1 1 0 0 1 1 1v17a1 1 0 0 1-1 1h-7zm0-2h6v-3H6.5a1.5 1.5 0 0 0 0 3H7v-2h6v2zm6-5V4H6v10.035A3.53 3.53 0 0 1 6.5 14H19zM7 5h2v2H7V5zm0 3h2v2H7V8zm0 3h2v2H7v-2z"
-            fill="currentColor" />
-        </svg>
+    <li class="bg-gray-100 rounded py-10 px-10">
+      <div class="title-sm text-gray-800 mb-3">
+        Open source
       </div>
-      <div>
-        <p class="title-lg">+250</p>
-        <h4 class="title-xs-light mb-1">Repositories</h4>
-      </div>
+      <p class="text-sm md:text-base text-gray-600">
+        We consider ourselves an open source company. Whenever possible we prefer to use open source tools and frameworks. We contribute to open source projects and we publish our work under open source licenses.
+      </p>
     </li>
-
-    <li class="stats-item">
-      <div class="stats-icon">
-        <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path fill="none" d="M0 0h24v24H0z" />
-          <path
-            d="M23 12l-7.071 7.071-1.414-1.414L20.172 12l-5.657-5.657 1.414-1.414L23 12zM3.828 12l5.657 5.657-1.414 1.414L1 12l7.071-7.071 1.414 1.414L3.828 12z"
-            fill="currentColor" />
-        </svg>
+    <li class="bg-gray-100 rounded py-10 px-10">
+      <div class="title-sm text-gray-800 mb-3">
+        Open standards
       </div>
-      <div>
-        <p class="title-md">+15 milion</p>
-        <h4 class="title-xs-light mb-1">Lines of code</h4>
-
-      </div>
+      <p class="text-sm md:text-base text-gray-600">
+        We prefer not to publish data using proprietary standards, as we think this is often inefficient. By instead adopting open standards and semantics, we make our data more powerful and interoperable.
+      </p>
     </li>
-
-    <li class="stats-item">
-      <div class="stats-icon">
-        <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-          <path fill="none" d="M0 0h24v24H0z" />
-          <path
-            d="M16 13V5H6v8a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2zM5 3h15a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V4a1 1 0 0 1 1-1zm13 2v3h2V5h-2zM2 19h18v2H2v-2z"fill="currentColor" />
-        </svg>
+    <li class="bg-gray-100 rounded py-10 px-10">
+      <div class="title-sm text-gray-800 mb-3">
+        Distributed solutions
       </div>
-      <div>
-        <p class="title-lg">∞</p>
-        <h4 class="title-xs-light mb-1">Coffees</h4>
+      <p class="text-sm md:text-base text-gray-600">
+        Too often, web services and applications rely on a single point of failure. By switching to decentralized models, we make our products faster and more reliable.
+      </p>
+    </li>
+    <li class="bg-gray-100 rounded py-10 px-10">
+      <div class="title-sm text-gray-800 mb-3">
+        Research
       </div>
+      <p class="text-sm md:text-base text-gray-600">
+        We prize innovation above everything else. We contribute to several research projects and invest substantially in research and development, including open source projects.
+      </p>
+    </li>
+    <li class="bg-white h-64 flex items-center justify-center">
+      <img class="h-full" src="/assets/vector/research-small.svg" alt="Research">
     </li>
   </ul>
 </section>
 
-
-<section class="values">
-  <div class="values-inner">
-    <div class="values-header">
-      <h2 class="title-lg">What are we all about?</h2>
-      <h3 class="title-sm-thin mb-6">Some of the things we like</h3>
+<section class="container margin-bottom-large">
+  <div class="bg-gray-100 py-24 xl:py-64 rounded flex flex-col xl:flex-row items-center justify-between space-y-6">
+    <div class="text-center">
+      <h2 class="title-lg text-gray-800">
+        Want to join the team?
+      </h2>
+      <h3 class="title-md-thin text-gray-800">
+        Check for opportunities
+      </h3>
     </div>
-    <ul class="values-list">
-      <li class="values-list-img">
-          <img class="h-full" src="/assets/vector/open-source-small.svg" alt="open source">
-      </li>
-      <li class="values-list-item">
-
-          <h4 class="values-item-title ">Open source</h4>
-          <p class="values-item-text">We consider ourselves an Open source company. Whenever possible we prefer to use
-            Open
-            Source, we contribute to open source projects, and we publish our work under open source
-            licenses when we can.
-          </p>
-
-      </li>
-      <li class="values-list-item">
-
-          <h4 class="values-item-title ">Open standards</h4>
-          <p class="values-item-text">We prefer not to publish data using proprietary standards, as we think this is
-            often
-            inefficient.
-            By instead adopting open standards and semantics, we make our data more powerful and interoperable.</p>
-
-      </li>
-      <li class="values-list-item">
-
-          <h4 class="values-item-title ">Distributed solutions</h4>
-          <p class="values-item-text">Too often, web services and applications rely on a single point of failure.
-            By switching to decentralized models, we make our products faster and more reliable. </p>
-
-      </li>
-      <li class="values-list-item">
-
-          <h4 class="values-item-title ">Research</h4>
-          <p class="values-item-text">We prize innovation above everything else. We contribute to several research
-            projects and invest substantially in research and development, including Open source
-            projects.
-          </p>
-
-      </li>
-      <li class="values-list-img">
-          <img class="h-full" src="/assets/vector/research-small.svg" alt="open source">
-      </li>
-    </ul>
-  </div>
-</section>
-
-<section class="container">
-  <div class="join">
-    <div class="join-header">
-      <h2 class="title-lg">Want to join the team?</h2>
-      <h3 class="title-md-thin">Check for opportunities</h3>
-    </div>
-    <div>
-      <LinkTo @route="careers" class="join-button">
-        <span class="px-16 font-bold"> Start a new experience </span>
-        <span class="rounded-full bg-red-600 text-white py-3 px-10 font-bold"> Careers</span>
+    <div class="px-4 w-full sm:w-96 sm:px-0">
+      <LinkTo @route="careers" class="bg-white rounded-full pl-4 sm:pl-6 pr-2 py-2 flex items-center justify-between">
+        <span class="text-sm font-semibold text-gray-800">
+          Start a new experience
+        </span>
+        <span class="py-2 px-6 rounded-full bg-red-600 text-white text-sm font-semibold">
+          Careers
+        </span>
       </LinkTo>
     </div>
   </div>
