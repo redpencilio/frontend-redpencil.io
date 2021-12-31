@@ -1,62 +1,70 @@
-<nav class="nav {{if this.active " h-screen"}}">
-  <div class="nav-inner z-30 relative">
-    <LinkTo @route="index" class="nav-logo">
+<nav class="container fixed h-16 w-full z-20 bg-white border-b border-gray-100 {{if this.isOpenMenu "h-screen overflow-auto"}}">
+  <div class="flex items-center justify-between py-5">
+    <LinkTo @route="index" class="mr-6">
       <img class="h-6" src="/assets/vector/rpio-logo.svg" alt="redpencil.io">
     </LinkTo>
-    <ul class="nav-list">
-      <li class="nav-list-item">
-        <LinkTo @route="services">Services</LinkTo>
-      </li>
-      <li class="nav-list-item">
-        <LinkTo @route="projects">Projects</LinkTo>
-      </li>
-      <li class="nav-list-item">
-        <LinkTo @route="who-we-are">Who we are</LinkTo>
-      </li>
-      <li class="nav-list-item">
-        <LinkTo @route="careers">Careers</LinkTo>
-      </li>
-    </ul>
-    <div class="nav-list-menu">
-      <button type="button" class="text-black" {{on 'click' this.toggleActive}}>
-        <svg class="w-6 h-6 hover:text-red-500" fill="currentColor" viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd"
-            d="M3 7a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 13a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"></path>
-        </svg>
+
+    {{!-- Mobile menu toggle --}}
+    <div class="ml-8 lg:hidden">
+      <button type="button" class="text-black" {{on "click" this.toggleMenu}}>
+        {{svg-jar "hamburger-menu" class="w-6 h-6 hover:text-red-600"}}
         <span class="sr-only">Toggle navigation menu</span>
       </button>
-
     </div>
-    <li class="nav-list-button ">
-      <LinkTo class="nav-list-button-inner" @route="contact">Contact</LinkTo>
-    </li>
-  </div>
-  {{#if this.active}}
-  <section class="fs-menu">
-    <div class="fs-menu-inner">
-      <p>Menu</p>
-      <ul>
-        <li class="fs-nav-list-item">
+
+    {{!-- Non-mobile menu items --}}
+    <div class="hidden lg:block">
+      <ul class="flex justify-between items-center space-x-12">
+        <li class="text-base font-semibold text-gray-800 hover:text-red-600">
           <LinkTo @route="services">Services</LinkTo>
         </li>
-        <li class="fs-nav-list-item">
+        <li class="text-base font-semibold text-gray-800 hover:text-red-600">
           <LinkTo @route="projects">Projects</LinkTo>
         </li>
-        <li class="fs-nav-list-item">
+        <li class="text-base font-semibold text-gray-800 hover:text-red-600">
           <LinkTo @route="who-we-are">Who we are</LinkTo>
         </li>
-        <li class="fs-nav-list-item">
+        <li class="text-base font-semibold text-gray-800 hover:text-red-600">
           <LinkTo @route="careers">Careers</LinkTo>
-        </li>
-        <li class="fs-nav-list-item">
-          <LinkTo @route="contact">Contact</LinkTo>
         </li>
       </ul>
     </div>
-  </section>
+
+    <div class="hidden lg:block">
+      <LinkTo @route="contact"
+        class="bg-gray-800 text-sm text-gray-100 px-12 py-2 rounded-md font-bold hover:bg-gray-700">
+        Contact
+      </LinkTo>
+    </div>
+  </div>
+
+  {{!-- Mobile menu --}}
+  {{#if this.isOpenMenu}}
+    <section class="py-8">
+      <h1 class="pb-4 border-b-2 border-gray-600 text-lg font-medium text-gray-800 uppercase tracking-wide">
+        Menu
+      </h1>
+      <ul class="mt-6 space-y-6">
+        <li class="text-2xl font-medium text-gray-800">
+          <LinkTo @route="services">Services</LinkTo>
+        </li>
+        <li class="text-2xl font-medium text-gray-800">
+          <LinkTo @route="projects">Projects</LinkTo>
+        </li>
+        <li class="text-2xl font-medium text-gray-800">
+          <LinkTo @route="who-we-are">Who we are</LinkTo>
+        </li>
+        <li class="text-2xl font-medium text-gray-800">
+          <LinkTo @route="careers">Careers</LinkTo>
+        </li>
+        <li class="text-2xl font-medium text-gray-800">
+          <LinkTo @route="contact">Contact</LinkTo>
+        </li>
+      </ul>
+    </section>
   {{/if}}
 </nav>
 
-<div class="h-16 min-w-screen"></div>
+<div class="h-16">
+  {{!-- Fixed header whitespace --}}
+</div>

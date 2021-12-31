@@ -5,7 +5,8 @@ import { inject as service } from '@ember/service';
 
 export default class NavbarComponent extends Component {
   @service router;
-  @tracked active = false;
+
+  @tracked isOpenMenu = false;
 
   constructor() {
     super(...arguments);
@@ -18,11 +19,13 @@ export default class NavbarComponent extends Component {
     this.router.off('routeWillChange', this.closeMobileMenu);
   }
 
-  @action closeMobileMenu() {
-    this.active = false;
+  @action
+  closeMobileMenu() {
+    this.isOpenMenu = false;
   }
 
-  @action toggleActive() {
-    this.active = !this.active;
+  @action
+  toggleMenu() {
+    this.isOpenMenu = !this.isOpenMenu;
   }
 }
