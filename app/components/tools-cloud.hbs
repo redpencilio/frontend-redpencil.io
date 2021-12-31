@@ -1,0 +1,8 @@
+<ul class="grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+  {{#each this.logos as |logo|}}
+    <li class="tooltip-wrapper p-4 md:p-6 bg-gradient-to-br from-gray-100 to-gray-50 flex justify-center items-center">
+      <img class="h-8 lg:h-10" src="/assets/vector/logos/{{logo.image}}" alt={{logo.name}}>
+      <div class="tooltip">{{logo.name}}</div>
+    </li>
+  {{/each}}
+</ul>

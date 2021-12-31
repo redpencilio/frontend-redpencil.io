@@ -1,15 +1,6 @@
 @layer components {
-
   .hero-list-item {
     @apply bg-gray-100 text-sm text-gray-700 font-medium tracking-wide px-4 py-2 mr-2 mb-2 rounded whitespace-nowrap
-  }
-
-  .os-list-item {
-    @apply w-16 h-16 md:w-24 md:h-24 bg-gradient-to-br from-gray-100 to-gray-50 flex justify-center items-center
-  }
-
-  .os-list-item-logo {
-    @apply h-6 lg:h-8
   }
 
   .data-list-item {

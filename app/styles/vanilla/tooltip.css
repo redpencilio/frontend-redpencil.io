@@ -1,5 +1,4 @@
-.tt-wrapper {
-
+.tooltip-wrapper {
   position: relative;
   -webkit-transform: translateZ(0);
   /* webkit flicker fix */
@@ -7,7 +6,7 @@
   /* webkit text rendering fix */
 }
 
-.tt-wrapper .tooltip {
+.tooltip-wrapper .tooltip {
   background: #1b1b1b;
   bottom: 100%;
   color: #fff;
@@ -41,7 +40,7 @@
 
 /* This bridges the gap so you can mouse into the tooltip without it disappearing */
 
-.tt-wrapper .tooltip:before {
+.tooltip-wrapper .tooltip:before {
   bottom: -20px;
   content: " ";
   display: block;
@@ -52,7 +51,7 @@
 
 /* CSS Triangles - see Trevor's post */
 
-.tt-wrapper .tooltip:after {
+.tooltip-wrapper .tooltip:after {
   border-left: solid transparent 5px;
   border-right: solid transparent 5px;
   border-top: solid #1b1b1b 5px;
@@ -65,7 +64,7 @@
   width: 0;
 }
 
-.tt-wrapper:hover .tooltip {
+.tooltip-wrapper:hover .tooltip {
   opacity: 1;
   pointer-events: auto;
   -webkit-transform: translateY(0px);
