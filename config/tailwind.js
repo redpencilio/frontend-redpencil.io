@@ -1,9 +1,10 @@
-const colors = require('tailwindcss/colors');
-
 module.exports = {
-  purge: [],
-  darkMode: false,
-  plugins: [require('@tailwindcss/forms')],
+  content: [
+    './app/index.html',
+    './app/templates/**/*.hbs',
+    './app/components/**/*.hbs',
+  ],
+
   theme: {
     container: {
       center: true,
@@ -19,13 +20,7 @@ module.exports = {
       gridTemplateColumns: {
         content: '1fr 100px 1fr',
       },
-      colors: {
-        gray: colors.trueGray,
-      },
     },
-    variants: {
-      extend: {},
-    },
-    plugins: [],
+    plugins: [require('@tailwindcss/forms')],
   },
 };
