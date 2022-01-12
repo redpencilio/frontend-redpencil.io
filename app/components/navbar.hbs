@@ -1,6 +1,6 @@
 
 {{!-- DESKTOP NAV --}}
-<nav class="nav">
+<nav class="nav  {{if @dark 'dark'}}">
   <LinkTo @route="index">
   {{#if @dark}}
     <img class="h-6" src="/assets/vector/rpio-logo-light.svg" alt="redpencil.io">
@@ -30,13 +30,13 @@
 <nav class="m-nav {{if this.active 'h-screen'}} overflow-hidden">
   <div class="m-nav-bar">
     <LinkTo @route="index">
-      <img class="h-5" src="/assets/vector/rpio-logo.svg" alt="redpencil.io">
+      <img class="h-5" src="/assets/vector/rpio-logo-light.svg" alt="redpencil.io">
     </LinkTo>
     <button type="button" class="m-nav-toggle" {{on 'click' this.toggleActive}}>
       {{#if this.active}}
-        {{svg-jar "close-line"}}
+        {{svg-jar "close-line" class="text-gray-200" fill="currentColor"}}
       {{else}}
-        {{svg-jar "menu-line"}}
+        {{svg-jar "menu-line" class="text-gray-200" fill="currentColor"}}
       {{/if}}
     </button>
   </div>

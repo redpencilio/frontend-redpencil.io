@@ -3,13 +3,12 @@ import Component from '@glimmer/component';
 export default class HeroSphereComponent extends Component {
 
 initSphere(nCanvasRender) {
-  console.log("yes")
   var app, fnAddEventListener, fnRequestAnimationFrame;
 
   fnRequestAnimationFrame = function(fnCallback) {
     var fnAnimFrame;
     fnAnimFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(fnCallback) {
-      window.setTimeOut(fnCallback, 1000 / 60);
+      window.setTimeout(fnCallback, 1000 / 60);
     };
     fnAnimFrame(fnCallback);
   };
@@ -46,13 +45,13 @@ initSphere(nCanvasRender) {
     fAngle = 0.0;
     fSinAngle = 0.0;
     fCosAngle = 0.0;
-    window.iFramesToRotate = 1750.0;
-    window.iPerspective = 1000;
-    window.iNewParticlePerFrame = 2;
-    window.fGrowDuration = 200.0;
-    window.fWaitDuration = 50.0;
-    window.fShrinkDuration = 250.0;
-    window.aColor = [100,100,100];
+    window.iFramesToRotate = 2000.0
+    window.iPerspective = 250
+    window.iNewParticlePerFrame = 10
+    window.fGrowDuration = 200.0
+    window.fWaitDuration = 50.0
+    window.fShrinkDuration = 250.0
+    window.aColor = [255, 0, 128]
     fVX = (1.5 * fPI) / window.iFramesToRotate;
     ctxRender = nCanvasRender.getContext('2d');
     oRender = {
@@ -65,8 +64,8 @@ initSphere(nCanvasRender) {
     fnSetSize = function() {
       nCanvasRender.width = w = window.innerWidth;
       nCanvasRender.height = h = window.innerHeight;
-      iProjSphereX = w / 1.5;
-      iProjSphereY = h / 2 - 50;
+      iProjSphereX = w / 2
+      iProjSphereY = h / 2
       return {
         w: w,
         h: h
@@ -203,7 +202,7 @@ initSphere(nCanvasRender) {
     })();
     fnRender = function() {
       var iCount, p;
-      ctxRender.fillStyle = "#f5f5f5";
+      ctxRender.fillStyle = "#000000";
       ctxRender.fillRect(0, 0, w, h);
       p = oRender.pFirst;
       iCount = 0;
