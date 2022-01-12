@@ -9,7 +9,11 @@
   }
 
   .career-banner-link {
-    @apply flex items-center py-3 text-gray-300 font-medium text-center text-xs hover:text-white
+    @apply flex items-center space-x-2 py-3 text-gray-300 font-medium text-center text-xs hover:text-white
+  }
+
+  .career-banner-icon {
+    @apply text-red-500 leading-none h-4
   }
 
 }

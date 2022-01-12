@@ -9,19 +9,19 @@
   }
 
   .construction-header {
-    @apply flex justify-between md:border-b pb-1 mb-4 md:mb-6 flex-col md:flex-row
+    @apply flex justify-between md:border-b border-gray-600 pb-1 mb-4 md:mb-6 flex-col md:flex-row
   }
 
   .construction-title {
-    @apply text-lg md:text-2xl font-medium border-b md:border-none mb-4 md:mb-0
+    @apply text-lg md:text-2xl font-medium md:border-none mb-4 md:mb-0 text-white
   }
 
   .construction-info {
-    @apply p-2 text-xs md:text-sm flex space-x-2 items-center text-blue-800 font-medium bg-blue-50
+    @apply p-2 text-xs md:text-sm flex space-x-2 items-center text-blue-300 font-medium bg-blue-900
   }
 
   .construction-info-icon {
-    @apply text-blue-600
+    @apply text-blue-300
   }
 
   .construction-list {

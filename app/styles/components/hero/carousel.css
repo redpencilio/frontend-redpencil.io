@@ -1,10 +1,10 @@
 @layer components {
   .carousel {
-    @apply relative flex bg-gradient-to-r from-black to-gray-900 h-80 items-center
+    @apply relative flex bg-gray-900 h-80 md:h-96 items-center
   }
 
   .carousel-slide {
-    @apply z-10 flex items-center justify-between h-full w-full p-3  md:p-6 bg-cover lg:bg-contain bg-no-repeat bg-right-top
+    @apply z-10 flex items-center justify-between h-full w-full p-3  md:p-6 bg-cover lg:bg-contain bg-no-repeat bg-right-top bg-opacity-40
   }
 
   .carousel-header {
@@ -12,11 +12,11 @@
   }
 
   .carousel-title {
-    @apply text-xl md:text-2xl font-medium mb-4 text-white
+    @apply text-xl md:text-2xl font-medium mb-4 text-gray-100
   }
 
   .carousel-text {
-    @apply text-sm md:text-base text-gray-300
+    @apply text-sm md:text-base text-gray-400
   }
 
   .carousel-navigation {

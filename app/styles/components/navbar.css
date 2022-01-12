@@ -9,7 +9,7 @@
   }
 
   .nav-ul > li {
-    @apply text-gray-400 hover:text-gray-900
+    @apply text-zinc-400 hover:text-zinc-900
   }
 
   .nav-li {
@@ -17,21 +17,21 @@
   }
 
   .nav-button {
-    @apply px-12 py-2 font-medium border border-gray-300 text-sm text-gray-400  hover:bg-gray-800 hover:text-white
+    @apply px-12 py-2 font-medium border border-gray-700 text-sm text-zinc-400 hover:text-white hover:bg-red-700
   }
 
   /* MOBILE */
 
   .m-nav {
-    @apply w-full relative z-50 flex flex-col items-start lg:hidden bg-white
+    @apply w-full relative z-50 flex flex-col items-start lg:hidden
   }
 
   .m-nav-bar {
-    @apply flex w-full items-center justify-between border-b p-3
+    @apply flex w-full items-center justify-between p-3
   }
 
   .m-nav-toggle {
-    @apply bg-gray-100 p-1
+    @apply bg-gray-800 p-1 border border-gray-600
   }
 
   .m-nav-content {
@@ -39,15 +39,14 @@
   }
 
   .m-nav-ul {
-    @apply flex flex-col items-center text-gray-600 py-6
+    @apply flex flex-col items-center text-gray-300 py-6
   }
 
   .m-nav-li {
     @apply flex w-full text-2xl py-3 text-center
   }
 
-  .active {
-    @apply text-black font-medium
+  .nav.dark > ul > li {
+    @apply hover:text-zinc-200
   }
-
 }

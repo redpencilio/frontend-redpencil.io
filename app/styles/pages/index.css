@@ -1,7 +1,7 @@
 @layer components {
 
   .landing {
-    @apply min-h-screen mb-12 md:mb-24 lg:mb-32
+    @apply bg-gray-900 mb-12 md:mb-24 lg:mb-32
   }
 
   .hero-section {
@@ -9,19 +9,19 @@
   }
 
   .hero-inner {
-    @apply w-full sm:w-2/3 xl:w-1/2
+    @apply w-full sm:w-2/3 xl:w-1/2 z-10
   }
 
   .hero-title {
-    @apply text-3xl mb-6 text-black lg:text-5xl lg:mb-12
+    @apply text-3xl mb-6 font-light text-gray-100 lg:text-5xl lg:mb-12
   }
 
   .hero-link {
-    @apply bg-red-600 text-gray-100 px-12 py-3 font-medium hover:bg-red-700
+    @apply bg-black border border-gray-800 text-white px-12 py-3 font-medium hover:bg-red-700
   }
 
   .os-section {
-    @apply container mb-12 md:mb-24 lg:mb-32
+    @apply container mb-12 md:mb-24 lg:mb-32 py-12
   }
 
   .os-section-inner {
@@ -33,7 +33,7 @@
   }
 
   .os-title {
-    @apply flex-1 text-2xl md:text-4xl font-medium
+    @apply flex-1 text-2xl md:text-4xl font-medium text-gray-700
   }
 
   .os-title-sub {
@@ -41,7 +41,7 @@
   }
 
   .os-text {
-    @apply text-sm md:text-base mb-6 text-gray-700
+    @apply text-sm md:text-base mb-6 md:mb-16 text-gray-700
   }
 
   .os-list {
@@ -49,11 +49,11 @@
   }
 
   .os-list-item {
-    @apply flex p-3 bg-gray-100
+    @apply flex items-center
   }
 
   .os-list-item-title {
-    @apply text-sm md:text-base leading-6 font-medium text-gray-900
+    @apply text-sm md:text-base leading-6 font-medium text-gray-800
   }
 
   .os-list-item-text {
@@ -61,11 +61,11 @@
   }
 
   .os-illustration-container {
-    @apply flex-1 bg-gradient-to-tr from-gray-900 to-black hidden lg:block
+    @apply flex-1 bg-gray-100 hidden lg:block
   }
 
   .os-illustration {
-    @apply  bg-cover bg-no-repeat bg-top w-full h-full
+    @apply  bg-cover bg-no-repeat bg-top h-full w-full
   }
 
   .data-section {
@@ -73,7 +73,7 @@
   }
 
   .data-inner {
-    @apply flex flex-col items-center justify-center max-w-full
+    @apply flex flex-col justify-center max-w-full
   }
 
   .data-title {
@@ -85,7 +85,7 @@
   }
 
   .data-list {
-    @apply flex flex-wrap items-center md:justify-center
+    @apply flex flex-wrap items-center
   }
 
   .data-list-item {

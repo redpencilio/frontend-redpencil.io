@@ -1,7 +1,7 @@
 @layer components {
 
   .projects-card {
-    @apply w-full bg-gray-900 rounded
+    @apply w-full bg-black rounded
   }
 
   .projects-card-inner {
@@ -33,7 +33,7 @@
   }
 
   .construction-card {
-    @apply px-6 lg:px-8 p-8 bg-gray-100 h-full
+    @apply px-6 lg:px-8 p-8 bg-gray-900 border-2 border-gray-800 h-full
   }
 
   .construction-card-header {
@@ -41,11 +41,11 @@
   }
 
   .construction-card-title {
-    @apply title-sm  mb-3
+    @apply title-sm  mb-3 text-white
   }
 
   .construction-card-text {
-    @apply text-gray-600 text-sm font-medium
+    @apply text-gray-200 text-sm font-medium
   }
 
   .construction-card-resources a {

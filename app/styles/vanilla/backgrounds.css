@@ -4,7 +4,7 @@
 }
 
 .bg-kaleidos{
-  background-image: url('/assets/vector/kaleidos-pattern.svg');
+  background-image: url('/assets/patterns/kaleidos-pattern.svg');
 }
 
 .bg-toevla{
@@ -57,5 +57,9 @@
 
 .bg-power-spa{
   background-image: url('/assets/vector/power-spa.svg');
+}
+
+.bg-services-lines {
+  background-image: url('/assets/vector/services-lines.svg');
 }
 
