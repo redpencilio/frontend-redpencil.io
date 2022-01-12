@@ -1,7 +1,7 @@
-<div class="landing">
-  <Hero::CareerBanner />
-  <Navbar />
-  <Hero::Sphere />
+<Hero::CareerBanner />
+
+<div class="bg-gradient-to-r from-black to-gray-900 pb-64">
+  <Navbar @dark={{true}} />
 
   <section class="hero-section">
     <div class="hero-inner">
@@ -14,27 +14,31 @@
       </LinkTo>
     </div>
   </section>
-  <Hero::Carousel />
 </div>
+
+<Hero::Carousel />
 
 <section class="os-section">
   <div class="os-section-inner">
     <div class="flex-1">
-      <h2 class="os-title">We &lt;3 Open Source</h2>
-      <p class="os-title-sub">
+
+      <h2 class="os-title">We Breath Open Source</h2>
+      <p class="os-title-sub" >
         Part of our DNA
       </p>
-      <p class="os-text">As technology professionals, we like to see how the applications we use work.
-        Even more, if we
-        see really good solutions we want to implement them ourselves. There are many reasons why open-source
+
+      <p class="os-text">
+        There are many reasons why open-source
         conquered the world of software development, but behind it all is the idea that a large, open community of
-        developers results in better software than any closed group.
+        developers results in better software than any closed group. That why at Redpencil.io we love to use and contribute to Open Source.
       </p>
         <ul class="os-list">
           <li class="os-list-item">
-            {{svg-jar "check-line"}}
+            <div class="bg-green-100 p-2 rounded-full">
+              {{svg-jar "check-line"}}
+            </div>
             <div class="ml-3">
-              <div class="os-list-item-title">
+              <div class="os-list-item-title ">
                 Open collaboration
               </div>
               <div class="os-list-item-text">
@@ -43,7 +47,9 @@
             </div>
           </li>
           <li class="os-list-item">
-            {{svg-jar "check-line"}}
+            <div class="bg-green-100 p-2 rounded-full">
+              {{svg-jar "check-line"}}
+            </div>
             <div class="ml-3">
               <div class="os-list-item-title">
                 Transparency
@@ -54,7 +60,9 @@
             </div>
           </li>
           <li class="os-list-item">
-            {{svg-jar "check-line"}}
+            <div class="bg-green-100 p-2 rounded-full">
+              {{svg-jar "check-line"}}
+            </div>
             <div class="ml-3">
               <div class="os-list-item-title">
                 Security & reliability
@@ -67,32 +75,33 @@
         </ul>
     </div>
     <div class="os-illustration-container">
-      <div class="os-illustration bg-logo-cloud ">
+      <div class="os-illustration bg-logo-cloud bg-gray-900">
       </div>
     </div>
   </div>
 </section>
 
-<div class="container">
-  <section class="data-section">
-    <div class="data-inner">
-      <h2 class="data-title">We build for the long term! Our data engineering solutions ensure:
-      </h2>
-      <ul class="data-list">
-        <li class="data-list-item">Improved data quality</li>
-        <li class="data-list-item">Better data analysis</li>
-        <li class="data-list-item">Eliminated data silos</li>
-        <li class="data-list-item">Reusable data </li>
-        <li class="data-list-item">Sustainable data publishing</li>
-        <li class="data-list-item">Data interoperability</li>
-      </ul>
-    </div>
-  </section>
-</div>
 
-<div class="container mb-12 md:mb-24">
-  <div class="bg-gray-900 px-6 py-12">
-    <Hero::DataCycle />
+
+
+<div class="container">
+  <section class="data-inner">
+    <h2 class="data-title">We build for the long term! Our data engineering solutions ensure:
+    </h2>
+    <ul class="data-list">
+      <li class="data-list-item">Improved data quality</li>
+      <li class="data-list-item">Better data analysis</li>
+      <li class="data-list-item">Eliminated data silos</li>
+      <li class="data-list-item">Reusable data </li>
+      <li class="data-list-item">Sustainable data publishing</li>
+      <li class="data-list-item">Data interoperability</li>
+    </ul>
+  </section>
+
+  <div class="mb-12 md:mb-24 bg-gray-900">
+    <div class=" px-6 py-12 ">
+      <Hero::DataCycle />
+    </div>
   </div>
 </div>
 

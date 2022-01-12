@@ -1,13 +1,18 @@
-<Navbar />
-<Breadcrumbs />
-<PageHeader
-  @title="Our Services"
-  @text="Software solutions and consulting that transform data into knowledge and
-    knowledge into insight."
-/>
 
-<section class="service-category">
-  <h2 class="service-category-title ">Data strategy & architecture</h2>
+<div class="bg-gradient-to-r from-black to-gray-900">
+  <Navbar @dark={{true}}/>
+  <div class="container pb-36">
+    <div class="flex flex-col items-center py-12 md:py-20  text-center">
+    <h2 class="text-4xl lg:text-6xl font-medium mb-3 text-white">Services</h2>
+    <p class="text-base lg:text-xl font-light w-full text-gray-500">Software solutions and consulting that transform data into knowledge and
+      knowledge into insight.</p>
+      {{svg-jar "services-lines"}}
+    </div>
+  </div>
+</div>
+
+<section class="service-category -mt-40">
+  <h2 class="service-category-title text-gray-100 border-gray-600">Data strategy & architecture</h2>
   <div class="service-data-list">
     <ServiceCard
       @illustration="/assets/vector/data-modeling.svg"
@@ -29,7 +34,7 @@
   </div>
 </section>
 
-<section class="service-category">
+<section class="service-category mb-36">
   <h2 class="service-category-title">Application development</h2>
   <div class="service-data-list">
     <ServiceCard

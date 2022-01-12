@@ -1,163 +1,147 @@
-<Navbar />
-<Breadcrumbs />
+<div class="bg-gradient-to-br from-black to-gray-900 pb-48">
+  <Navbar @dark={{true}}/>
+</div>
+<Projects::Header @background="bg-lblod" @title="LBLOD" @text="Lokale Besluiten Linked Open Data" />
 
-<Projects::Header
-  @background="bg-lblod"
-  @title="LBLOD"
-  @text="Lokale Besluiten Linked Open Data"
-/>
-
-<Projects::Section
-  @title="A short introduction"
-  @text="Lokale Besluiten als gelinkte Open Data (Local Decisions as Linked Open Data) is a
-      project by
-      the Flemish Agency for Local Government (Agentschap Binnenlands Bestuur - ABB), launched in 2015 to increase the
-      quality of
-      the data streams between local administration, the Flemish government, and the public. The aim is to increase the
-      efficiency of
-      administration and provide better access to public information.
-      <br> <br>
-
+<div class="container flex flex-col items-center">
+  <section class="w-2/3">
+    <h2 class="mb-6">
+      A short introduction
+    </h2>
+    <p class="leading-relaxed mb-12">
+      Lokale Besluiten als geLinkte Open Data (Local Decisions as Linked Open Data) is a project by the Flemish Agency
+      for Local Government (Agentschap Binnenlands Bestuur - ABB), launched in 2015 to increase the quality of the data
+      streams between local administration, the Flemish government, and the public. The aim is to increase the
+      efficiency of administration and provide better access to public information. <br> <br>
       Redpencil is proud to have helped the Flemish agency for Local Government develop an award-winning new framework
-      for sharing,
-      recording, and publishing the policy decisions of municipalities, provinces, and other local organizations as
-      Linked Open Data"
-/>
+      for sharing, recording, and publishing the policy decisions of municipalities, provinces, and other local
+      organizations as Linked Open Data
+    </p>
 
-<Projects::Section
-  @title="A ‘data first’ application framework"
-  @text="LBLOD is a web of distributed applications working together to create an ecosystem on top of a Linked Open Data
-      platform. Redpencil worked with ABB to create a domain-specific data model and linked data vocabularies. We helped
-      design exchange specifications between over 800 independent parties.
-      <br><br>
+    <div class="lblod-video mb-24">
+      <iframe title="lblod" height="400" src="https://www.youtube.com/embed/DsMbDIkUwMY"
+        class="shadow top-100 left-50 w-full"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </section>
 
-      We also collaborated with ABB to create an application for finding information about local officeholders
-      (Mandatendatabank).
-      Relevant data is also available through a SPARQL endpoint (Centrale Vindplaats).
-      LBLOD data is published as Linked Open Data for easy integration with third-party applications, web pages, and
-      tools."
-/>
 
-<Projects::Section
-  @title="Gelinkt Notuleren — Linked minutes"
-  @text="Streamlining processes and data flows is a central part of LBLOD. To achieve this,
-      Redpencil developed a new semantic word processor.
-      <br><br>
+
+  <section class="w-2/3 mb-24">
+    <h2 class="mb-6">
+      A ‘data first’ application framework
+    </h2>
+    <p class="leading-relaxed">
+      Lokale Besluiten als geLinkte Open Data (Local Decisions as Linked Open Data) is a project by the Flemish Agency
+      for Local Government (Agentschap Binnenlands Bestuur - ABB), launched in 2015 to increase the quality of the data
+      streams between local administration, the Flemish government, and the public. The aim is to increase the
+      efficiency of administration and provide better access to public information.
+      Redpencil is proud to have helped the Flemish agency for Local Government develop an award-winning new framework
+      for sharing, recording, and publishing the policy decisions of municipalities, provinces, and other local
+      organizations as Linked Open Data
+    </p>
+  </section>
+
+
+  <section class="w-2/3 mb-24">
+    <h2 class="mb-6">
+      Gelinkt Notuleren — Linked minutes
+    </h2>
+    <p class="leading-relaxed mb-12">
+      Streamlining processes and data flows is a central part of LBLOD. To achieve this, Redpencil developed a new
+      semantic word processor. <br><br>
+
       Gelinkt Notuleren simplifies the process of creating official meeting minutes and documents for local officials.
       It works in a browser, suggests text, imports links, and data — and automatically semantically annotates, reports,
-      and publishes the decisions.
+      and publishes the decisions. <br><br>
 
-      <br><br>Gelinkt Notuleren was made public as the Open Source project 'Say-editor'."
-/>
-{{!--
-<div class="container">
-  <div class="lblod-video">
-    <iframe title="lblod" height="400" src="https://www.youtube.com/embed/DsMbDIkUwMY"
-      class="shadow top-100 left-50 w-1/2"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
-  </div>
-</div> --}}
-
-
-<section class="masterpiece">
-  <div class="masterpiece-header">
-    <h2 class="title-lg margin-bottom-xsmall">Awards for LBLOD</h2>
-
-    <p class="text-gray-700 w-full lg:w-2/3 margin-bottom-small">LBLOD has been repeatedly recognized as a project that
-      improves the
-      efficiency and
-      openness of local governance in
-      Flanders
+      Gelinkt Notuleren was made public as the Open Source project 'Say-editor'.
     </p>
-  </div>
-  <ul class="awards-list">
-    <li class="awards-list-item">
-      <div class="awards-date">11 Dec 2020</div>
-      <div class="flex-1">
-        <h2 class="awards-title">Gold prize Technology</h2>
-        <p class="leading-relaxed">The Publica Awards reward the best public projects and in this
+    <div class="lblod-gif">
+      <img src="/assets/pixel/editor.gif" alt="editor">
+    </div>
+  </section>
+
+  <section class="w-2/3 mb-24">
+      <h2 class="mb-6">
+        Awards for LBLOD
+      </h2>
+      <p class="leading-relaxed mb-6">
+        LBLOD has been repeatedly recognized as a project that
+        improves the
+        efficiency and
+        openness of local governance in
+        Flanders
+      </p>
+    <ul class="awards-list space-y-2">
+      <li class="flex flex-col items-start justify-center bg-gray-900 text-white p-5 h-32">
+        <div class="bg-zinc-800 border border-gray-600 px-2 py-px rounded text-xs text-gray-200 mb-2">11 Dec 2020</div>
+        <div class="text-white text-xl">Gold prize Technology</div>
+        <p class="text-sm">The Publica Awards reward the best public projects and in this
           way put public actors
           and
           their partners in the spotlight.</p>
-      </div>
-      <a class="awards-link"
-        href="https://publica-brussels.com/winnaars-publica-awards-2020/">Learn
-        more -></a>
-    </li>
-    <li class="awards-list-item">
-      <span class="awards-date">6 Dec 2019</span>
-      <div class="flex-1">
-        <h2 class="awards-title">‘Open Data’ category at Agoria e-gov Awards</h2>
-        <p class="leading-relaxed">Agoria is the trade association for the Belgian technology
-          industry</p>
-      </div>
-      <a class="awards-link"
-        href="https://www.agoria.be/nl/Modernisering-burgerlijke-stand-wint-e-gov-Award-2019">Learn
-        more -></a>
-    </li>
-    <li class="awards-list-item">
-      <span class="awards-date">11 Nov 2019</span>
-      <div class="flex-1">
-        <h2 class="awards-title">Best Large ICT-project
-        </h2>
-        <p class="leading-relaxed">Awarded by Belgian computer magazine DataNews</p>
-      </div>
-      <a class="awards-link"
-        href="https://datanews.knack.be/ict/nieuws/filip-michiels-is-cio-of-the-year-2019/article-news-1535065.html">Learn
-        more -></a>
-    </li>
-    <li class="awards-list-item">
-      <span class="awards-date">14 Dec 2018</span>
-      <div class="flex-1">
-        <h2 class="awards-title">Gouden Byte’ by V-ICT-OR
-        </h2>
-        <p class="leading-relaxed">Awarded for best intergovernmental IT project</p>
-      </div>
-      <a class="awards-link"
-        href="https://lokaalbestuur.vlaanderen.be/nieuws/tool-gelinkt-notuleren-wint-gouden-byte-2018">Learn
-        more -></a>
-    </li>
-  </ul>
-</section>
+      </li>
+      <li class="flex flex-col items-start justify-center bg-gray-900 text-white p-5 h-32">
+        <div class="bg-zinc-800 border border-gray-600 px-2 py-px rounded text-xs text-gray-200 mb-2">6 Dec 2019</div>
+        <div class="text-white text-xl">‘Open Data’ category at Agoria e-gov Awards</div>
+        <p class="text-sm">Agoria is the trade association for the Belgian technology
+            industry</p>
+      </li>
+      <li class="flex flex-col items-start justify-center bg-gray-900 text-white p-5 h-32">
+        <div class="bg-zinc-800 border border-gray-600 px-2 py-px rounded text-xs text-gray-200 mb-2">11 Nov 2019</div>
+        <div class="text-white text-xl">Best Large ICT-project</div>
+        <p class="text-sm">Awarded by Belgian computer magazine DataNews</p>
+      </li>
+      <li class="flex flex-col items-start justify-center bg-gray-900 text-white p-5 h-32">
+        <div class="bg-zinc-800 border border-gray-600 px-2 py-px rounded text-xs text-gray-200 mb-2">14 Dec 2018</div>
+        <div class="text-white text-xl">Gouden Byte’ by V-ICT-OR</div>
+        <p class="text-sm">Awarded for best intergovernmental IT project</p>
+      </li>
+    </ul>
+  </section>
 
-<section class="lblod-elements">
-  <div class="lblod-elements-header">
-    <h2 class="title-lg margin-bottom-xsmall">Key elements</h2>
-    <p class="text-gray-700 w-full lg:w-2/3 margin-bottom-small">LBLOD is an ensemble of many elements that work
+  <section class="w-2/3 mb-24">
+    <h2 class="mb-6">
+      Key elements
+    </h2>
+    <p class="leading-relaxed mb-6">
+      LBLOD is an ensemble of many elements that work
       together in harmony.
       A true revolution
       in the way in
       transformed
-      the way the flemish government handles data.</p>
-  </div>
-  <ul class="lblod-elements-list">
-    <li class="lblod-elements-list-item">
-      <h4 class="font-bold text-xl mb-2">Data architecture</h4>
-      <p class="text-sm">To ensure a smooth flow of data throughout the project applications we have adapted the
+      the way the flemish government handles data.
+    </p>
+  <ul class="lblod-elements-list ">
+    <li class="p-6 bg-gray-50">
+      <h4 class="text-lg mb-2 ">Data architecture</h4>
+      <p class="text-sm text-gray-700">To ensure a smooth flow of data throughout the project applications we have adapted the
         Open Source
         semantic.works microservice framework to the domain of reporting on the decisions at the level of the community
         council. project.
       </p>
     </li>
-    <li class="lblod-elements-list-item">
-      <h4 class="font-bold text-xl mb-2">Digitaal Loket</h4>
-      <p class="text-sm">`Loket voor Lokale Besturen’ is a digital portal for sharing data between the Agentschap Binnenlands Bestuur
+    <li class="p-6 bg-gray-900 text-white">
+      <h4 class="text-lg mb-2">Digitaal Loket</h4>
+      <p class="text-sm text-gray-300">`Loket voor Lokale Besturen’ is a digital portal for sharing data between the Agentschap Binnenlands Bestuur
         and the local governments of Flanders.</p>
     </li>
-    <li class="lblod-elements-list-item">
-      <h4 class="font-bold text-xl mb-2 ">Gelinkt Notuleren</h4>
-      <p class="text-sm">A cornerstone of LBLOD, ‘Linked Minutes’ is a semantic word processor. When used with official
+    <li class="p-6 bg-gray-900 border text-white">
+      <h4 class="text-lg mb-2 ">Gelinkt Notuleren</h4>
+      <p class="text-sm text-gray-300">A cornerstone of LBLOD, ‘Linked Minutes’ is a semantic word processor. When used with official
         documents
         related to local governance decision making, it collects and distributes relevant information as structured
         data. The open source Say-editor is derived from this project.</p>
     </li>
-    <li class="lblod-elements-list-item">
-      <h4 class="font-bold text-xl mb-2">Data distribution services</h4>
-      <p class="text-sm">Local government data is made available as Linked Open Data through services like
+    <li class="p-6 bg-gray-50">
+      <h4 class="text-lg mb-2">Data distribution services</h4>
+      <p class="text-sm text-gray-700">Local government data is made available as Linked Open Data through services like
         Mandatendatabank and Centrale Vindplaats.
       </p>
     </li>
   </ul>
 
 </section>
+</div>

@@ -1,28 +1,37 @@
-<PageHeader
-  @title="Our projects"
-  @text="We take a problem and transform the solution into art."
-/>
+<div class="bg-gradient-to-br from-black to-gray-900 pb-64 md:pb-36">
+  <Navbar @dark={{true}}/>
 
-<section class="projects-card-list">
-  <h2 class="sr-only">Projects with pages</h2>
-  <ProjectCard
-    @title="LBLOD"
-    @text="Local Decisions as Linked Open Data is a project by the Flemish Agency for Local Government"
-    @linkTo="projects.lblod"
-    @illustration="/assets/pixel/digitaal-loket.png"
-    @complete={{true}}
-  />
+  <div class="page-header">
+  <div class="page-header-inner">
+    <div class="page-header-content">
+      <h1 class="page-header-title text-white">Our projects</h1>
+      <h2 class="page-header-text">We take a problem and transform the solution into art.</h2>
+    </div>
+  </div>
+</div>
 
-  <ProjectCard
-    @title="Kaleidos"
-    @text="Kaleidos is a digital platform for managing and working on documents related to the Flemish government’s decision-making process"
-    @linkTo="projects.kaleidos"
-    @illustration="/assets/pixel/digitaal-loket.png"
-    @complete={{true}}
-  />
-</section>
+  <section class="projects-card-list">
+    <h2 class="sr-only">Projects with pages</h2>
+    <ProjectCard
+      @title="LBLOD"
+      @text="Local Decisions as Linked Open Data is a project by the Flemish Agency for Local Government"
+      @linkTo="projects.lblod"
+      @illustration="/assets/pixel/digitaal-loket.png"
+      @complete={{true}}
+    />
 
-<section class="construction">
+    <ProjectCard
+      @title="Kaleidos"
+      @text="Kaleidos is a digital platform for managing and working on documents related to the Flemish government’s decision-making process"
+      @linkTo="projects.kaleidos"
+      @illustration="/assets/pixel/digitaal-loket.png"
+      @complete={{true}}
+    />
+  </section>
+
+</div>
+
+<section class="construction -mt-48 md:-mt-36">
   <div class="construction-header">
     <h2 class="construction-title">Under construction</h2>
     <div class="construction-info">
@@ -32,7 +41,7 @@
           d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM11 7h2v2h-2V7zm0 4h2v6h-2v-6z"
           fill="currentColor" />
       </svg>
-      <span>These projects do not have their own pages yet </span>
+      <span class="font-normal">These projects do not have their own pages yet </span>
     </div>
   </div>
 
