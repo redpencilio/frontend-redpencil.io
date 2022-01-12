@@ -6,6 +6,8 @@
 @import "tailwindcss/utilities";
 
 
+@import "./base.css";
+
 /* PAGES */
 @import "./pages/index.css";
 @import "./pages/who-we-are.css";
@@ -38,14 +40,12 @@
 /* TYPOGRAPHY */
 
 @import "./typography/titles.css";
-@import "./typography/text.css";
 @import "./vanilla/fontface.css";
 
 
 /* OTHER */
 @import "./vanilla/backgrounds.css";
 @import "./vanilla/effects.css";
-@import "./vanilla/tooltip.css";
 
 
 * {
