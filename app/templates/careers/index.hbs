@@ -1,16 +1,17 @@
-<div class="bg-gradient-to-r from-black to-gray-900">
+<div class="bg-gradient-to-r from-black to-gray-900 pb-48 md:pb-36">
   <Navbar @dark={{true}}/>
-</div>
-
-<div class="careers-header">
-  <div class="careers-header-inner">
-    <h1 class="careers-header-title">Careers</h1>
-    <p class="careers-header-text">Work with our team of 12 people to create the #WebWeWant</p>
+  <div class="careers-header ">
+    <div class="careers-header-inner">
+      <h1 class="careers-header-title text-white">Careers</h1>
+      <p class="careers-header-text text-gray-300">Work with our team of 12 people to create the #WebWeWant</p>
+    </div>
   </div>
 </div>
 
-<section class="careers-list">
-  <LinkTo @route="careers.full-stack-developer" class="job-card bg-gray-900">
+
+
+<section class="careers-list -mt-32 md:-mt-20">
+  <LinkTo @route="careers.full-stack-developer" class="job-card bg-gray-900 border-2 border-gray-800 shadow-lg">
     <div class="job-card-header">
       <h3 class="job-card-title">Full Stack Web Developer</h3>
       <div class="job-pill-open">
@@ -50,7 +51,7 @@
       </li>
     </ul>
   </LinkTo>
-  <LinkTo @route="careers.internship" class="job-card bg-gray-900">
+  <LinkTo @route="careers.internship" class="job-card bg-gray-900 border-2 border-gray-800 shadow-lg">
     <div class="job-card-header">
       <h3 class="job-card-title">Internship</h3>
       <div class="job-pill-open">
@@ -92,7 +93,7 @@
   </LinkTo>
 </section>
 
-{{!-- <section class="container mb-48">
+<section class="container mb-48">
   <h2 class="title-lg">Working at redpencil</h2>
   <h3 class="title-sm-thin mb-12">What you can expect</h3>
   <ul class="advantages-list">
@@ -197,5 +198,5 @@
       </svg>
     </a>
   </div>
-</section> --}}
+</section>
 
