@@ -30,13 +30,8 @@ canvas {
 }
 
 .progress {
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-radius: 100px;
-  background: linear-gradient(90deg, #942a2ae5 0%, #da0d0dd3 100%);
-  width: 10%;
-  height: 100%;
+  @apply absolute top-0 left-0 w-full h-full rounded-full;
+  background: linear-gradient(90deg, #d4d4d4 0%, #e5e5e5 100%);
   animation: grow 7s linear;
 }
 

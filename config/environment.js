@@ -2,7 +2,7 @@
 
 module.exports = function (environment) {
   let ENV = {
-    modulePrefix: 'rpio-website',
+    modulePrefix: 'frontend-redpencil',
     environment,
     rootURL: '/',
     locationType: 'auto',
