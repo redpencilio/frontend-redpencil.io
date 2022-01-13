@@ -1,16 +1,3 @@
-
-.glass:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: transparent;
-  border-bottom: 1px solid transparent;
-  backdrop-filter: blur(8px);
-}
-
 .red-dot {
   border-radius: 50px;
   height: 10px;
@@ -31,7 +18,7 @@ canvas {
 
 .progress {
   @apply absolute top-0 left-0 w-full h-full rounded-full;
-  background: linear-gradient(90deg, #d4d4d4 0%, #e5e5e5 100%);
+  background: linear-gradient(90deg, #942a2ae5 0%, #da0d0dd3 100%);
   animation: grow 7s linear;
 }
 

@@ -25,7 +25,7 @@
               </path>
             </svg>
           </div>
-          <Input @type="text" @name="name" @id="name" @value={{this.name}} class="input-box" @placeholder="John" />
+          <Input @type="text" name="name" id="name" @value={{this.name}} class="input-box" placeholder="John" />
         </div>
       </div>
 
@@ -40,8 +40,8 @@
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
               </svg>
             </div>
-            <Input @type="text" @name="email" @id="email" @value={{this.email}} class="input-box"
-              @placeholder="you@example.com" required />
+            <Input @type="text" name="email" id="email" @value={{this.email}} class="input-box"
+              placeholder="you@example.com" required />
           </div>
         </div>
         <div class="flex-1">
@@ -55,8 +55,8 @@
                 </path>
               </svg>
             </div>
-            <Input @type="text" @name="tel" @id="tel" @value={{this.phone}} class="input-box"
-              @placeholder="+12 345678910" />
+            <Input @type="text" name="tel" id="tel" @value={{this.phone}} class="input-box"
+              placeholder="+12 345678910" />
           </div>
         </div>
       </div>
@@ -69,8 +69,8 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
               </svg>
             </div>
-            <Textarea @name="message" class="textarea-box" @placeholder="message" @id="message" @value={{this.message}}
-              @cols="30" @rows="10" required />
+            <Textarea name="message" class="textarea-box" placeholder="message" id="message" @value={{this.message}}
+              cols="30" rows="10" required />
           </div>
       </div>
       <button type="submit" class="submit-button">

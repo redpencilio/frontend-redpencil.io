@@ -1,0 +1,77 @@
+<div class="container -mt-48 mb-12 lg:mb-32 z-30 relativ">
+  <div class="relative flex bg-gray-900 h-80 md:h-96 items-center shadow-lg border border-gray-800">
+    {{#if (eq this.index 0)}}
+      <CarouselSlide>
+        <:title>
+          Open standards
+        </:title>
+        <:text>
+          We use existing, publicly available standards and tools
+          &mdash; to make data shareable, reusable, and avoid vendor lock-in
+        </:text>
+        <:image>
+          <img src="/assets/vector/open-standards.svg"  class="h-full" alt="Open standards">
+        </:image>
+      </CarouselSlide>
+
+    {{else if (eq this.index 1)}}
+      <CarouselSlide>
+        <:title>
+          Powerful web apps
+        </:title>
+        <:text>
+          We use the latest frontend technologies to develop responsive and powerful single-page applications
+          &mdash; for an outstanding user experience
+        </:text>
+        <:image>
+          <img src="/assets/vector/spa.svg" class="h-full" alt="Single page applications">
+        </:image>
+      </CarouselSlide>
+
+    {{else if (eq this.index 2)}}
+      <CarouselSlide>
+        <:title>
+          Data-centric architecture
+        </:title>
+        <:text>
+          We build applications on a domain-specific data infrastructure
+          &mdash; improving data modelling and management
+        </:text>
+        <:image>
+          <img src="/assets/vector/data-centric.svg" class="h-full" alt="Data-centric architecture">
+        </:image>
+      </CarouselSlide>
+
+    {{else if (eq this.index 3)}}
+      <CarouselSlide>
+        <:title>
+          Built with Linked Data
+        </:title>
+        <:text>
+          We use semantic web technologies to model, store and publish data
+          &mdash; to ensure high-quality data flows and avoid data silos
+        </:text>
+        <:image>
+          <img src="/assets/vector/linked-data.svg" class="h-full" alt="Linked Data">
+        </:image>
+      </CarouselSlide>
+    {{/if}}
+  </div>
+
+  <div class="flex justify-start items-center w-full py-2">
+    <div class="relative flex items-center space-x-2 justify-center">
+      {{#each this.items as |item|}}
+      <button {{ on 'click' (fn this.setIndex item)}} type="button"
+        class="w-10 sm:w-12 h-2 rounded-full bg-gray-200 focus:outline-white border hover:bg-gray-300 duration-500 {{if (eq this.index item) "
+        w-28 sm:w-36 bg-gray-50 duration-500 relative"}}">
+        <span class="sr-only">slide number {{item}}</span>
+        {{#if (eq this.index item) }}
+        <div class="progress">
+          <span class="sr-only">current slide</span>
+        </div>
+        {{/if}}
+      </button>
+      {{/each}}
+    </div>
+  </div>
+</div>

@@ -6,8 +6,10 @@ import { inject as service } from '@ember/service';
 export default class HeroCarouselComponent extends Component {
   @service fastboot;
 
-  @tracked index = 3;
-  @tracked items = [0, 1, 2, 3];
+  duration = 7000; // in millis
+  items = [0, 1, 2, 3];
+
+  @tracked index = 0;
   @tracked intervalId;
 
   constructor() {
@@ -28,6 +30,6 @@ export default class HeroCarouselComponent extends Component {
     const nextIndex = () => {
       this.index = (this.index + 1) % this.items.length;
     };
-    this.intervalId = setInterval(nextIndex, 7000);
+    this.intervalId = setInterval(nextIndex, this.duration);
   }
 }
