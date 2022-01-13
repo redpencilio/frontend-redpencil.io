@@ -7,11 +7,4 @@ export default class ContactRoute extends Route {
   afterModel() {
     this.headData.title = 'RPIO | Contact';
   }
-
-  breadCrumbs = [
-    {
-      label: 'Contact',
-      route: 'contact',
-    },
-  ];
 }

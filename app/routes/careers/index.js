@@ -7,11 +7,4 @@ export default class CareersIndexRoute extends Route {
   afterModel() {
     this.headData.title = 'RPIO | Careers';
   }
-
-  breadCrumbs = [
-    {
-      label: 'Careers',
-      route: 'careers',
-    },
-  ];
 }

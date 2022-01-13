@@ -7,14 +7,4 @@ export default class ProjectsToevlaRoute extends Route {
   afterModel() {
     this.headData.title = 'Demo App';
   }
-  breadCrumbs = [
-    {
-      label: 'Projects',
-      route: 'projects',
-    },
-    {
-      label: 'ToeVla',
-      route: 'projects.toevla',
-    },
-  ];
 }

@@ -7,11 +7,4 @@ export default class WhoWeAreRoute extends Route {
   afterModel() {
     this.headData.title = 'RPIO | Who we are';
   }
-
-  breadCrumbs = [
-    {
-      label: 'Who we are',
-      route: 'who-we-are',
-    },
-  ];
 }

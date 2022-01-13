@@ -7,14 +7,4 @@ export default class ProjectsLblodRoute extends Route {
   afterModel() {
     this.headData.title = 'Projects | LBLOD';
   }
-  breadCrumbs = [
-    {
-      label: 'Projects',
-      route: 'projects',
-    },
-    {
-      label: 'LBLOD',
-      route: 'projects.lblod',
-    },
-  ];
 }

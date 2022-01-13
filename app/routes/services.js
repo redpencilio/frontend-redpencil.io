@@ -7,11 +7,4 @@ export default class ServicesRoute extends Route {
   afterModel() {
     this.headData.title = 'RPIO | Services';
   }
-
-  breadCrumbs = [
-    {
-      label: 'Services',
-      route: 'services',
-    },
-  ];
 }

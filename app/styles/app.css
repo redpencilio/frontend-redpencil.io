@@ -24,7 +24,6 @@
 @import "./utilities/spacing.css";
 
 /* COMPONENTS */
-@import "./components/breadcrumbs.css";
 @import "./components/hero/carousel.css";
 @import "./components/hero/career-banner.css";
 @import "./components/hero/data-cycle.css";

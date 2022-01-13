@@ -7,15 +7,4 @@ export default class CareersInternshipRoute extends Route {
   afterModel() {
     this.headData.title = 'Careers | Internship ';
   }
-
-  breadCrumbs = [
-    {
-      label: 'Careers',
-      route: 'careers',
-    },
-    {
-      label: 'Internship',
-      route: 'careers.internship',
-    },
-  ];
 }

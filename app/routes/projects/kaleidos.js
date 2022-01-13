@@ -7,15 +7,4 @@ export default class ProjectsKaleidosRoute extends Route {
   afterModel() {
     this.headData.title = 'RPIO | Kaleidos';
   }
-
-  breadCrumbs = [
-    {
-      label: 'Projects',
-      route: 'projects',
-    },
-    {
-      label: 'Kaleidos',
-      route: 'projects.kaleidos',
-    },
-  ];
 }

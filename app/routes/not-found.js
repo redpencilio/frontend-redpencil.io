@@ -7,11 +7,4 @@ export default class NotFoundRoute extends Route {
   afterModel() {
     this.headData.title = 'RPIO | Page not found';
   }
-
-  breadCrumbs = [
-    {
-      label: '?',
-      route: 'index',
-    },
-  ];
 }

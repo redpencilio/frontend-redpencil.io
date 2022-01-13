@@ -7,15 +7,4 @@ export default class CareersFullStackDeveloperRoute extends Route {
   afterModel() {
     this.headData.title = 'Careers | Full Stack Web Developer';
   }
-
-  breadCrumbs = [
-    {
-      label: 'Careers',
-      route: 'careers',
-    },
-    {
-      label: 'Full Stack Web Developer',
-      route: 'careers.full-stack-developer',
-    },
-  ];
 }
