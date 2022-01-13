@@ -9,7 +9,7 @@
   }
 
   .contact-form{
-    @apply container mb-24 md:mb-48
+    @apply container mb-24 md:mb-48 flex items-center justify-center
   }
 
   .contact-form-inner {
