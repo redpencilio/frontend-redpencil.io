@@ -1,7 +1,9 @@
-<Navbar />
+<div class="bg-gradient-to-r from-black to-gray-900 mb-12 md:mb-28">
+  <Navbar @dark={{true}}/>
+</div>
 
 <article class="not-found-message">
-  <h1 class="title-xl font-bold"> Page not found</h1>
+  <h1 class="title-xl font-medium"> Page not found</h1>
   <p class="mb-16 text-gray-600 w-full md:w-1/2">It looks like this page does not exist or has been moved to a different
     location</p>
   <LinkTo @route="index" class=" inline-flex items-center space-x-2 bg-gray-900 hover:bg-gray-700 rounded px-4 py-2 text-sm text-gray-100 font-semibold">
