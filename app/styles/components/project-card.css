@@ -33,7 +33,7 @@
   }
 
   .construction-card {
-    @apply px-6 lg:px-8 p-8 bg-gray-900 border-2 border-gray-800 h-full
+    @apply px-6 lg:px-8 p-8 bg-gray-800 border-2 border-gray-700 h-full
   }
 
   .construction-card-header {
