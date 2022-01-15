@@ -17,7 +17,7 @@
   }
 
   .construction-info {
-    @apply p-2 text-xs md:text-sm flex space-x-2 items-center text-blue-300 font-medium bg-blue-900
+    @apply p-2 text-xs md:text-sm flex space-x-2 items-center text-blue-200
   }
 
   .construction-info-icon {
