@@ -1,77 +1,135 @@
-
-<div class="bg-gradient-to-r from-black to-gray-900 pb-28 md:pb-36">
+<div class="bg-gradient-to-r from-black to-gray-900">
   <Navbar />
-  <div class="container">
-    <div class="flex flex-col items-center py-12 md:py-20  text-center w-full">
-      <h2 class="text-4xl lg:text-6xl font-medium mb-3 text-white">Contact us</h2>
-      <p class="text-base lg:text-xl font-light w-full text-gray-500">Want to know more about what our solutions can do for your organisation or want to help us develop the new world?
-      Send us a message, and we will get back to you!</p>
-      {{svg-jar "contact-magic" class='w-full'}}
+  <div class="border-y  border-gray-800">
+    <div class="container py-12 lg:py-32">
+
+      <div class="flex flex-col lg:flex-row items-start lg:space-x-24 h-full">
+        <div class="flex flex-col items-start pb-12 md:pb-20 flex-1">
+          <h2 class="text-4xl lg:text-6xl font-medium mb-3 text-white whitespace-nowrap">Contact us</h2>
+          <p class="text-base lg:text-lg font-light w-full text-gray-500 mb-8">Want to know more about what our
+            solutions can do for your organisation or want to help us develop the new world?
+            Send us a message, and we will get back to you!</p>
+          <Socials/>
+        </div>
+
+        <form {{on 'submit' this.sendEmail}}>
+          <div class="flex flex-col space-y-3 w-full bg-white border-2 border-gray-100 rounded-md p-8">
+            <div>
+              <label for="name" class="sr-only">Your name</label>
+              <div class="mt-1 relative">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                  {{svg-jar "person" class="h-4 w-4 text-gray-400"}}
+                </div>
+                <Input @type="text" name="name" id="name" @value={{this.name}}
+                  class="block w-full py-4 pl-10 sm:text-sm border-2 border-gray-100 rounded-md "
+                  placeholder="John" />
+              </div>
+            </div>
+            <div class="flex-1">
+              <label for="email" class="sr-only"> email </label>
+              <div class="mt-1 relative">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                  {{svg-jar "email-line" class="h-4 w-4 text-gray-400"}}
+                </div>
+                <Input @type="text" name="email" id="email" @value={{this.email}}
+                  class="block w-full py-4 pl-10 sm:text-sm border-2 border-gray-100 rounded-md "
+                  placeholder="you@example.com" required />
+              </div>
+            </div>
+            <div class="flex-1">
+              <label for="tel" class="sr-only"> Telephone number </label>
+              <div class="mt-1 relative">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                  {{svg-jar "phone" class="h-4 w-4 text-gray-400"}}
+                </div>
+                <Input @type="text" name="tel" id="tel" @value={{this.phone}}
+                  class="block w-full py-4 pl-10 sm:text-sm border-2 border-gray-100 rounded-md "
+                  placeholder="+12 345678910" />
+              </div>
+            </div>
+            <div>
+              <label for="message" class="sr-only">Message</label>
+              <div class="mt-1 relative">
+                <Textarea name="message"
+                  class="block w-full p-4 sm:text-sm rounded-md bg-gray-100"
+                  placeholder="message" id="message" @value={{this.message}} cols="30" rows="10" required />
+              </div>
+            </div>
+            <button type="submit" class="flex space-x-6 justify-center items-center py-4 bg-gray-900 text-white rounded-md text-sm font-medium hover:bg-gray-700">
+              Send message
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
-</div>
 
-<section>
-  <div class="container mb-24 md:mb-48 flex items-center justify-center">
-    <form class="w-full lg:w-2/3 space-y-3 md:space-y-6 p-2 md:p-6 bg-gray-100 -mt-28" {{on 'submit' this.sendEmail}}>
-      <div>
-        <label for="name" class="sr-only">name </label>
-        <div class="mt-1 relative shadow-sm">
-          <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-            {{svg-jar "person" class="h-5 w-5 text-gray-400"}}
-          </div>
-          <Input @type="text" name="name" id="name" @value={{this.name}} class="focus:ring-gray-500 focus:border-gray-500 block w-full py-4 pl-10 sm:text-sm border-gray-300 bg-gray-50" placeholder="John" />
-        </div>
-      </div>
-
-      <div class="flex space-x-6">
-        <div class="flex-1">
-          <label for="email" class="sr-only"> email </label>
+  {{!-- <div class="container ">
+    <div class="mb-24 md:mb-48 flex items-center justify-center">
+      <form class="w-full lg:w-2/3 space-y-3 md:space-y-6 p-2 md:p-6 bg-gray-100 " {{on 'submit' this.sendEmail}}>
+        <div>
+          <label for="name" class="sr-only">name </label>
           <div class="mt-1 relative shadow-sm">
             <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-              {{svg-jar "email-fill" class="h-5 w-5 text-gray-400"}}
+              {{svg-jar "person" class="h-5 w-5 text-gray-400"}}
             </div>
-            <Input @type="text" name="email" id="email" @value={{this.email}} class="focus:ring-gray-500 focus:border-gray-500 block w-full py-4 pl-10 sm:text-sm border-gray-300 bg-gray-50"
-              placeholder="you@example.com" required />
+            <Input @type="text" name="name" id="name" @value={{this.name}}
+              class="focus:ring-gray-500 focus:border-gray-500 block w-full py-4 pl-10 sm:text-sm border-gray-300 bg-gray-50"
+              placeholder="John" />
           </div>
         </div>
-        <div class="flex-1">
-          <label for="tel" class="sr-only"> Telephone number </label>
-          <div class="mt-1 relative shadow-sm">
-            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-              {{svg-jar "phone" class="h-5 w-5 text-gray-400"}}
+
+        <div class="flex space-x-6">
+          <div class="flex-1">
+            <label for="email" class="sr-only"> email </label>
+            <div class="mt-1 relative shadow-sm">
+              <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                {{svg-jar "email-fill" class="h-5 w-5 text-gray-400"}}
+              </div>
+              <Input @type="text" name="email" id="email" @value={{this.email}}
+                class="focus:ring-gray-500 focus:border-gray-500 block w-full py-4 pl-10 sm:text-sm border-gray-300 bg-gray-50"
+                placeholder="you@example.com" required />
             </div>
-            <Input @type="text" name="tel" id="tel" @value={{this.phone}} class="focus:ring-gray-500 focus:border-gray-500 block w-full py-4 pl-10 sm:text-sm border-gray-300 bg-gray-50"
-              placeholder="+12 345678910" />
+          </div>
+          <div class="flex-1">
+            <label for="tel" class="sr-only"> Telephone number </label>
+            <div class="mt-1 relative shadow-sm">
+              <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                {{svg-jar "phone" class="h-5 w-5 text-gray-400"}}
+              </div>
+              <Input @type="text" name="tel" id="tel" @value={{this.phone}}
+                class="focus:ring-gray-500 focus:border-gray-500 block w-full py-4 pl-10 sm:text-sm border-gray-300 bg-gray-50"
+                placeholder="+12 345678910" />
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <label for="message" class="sr-only">Message</label>
+        <div>
+          <label for="message" class="sr-only">Message</label>
           <div class="mt-1 relative shadow-sm">
             <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
               {{svg-jar "chevron-right" class="h-4 w-4 text-gray-400 mb-auto mt-5" }}
             </div>
-            <Textarea name="message" class="focus:ring-gray-500 focus:border-gray-500 block w-full py-4 pl-10 sm:text-sm  border border-gray-300 resize-none bg-gray-50" placeholder="message" id="message" @value={{this.message}}
-              cols="30" rows="10" required />
+            <Textarea name="message"
+              class="focus:ring-gray-500 focus:border-gray-500 block w-full py-4 pl-10 sm:text-sm  border border-gray-300 resize-none bg-gray-50"
+              placeholder="message" id="message" @value={{this.message}} cols="30" rows="10" required />
           </div>
-      </div>
-      <button type="submit" class="submit-button">
-        Send
-      </button>
-    </form>
-  </div>
+        </div>
+        <button type="submit" class="submit-button">
+          Send
+        </button>
+      </form>
+    </div>
 
-</section>
-<Footer/>
+  </div> --}}
+  </div>
+<Footer />
 
 {{#if this.showNotification}}
-  {{#if this.success}}
-    <Notification @success={{this.success}} @title="Message successfully sent!"
-      @text="Thank you for your message, we will get back to you as soon as possible" @onClose={{this.close}} />
-  {{else}}
-    <Notification @success={{this.success}} @title="Something went wrong"
-      @text="Please try again later or mail us directly at meettheteam@redpencil.io" @onClose={{this.close}} />
-  {{/if}}
+{{#if this.success}}
+<Notification @success={{this.success}} @title="Message successfully sent!"
+  @text="Thank you for your message, we will get back to you as soon as possible" @onClose={{this.close}} />
+{{else}}
+<Notification @success={{this.success}} @title="Something went wrong"
+  @text="Please try again later or mail us directly at meettheteam@redpencil.io" @onClose={{this.close}} />
 {{/if}}
-
+{{/if}}
