@@ -61,7 +61,7 @@
   }
 
   .advantages-icon {
-    @apply bg-gray-900 text-white p-3 rounded-full mr-3 md:mr-0
+    @apply bg-gray-900 text-white p-3 rounded mr-3 md:mr-0
   }
 
   .advantages-list-item {
