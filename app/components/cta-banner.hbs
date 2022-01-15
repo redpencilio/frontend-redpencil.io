@@ -1,0 +1,16 @@
+<div class="h-full relative">
+  <div class="container relative z-10">
+    <div
+      class="relative h-72 flex flex-col justify-center w-full bg-gradient-to-r from-gray-800 to-black border border-gray-800 rounded-lg p-16 shadow-2xl shadow-red-900/20">
+      <div class="z-10">
+        <div class="text-2xl font-medium text-white">We’d love to hear from you</div>
+        <LinkTo @route="contact" class="flex items-center space-x-1 font-medium text-red-500 hover:text-red-400">
+          <span>contact us</span>
+          {{svg-jar "arrow-right" class="h-4  group"}}
+        </LinkTo>
+      </div>
+      <img class="absolute h-full right-0 top-0" src="/assets/vector/ripples.svg" alt="ripples">
+    </div>
+  </div>
+  <div class="h-1/3 w-full bg-gradient-to-r from-black to-gray-900 absolute bottom-0"></div>
+</div>
