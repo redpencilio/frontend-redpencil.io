@@ -8,96 +8,33 @@
   </div>
 </div>
 
-
-
 <section class="careers-list -mt-32 md:-mt-20">
-  <LinkTo @route="careers.full-stack-developer" class="job-card bg-gray-900 border-2 border-gray-800 shadow-lg">
-    <div class="job-card-header">
-      <h3 class="job-card-title">Full Stack Web Developer</h3>
-      <div class="job-pill-open">
-        <svg class="job-pill-open-circle" fill="currentColor" viewBox="0 0 8 8">
-          <circle cx="4" cy="4" r="3" />
-        </svg>
-        <span>Open</span>
-      </div>
-    </div>
-    <ul class="job-prop-list">
-      <li class="job-prop-item">
-        <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path fill="none" d="M0 0H24V24H0z" />
-          <path
-            d="M15 3c.552 0 1 .448 1 1v2h5c.552 0 1 .448 1 1v13c0 .552-.448 1-1 1H3c-.552 0-1-.448-1-1V7c0-.552.448-1 1-1h5V4c0-.552.448-1 1-1h6zM8 8H6v11h2V8zm10 0h-2v11h2V8zm-4-3h-4v1h4V5z"
-            fill="currentColor" />
-        </svg>
-        <span>Full-time</span>
-      </li>
-      <li class="job-prop-item">
-        <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path fill="none" d="M0 0h24v24H0z" />
-          <path
-            d="M21 19h2v2H1v-2h2V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v15h2V9h3a1 1 0 0 1 1 1v9zM7 11v2h4v-2H7zm0-4v2h4V7H7z"
-            fill="currentColor" />
-        </svg>
-        <span>Remote</span>
-      </li>
-      <li class="job-prop-item">
-        <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path fill="none" d="M0 0h24v24H0z" />
-          <path
-            d="M16.95 11.95a6.996 6.996 0 0 0 1.858-6.582l2.495-1.07a.5.5 0 0 1 .697.46V19l-7 3-6-3-6.303 2.701a.5.5 0 0 1-.697-.46V7l3.129-1.341a6.993 6.993 0 0 0 1.921 6.29L12 16.9l4.95-4.95zm-1.414-1.414L12 14.07l-3.536-3.535a5 5 0 1 1 7.072 0z"
-            fill="currentColor" />
-        </svg>
-        <span>Belgium (preferably)</span>
-      </li>
-    </ul>
-  </LinkTo>
-  <LinkTo @route="careers.internship" class="job-card bg-gray-900 border-2 border-gray-800 shadow-lg">
-    <div class="job-card-header">
-      <h3 class="job-card-title">Internship</h3>
-      <div class="job-pill-open">
-        <svg class="job-pill-open-circle" fill="currentColor" viewBox="0 0 8 8">
-          <circle cx="4" cy="4" r="3" />
-        </svg>
-        <span>Open</span>
-      </div>
-    </div>
-    <ul class="job-prop-list">
-      <li class="job-prop-item">
-        <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path fill="none" d="M0 0H24V24H0z" />
-          <path
-            d="M15 3c.552 0 1 .448 1 1v2h5c.552 0 1 .448 1 1v13c0 .552-.448 1-1 1H3c-.552 0-1-.448-1-1V7c0-.552.448-1 1-1h5V4c0-.552.448-1 1-1h6zM8 8H6v11h2V8zm10 0h-2v11h2V8zm-4-3h-4v1h4V5z"
-            fill="currentColor" />
-        </svg>
-        <span>Temporary</span>
-      </li>
-      <li class="job-prop-item">
-        <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path fill="none" d="M0 0h24v24H0z" />
-          <path
-            d="M21 19h2v2H1v-2h2V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v15h2V9h3a1 1 0 0 1 1 1v9zM7 11v2h4v-2H7zm0-4v2h4V7H7z"
-            fill="currentColor" />
-        </svg>
-        <span>Remote</span>
-      </li>
-      <li class="job-prop-item">
-        <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path fill="none" d="M0 0h24v24H0z" />
-          <path
-            d="M16.95 11.95a6.996 6.996 0 0 0 1.858-6.582l2.495-1.07a.5.5 0 0 1 .697.46V19l-7 3-6-3-6.303 2.701a.5.5 0 0 1-.697-.46V7l3.129-1.341a6.993 6.993 0 0 0 1.921 6.29L12 16.9l4.95-4.95zm-1.414-1.414L12 14.07l-3.536-3.535a5 5 0 1 1 7.072 0z"
-            fill="currentColor" />
-        </svg>
-        <span>Global</span>
-      </li>
-    </ul>
-  </LinkTo>
+  <CareerCard
+    @isLink={{true}}
+    @linkTo="careers.full-stack-developer"
+    @title="Full Stack Web Developer"
+    @status="Open"
+    @contract="Full-time"
+    @remoteOrLocal="Remote"
+    @location="Belgium (preferably)"
+  />
+
+  <CareerCard
+    @isLink={{true}}
+    @linkTo="careers.internship"
+    @title="Internship"
+    @status="Open"
+    @contract="Temporary"
+    @remoteOrLocal="Remote"
+    @location="Global"
+  />
 </section>
 
 <section class="container mb-48">
-  <h2 class="title-lg">Working at redpencil</h2>
-  <h3 class="title-sm-thin mb-12">What you can expect</h3>
+  <h2 class="text-2xl md:text-4xl mb-1 font-medium text-gray-900 text-center">Working at redpencil</h2>
+  <h3 class="title-sm-thin mb-12 text-center">What you can expect</h3>
   <ul class="advantages-list">
-    <li class="advantages-list-item">
+    <li class="advantages-list-item ">
       <div class="advantages-icon">
         <svg class="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path fill="none" d="M0 0H24V24H0z" />
@@ -106,7 +43,7 @@
             fill="currentColor" />
         </svg>
       </div>
-      <p class=" font-bold">Work-life balance</p>
+      <p class="font-medium">Work-life balance</p>
     </li>
     <li class="advantages-list-item">
       <div class="advantages-icon">
