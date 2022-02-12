@@ -7,12 +7,10 @@ export default class ToolsCloudComponent extends Component {
     'Ember.js',
     'Kibana',
     'Elasticsearch',
-    'Docker Compose',
     'Semantic.works',
     'Python',
     'RDF',
     'Node.js',
-    'Emacs',
     'Ruby',
   ];
 
