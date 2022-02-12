@@ -1,6 +1,7 @@
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+const autoprefixer = require('autoprefixer');
 
 module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
@@ -13,6 +14,10 @@ module.exports = function (defaults) {
             options: {
               path: ['node_modules'],
             },
+          },
+          {
+            module: autoprefixer,
+            options: {},
           },
           require('tailwindcss')('./config/tailwind.js'),
         ],
