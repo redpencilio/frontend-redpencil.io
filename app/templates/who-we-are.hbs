@@ -1,6 +1,6 @@
-<div class="bg-gradient-to-br from-black to-gray-900 pb-36 mb-6">
+<div class="relative bg-gradient-to-br from-black to-gray-900 pb-36 mb-6 overflow-hidden">
   <Navbar/>
-
+  <img class="absolute w-full right-0 top-0" src="/assets/vector/waves.svg" alt="ripples">
   <div class="page-header">
     <div class="page-header-inner">
       <div class="page-header-content relative">
@@ -10,7 +10,7 @@
     </div>
   </div>
 
-  <section class="container mb-12">
+  <section class="container mb-12 z-10">
     <h2 class="text-2xl md:text-4xl mb-4 font-medium text-white">Our story</h2>
     <p class="w-full md:w-2/3 text-gray-100">We were founded by 5 experienced technology professionals in 2017. The idea was to develop
       business-critical and user-oriented web-applications that have impact based on open data standards.
@@ -27,19 +27,21 @@
     </p>
   </section>
 
-  <section class="container mb-12 md:mb-24 lg:mb-32">
-    <ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
-      <FactCard @icon="plant" @title="2017" @description="Founded" />
-      <FactCard @icon="book" @title="+250" @description="Repositories" />
-      <FactCard @icon="code" @title="+15 M" @description="Lines of code" />
-      <FactCard @icon="coffee" @title="∞" @description="Coffees" />
-    </ul>
-  </section>
+
 </div>
 
+<section class="relative container mb-12 md:mb-24 lg:mb-32 -mt-20 z-10">
+  <ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+    <FactCard @icon="plant" @title="2017" @description="Founded" />
+    <FactCard @icon="book" @title="+250" @description="Repositories" />
+    <FactCard @icon="code" @title="+15 M" @description="Lines of code" />
+    <FactCard @icon="coffee" @title="∞" @description="Coffees" />
+  </ul>
+</section>
 
-<section class="container mb-12 -mt-40">
-  <div class="flex flex-col p-6 md:p-12 lg:p-24 bg-gray-100 border-2">
+
+<section class="container mb-12 ">
+  <div class="flex flex-col">
     <div class="mb-6 md:mb-12">
       <h2 class="text-2xl md:text-4xl font-medium text-center text-gray-900">What are we all about?</h2>
       <p class="text-lg md:text-xl text-center text-gray-700">Some of the things we like</p>
@@ -49,7 +51,7 @@
       <li class="flex flex-col items-start justify-center  bg-gray-900 border border-gray-800  py-0 md:py-2 px-5 md:px-10 h-64">
 
           <h4 class="text-xl text-white mb-3 ">Open source</h4>
-          <p class="text-xs md:text-sm font-medium text-gray-300">We consider ourselves an Open source company. Whenever possible we prefer to use
+          <p class=" md:text-sm font-medium text-gray-300">We consider ourselves an Open source company. Whenever possible we prefer to use
             Open
             Source, we contribute to open source projects, and we publish our work under open source
             licenses when we can.
@@ -59,7 +61,7 @@
       <li class="flex flex-col items-start justify-center  bg-gray-900 border border-gray-800  py-0 md:py-2 px-5 md:px-10 h-64">
 
           <h4 class="text-xl text-white mb-3 ">Open standards</h4>
-          <p class="text-xs md:text-sm font-medium text-gray-300">We prefer not to publish data using proprietary standards, as we think this is
+          <p class=" md:text-sm font-medium text-gray-300">We prefer not to publish data using proprietary standards, as we think this is
             often
             inefficient.
             By instead adopting open standards and semantics, we make our data more powerful and interoperable.</p>
@@ -68,7 +70,7 @@
       <li class="flex flex-col items-start justify-center  bg-gray-900 border border-gray-800  py-0 md:py-2 px-5 md:px-10 h-64">
 
           <h4 class="text-xl text-white mb-3 ">Distributed solutions</h4>
-          <p class="text-xs md:text-sm font-medium text-gray-300">Too often, web services and applications rely on a single point of failure.
+          <p class=" md:text-sm font-medium text-gray-300">Too often, web services and applications rely on a single point of failure.
             By switching to decentralized models, we make our products faster and more reliable. </p>
 
       </li>
