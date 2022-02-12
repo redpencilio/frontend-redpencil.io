@@ -32,77 +32,73 @@
         conquered the world of software development, but behind it all is the idea that a large, open community of
         developers results in better software than any closed group. That why at Redpencil.io we love to use and contribute to Open Source.
       </p>
-        <ul class="os-list">
-          <li class="os-list-item">
-            <div class="bg-green-100 p-2 rounded-full">
-              {{svg-jar "check-line"}}
-            </div>
-            <div class="ml-3">
-              <div class="os-list-item-title ">
-                Open collaboration
-              </div>
-              <div class="os-list-item-text">
-                Driver of innovation
-              </div>
-            </div>
-          </li>
-          <li class="os-list-item">
-            <div class="bg-green-100 p-2 rounded-full">
-              {{svg-jar "check-line"}}
-            </div>
-            <div class="ml-3">
-              <div class="os-list-item-title">
-                Transparency
-              </div>
-              <div class="os-list-item-text">
-                Know what you use
-              </div>
-            </div>
-          </li>
-          <li class="os-list-item">
-            <div class="bg-green-100 p-2 rounded-full">
-              {{svg-jar "check-line"}}
-            </div>
-            <div class="ml-3">
-              <div class="os-list-item-title">
-                Security & reliability
-              </div>
-              <div class="os-list-item-text">
-                Trust what you use
-              </div>
-            </div>
-          </li>
-        </ul>
     </div>
-    <div class="os-illustration-container">
-      <div class="os-illustration bg-logo-cloud bg-gray-900">
+    <div class="w-1/2 flex flex-col space-y-10 mb-24">
+      <div class="w-full flex justify-center">
+        <div class="flex flex-col text-center">
+          <span class="font-medium">Security & reliability</span>
+          <span class="text-sm">Trust what you use</span>
+        </div>
+      </div>
+      <div class="flex justify-evenly relative">
+        <div class="absolute w-full h-px bg-gradient-to-r from-gray-50 via-black to-gray-50 top-1/2">
+
+        </div>
+        <div class="z-10 w-14 h-14 bg-white flex items-center justify-center border border-gray-200 rounded shadow-2xl shadow-red-300/40">
+          {{svg-jar "collaboration" class="flex-no-shrink text-red-600 w-6"}}
+          <div class="absolute bottom-0 h-4 w-px bg-gray-900 transform translate-y-full"></div>
+        </div>
+        <div class="z-10 w-14 h-14 bg-white flex items-center justify-center border border-gray-200 rounded shadow-2xl shadow-red-300/40">
+          {{svg-jar "shield-secure" class="flex-no-shrink text-red-600 w-6"}}
+          <div class="absolute top-0 h-4 w-px bg-gray-900 transform -translate-y-full"></div>
+        </div>
+        <div class="z-10 w-14 h-14 bg-white flex items-center justify-center border border-gray-200 rounded shadow-2xl shadow-red-300/40">
+          {{svg-jar "open-book" class="flex-no-shrink text-red-600 w-6"}}
+          <div class="absolute bottom-0 h-4 w-px bg-gray-900 transform translate-y-full"></div>
+        </div>
+      </div>
+      <div class="flex justify-evenly">
+        <div class="flex flex-col text-center">
+          <span class="font-medium">Open collaboration</span>
+          <span class="text-sm">Driver of innovation</span>
+        </div>
+        <div></div>
+        <div class="flex flex-col text-center">
+          <span class="font-medium">Transparency</span>
+          <span class="text-sm">Know what you use</span>
+        </div>
       </div>
     </div>
+  </div>
+  <div>
+    <h3 class="font-normal text-gray-700 mb-3 text-center">Some open source technologies we use</h3>
+    <ToolsCloud/>
+  </div>
+
+</section>
+
+<section class="bg-gradient-to-br from-black to-gray-800 mb-32">
+  <div class="container">
+    <div class="border-b border-px border-gray-800 py-36 flex justify-center space-x-12">
+      <h2 class="text-4xl mb-6 text-white font-light w-1/2">We build for the long term ensuring:
+      </h2>
+      <div>
+        <ul class="data-list">
+          <li class="data-list-item">Improved data quality</li>
+          <li class="data-list-item">Better data analysis</li>
+          <li class="data-list-item">Eliminated data silos</li>
+          <li class="data-list-item">Reusable data </li>
+          <li class="data-list-item">Sustainable data publishing</li>
+          <li class="data-list-item">Data interoperability</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="py-36">
+    <Hero::DataCycle/>
   </div>
 </section>
 
 
-
-
-<div class="container">
-  <section class="data-inner">
-    <h2 class="data-title">We build for the long term ensuring:
-    </h2>
-    <ul class="data-list">
-      <li class="data-list-item">Improved data quality</li>
-      <li class="data-list-item">Better data analysis</li>
-      <li class="data-list-item">Eliminated data silos</li>
-      <li class="data-list-item">Reusable data </li>
-      <li class="data-list-item">Sustainable data publishing</li>
-      <li class="data-list-item">Data interoperability</li>
-    </ul>
-  </section>
-
-  <div class="mb-12 md:mb-24 bg-gray-900">
-    <div class=" px-6 py-12 ">
-      <Hero::DataCycle />
-    </div>
-  </div>
-</div>
-
+<CtaBanner />
 <Footer />

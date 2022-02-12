@@ -73,23 +73,23 @@
   }
 
   .data-inner {
-    @apply flex flex-col justify-center max-w-full
+    @apply flex justify-between max-w-full
   }
 
   .data-title {
-    @apply text-2xl md:text-4xl md:w-2/3 mb-6
+    @apply text-2xl md:text-4xl mb-6 text-center
   }
 
-  .data-content {
-    @apply flex flex-col
+  .data-list-container {
+    @apply flex
   }
 
   .data-list {
-    @apply flex flex-wrap items-center
+    @apply flex flex-wrap justify-center
   }
 
   .data-list-item {
-    @apply  text-white text-xs md:text-sm px-4 py-2 md:px-6 md:py-3 mr-3 mb-3 bg-gray-800 whitespace-nowrap
+    @apply text-white px-6 py-2 bg-gray-900 rounded border border-gray-800 mr-3 mb-3 h-10 text-center shadow-2xl shadow-red-700/40
   }
 
 }
