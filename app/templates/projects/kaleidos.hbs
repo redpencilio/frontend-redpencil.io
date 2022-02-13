@@ -4,44 +4,60 @@
 <Projects::Header @background="bg-kaleidos" @title="KALEIDOS" />
 
 <div class="container flex flex-col items-center">
+  <div class="w-2/3 mb-16">
+    <blockquote class="relative py-6 px-2 text-xl italic border-t border-b  text-neutral-600 border-gray-200">
+      <p class="mb-4 font-light">&ldquo; We are evolving from a government that works on the basis of individual paper documents to a government that
+        works on the basis of digital information flows, digital and interactive networks, linked databases &ldquo;</p>
+      <cite class="flex items-center text-sm leading-none">
+        <a href="https://www.vlaanderen.be/publicaties/vlaanderen-radicaal-digitaal-2015-2019" class="text-blue-500">Conceptnota Vlaanderen Radicaal Digitaal 2015-2019, p13</a>
+      </cite>
+      <span class="text-xs font-light">Translated from Dutch to English</span>
+    </blockquote>
+  </div>
   <section class="w-2/3 mb-24">
-    <h2 class="mb-6">
+    <h2 class="mb-6 text-gray-700">
       Making decisions true
     </h2>
-    <p class="leading-relaxed">
-      “We are evolving from a government that works on the basis of individual paper documents to a government that
-      works on the basis of digital information flows, digital and interactive networks, linked databases”. Extract
-      translated from: Conceptnota Vlaanderen Radicaal Digitaal 2015-2019, p13
-      (https://www.vlaanderen.be/publicaties/vlaanderen-radicaal-digitaal-2015-2019)
+    <p class="leading-relaxed text-lg">
       With the Kaleidos project Redpencil is supporting the development of a digital platform that supports the
       decision-making process of the Flemish Government.</p>
+
     <br>
-    <h3 class="font-medium">
-      With the RDF based application it is possible to:
-    </h3>
-    <ul class="list-disc pl-5">
-      <li>draft the agenda based on the proposals of agenda points</li>
-      <li>register the legislative texts with metadata in a transparent manner,</li>
-      <li>support the approval stages from submission to publication,</li>
-      <li>disseminate the information about the decisions of the Flemish government to stakeholders and publication
-        channels (administration, press, Mailchimp, website, open data platform)</li>
-      <li>search the full text of the entire archive of digitised decisions of the Flemish Government</li>
-    </ul>
+    <br>
+    <div class="bg-gray-100 rounded-md p-6">
+      <h3 class="text-lg mb-6 font-medium text-gray-700">
+        With the RDF based application it is possible to:
+      </h3>
+      <ul class="pl-2 list-inside flex flex-col space-y-6">
+        <li> <span class="px-2 bg-blue-100 text-blue-700 rounded-full leading-none mr-2">></span>Draft the agenda based on the proposals of agenda points</li>
+        <li><span class="px-2 bg-blue-100 text-blue-700 rounded-full leading-none mr-2">></span>Register the legislative texts with metadata in a transparent manner,</li>
+        <li><span class="px-2 bg-blue-100 text-blue-700 rounded-full leading-none mr-2">></span>Support the approval stages from submission to publication,</li>
+        <li><span class="px-2 bg-blue-100 text-blue-700 rounded-full leading-none mr-2">></span>Disseminate the information about the decisions of the Flemish government to stakeholders and publication
+          channels (administration, press, Mailchimp, website, open data platform)</li>
+        <li><span class="px-2 bg-blue-100 text-blue-700 rounded-full leading-none mr-2">></span>Search the full text of the entire archive of digitised decisions of the Flemish Government</li>
+      </ul>
+    </div>
   </section>
 
 
   <section class="w-2/3 mb-24">
-    <h2 class="mb-6">
+    <h2 class="mb-6 text-gray-700">
       We choose to do this not because it is easy
     </h2>
-    <p class="leading-relaxed">
+    <p class="leading-relaxed text-lg">
       The program involves aligning objectives and the redesign of processes with the services of the Chancellery
-      (legal, secretary, communications, publications, finance), central user and authorisation management of the
+      <span class="text-sm">(legal, secretary, communications, publications, finance)</span>
+      , central user and authorisation management of the
       Flemish Government, central IT services for website and mail, 9 different political cabinets, 9 government
-      departments, the Flemish Parliament and several other institutions. Every minor or major upgrade must be deployed
+      departments, the Flemish Parliament and several other institutions.
+
+      <br><br>
+      Every minor or major upgrade must be deployed
       in such a way that the governmental work can proceed without interruption. In every step strong controls are
       required, but equally there must be an option for flexibility to bend for specific edge cases. And all functions
       need to be intuitive.
+
+      <br><br>
       The Kaleidos project was the driver to add a number of major modules to the semantic.works stack: rolling data
       driven authorisation, model driven full text search, HTTP-monitoring between the micro services, redundancy setup.
       Redpencil is proud to contribute to facilitating and supporting the decision making and the transparency of the
@@ -50,25 +66,31 @@
   </section>
 
   <section class="w-2/3 mb-24">
-    <h2 class="mb-6">
+    <h2 class="mb-6 text-gray-700">
       Data First
     </h2>
-    <p class="leading-relaxed">
-      The entire platform is based on the data model for decision making, established with the business
-      (https://data.vlaanderen.be/doc/applicatieprofiel/besluitvorming/)
-      Implementing all functionality on this data model, we aim to:
-      - simplify and accelerate the efficiency of the administration
-      - enrich the registration of the decision steps and documents
-      - increase the transparency of the supporting administrative processes
+    <p class="leading-relaxed text-lg">
+      The entire platform is based on <a href="https://data.vlaanderen.be/doc/applicatieprofiel/besluitvorming/" class="text-blue-700">the data model for decision making</a>, established with the business
     </p>
+    <br><br>
+      <div class="bg-gray-100 rounded-md p-6">
+        <h3 class="text-lg mb-6 font-medium text-gray-700">
+          Implementing all functionality on this data model, we aim to:
+        </h3>
+        <ul class="pl-2 list-inside flex flex-col space-y-6">
+          <li> <span class="px-2 bg-blue-100 text-blue-700 rounded-full leading-none mr-2">></span> Simplify and accelerate the efficiency of the administration</li>
+          <li> <span class="px-2 bg-blue-100 text-blue-700 rounded-full leading-none mr-2">></span> Enrich the registration of the decision steps and documents</li>
+          <li> <span class="px-2 bg-blue-100 text-blue-700 rounded-full leading-none mr-2">></span> Increase the transparency of the supporting administrative processes</li>
+        </ul>
+      </div>
   </section>
 
 
   <section class="w-2/3 mb-24">
-    <h2 class="mb-6">
+    <h2 class="mb-6 text-gray-700">
       And more
     </h2>
-    <p class="leading-relaxed">
+    <p class="leading-relaxed text-lg">
       In the slipstream of the application for the actual management of the agenda and files, we also developed an
       application for disseminating the files of the intergovernmental Overleg Comité and we developed the platform
       which makes the public available information about the formation of the governments and the decisions available as
