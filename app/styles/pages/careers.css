@@ -21,7 +21,7 @@
   }
 
   .careers-list {
-    @apply container grid grid-cols-1 lg:grid-cols-2 justify-between gap-5 margin-bottom-large
+    @apply container grid grid-cols-1 lg:grid-cols-2 justify-between gap-5 mb-32
   }
 
   .job-card {
