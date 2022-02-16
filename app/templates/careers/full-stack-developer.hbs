@@ -3,77 +3,82 @@
 </div>
 
 <section class="container">
-  <CareerCard
-    @isLink={{false}}
-    @title="Full Stack Web Developer"
-    @status="Open"
-    @contract="Full-time"
-    @remoteOrLocal="Remote"
-    @location="Belgium (preferably)"
-  />
+  <CareerCard @isLink={{false}} @title="Full Stack Web Developer" @status="Open" @contract="Full-time"
+    @remoteOrLocal="Remote" @location="Belgium (preferably)" />
 
   <section class="lg:w-2/3">
-    <article class="mb-24">
-      <h2 class="title-md margin-bottom-xsmall">Job description</h2>
-      <p>You are a full stack developer, eager to work on both frontend and backend technologies. You
+    <article class="mb-32">
+      <h2 class="mb-6 text-gray-700">Job description</h2>
+      <p class="text-lg">You are a full stack developer, eager to work on both frontend and backend technologies. You
         will develop applications for 80% of your time, and are free to improve tooling and experiment
         with new technologies that may provide business value with the other 20% of your time. You
         work on practical, reusable solutions that serve the clients' needs. Together we build
         applications using both existing and new components.</p>
     </article>
-    <article class="mb-24">
-      <h2 class="title-md margin-bottom-xsmall">Who are we looking for?</h2>
-      <p>Experience gets you a long way. An eager mind gets you everywhere.
+
+    <article class="mb-32">
+      <h2 class="mb-6 text-gray-700">Who are we looking for?</h2>
+      <p class="text-lg">Experience gets you a long way. An eager mind gets you everywhere.
         We expect you to know how to develop software applications. You should know how to solve
         puzzles and how to write code. A diploma shows a lot, so does Open source work and prior work
         experience. All are appreciated, at least one is required.
-        Developing software is a balancing act.
-        <br><br>
-        <strong>We look for someone who:</strong>
-        <ul>
-          <li>&#8226; likes coding, likes solving the puzzles without losing sight of the bigger picture</li>
-          <li>&#8226; likes to implement use cases and aims for reusable components</li>
-          <li>&#8226; likes working with (linked) data</li>
-          <li>&#8226; likes to learn new stuff and is not dogmatic about the technologies he/she likes to use</li>
+        Developing software is a balancing act.</p>
+      <div class="my-12">
+        <h3 class="mb-6 text-gray-900 text-xl">We look for someone who:</h3>
+        <ul class="flex flex-col space-y-6">
+          <li> <span class="px-2 bg-blue-100 text-blue-700 rounded-full leading-none mr-2">></span> Likes coding, likes
+            solving the puzzles without losing sight of the bigger picture</li>
+          <li> <span class="px-2 bg-blue-100 text-blue-700 rounded-full leading-none mr-2">></span> Likes to implement
+            use cases and aims for reusable components</li>
+          <li> <span class="px-2 bg-blue-100 text-blue-700 rounded-full leading-none mr-2">></span> Likes working with
+            (linked) data</li>
+          <li> <span class="px-2 bg-blue-100 text-blue-700 rounded-full leading-none mr-2">></span> Likes to learn new
+            stuff and is not dogmatic about the technologies he/she likes to use</li>
         </ul>
-        <br>
+      </div>
+      <p class="text-lg">
         Speaking Dutch is a big plus, the majority of our customers and a big part of the business domain
         are in Flanders. For practical reasons you must be based in Belgium and have the belgian
         nationality or a european work permit.</p>
     </article>
-    <article class="mb-24">
-      <h2 class="title-md margin-bottom-xsmall">What technologies do we use?</h2>
-      <p>Our backend consists of reusable and understandable microservices, integrated by a single page
+
+    <article class="mb-32">
+      <h2 class="mb-6 text-gray-700">What technologies do we use?</h2>
+      <p class="text-lg">Our backend consists of reusable and understandable microservices, integrated by a single page
         app. You don’t need to know any of the following, but knowing some is appreciated. We will
-        guide you and provide you with time to learn.
-        <br><br>
-        <strong>Technologies we use daily are:</strong>
+        guide you and provide you with time to learn.</p>
+      <br><br>
+      <div class="mb-2 p-4 bg-white">
+        <h3 class="text-lg mb-3 font-medium text-gray-900">Technologies we use daily are:</h3>
         <ul>
           <li>&#8226; JavaScript (frontend with EmberJS, backend with NodeJS), Ruby, Docker, SPARQL & Linked Data</li>
           <li>&#8226; Git, Linux (and a little bit of Mac), Emacs, Inkscape, the coffee corner</li>
         </ul>
-        <ul>
-          <br>
-        </ul>
-
-        <strong>Other technologies we make use of:</strong>
+      </div>
+      <div class="mb-8 p-4 bg-white">
+        <h3 class="text-lg mb-3 font-medium text-gray-900">Other technologies we make use of:</h3>
         <ul>
           <li>&#8226; Elixir, Common Lisp, Python, Scala, Bash.</li>
-
         </ul>
-        <br>
-        Open source examples on github are: lblod, mu-semtech, redpencilio, nvdk, cecemel, erikap,
-        madnificent.</p>
+      </div>
+      Open source examples on github are: lblod, mu-semtech, redpencilio, nvdk, cecemel, erikap,
+      madnificent.
     </article>
-    <article class="mb-24">
-      <h2 class="title-md margin-bottom-xsmall">What do we offer?</h2>
-      <ul>
-        <li>&#8226; A fair, honest and open employer.</li>
-        <li>&#8226; 20% time to learn or to grow a project we both believe in. </li>
-        <li>&#8226; A senior team you can learn from, and will learn from you. </li>
 
-        <li>&#8226; Remuneration based on experience and market standards, including extra-legal benefits. </li>
-        <li>&#8226; Work from home or co-working spaces whenever possible.</li>
+    <article class="mb-32">
+      <h2 class="mb-6 text-gray-700">What do we offer?</h2>
+
+      <ul class="flex flex-col space-y-4">
+        <li> <span class="px-2 bg-blue-100 text-blue-700 rounded-full leading-none mr-2">></span> A fair, honest and
+          open employer.</li>
+        <li> <span class="px-2 bg-blue-100 text-blue-700 rounded-full leading-none mr-2">></span> 20% time to learn or
+          to grow a project we both believe in.</li>
+        <li> <span class="px-2 bg-blue-100 text-blue-700 rounded-full leading-none mr-2">></span> A senior team you can
+          learn from, and will learn from you.</li>
+        <li> <span class="px-2 bg-blue-100 text-blue-700 rounded-full leading-none mr-2">></span> Remuneration based on
+          experience and market standards, including extra-legal benefits.</li>
+        <li> <span class="px-2 bg-blue-100 text-blue-700 rounded-full leading-none mr-2">></span> Work from home or
+          co-working spaces whenever possible.</li>
       </ul>
     </article>
   </section>

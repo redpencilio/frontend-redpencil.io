@@ -21,11 +21,10 @@
   }
 
   .construction-info-icon {
-    @apply text-blue-300
+    @apply text-blue-500
   }
 
   .construction-list {
     @apply grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-6
   }
-
 }
