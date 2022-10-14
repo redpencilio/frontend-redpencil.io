@@ -32,7 +32,7 @@
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
     "@tailwindcss/forms": "^0.4.0",
-    "autoprefixer": "^10.4.2",
+    "autoprefixer": "^10.4.12",
     "babel-eslint": "^10.1.0",
     "body-scroll-lock": "^4.0.0-beta.0",
     "broccoli-asset-rev": "^3.0.0",
@@ -77,12 +77,12 @@
     "eslint-plugin-qunit": "^6.2.0",
     "loader.js": "^4.7.0",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.5",
+    "postcss": "^8.4.18",
     "postcss-import": "^14.0.0",
     "prettier": "^2.5.1",
     "qunit": "^2.17.2",
     "qunit-dom": "^1.6.0",
-    "tailwindcss": "^3.0.13"
+    "tailwindcss": "^3.1.8"
   },
   "engines": {
     "node": "12.* || 14.* || >= 16"
