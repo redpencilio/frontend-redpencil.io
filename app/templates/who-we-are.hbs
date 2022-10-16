@@ -1,6 +1,5 @@
-<div class="relative bg-gradient-to-br from-black to-gray-900 pb-36 mb-6 overflow-hidden">
+<div class="relative bg-gradient-to-br from-black to-gray-900 pb-12 mb-6 overflow-hidden">
   <Navbar/>
-  <img class="absolute w-full right-0 top-0" src="/assets/vector/waves.svg" alt="ripples">
   <div class="page-header">
     <div class="page-header-inner">
       <div class="page-header-content relative">
@@ -9,26 +8,9 @@
       </div>
     </div>
   </div>
-
-  <section class="container z-10">
-    <h2 class="text-2xl md:text-4xl mb-4 font-medium text-white">Our story</h2>
-    <p class="w-full md:w-2/3 text-gray-100 text-lg">We were founded by 5 experienced technology professionals in 2017. The idea was to develop
-      business-critical and user-oriented web-applications that have impact based on open data standards.
-
-      <br><br>What users want from data is insights. Insight is gained when knowledge interacts with knowledge: therefore,
-      data should flow freely throughout systems, rather than being stored in ‘data silos’.
-      <br><br>
-      That is why we prefer to work with semantically structured data models, which allow for data reusability, seamless
-      integration, easy sharing, and automatic enrichment. In short, more insight, less waste.
-      <br><br>
-      Since our founding, we have kept growing. Based in the heart of Brussels, we have an international outlook, and our
-      coworkers come from all across Europe.
-
-    </p>
-  </section>
 </div>
 
-<section class="relative container mb-12 md:mb-24 lg:mb-32 -mt-20 z-10">
+<section class="relative container mb-12 md:mb-24 -mt-20 z-10">
   <ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
     <FactCard @icon="plant" @title="2017" @description="Founded" />
     <FactCard @icon="book" @title="+250" @description="Repositories" />
@@ -37,60 +19,97 @@
   </ul>
 </section>
 
-<section class="container mb-36">
-  <div class="flex flex-col">
-    <div class="mb-6 md:mb-12">
-      <h2 class="text-2xl md:text-4xl font-medium text-gray-900">What are we all about?</h2>
-      <p class="text-lg md:text-xl text-gray-700">Some of the things we like</p>
+<section class="container mb-12 md:mb-24 lg:mb-32">
+  <h2 class="text-2xl md:text-4xl mb-4 font-medium">Our story</h2>
+  <p class="w-full md:w-2/3 text-gray-800 text-lg">We were founded by 5 experienced technology professionals in 2017. The idea was to develop
+    business-critical and user-oriented web-applications that have impact based on open data standards.
+
+    <br><br>What users want from data is insights. Insight is gained when knowledge interacts with knowledge: therefore,
+    data should flow freely throughout systems, rather than being stored in ‘data silos’.
+    <br><br>
+    That is why we prefer to work with semantically structured data models, which allow for data reusability, seamless
+    integration, easy sharing, and automatic enrichment. In short, more insight, less waste.
+    <br><br>
+    Since our founding, we have kept growing. Based in the heart of Brussels, we have an international outlook, and our
+    coworkers come from all across Europe.
+
+  </p>
+</section>
+
+<section class="mb-32 bg-gradient-to-br from-black to-gray-900 py-32">
+  <div class="container">
+    <div class="flex flex-col">
+      <div class="mb-6 md:mb-12">
+        <h2 class="text-2xl md:text-4xl font-medium text-gray-100">What are we all about?</h2>
+        <p class="text-lg md:text-xl text-gray-400">Some of the things we like</p>
+      </div>
+
+      <ul class="grid grid-cols-1 md:grid-cols-2  xl:grid-cols-3 gap-3 md:gap-6">
+        <li class="flex flex-col items-start justify-start bg-gray-900 border border-gray-800 py-8 px-5 md:px-10">
+            <div class="flex justify-center items-center bg-red-500/20 text-gray-900 w-12 h-12 mb-3 rounded">
+              {{svg-jar "book" class="flex-no-shrink text-red-500 w-5"}}
+            </div>
+
+            <h4 class="text-xl text-white mb-3">Open source</h4>
+            <p class="text-sm text-gray-300">We consider ourselves an Open source company. Whenever possible we prefer to use
+              Open
+              Source, we contribute to open source projects, and we publish our work under open source
+              licenses when we can.
+            </p>
+
+        </li>
+        <li class="flex flex-col items-start justify-start bg-gray-900 border border-gray-800 py-8 px-5 md:px-10">
+            <div class="flex justify-center items-center bg-red-500/20 text-gray-900 w-12 h-12 mb-3 rounded">
+              {{svg-jar "open-standard" class="flex-no-shrink fill-red-500 w-5"}}
+            </div>
+            <h4 class="text-xl text-white mb-3 ">Open standards</h4>
+            <p class="text-sm text-gray-300">We prefer not to publish data using proprietary standards, as we think this is
+              often
+              inefficient.
+              By instead adopting open standards and semantics, we make our data more powerful and interoperable.</p>
+
+        </li>
+        <li class="flex flex-col items-start justify-start bg-gray-900 border border-gray-800 py-8 px-5 md:px-10">
+            <div class="flex justify-center items-center bg-red-500/20 text-gray-900 w-12 h-12 mb-3 rounded">
+              {{svg-jar "distributed" class="flex-no-shrink fill-red-500 w-5"}}
+            </div>
+            <h4 class="text-xl text-white mb-3 ">Distributed solutions</h4>
+            <p class="text-sm text-gray-300">Too often, web services and applications rely on a single point of failure.
+              By switching to decentralized models, we make our products faster and more reliable. </p>
+
+        </li>
+        <li class="flex flex-col items-start justify-start bg-gray-900 border border-gray-800 py-8 px-5 md:px-10">
+            <div class="flex justify-center items-center bg-red-500/20 text-gray-900 w-12 h-12 mb-3 rounded">
+              {{svg-jar "research" class="flex-no-shrink fill-red-500 w-5"}}
+            </div>
+            <h4 class="text-xl text-white mb-3 ">Research</h4>
+            <p class="text-sm text-gray-300">We prize innovation above everything else. We contribute to several research
+              projects and invest substantially in research and development, including Open source
+              projects.
+            </p>
+
+        </li>
+      </ul>
     </div>
-
-    <ul class="grid grid-cols-1 md:grid-cols-2  xl:grid-cols-3 gap-3 md:gap-6">
-      <li class="flex flex-col items-start justify-center  bg-gray-100 border border-gray-200 py-8 px-5 md:px-10">
-          <div class="flex justify-center items-center bg-gray-500/10 text-gray-900 w-10 h-10 mb-3">
-            {{svg-jar "book" class="flex-no-shrink text-gray-900 w-4"}}
-          </div>
-
-          <h4 class="text-xl text-gray-900 mb-3 ">Open source</h4>
-          <p class="text-sm text-gray-600">We consider ourselves an Open source company. Whenever possible we prefer to use
-            Open
-            Source, we contribute to open source projects, and we publish our work under open source
-            licenses when we can.
-          </p>
-
-      </li>
-      <li class="flex flex-col items-start justify-center  bg-gray-100 border border-gray-200 py-8 px-5 md:px-10">
-          <div class="flex justify-center items-center bg-gray-500/10 text-gray-900 w-10 h-10 mb-3">
-            {{svg-jar "book" class="flex-no-shrink text-gray-900 w-4"}}
-          </div>
-          <h4 class="text-xl text-gray-900 mb-3 ">Open standards</h4>
-          <p class="text-sm text-gray-600">We prefer not to publish data using proprietary standards, as we think this is
-            often
-            inefficient.
-            By instead adopting open standards and semantics, we make our data more powerful and interoperable.</p>
-
-      </li>
-      <li class="flex flex-col items-start justify-center  bg-gray-100 border border-gray-200 py-8 px-5 md:px-10">
-          <div class="flex justify-center items-center bg-gray-500/10 text-gray-900 w-10 h-10 mb-3">
-            {{svg-jar "book" class="flex-no-shrink text-gray-900 w-4"}}
-          </div>
-          <h4 class="text-xl text-gray-900 mb-3 ">Distributed solutions</h4>
-          <p class="text-sm text-gray-600">Too often, web services and applications rely on a single point of failure.
-            By switching to decentralized models, we make our products faster and more reliable. </p>
-
-      </li>
-      <li class="flex flex-col items-start justify-center  bg-gray-100 border border-gray-200 py-8 px-5 md:px-10">
-          <div class="flex justify-center items-center bg-gray-500/10 text-gray-900 w-10 h-10 mb-3">
-            {{svg-jar "book" class="flex-no-shrink text-gray-900 w-4"}}
-          </div>
-          <h4 class="text-xl text-gray-900 mb-3 ">Research</h4>
-          <p class="text-sm text-gray-600">We prize innovation above everything else. We contribute to several research
-            projects and invest substantially in research and development, including Open source
-            projects.
-          </p>
-
-      </li>
-    </ul>
   </div>
 </section>
 
+<section class="container mb-12 md:mb-24 lg:mb-32">
+  <h2 class="text-2xl md:text-4xl mb-4 font-medium">The web we want</h2>
+  <p class="w-full md:w-2/3 text-gray-800 text-lg">We were founded by 5 experienced technology professionals in 2017. The idea was to develop
+    business-critical and user-oriented web-applications that have impact based on open data standards.
+
+    <br><br>What users want from data is insights. Insight is gained when knowledge interacts with knowledge: therefore,
+    data should flow freely throughout systems, rather than being stored in ‘data silos’.
+    <br><br>
+    That is why we prefer to work with semantically structured data models, which allow for data reusability, seamless
+    integration, easy sharing, and automatic enrichment. In short, more insight, less waste.
+    <br><br>
+    Since our founding, we have kept growing. Based in the heart of Brussels, we have an international outlook, and our
+    coworkers come from all across Europe.
+
+  </p>
+</section>
+
+<CtaBanner />
 <Footer/>
