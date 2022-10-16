@@ -29,15 +29,15 @@
   }
 
   .projects-card-link {
-    @apply text-xs md:text-sm font-medium py-2 md:py-3 px-8 hover:bg-gray-200 bg-white text-gray-900
+    @apply text-xs md:text-sm font-medium py-2 md:py-3 px-8 hover:bg-gray-200 bg-white text-gray-900 border border-gray-300
   }
 
   .construction-card {
-    @apply px-6 lg:px-8 p-8 bg-gray-100 border border-gray-200 h-full shadow-xl shadow-gray-100
+    @apply flex flex-col px-6 lg:px-8 p-8 bg-gray-100 border border-gray-300 h-full
   }
 
   .construction-card-header {
-    @apply mb-6
+    @apply mb-6 flex-1
   }
 
   .construction-card-title {

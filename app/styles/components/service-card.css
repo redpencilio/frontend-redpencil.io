@@ -22,6 +22,6 @@
   }
 
   .service-card-illustration {
-    @apply flex-1 bg-gray-100 py-6
+    @apply flex-1 bg-gray-100 py-6 border border-gray-300
   }
 }
