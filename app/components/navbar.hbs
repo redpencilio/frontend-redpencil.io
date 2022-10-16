@@ -19,12 +19,12 @@
       <LinkTo @route="careers">Careers</LinkTo>
     </li>
   </ul>
-  <LinkTo class="px-12 py-2 font-medium border border-gray-700 text-sm text-zinc-400 hover:text-white hover:bg-red-800 hover:border-transparent shadow-xl shadow-red-500/10" @route="contact">Contact</LinkTo>
+  <LinkTo class="px-12 py-2 font-medium border border-gray-700 text-sm text-zinc-400 hover:text-white hover:bg-red-800 hover:border-transparent shadow-xl shadow-red-500/10 rounded" @route="contact">Contact</LinkTo>
 </nav>
 
 
 {{!-- MOBILE NAV  --}}
-<nav class="w-full relative z-50 flex flex-col items-start lg:hidden {{if this.isOpenMenu 'h-screen'}} overflow-hidden">
+<nav class="w-full relative z-50 flex flex-col items-start lg:hidden {{if this.isOpenMenu 'h-screen'}} overflow-hidden" aria-label="mobile navigation">
   <div class="flex w-full items-center justify-between p-3">
     <LinkTo @route="index">
       <img class="h-5" src="/assets/vector/rpio-logo-light.svg" alt="redpencil.io">
