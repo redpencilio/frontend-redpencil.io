@@ -86,7 +86,7 @@ export default class HeroSphereComponent extends Component {
       window.fGrowDuration = 200.0;
       window.fWaitDuration = 50.0;
       window.fShrinkDuration = 250.0;
-      window.aColor = [255, 0, 128];
+      window.aColor = [245, 66, 66];
       fVX = (1.5 * fPI) / window.iFramesToRotate;
       ctxRender = nCanvasRender.getContext('2d');
       oRender = {
