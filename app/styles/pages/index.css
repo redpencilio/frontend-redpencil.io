@@ -85,11 +85,11 @@
   }
 
   .data-list {
-    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4
+    @apply grid grid-cols-2 xl:grid-cols-3 gap-4
   }
 
   .data-list-item {
-    @apply flex items-center justify-center px-8 py-4 border border-gray-700 rounded-lg text-white bg-gray-900/50
+    @apply flex items-center justify-center px-8 py-4 border border-gray-700 rounded-lg text-white bg-gray-900/50 text-sm
   }
 
 }

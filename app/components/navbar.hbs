@@ -39,23 +39,23 @@
   </div>
   {{#if this.isOpenMenu}}
     <div class="flex-1 flex flex-col justify-between w-full p-3" {{body-scroll-lock}}>
-      <ul class="flex flex-col items-center text-gray-300 py-6">
-        <li class="flex w-full text-2xl py-3 text-center">
+      <ul class="flex flex-col items-center text-gray-300 py-6 divide-y divide-gray-700">
+        <li class="flex w-full text-2xl py-3">
           <LinkTo class="w-full" @route="index">Homepage</LinkTo>
         </li>
-        <li class="flex w-full text-2xl py-3 text-center">
+        <li class="flex w-full text-2xl py-3">
           <LinkTo class="w-full" @route="services">Services</LinkTo>
         </li>
-        <li class="flex w-full text-2xl py-3 text-center">
+        <li class="flex w-full text-2xl py-3">
           <LinkTo class="w-full" @route="projects">Projects</LinkTo>
         </li>
-        <li class="flex w-full text-2xl py-3 text-center">
+        <li class="flex w-full text-2xl py-3">
           <LinkTo class="w-full" @route="who-we-are">Who we are</LinkTo>
         </li>
-        <li class="flex w-full text-2xl py-3 text-center">
+        <li class="flex w-full text-2xl py-3">
           <LinkTo class="w-full" @route="careers">Careers</LinkTo>
         </li>
-        <li class="flex w-full text-2xl py-3 text-center">
+        <li class="flex w-full text-2xl py-3">
           <LinkTo class="w-full" @route="contact">Contact</LinkTo>
         </li>
       </ul>
