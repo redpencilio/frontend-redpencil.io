@@ -33,7 +33,7 @@
   }
 
   .construction-card {
-    @apply flex flex-col px-6 lg:px-8 p-8 bg-gray-100 border border-gray-300 h-full
+    @apply flex flex-col px-6 lg:px-8 p-8 bg-gray-100 border border-gray-300 h-full rounded
   }
 
   .construction-card-header {
