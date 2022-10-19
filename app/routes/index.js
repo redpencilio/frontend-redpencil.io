@@ -5,6 +5,6 @@ export default class IndexRoute extends Route {
   @service headData;
 
   afterModel() {
-    this.headData.title = 'Welcome to redpencil.io';
+    this.headData.title = 'Creating excellent applications, better data, and proudly building the #WebWeWant';
   }
 }
