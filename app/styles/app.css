@@ -4,34 +4,7 @@
 @import "tailwindcss/utilities";
 
 
-@import "./base.css";
-
-/* PAGES */
-@import "./pages/index.css";
-@import "./pages/projects.css";
-@import "./pages/projects/lblod.css";
-@import "./pages/careers.css";
-@import "./pages/not-found.css";
-
-
-/* UTILITIES */
-
-@import "./utilities/spacing.css";
-
-/* COMPONENTS */
-@import "./components/hero/career-banner.css";
-@import "./components/hero/data-cycle.css";
-@import "./components/service-card.css";
-@import "./components/project-card.css";
-@import "./components/buttons.css";
-@import "./components/page-header.css";
-@import "./components/projects/header.css";
-@import "./components/projects/section.css";
-
-
 /* TYPOGRAPHY */
-
-@import "./typography/titles.css";
 @import "./vanilla/fontface.css";
 
 
