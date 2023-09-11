@@ -1,23 +1,18 @@
-<div class="bg-gradient-to-br from-black to-gray-900 pb-64 md:pb-36">
+<div class="bg-gradient-to-br from-black to-zinc-950 pb-64 md:pb-36">
   <Navbar />
 
-  <div class="page-header">
-  <div class="page-header-inner">
-    <div class="page-header-content">
-      <h1 class="page-header-title text-white">Our projects</h1>
-      <h2 class="page-header-text">We take a problem and transform the solution into art.</h2>
-    </div>
-  </div>
-</div>
+  <PageHeader 
+    @title="Our projects"
+    @text="We take a problem and transform the solution into art."
+  />
 
-  <section class="projects-card-list">
+  <section class="container flex flex-col space-y-6 mb-12 md:mb-24 lg:mb-32">
     <h2 class="sr-only">Projects with pages</h2>
     <ProjectCard
       @title="LBLOD"
       @text="Local Decisions as Linked Open Data is a project by the Flemish Agency for Local Government"
       @linkTo="projects.lblod"
       @illustration="/assets/pixel/digitaal-loket.png"
-      @complete={{true}}
     />
 
     <ProjectCard
@@ -25,17 +20,16 @@
       @text="Kaleidos is a digital platform for managing and working on documents related to the Flemish government’s decision-making process"
       @linkTo="projects.kaleidos"
       @illustration="/assets/pixel/kaleidos.png"
-      @complete={{true}}
     />
   </section>
 
 </div>
 
-<section class="construction -mt-48 md:-mt-36">
-  <div class="construction-header">
-    <h2 class="construction-title">Other projects</h2>
-    <div class="construction-info">
-      <svg class="construction-info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+<section class="container mb-12 md:mb-24 lg:mb-32 -mt-48 md:-mt-36">
+  <div class="flex justify-between md:border-b border-gray-600 pb-1 mb-4 md:mb-6 flex-col md:flex-row">
+    <h2 class="text-lg md:text-2xl font-medium md:border-none mb-4 md:mb-0 text-white">Other projects</h2>
+    <div class="md:p-2 text-xs md:text-sm flex space-x-2 items-center text-blue-200">
+      <svg class="text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
         <path fill="none" d="M0 0h24v24H0z" />
         <path
           d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM11 7h2v2h-2V7zm0 4h2v6h-2v-6z"
@@ -45,32 +39,32 @@
     </div>
   </div>
 
-  <ul class="construction-list">
-    <ProjectCard
+  <ul class="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-6">
+    <ConstructionCard
       @title="ToeVla"
       @text="Toegankelijk Vlaanderen (accessible Flanders) is a website and database containing reliable information about the accessibility of public buildings in Flanders"
       @complete={{false}}
       @illustration="/assets/pixel/toevla-logo.png">
-        <a class="projects-card-link" href="https://inter.vlaanderen/toegankelijk-vlaanderen" target="_blank" rel="noopener noreferrer">Learn more</a>
-        <a class="projects-card-link" href="https://toevla.vlaanderen.be/publiek/nl/register/start" target="_blank" rel="noopener noreferrer">Visit</a>
-    </ProjectCard>
+        <a class="text-xs md:text-sm font-medium py-2 md:py-3 px-8 hover:bg-gray-200 bg-white text-gray-900 border border-gray-300 rounded" href="https://inter.vlaanderen/toegankelijk-vlaanderen" target="_blank" rel="noopener noreferrer">Learn more</a>
+        <a class="text-xs md:text-sm font-medium py-2 md:py-3 px-8 hover:bg-gray-200 bg-white text-gray-900 border border-gray-300 rounded" href="https://toevla.vlaanderen.be/publiek/nl/register/start" target="_blank" rel="noopener noreferrer">Visit</a>
+    </ConstructionCard>
 
-    <ProjectCard
+    <ConstructionCard
       @title="Luisterpunt"
       @text="The Flemish library for the visual impaired"
       @complete={{false}}
       @illustration="/assets/vector/logos/luisterpunt.svg">
-        <a class="projects-card-link" href="https://www.luisterpuntbibliotheek.be/nl/english" target="_blank" rel="noopener noreferrer">Learn more</a>
-    </ProjectCard>
+        <a class="text-xs md:text-sm font-medium py-2 md:py-3 px-8 hover:bg-gray-200 bg-white text-gray-900 border border-gray-300 rounded" href="https://www.luisterpuntbibliotheek.be/nl/english" target="_blank" rel="noopener noreferrer">Learn more</a>
+    </ConstructionCard>
 
-    <ProjectCard
+    <ConstructionCard
       @title="IPFS-search"
       @text="A decentralized search engine for the Interplanetary Filesystem"
       @complete={{false}}
       @illustration="/assets/vector/logos/ipfs-search.svg">
-        <a class="projects-card-link" href="https://ipfs-search.com/#/search" target="_blank" rel="noopener noreferrer">Visit</a>
-        <a class="projects-card-link" href="https://github.com/ipfs-search/ipfs-search" target="_blank" rel="noopener noreferrer">git repo</a>
-    </ProjectCard>
+        <a class="text-xs md:text-sm font-medium py-2 md:py-3 px-8 hover:bg-gray-200 bg-white text-gray-900 border border-gray-300 rounded" href="https://ipfs-search.com/#/search" target="_blank" rel="noopener noreferrer">Visit</a>
+        <a class="text-xs md:text-sm font-medium py-2 md:py-3 px-8 hover:bg-gray-200 bg-white text-gray-900 border border-gray-300 rounded" href="https://github.com/ipfs-search/ipfs-search" target="_blank" rel="noopener noreferrer">git repo</a>
+    </ConstructionCard>
   </ul>
 </section>
 

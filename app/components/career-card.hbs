@@ -1,16 +1,16 @@
 {{#if @isLink}}
-  <LinkTo @route={{@linkTo}} class="job-card bg-gray-900 border border-gray-700 shadow-lg">
-      <div class="job-card-header">
-        <h3 class="job-card-title">{{@title}}</h3>
-        <div class="job-pill-open">
-          <svg class="job-pill-open-circle" fill="currentColor" viewBox="0 0 8 8">
+  <LinkTo @route={{@linkTo}} class="relative p-4 md:p-6 rounded bg-zinc-950 border-2 border-zinc-900 hover:border-red-800 shadow-lg hover:shadow-2xl">
+      <div class="relative flex mb-6 justify-between text-white">
+        <h3 class="font-medium text-base md:text-xl">{{@title}}</h3>
+        <div class="absolute top-0 right-0 flex justify-center items-center space-x-2  text-green-400 px-3 py-1 rounded-full font-bold">
+          <svg class="h-2 w-2 -ml-2" fill="currentColor" viewBox="0 0 8 8">
             <circle cx="4" cy="4" r="3" />
           </svg>
           <span>{{@status}}</span>
         </div>
       </div>
-      <ul class="job-prop-list">
-        <li class="job-prop-item">
+      <ul class="flex flex-col space-y-2 md:flex-row md:space-x-6 md:space-y-0">
+        <li class="flex space-x-2 text-gray-300">
           <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path fill="none" d="M0 0H24V24H0z" />
             <path
@@ -19,7 +19,7 @@
           </svg>
           <span>{{@contract}}</span>
         </li>
-        <li class="job-prop-item">
+        <li class="flex space-x-2 text-gray-300">
           <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path fill="none" d="M0 0h24v24H0z" />
             <path
@@ -28,7 +28,7 @@
           </svg>
           <span>{{@remoteOrLocal}}</span>
         </li>
-        <li class="job-prop-item">
+        <li class="flex space-x-2 text-gray-300">
           <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path fill="none" d="M0 0h24v24H0z" />
             <path
@@ -40,15 +40,15 @@
       </ul>
     </LinkTo>
 {{else}}
-  <div class="job-header bg-gray-900 border-2 border-gray-800 shadow-lg -mt-20">
+  <div class="mb-16 bg-zinc-950 rounded border-2 border-zinc-800 shadow-lg -mt-20">
     <div class="p-6">
       <div class="relative sm:flex sm:justify-between sm:items-baseline">
         <div class="sm:w-0 sm:flex-1">
           <h1 id="message-heading" class="text-lg md:text-2xl text-white mb-3">
             {{@title}}
           </h1>
-          <ul class="job-prop-list">
-            <li class="job-prop-item">
+          <ul class="flex flex-col space-y-2 md:flex-row md:space-x-6 md:space-y-0">
+            <li class="flex space-x-2 text-gray-300">
               <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path fill="none" d="M0 0H24V24H0z" />
                 <path
@@ -57,7 +57,7 @@
               </svg>
               <span>{{@contract}}</span>
             </li>
-            <li class="job-prop-item">
+            <li class="flex space-x-2 text-gray-300">
               <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path fill="none" d="M0 0h24v24H0z" />
                 <path
@@ -66,7 +66,7 @@
               </svg>
               <span>{{@remoteOrLocal}}</span>
             </li>
-            <li class="job-prop-item">
+            <li class="flex space-x-2 text-gray-300">
               <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path fill="none" d="M0 0h24v24H0z" />
                 <path
@@ -77,8 +77,8 @@
             </li>
           </ul>
         </div>
-        <div class="job-pill-open">
-          <svg class="job-pill-open-circle" fill="currentColor" viewBox="0 0 8 8">
+        <div class="absolute top-0 right-0 flex justify-center items-center space-x-2  text-green-400 px-3 py-1 rounded-full font-bold">
+          <svg class="h-2 w-2 -ml-2" fill="currentColor" viewBox="0 0 8 8">
             <circle cx="4" cy="4" r="3" />
           </svg>
           <span>{{@status}}</span>

@@ -1,9 +1,9 @@
-<article class="service-card">
-  <div class="service-card-illustration">
+<article class="flex flex-col">
+  <div class="flex-1 bg-gray-100 py-6 md:border border-gray-300">
     <img class="h-64 w-full" src={{@illustration}} alt={{@title}}>
   </div>
-  <div class="service-card-header">
-    <h3 class="service-card-title">{{@title}}</h3>
-    <p class="service-card-text">{{@text}}</p>
+  <div class="pt-0 pb-8 bg-gray-100 md:bg-white flex-1 text-left md:pt-5 px-3">
+    <h3 class="text-center md:text-left text-xl font-medium mb-3 text-gray-900">{{@title}}</h3>
+    <p class="text-center md:text-left text-sm md:text-base text-gray-500">{{@text}}</p>
   </div>
 </article>

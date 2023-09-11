@@ -1,14 +1,14 @@
-<div class="bg-gradient-to-r from-black to-gray-900 pb-36">
+<div class="bg-gradient-to-r from-black to-zinc-950 pb-24">
   <Navbar />
-  <div class="careers-header">
-    <div class="careers-header-inner">
-      <h1 class="careers-header-title text-white">Careers</h1>
-      <p class="page-header-text text-center">Work with our team to create the #WebWeWant</p>
+  <div class="container w-full py-12">
+    <div class="flex flex-col justify-center">
+      <h1 class="text-center text-4xl md:text-6xl py-3 text-white">Careers</h1>
+      <p class="text-base lg:text-xl font-normal w-full text-gray-500 text-center">Work with our  #WebWeWant</p>
     </div>
   </div>
 </div>
 
-<section class="careers-list -mt-32 md:-mt-20">
+<section class="container grid grid-cols-1 lg:grid-cols-2 justify-between gap-5 mb-32 -mt-32 md:-mt-20">
   <CareerCard @isLink={{true}} @linkTo="careers.full-stack-developer" @title="Full Stack Web Developer" @status="Open"
     @contract="Full-time" @remoteOrLocal="Remote" @location="Belgium (preferably)" />
 
@@ -20,10 +20,10 @@
   <div class="flex flex-col md:items-center mb-24 md:mb-36">
       <div class="md:text-center">
         <h2 class="text-xl md:text-3xl mb-1 font-medium text-gray-900 whitespace-nowrap">Working at redpencil</h2>
-        <p class="title-sm-thin mb-6 md:mb-12">What you can expect</p>
+        <p class="sm:text-lg md:text-xl font-light mb-6 md:mb-12">What you can expect</p>
       </div>
 
-      <ul class="flex flex-col md:flex-row border border-gray-300 rounded h-full divide-y md:divide-x divide-gray-100">
+      <ul class="flex flex-col md:flex-row border-2 border-gray-300 rounded-md h-full divide-y md:divide-x divide-gray-100">
         <li
           class="bg-white md:w-1/2 p-6 flex flex-row md:flex-col items-center text-zinc-900 md:space-y-4 rounded">
           <div class="flex justify-center items-center text-red-800 w-10 h-10 rounded">
@@ -57,9 +57,9 @@
     <div class="flex-1">
       <div class="mb-6 text-center">
         <h2 class="text-xl md:text-3xl mb-1 font-medium text-gray-900 ">Useful resources</h2>
-        <p class="title-sm-thin mb-12">Discover the code</p>
+        <p class="sm:text-lg md:text-xl font-light mb-12">Discover the code</p>
       </div>
-      <div class="max-w-2xl flex flex-col rounded-lg mx-auto border divide-y">
+      <div class="max-w-2xl flex flex-col rounded-lg mx-auto border-2 border-gray-300 divide-y-2">
         <a href="https://github.com/redpencilio" target="_blank" rel="noopener noreferrer"
           class="px-6 py-4 flex items-center justify-between text-gray-800 bg-white rounded-t-lg">
           {{svg-jar "github" class="w-6"}}

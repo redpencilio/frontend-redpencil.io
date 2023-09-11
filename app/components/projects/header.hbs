@@ -1,10 +1,10 @@
-<section class="project -mt-32">
-  <div class="project-art {{@background}}">
-    <div class="project-header ">
-      <div class="project-header-inner bg-gradient-to-br from-black to-gray-900">
-        <h1 class="project-header-title">{{@title}}</h1>
+<section class="container mb-10 md:mb-16 -mt-32">
+  <div class="w-full h-48 mb-6 flex flex-col justify-center items-center md:h-72 rounded {{@background}} border-2 border-zinc-800">
+    <div class="flex mx-2 md:ml-6 text-center">
+      <div class="px-6 md:px-10 lg:px-20 py-6 rounded font-light bg-white border-2 border-zinc-500">
+        <h1 class="text-zinc-900 text-3xl font-medium">{{@title}}</h1>
         {{#if @text}}
-          <h2 class="project-header-text">{{@text}}</h2>
+          <h2 class="text-zinc-800 text-xl">{{@text}}</h2>
         {{/if}}
       </div>
     </div>
