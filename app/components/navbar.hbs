@@ -1,62 +1,88 @@
-
-{{!-- DESKTOP NAV --}}
-<nav class="hidden relative container lg:flex items-center justify-between py-5 z-10" aria-label="desktop navigation">
-  <LinkTo @route="index">
-    <img class="h-6 w-auto" src="/assets/vector/rpio-logo-light.svg" alt="redpencil.io">
+{{! DESKTOP NAV }}
+<nav
+  class='container relative z-10 hidden items-center justify-between py-5 lg:flex'
+  aria-label='desktop navigation'
+>
+  <LinkTo @route='index'>
+    <img
+      class='h-6 w-auto'
+      src='/assets/vector/rpio-logo-light.svg'
+      alt='redpencil.io'
+    />
   </LinkTo>
 
-  <ul class="flex justify-between items-center">
-    <li class="mx-6 text-sm font-medium text-zinc-400 hover:text-zinc-200">
-      <LinkTo @route="services">Services</LinkTo>
+  <ul class='flex items-center justify-between'>
+    <li class='mx-6 text-sm font-medium text-zinc-400 hover:text-zinc-200'>
+      <LinkTo @route='services'>Services</LinkTo>
     </li>
-    <li class="mx-6 text-sm font-medium text-zinc-400 hover:text-zinc-200">
-      <LinkTo @route="projects">Projects</LinkTo>
+    <li class='mx-6 text-sm font-medium text-zinc-400 hover:text-zinc-200'>
+      <LinkTo @route='projects'>Projects</LinkTo>
     </li>
-    <li class="mx-6 text-sm font-medium text-zinc-400 hover:text-zinc-200">
-      <LinkTo @route="who-we-are">Who we are</LinkTo>
+    <li class='mx-6 text-sm font-medium text-zinc-400 hover:text-zinc-200'>
+      <LinkTo @route='who-we-are'>Who we are</LinkTo>
     </li>
-    <li class="mx-6 text-sm font-medium text-zinc-400 hover:text-zinc-200">
-      <LinkTo @route="careers">Careers</LinkTo>
+    <li class='mx-6 text-sm font-medium text-zinc-400 hover:text-zinc-200'>
+      <LinkTo @route='careers'>Careers</LinkTo>
     </li>
   </ul>
-  <LinkTo class="px-12 py-2 font-medium border-2 bg-red-800 border-red-500 text-sm text-white hover:bg-red-600 hover:border-transparent shadow shadow-red-500/10 rounded" @route="contact">Contact</LinkTo>
+  <LinkTo
+    class='rounded border-2 border-red-500 bg-red-800 px-12 py-2 text-sm font-medium text-white shadow shadow-red-500/10 hover:border-transparent hover:bg-red-600'
+    @route='contact'
+  >Contact</LinkTo>
 </nav>
 
-
-{{!-- MOBILE NAV  --}}
-<nav class="w-full relative z-50 flex flex-col items-start lg:hidden {{if this.isOpenMenu 'h-screen'}} overflow-hidden" aria-label="mobile navigation">
-  <div class="flex w-full items-center justify-between p-3">
-    <LinkTo @route="index">
-      <img class="h-5" src="/assets/vector/rpio-logo-light.svg" alt="redpencil.io">
+{{! MOBILE NAV  }}
+<nav
+  class='relative z-50 flex w-full flex-col items-start lg:hidden
+    {{if this.isOpenMenu "h-screen"}}
+    overflow-hidden'
+  aria-label='mobile navigation'
+>
+  <div class='flex w-full items-center justify-between p-3'>
+    <LinkTo @route='index'>
+      <img
+        class='h-5'
+        src='/assets/vector/rpio-logo-light.svg'
+        alt='redpencil.io'
+      />
     </LinkTo>
-    <button type="button" class="bg-gray-800 p-1 border border-gray-600" {{on 'click' this.toggleMenu}}>
+    <button
+      type='button'
+      class='border border-gray-600 bg-gray-800 p-1'
+      {{on 'click' this.toggleMenu}}
+    >
       {{#if this.isOpenMenu}}
-        {{svg-jar "close-line" class="text-gray-200" fill="currentColor"}}
+        {{svg-jar 'close-line' class='text-gray-200' fill='currentColor'}}
       {{else}}
-        {{svg-jar "menu-line" class="text-gray-200" fill="currentColor"}}
+        {{svg-jar 'menu-line' class='text-gray-200' fill='currentColor'}}
       {{/if}}
     </button>
   </div>
   {{#if this.isOpenMenu}}
-    <div class="flex-1 flex flex-col justify-between w-full p-3" {{body-scroll-lock}}>
-      <ul class="flex flex-col items-center text-gray-300 py-6 divide-y divide-gray-700">
-        <li class="flex w-full text-xl py-3">
-          <LinkTo class="w-full" @route="index">Homepage</LinkTo>
+    <div
+      class='flex w-full flex-1 flex-col justify-between p-3'
+      {{body-scroll-lock}}
+    >
+      <ul
+        class='flex flex-col items-center divide-y divide-gray-700 py-6 text-gray-300'
+      >
+        <li class='flex w-full py-3 text-xl'>
+          <LinkTo class='w-full' @route='index'>Homepage</LinkTo>
         </li>
-        <li class="flex w-full text-xl py-3">
-          <LinkTo class="w-full" @route="services">Services</LinkTo>
+        <li class='flex w-full py-3 text-xl'>
+          <LinkTo class='w-full' @route='services'>Services</LinkTo>
         </li>
-        <li class="flex w-full text-xl py-3">
-          <LinkTo class="w-full" @route="projects">Projects</LinkTo>
+        <li class='flex w-full py-3 text-xl'>
+          <LinkTo class='w-full' @route='projects'>Projects</LinkTo>
         </li>
-        <li class="flex w-full text-xl py-3">
-          <LinkTo class="w-full" @route="who-we-are">Who we are</LinkTo>
+        <li class='flex w-full py-3 text-xl'>
+          <LinkTo class='w-full' @route='who-we-are'>Who we are</LinkTo>
         </li>
-        <li class="flex w-full text-xl py-3">
-          <LinkTo class="w-full" @route="careers">Careers</LinkTo>
+        <li class='flex w-full py-3 text-xl'>
+          <LinkTo class='w-full' @route='careers'>Careers</LinkTo>
         </li>
-        <li class="flex w-full text-xl py-3">
-          <LinkTo class="w-full" @route="contact">Contact</LinkTo>
+        <li class='flex w-full py-3 text-xl'>
+          <LinkTo class='w-full' @route='contact'>Contact</LinkTo>
         </li>
       </ul>
     </div>

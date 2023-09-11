@@ -1,89 +1,114 @@
-<div class="relative bg-gradient-to-r from-black to-zinc-950 pb-12 mb-6 overflow-hidden">
-  <Navbar/>
+<div
+  class='relative mb-6 overflow-hidden bg-gradient-to-r from-black to-zinc-950 pb-12'
+>
+  <Navbar />
 
-  <PageHeader 
-    @title="Who we are"
-    @text="Triving towards the web we want."
-  />
+  <PageHeader @title='Who we are' @text='Triving towards the web we want.' />
 </div>
 
-<section class="relative container mb-24 -mt-20 z-10">
-  <ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
-    <FactCard @icon="plant" @title="2017" @description="Founded" />
-    <FactCard @icon="book" @title="+250" @description="Repositories" />
-    <FactCard @icon="code" @title="+15 M" @description="Lines of code" />
-    <FactCard @icon="coffee" @title="∞" @description="Coffees" />
+<section class='container relative z-10 -mt-20 mb-24'>
+  <ul class='grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4'>
+    <FactCard @icon='plant' @title='2017' @description='Founded' />
+    <FactCard @icon='book' @title='+250' @description='Repositories' />
+    <FactCard @icon='code' @title='+15 M' @description='Lines of code' />
+    <FactCard @icon='coffee' @title='∞' @description='Coffees' />
   </ul>
 </section>
 
-<section class="container mb-24 lg:mb-32">
-  <h2 class="text-2xl md:text-4xl mb-4 font-medium">Our story</h2>
-  <p class="w-full md:w-2/3 text-gray-800 text-base md:text-lg">We were founded by 5 experienced technology professionals in 2017. The idea was to develop
-    business-critical and user-oriented web-applications that have impact based on open data standards.
+<section class='container mb-24 lg:mb-32'>
+  <h2 class='mb-4 text-2xl font-medium md:text-4xl'>Our story</h2>
+  <p class='w-full text-base text-gray-800 md:w-2/3 md:text-lg'>We were founded
+    by 5 experienced technology professionals in 2017. The idea was to develop
+    business-critical and user-oriented web-applications that have impact based
+    on open data standards.
 
-    <br><br>What users want from data is insights. Insight is gained when knowledge interacts with knowledge: therefore,
-    data should flow freely throughout systems, rather than being stored in ‘data silos’.
-    <br><br>
-    That is why we prefer to work with semantically structured data models, which allow for data reusability, seamless
-    integration, easy sharing, and automatic enrichment. In short, more insight, less waste.
-    <br><br>
-    Since our founding, we have kept growing. Based in the heart of Brussels, we have an international outlook, and our
-    coworkers come from all across Europe.
+    <br /><br />What users want from data is insights. Insight is gained when
+    knowledge interacts with knowledge: therefore, data should flow freely
+    throughout systems, rather than being stored in ‘data silos’.
+    <br /><br />
+    That is why we prefer to work with semantically structured data models,
+    which allow for data reusability, seamless integration, easy sharing, and
+    automatic enrichment. In short, more insight, less waste.
+    <br /><br />
+    Since our founding, we have kept growing. Based in the heart of Brussels, we
+    have an international outlook, and our coworkers come from all across
+    Europe.
 
   </p>
 </section>
 
-<section class="mb-24 lg:mb-32 bg-gradient-to-br from-black to-zinc-950 py-24 md:py-32">
-  <div class="container">
-    <div class="flex flex-col">
-      <div class="mb-6 md:mb-12">
-        <h2 class="text-2xl md:text-4xl font-medium text-gray-100">What are we all about?</h2>
-        <p class="text-lg md:text-xl text-gray-400">Some of the things we like</p>
+<section
+  class='mb-24 bg-gradient-to-br from-black to-zinc-950 py-24 md:py-32 lg:mb-32'
+>
+  <div class='container'>
+    <div class='flex flex-col'>
+      <div class='mb-6 md:mb-12'>
+        <h2 class='text-2xl font-medium text-gray-100 md:text-4xl'>What are we
+          all about?</h2>
+        <p class='text-lg text-gray-400 md:text-xl'>Some of the things we like</p>
       </div>
 
-      <ul class="grid grid-cols-1 md:grid-cols-2  xl:grid-cols-3 gap-3 md:gap-6">
-        <li class="flex flex-col items-start justify-start bg-zinc-950 border-2 border-zinc-800 py-16 px-5 md:px-10 rounded">
-            <div class="flex justify-center items-center bg-red-500/20 text-gray-900 w-12 h-12 mb-3 rounded">
-              {{svg-jar "book" class="flex-no-shrink text-red-500 w-5"}}
-            </div>
+      <ul class='grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-6 xl:grid-cols-3'>
+        <li
+          class='flex flex-col items-start justify-start rounded border-2 border-zinc-800 bg-zinc-950 px-5 py-16 md:px-10'
+        >
+          <div
+            class='mb-3 flex h-12 w-12 items-center justify-center rounded bg-red-500/20 text-gray-900'
+          >
+            {{svg-jar 'book' class='flex-no-shrink text-red-500 w-5'}}
+          </div>
 
-            <h3 class="text-base md:text-xl text-white mb-3">Open source</h3>
-            <p class="text-gray-300">We consider ourselves an Open source company. Whenever possible we prefer to use
-              Open
-              Source, we contribute to open source projects, and we publish our work under open source
-              licenses when we can.
-            </p>
-
-        </li>
-        <li class="flex flex-col items-start justify-start bg-zinc-950 border-2 border-zinc-800 py-16 px-5 md:px-10 rounded">
-            <div class="flex justify-center items-center bg-red-500/20 text-gray-900 w-12 h-12 mb-3 rounded">
-              {{svg-jar "open-standard" class="flex-no-shrink fill-red-500 w-5"}}
-            </div>
-            <h3 class="text-base md:text-xl text-white mb-3 ">Open standards</h3>
-            <p class=" text-gray-300">We prefer not to publish data using proprietary standards, as we think this is
-              often
-              inefficient.
-              By instead adopting open standards and semantics, we make our data more powerful and interoperable.</p>
+          <h3 class='mb-3 text-base text-white md:text-xl'>Open source</h3>
+          <p class='text-gray-300'>We consider ourselves an Open source company.
+            Whenever possible we prefer to use Open Source, we contribute to
+            open source projects, and we publish our work under open source
+            licenses when we can.
+          </p>
 
         </li>
-        <li class="flex flex-col items-start justify-start bg-zinc-950 border-2 border-zinc-800 py-16 px-5 md:px-10 rounded">
-            <div class="flex justify-center items-center bg-red-500/20 text-gray-900 w-12 h-12 mb-3 rounded">
-              {{svg-jar "distributed" class="flex-no-shrink fill-red-500 w-5"}}
-            </div>
-            <h3 class="text-base md:text-xl text-white mb-3 ">Distributed solutions</h3>
-            <p class="text-gray-300">Too often, web services and applications rely on a single point of failure.
-              By switching to decentralized models, we make our products faster and more reliable. </p>
+        <li
+          class='flex flex-col items-start justify-start rounded border-2 border-zinc-800 bg-zinc-950 px-5 py-16 md:px-10'
+        >
+          <div
+            class='mb-3 flex h-12 w-12 items-center justify-center rounded bg-red-500/20 text-gray-900'
+          >
+            {{svg-jar 'open-standard' class='flex-no-shrink fill-red-500 w-5'}}
+          </div>
+          <h3 class='mb-3 text-base text-white md:text-xl'>Open standards</h3>
+          <p class='text-gray-300'>We prefer not to publish data using
+            proprietary standards, as we think this is often inefficient. By
+            instead adopting open standards and semantics, we make our data more
+            powerful and interoperable.</p>
 
         </li>
-        <li class="flex flex-col items-start justify-start bg-zinc-950 border-2 border-zinc-800 py-16 px-5 md:px-10 rounded">
-            <div class="flex justify-center items-center bg-red-500/20 text-gray-900 w-12 h-12 mb-3 rounded">
-              {{svg-jar "research" class="flex-no-shrink fill-red-500 w-5"}}
-            </div>
-            <h3 class="text-base md:text-xl text-white mb-3 ">Research</h3>
-            <p class="text-gray-300">We prize innovation above everything else. We contribute to several research
-              projects and invest substantially in research and development, including Open source
-              projects.
-            </p>
+        <li
+          class='flex flex-col items-start justify-start rounded border-2 border-zinc-800 bg-zinc-950 px-5 py-16 md:px-10'
+        >
+          <div
+            class='mb-3 flex h-12 w-12 items-center justify-center rounded bg-red-500/20 text-gray-900'
+          >
+            {{svg-jar 'distributed' class='flex-no-shrink fill-red-500 w-5'}}
+          </div>
+          <h3 class='mb-3 text-base text-white md:text-xl'>Distributed solutions</h3>
+          <p class='text-gray-300'>Too often, web services and applications rely
+            on a single point of failure. By switching to decentralized models,
+            we make our products faster and more reliable.
+          </p>
+
+        </li>
+        <li
+          class='flex flex-col items-start justify-start rounded border-2 border-zinc-800 bg-zinc-950 px-5 py-16 md:px-10'
+        >
+          <div
+            class='mb-3 flex h-12 w-12 items-center justify-center rounded bg-red-500/20 text-gray-900'
+          >
+            {{svg-jar 'research' class='flex-no-shrink fill-red-500 w-5'}}
+          </div>
+          <h3 class='mb-3 text-base text-white md:text-xl'>Research</h3>
+          <p class='text-gray-300'>We prize innovation above everything else. We
+            contribute to several research projects and invest substantially in
+            research and development, including Open source projects.
+          </p>
 
         </li>
       </ul>
@@ -91,19 +116,26 @@
   </div>
 </section>
 
-<section class="container mb-24 lg:mb-32">
-  <h2 class="text-2xl md:text-4xl mb-4 font-medium text-zinc-900">The web we want</h2>
-  <p class="w-full md:w-2/3 text-gray-800 text-base md:text-lg">
-    The web is one of the most important inventions of all time. It is important that it stays open and accessible to everybody.
-    Today, the major tech companies and some governments are closing off parts of the web and making it difficult for smaller actors to compete in other areas. Many of them combine their immense power with a predatory approach to how they handle user data and privacy.
-    <br><br>
+<section class='container mb-24 lg:mb-32'>
+  <h2 class='mb-4 text-2xl font-medium text-zinc-900 md:text-4xl'>The web we
+    want</h2>
+  <p class='w-full text-base text-gray-800 md:w-2/3 md:text-lg'>
+    The web is one of the most important inventions of all time. It is important
+    that it stays open and accessible to everybody. Today, the major tech
+    companies and some governments are closing off parts of the web and making
+    it difficult for smaller actors to compete in other areas. Many of them
+    combine their immense power with a predatory approach to how they handle
+    user data and privacy.
+    <br /><br />
     They are creating a ‘web of walls’.
-    <br><br>
-    The web should instead be an open and safe arena, a public good.
-    As a company, we believe we can change the web by being careful in what technologies we use and what actors we cooperate with.
-    By committing to open standards, Open Source and semantic technologies, and collaborating with like-minded actors we can help bring about the web we want.
+    <br /><br />
+    The web should instead be an open and safe arena, a public good. As a
+    company, we believe we can change the web by being careful in what
+    technologies we use and what actors we cooperate with. By committing to open
+    standards, Open Source and semantic technologies, and collaborating with
+    like-minded actors we can help bring about the web we want.
   </p>
 </section>
 
 <CtaBanner />
-<Footer/>
+<Footer />

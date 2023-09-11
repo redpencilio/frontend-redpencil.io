@@ -1,16 +1,27 @@
-<div class="h-full relative">
-  <div class="container relative z-10">
+<div class='relative h-full'>
+  <div class='container relative z-10'>
     <div
-      class="relative md:h-72 flex flex-col md:justify-center w-full bg-gradient-to-r from-zinc-950 to-black border-2 border-zinc-900 rounded-lg p-8 md:p-16 shadow-2xl shadow-red-900/20">
-      <div class="z-10">
-        <div class="text-lg md:text-2xl font-medium text-white">We’d love to hear from you</div>
-        <LinkTo @route="contact" class="flex items-center space-x-1 font-medium text-red-500 hover:text-red-400">
+      class='relative flex w-full flex-col rounded-lg border-2 border-zinc-900 bg-gradient-to-r from-zinc-950 to-black p-8 shadow-2xl shadow-red-900/20 md:h-72 md:justify-center md:p-16'
+    >
+      <div class='z-10'>
+        <div class='text-lg font-medium text-white md:text-2xl'>We’d love to
+          hear from you</div>
+        <LinkTo
+          @route='contact'
+          class='flex items-center space-x-1 font-medium text-red-500 hover:text-red-400'
+        >
           <span>contact us</span>
-          {{svg-jar "arrow-right" class="h-4  group"}}
+          {{svg-jar 'arrow-right' class='h-4  group'}}
         </LinkTo>
       </div>
-      <img class="absolute h-full right-0 top-0 object-cover opacity-50 md:opacity-100" src="/assets/vector/ripples.svg" alt="ripples">
+      <img
+        class='absolute right-0 top-0 h-full object-cover opacity-50 md:opacity-100'
+        src='/assets/vector/ripples.svg'
+        alt='ripples'
+      />
     </div>
   </div>
-  <div class="h-1/3 w-full bg-gradient-to-r from-black to-zinc-950 absolute bottom-0"></div>
+  <div
+    class='absolute bottom-0 h-1/3 w-full bg-gradient-to-r from-black to-zinc-950'
+  ></div>
 </div>

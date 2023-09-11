@@ -1,41 +1,62 @@
-<div class="bg-gradient-to-r from-black to-zinc-950">
+<div class='bg-gradient-to-r from-black to-zinc-950'>
   <Navbar />
-  <div class="container pb-36">
-    <div class="flex flex-col items-center py-12 md:py-20  text-center">
-      <h2 class="text-4xl lg:text-6xl font-medium mb-3 text-white">Services</h2>
-      <p class="text-base lg:text-xl font-light w-full text-gray-500">Software solutions and consulting that transform
-        data into knowledge and
+  <div class='container pb-36'>
+    <div class='flex flex-col items-center py-12 text-center md:py-20'>
+      <h2 class='mb-3 text-4xl font-medium text-white lg:text-6xl'>Services</h2>
+      <p class='w-full text-base font-light text-gray-500 lg:text-xl'>Software
+        solutions and consulting that transform data into knowledge and
         knowledge into insight.</p>
-      {{svg-jar "services-lines"}}
+      {{svg-jar 'services-lines'}}
     </div>
   </div>
 </div>
 
-<section class="container mb-16 -mt-40">
-  <h2 class="font-light mb-6 text-xl border-b text-gray-100 border-gray-600">Data strategy & architecture</h2>
-  <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3 md:gap-6">
-    <ServiceCard @illustration="/assets/vector/data-modeling.svg" @title="Data modeling"
-      @text="We help you conceptualise and model the vital information for your users and organization using universal ontologies" />
+<section class='container -mt-40 mb-16'>
+  <h2
+    class='mb-6 border-b border-gray-600 text-xl font-light text-gray-100'
+  >Data strategy & architecture</h2>
+  <div class='grid grid-cols-1 gap-3 md:gap-6 lg:grid-cols-2 xl:grid-cols-3'>
+    <ServiceCard
+      @illustration='/assets/vector/data-modeling.svg'
+      @title='Data modeling'
+      @text='We help you conceptualise and model the vital information for your users and organization using universal ontologies'
+    />
 
-    <ServiceCard @illustration="/assets/vector/data-governance.svg" @title="Data strategy"
-      @text="We help you envision a future proof IT and data strategy" />
+    <ServiceCard
+      @illustration='/assets/vector/data-governance.svg'
+      @title='Data strategy'
+      @text='We help you envision a future proof IT and data strategy'
+    />
 
-    <ServiceCard @illustration="/assets/vector/data-publication.svg" @title="Data publication"
-      @text="We help making your data accessible to both humans and machines" />
+    <ServiceCard
+      @illustration='/assets/vector/data-publication.svg'
+      @title='Data publication'
+      @text='We help making your data accessible to both humans and machines'
+    />
   </div>
 </section>
 
-<section class="container mb-36">
-  <h2 class="font-light mb-6 text-xl text-black border-b">Application development</h2>
-  <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3 md:gap-6">
-    <ServiceCard @illustration="/assets/vector/rich-web.svg" @title="Rich web applications"
-      @text="We help you to get the most out of your data by building rich data-driven web applications" />
+<section class='container mb-36'>
+  <h2 class='mb-6 border-b text-xl font-light text-black'>Application
+    development</h2>
+  <div class='grid grid-cols-1 gap-3 md:gap-6 lg:grid-cols-2 xl:grid-cols-3'>
+    <ServiceCard
+      @illustration='/assets/vector/rich-web.svg'
+      @title='Rich web applications'
+      @text='We help you to get the most out of your data by building rich data-driven web applications'
+    />
 
-    <ServiceCard @illustration="/assets/vector/a-a-f.svg" @title="Productive application frameworks"
-      @text="We use cutting edge development by relying on advanced technologies such as Ember.js, Docker and semantic.works" />
+    <ServiceCard
+      @illustration='/assets/vector/a-a-f.svg'
+      @title='Productive application frameworks'
+      @text='We use cutting edge development by relying on advanced technologies such as Ember.js, Docker and semantic.works'
+    />
 
-    <ServiceCard @illustration="/assets/vector/l-d-a.svg" @title="Native Linked Data approach"
-      @text="We guarantee your data flows seamlessly through your applications by adopting a native Linked data infrastructure" />
+    <ServiceCard
+      @illustration='/assets/vector/l-d-a.svg'
+      @title='Native Linked Data approach'
+      @text='We guarantee your data flows seamlessly through your applications by adopting a native Linked data infrastructure'
+    />
   </div>
 </section>
 

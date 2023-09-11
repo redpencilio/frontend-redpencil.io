@@ -1,16 +1,22 @@
-<div class="container -mt-48 mb-12 lg:mb-32 z-30 relativ">
-  <div class="relative flex bg-zinc-950 h-80 md:h-96 items-center shadow-lg border-2 border-zinc-800 rounded">
+<div class='relativ container z-30 -mt-48 mb-12 lg:mb-32'>
+  <div
+    class='relative flex h-80 items-center rounded border-2 border-zinc-800 bg-zinc-950 shadow-lg md:h-96'
+  >
     {{#if (eq this.index 0)}}
       <CarouselSlide>
         <:title>
           Open standards
         </:title>
         <:text>
-          We use existing, publicly available standards and tools
-          &mdash; to make data shareable, reusable, and avoid vendor lock-in
+          We use existing, publicly available standards and tools &mdash; to
+          make data shareable, reusable, and avoid vendor lock-in
         </:text>
         <:image>
-          <img src="/assets/vector/open-standards.svg"  class="h-full object-cover" alt="Open standards">
+          <img
+            src='/assets/vector/open-standards.svg'
+            class='h-full object-cover'
+            alt='Open standards'
+          />
         </:image>
       </CarouselSlide>
 
@@ -20,11 +26,16 @@
           Powerful web apps
         </:title>
         <:text>
-          We use the latest frontend technologies to develop responsive and powerful single-page applications
-          &mdash; for an outstanding user experience
+          We use the latest frontend technologies to develop responsive and
+          powerful single-page applications &mdash; for an outstanding user
+          experience
         </:text>
         <:image>
-          <img src="/assets/vector/spa.svg" class="h-full object-cover" alt="Single page applications">
+          <img
+            src='/assets/vector/spa.svg'
+            class='h-full object-cover'
+            alt='Single page applications'
+          />
         </:image>
       </CarouselSlide>
 
@@ -34,11 +45,15 @@
           Data-centric architecture
         </:title>
         <:text>
-          We build applications on a domain-specific data infrastructure
-          &mdash; improving data modelling and management
+          We build applications on a domain-specific data infrastructure &mdash;
+          improving data modelling and management
         </:text>
         <:image>
-          <img src="/assets/vector/data-centric.svg" class="h-full object-cover" alt="Data-centric architecture">
+          <img
+            src='/assets/vector/data-centric.svg'
+            class='h-full object-cover'
+            alt='Data-centric architecture'
+          />
         </:image>
       </CarouselSlide>
 
@@ -52,25 +67,36 @@
           &mdash; to ensure high-quality data flows and avoid data silos
         </:text>
         <:image>
-          <img src="/assets/vector/linked-data.svg" class="h-full object-cover" alt="Linked Data">
+          <img
+            src='/assets/vector/linked-data.svg'
+            class='h-full object-cover'
+            alt='Linked Data'
+          />
         </:image>
       </CarouselSlide>
     {{/if}}
   </div>
 
-  <div class="flex justify-start items-center w-full py-2">
-    <div class="relative flex items-center space-x-2 justify-center">
+  <div class='flex w-full items-center justify-start py-2'>
+    <div class='relative flex items-center justify-center space-x-2'>
       {{#each this.items as |item|}}
-      <button {{ on 'click' (fn this.setIndex item)}} type="button"
-        class="w-10 sm:w-12 h-2 rounded-full bg-gray-200 focus:outline-white border hover:bg-gray-300 duration-500 {{if (eq this.index item) "
-        w-28 sm:w-36 bg-gray-50 duration-500 relative"}}">
-        <span class="sr-only">slide number {{item}}</span>
-        {{#if (eq this.index item) }}
-        <div class="progress">
-          <span class="sr-only">current slide</span>
-        </div>
-        {{/if}}
-      </button>
+        <button
+          {{on 'click' (fn this.setIndex item)}}
+          type='button'
+          class='h-2 w-10 rounded-full border bg-gray-200 duration-500 hover:bg-gray-300 focus:outline-white sm:w-12
+            {{if
+              (eq this.index item)
+              "
+        relative w-28 bg-gray-50 duration-500 sm:w-36"
+            }}'
+        >
+          <span class='sr-only'>slide number {{item}}</span>
+          {{#if (eq this.index item)}}
+            <div class='progress'>
+              <span class='sr-only'>current slide</span>
+            </div>
+          {{/if}}
+        </button>
       {{/each}}
     </div>
   </div>

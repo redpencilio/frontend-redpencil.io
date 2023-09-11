@@ -1,9 +1,20 @@
-<div class="relative w-full bg-black z-10 border-b border-gray-800">
-  <div class="container flex items-center justify-center">
-  <LinkTo @route="careers" class="flex items-center space-x-2 py-3 text-gray-300 font-medium text-center text-xs hover:text-white">
-    {{svg-jar "alarm-warning-line" class="text-red-500 leading-none h-4" fill="currentColor"}}
-    <span>Looking for an exciting job? Lucky for you, we are hiring!</span>
-    {{svg-jar "alarm-warning-line" class="text-red-500 leading-none h-4" fill="currentColor"}}
-  </LinkTo>
+<div class='relative z-10 w-full border-b border-gray-800 bg-black'>
+  <div class='container flex items-center justify-center'>
+    <LinkTo
+      @route='careers'
+      class='flex items-center space-x-2 py-3 text-center text-xs font-medium text-gray-300 hover:text-white'
+    >
+      {{svg-jar
+        'alarm-warning-line'
+        class='text-red-500 leading-none h-4'
+        fill='currentColor'
+      }}
+      <span>Looking for an exciting job? Lucky for you, we are hiring!</span>
+      {{svg-jar
+        'alarm-warning-line'
+        class='text-red-500 leading-none h-4'
+        fill='currentColor'
+      }}
+    </LinkTo>
   </div>
 </div>

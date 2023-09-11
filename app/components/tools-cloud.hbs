@@ -1,7 +1,13 @@
-<ul class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
+<ul class='grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-5'>
   {{#each this.logos as |logo|}}
-    <li class="p-2 md:p-4 bg-zinc-50 border-2 flex justify-center items-center rounded shadow-inner shadow-gray-100/70">
-      <img class="h-8 lg:h-12" src="/assets/vector/logos/{{logo.image}}" alt={{logo.name}}>
+    <li
+      class='flex items-center justify-center rounded border-2 bg-zinc-50 p-2 shadow-inner shadow-gray-100/70 md:p-4'
+    >
+      <img
+        class='h-8 lg:h-12'
+        src='/assets/vector/logos/{{logo.image}}'
+        alt={{logo.name}}
+      />
     </li>
   {{/each}}
 </ul>
