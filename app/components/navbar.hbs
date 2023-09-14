@@ -1,14 +1,28 @@
 {{! DESKTOP NAV }}
-<nav class='container relative z-10 hidden items-center justify-between py-5 lg:flex' aria-label='desktop navigation'>
+<nav
+  class='container relative z-10 hidden items-center justify-between py-5 lg:flex'
+  aria-label='desktop navigation'
+>
   <LinkTo @route='index'>
     {{#if @dark}}
-      <img class='h-6 w-auto' src="assets/vector/rpio-logo.svg" alt='redpencil.io' />
-   {{else}}
-      <img class='h-6 w-auto' src="/assets/vector/rpio-logo-light.svg" alt='redpencil.io' />
+      <img
+        class='h-6 w-auto'
+        src='assets/vector/rpio-logo.svg'
+        alt='redpencil.io'
+      />
+    {{else}}
+      <img
+        class='h-6 w-auto'
+        src='/assets/vector/rpio-logo-light.svg'
+        alt='redpencil.io'
+      />
     {{/if}}
   </LinkTo>
 
-  <ul class='flex items-center justify-between text-sm font-medium text-zinc-400 hover:text-zinc-200 {{if @dark "text-zinc-900 hover:text-zinc-600"}}'>
+  <ul
+    class='flex items-center justify-between text-sm font-medium text-zinc-400 hover:text-zinc-200
+      {{if @dark "text-zinc-900 hover:text-zinc-600"}}'
+  >
     <li class='mx-6'>
       <LinkTo @route='services'>Services</LinkTo>
     </li>
@@ -24,21 +38,36 @@
   </ul>
   <LinkTo
     class='rounded border-2 border-red-500 bg-red-800 px-12 py-2 text-sm font-medium text-white shadow shadow-red-500/10 hover:border-transparent hover:bg-red-600'
-    @route='contact'>Contact</LinkTo>
+    @route='contact'
+  >Contact</LinkTo>
 </nav>
 
 {{! MOBILE NAV }}
-<nav class='relative z-50 flex w-full flex-col items-start lg:hidden
-    ' aria-label='mobile navigation'>
+<nav
+  class='relative z-50 flex w-full flex-col items-start lg:hidden'
+  aria-label='mobile navigation'
+>
   <div class='flex w-full items-center justify-between p-3'>
     <LinkTo @route='index'>
       {{#if @dark}}
-        <img class='h-6 w-auto' src="assets/vector/rpio-logo.svg" alt='redpencil.io' />
+        <img
+          class='h-6 w-auto'
+          src='assets/vector/rpio-logo.svg'
+          alt='redpencil.io'
+        />
       {{else}}
-        <img class='h-6 w-auto' src="/assets/vector/rpio-logo-light.svg" alt='redpencil.io' />
+        <img
+          class='h-6 w-auto'
+          src='/assets/vector/rpio-logo-light.svg'
+          alt='redpencil.io'
+        />
       {{/if}}
     </LinkTo>
-    <button type='button' class='p-1 {{if @dark "text-zinc-900" "text-zinc-200"}}' {{on 'click' this.toggleMenu}}>
+    <button
+      type='button'
+      class='p-1 {{if @dark "text-zinc-900" "text-zinc-200"}}'
+      {{on 'click' this.toggleMenu}}
+    >
       {{#if this.isOpenMenu}}
         {{svg-jar 'close-line' fill='currentColor'}}
       {{else}}
@@ -49,9 +78,14 @@
 
   {{#if this.isOpenMenu}}
     <div class='absolute top-0 w-full'>
-      <div class="bg-black/20 h-screen w-screen absolute top-0 left-0" {{on 'click' this.toggleMenu}}></div>
-      <div {{body-scroll-lock}} class="relative p-3 z-20 mt-10">
-        <ul class='bg-white rounded-lg flex flex-col items-center border-2 border-zinc-700 divide-y divide-gray-100 py-2 px-4 text-zinc-800 text-base font-medium'>
+      <div
+        class='absolute left-0 top-0 h-screen w-screen bg-black/20'
+        {{on 'click' this.toggleMenu}}
+      ></div>
+      <div {{body-scroll-lock}} class='relative z-20 mt-10 p-3'>
+        <ul
+          class='flex flex-col items-center divide-y divide-gray-100 rounded-lg border-2 border-zinc-700 bg-white px-4 py-2 text-base font-medium text-zinc-800'
+        >
           <li class='flex w-full py-4'>
             <LinkTo class='w-full' @route='index'>Homepage</LinkTo>
           </li>

@@ -1,9 +1,9 @@
 <div class='bg-white'>
-  <Navbar @dark="true" />
+  <Navbar @dark='true' />
 </div>
 
 <div class='relative bg-white'>
-  <div class='relative z-10 '>
+  <div class='relative z-10'>
     <div class='container py-12 lg:py-32'>
 
       <div class='flex h-full flex-col items-start lg:flex-row lg:space-x-24'>
@@ -18,14 +18,17 @@
 
           <ul class='flex items-center space-x-2 text-gray-600'>
             <li>
-              <a class='block p-4 md:p-6 bg-zinc-100 rounded-lg border-2 border-zinc-300 hover:text-black hover:bg-white' href='mailto:info@redpencil.io'>
+              <a
+                class='block rounded-lg border-2 border-zinc-300 bg-zinc-100 p-4 hover:bg-white hover:text-black md:p-6'
+                href='mailto:info@redpencil.io'
+              >
                 {{svg-jar 'email' class='w-6'}}
                 <span class='sr-only'>Send us an email</span>
               </a>
             </li>
             <li>
               <a
-                class='block p-4 md:p-6 bg-zinc-100 rounded-lg border-2 border-zinc-300 hover:text-blue-400 hover:bg-white'
+                class='block rounded-lg border-2 border-zinc-300 bg-zinc-100 p-4 hover:bg-white hover:text-blue-400 md:p-6'
                 href='https://twitter.com/redpencilio'
                 target='_blank'
                 rel='noopener noreferrer'
@@ -36,7 +39,7 @@
             </li>
             <li>
               <a
-                class='block p-4 md:p-6 bg-zinc-100 rounded-lg border-2 border-zinc-300 hover:text-blue-600 hover:bg-white'
+                class='block rounded-lg border-2 border-zinc-300 bg-zinc-100 p-4 hover:bg-white hover:text-blue-600 md:p-6'
                 href='https://www.linkedin.com/company/redpencilio/'
                 target='_blank'
                 rel='noopener noreferrer'
@@ -48,7 +51,7 @@
 
             <li>
               <a
-                class='block p-4 md:p-6 bg-zinc-100 rounded-lg border-2 border-zinc-300 hover:text-black hover:bg-white'
+                class='block rounded-lg border-2 border-zinc-300 bg-zinc-100 p-4 hover:bg-white hover:text-black md:p-6'
                 href='https://github.com/redpencilio'
                 target='_blank'
                 rel='noopener noreferrer'
@@ -57,13 +60,13 @@
                 <span class='sr-only'>Visit our Github page</span>
               </a>
             </li>
-            
+
           </ul>
         </div>
 
         <form {{on 'submit' this.sendEmail}}>
           <div
-            class='flex w-full flex-col space-y-3 rounded-md bg-white md:p-8 md:border-2 border-zinc-800 '
+            class='flex w-full flex-col space-y-3 rounded-md border-zinc-800 bg-white md:border-2 md:p-8'
           >
             <div>
               <label for='name' class='sr-only'>Your name</label>

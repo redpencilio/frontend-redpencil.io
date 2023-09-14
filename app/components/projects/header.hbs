@@ -6,11 +6,13 @@
   >
     <div class='mx-2 flex text-center md:ml-6'>
       <div
-        class='rounded border-2 border-zinc-500 bg-white px-6 py-4 md:py-6 font-light md:px-10 lg:px-20'
+        class='rounded border-2 border-zinc-500 bg-white px-6 py-4 font-light md:px-10 md:py-6 lg:px-20'
       >
-        <h1 class='text-lg md:text-3xl font-medium text-zinc-900'>{{@title}}</h1>
+        <h1
+          class='text-lg font-medium text-zinc-900 md:text-3xl'
+        >{{@title}}</h1>
         {{#if @text}}
-          <p class='text-base md:text-xl text-zinc-800'>{{@text}}</p>
+          <p class='text-base text-zinc-800 md:text-xl'>{{@text}}</p>
         {{/if}}
       </div>
     </div>
