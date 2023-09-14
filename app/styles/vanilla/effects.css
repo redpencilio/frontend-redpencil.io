@@ -4,6 +4,27 @@
   animation: grow 7s linear;
 }
 
+.animate-spin-slower {
+    animation: spin 6s linear infinite;
+}
+
+.red-dot {
+  border-radius: 50px;
+  height: 10px;
+  width: 10px;
+  background: linear-gradient(166.46deg, #FB5353 9.71%, rgba(189, 49, 49, 0.97) 104.39%);
+  box-shadow: 0px 4px 12px 0px #EB4B4B80;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes grow {
   from{
     width: 10%;
