@@ -1,20 +1,14 @@
-<div class='relative z-10 w-full border-b border-gray-800 bg-black'>
-  <div class='container flex items-center justify-center'>
+<div class='bg-black'>
+  <div class='container flex items-center'>
     <LinkTo
       @route='careers'
-      class='flex items-center space-x-2 py-3 text-center text-xs font-medium text-gray-300 hover:text-white'
+      class='flex items-center space-x-4 py-3 text-xs font-medium text-gray-300 hover:text-white'
     >
-      {{svg-jar
-        'alarm-warning-line'
-        class='text-red-500 leading-none h-4'
-        fill='currentColor'
-      }}
+    <span class="relative flex h-3 w-3">
+      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+      <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+    </span>
       <span>Looking for an exciting job? Lucky for you, we are hiring!</span>
-      {{svg-jar
-        'alarm-warning-line'
-        class='text-red-500 leading-none h-4'
-        fill='currentColor'
-      }}
     </LinkTo>
   </div>
 </div>

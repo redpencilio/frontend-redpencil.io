@@ -1,10 +1,10 @@
 <div
-  class='relative z-10 flex h-full w-full items-center justify-between p-3 md:p-6'
+  class='relative z-10 flex flex-col-reverse md:flex-row h-full w-full items-center justify-between p-0 md:p-6 overflow-hidden'
 >
-  <div class='absolute right-0 top-0 h-full opacity-40 lg:opacity-100'>
+  <div class='md:absolute bottom-0 md:right-0 md:top-0 h-full opacity-80 lg:opacity-100'>
     {{yield to='image'}}
   </div>
-  <div class='z-20 w-full md:w-2/3 lg:w-1/2 lg:px-6'>
+  <div class='p-6 md:p-0 z-20 w-full md:w-2/3 lg:w-1/2 lg:px-6'>
     <h4 class='mb-4 text-xl font-medium text-gray-100 md:text-2xl'>{{yield
         to='title'
       }}</h4>
