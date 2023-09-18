@@ -42,7 +42,7 @@
     <LinkTo @route='index'>
       <img
         class='h-6 w-auto'
-        src='assets/vector/rpio-logo.svg'
+        src='/assets/vector/rpio-logo.svg'
         alt='redpencil.io'
       />
     </LinkTo>
@@ -62,12 +62,12 @@
   {{#if this.isOpenMenu}}
     <div class='absolute top-0 w-full'>
       <div
-        class='absolute left-0 top-0 h-screen w-screen bg-black/20'
+        class='absolute left-0 top-0 h-screen w-screen bg-gray-500/30'
         {{on 'click' this.toggleMenu}}
       ></div>
       <div {{body-scroll-lock}} class='relative z-20 mt-10 p-3'>
         <ul
-          class='flex flex-col items-center divide-y divide-gray-100 rounded-lg border-2 border-zinc-700 bg-white px-4 py-2 text-base font-medium text-zinc-800'
+          class='flex flex-col items-center rounded-lg border border-zinc-500 bg-white px-6 py-2 text-xl font-medium text-zinc-800'
         >
           <li class='flex w-full py-4'>
             <LinkTo class='w-full' @route='index'>Homepage</LinkTo>
