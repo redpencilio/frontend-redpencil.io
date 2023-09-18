@@ -4,40 +4,31 @@
   aria-label='desktop navigation'
 >
   <LinkTo @route='index'>
-    {{#if @dark}}
-      <img
-        class='h-6 w-auto'
-        src='/assets/vector/rpio-logo.svg'
-        alt='redpencil.io'
-      />
-    {{else}}
-      <img
-        class='h-6 w-auto'
-        src='/assets/vector/rpio-logo-light.svg'
-        alt='redpencil.io'
-      />
-    {{/if}}
+    <img
+      class='h-6 w-auto'
+      src='/assets/vector/rpio-logo.svg'
+      alt='redpencil.io'
+    />
   </LinkTo>
 
   <ul
-    class='flex items-center justify-between text-sm font-medium text-zinc-400 hover:text-zinc-200
-      {{if @dark "text-zinc-900 hover:text-zinc-600"}}'
+    class='flex items-center justify-between text-sm font-medium text-zinc-950'
   >
-    <li class='mx-6'>
+    <li class='mx-6 hover:text-zinc-600'>
       <LinkTo @route='services'>Services</LinkTo>
     </li>
-    <li class='mx-6'>
+    <li class='mx-6 hover:text-zinc-600'>
       <LinkTo @route='projects'>Projects</LinkTo>
     </li>
-    <li class='mx-6'>
+    <li class='mx-6 hover:text-zinc-600'>
       <LinkTo @route='who-we-are'>Who we are</LinkTo>
     </li>
-    <li class='mx-6'>
+    <li class='mx-6 hover:text-zinc-600'>
       <LinkTo @route='careers'>Careers</LinkTo>
     </li>
   </ul>
   <LinkTo
-    class='rounded border-2 border-red-500 bg-red-800 px-12 py-2 text-sm font-medium text-white shadow shadow-red-500/10 hover:border-transparent hover:bg-red-600'
+    class='rounded border-2 border-zinc-900 bg-red-700 px-12 py-2 text-sm font-medium text-white shadow shadow-red-500/10 hover:border-transparent hover:bg-red-600'
     @route='contact'
   >Contact</LinkTo>
 </nav>
@@ -49,23 +40,15 @@
 >
   <div class='flex w-full items-center justify-between p-3'>
     <LinkTo @route='index'>
-      {{#if @dark}}
-        <img
-          class='h-6 w-auto'
-          src='assets/vector/rpio-logo.svg'
-          alt='redpencil.io'
-        />
-      {{else}}
-        <img
-          class='h-6 w-auto'
-          src='/assets/vector/rpio-logo-light.svg'
-          alt='redpencil.io'
-        />
-      {{/if}}
+      <img
+        class='h-6 w-auto'
+        src='assets/vector/rpio-logo.svg'
+        alt='redpencil.io'
+      />
     </LinkTo>
     <button
       type='button'
-      class='p-1 {{if @dark "text-zinc-900" "text-zinc-200"}}'
+      class='p-1 "text-zinc-900'
       {{on 'click' this.toggleMenu}}
     >
       {{#if this.isOpenMenu}}

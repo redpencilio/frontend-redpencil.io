@@ -1,9 +1,9 @@
 <Hero::CareerBanner />
 
 <div
-  class='relative overflow-hidden border-b-2 border-zinc-200 bg-white pb-48 md:pb-64'
+  class='relative overflow-hidden bg-white pb-48 md:pb-64 border-b border-zinc-500'
 >
-  <Navbar @dark={{true}} />
+  <Navbar />
 
   <section class='container relative z-10 flex py-20 lg:py-40'>
     <div class='z-10 w-full sm:w-2/3'>
@@ -13,7 +13,7 @@
       </h1>
       <LinkTo
         @route='contact'
-        class='rounded border-2 border-red-500 bg-red-800 px-10 py-3 text-base font-medium text-white shadow shadow-red-500/40 hover:border-transparent hover:bg-red-600 md:px-12 md:py-4'
+        class='rounded border-2 border-zinc-900 bg-red-700 px-10 py-3 text-base font-medium text-white shadow shadow-red-500/40 hover:border-transparent hover:bg-red-600 md:px-12 md:py-4'
       >
         Contact us
       </LinkTo>
@@ -34,7 +34,7 @@
         Part of our DNA
       </p>
 
-      <p class='mb-6 text-sm text-gray-700 md:mb-16 md:text-base'>
+      <p class='mb-6 text-sm font-medium text-gray-800 md:mb-16 md:text-base'>
         There are many reasons why open-source conquered the world of software
         development, but behind it all is the idea that a large, open community
         of developers results in better software than any closed group. That why
@@ -57,7 +57,7 @@
 
         </div>
         <div
-          class='z-10 flex h-14 w-14 items-center justify-center rounded border border-gray-200 bg-white shadow-2xl shadow-red-300/40'
+          class='z-10 flex h-14 w-14 items-center justify-center rounded border border-gray-500 bg-white shadow-2xl shadow-red-300/40'
         >
           {{svg-jar 'collaboration' class='flex-no-shrink text-red-600 w-6'}}
           <div
@@ -65,7 +65,7 @@
           ></div>
         </div>
         <div
-          class='z-10 flex h-14 w-14 items-center justify-center rounded border border-gray-200 bg-white shadow-2xl shadow-red-300/40'
+          class='z-10 flex h-14 w-14 items-center justify-center rounded border border-gray-500 bg-white shadow-2xl shadow-red-300/40'
         >
           {{svg-jar 'shield-secure' class='flex-no-shrink text-red-600 w-6'}}
           <div
@@ -73,7 +73,7 @@
           ></div>
         </div>
         <div
-          class='z-10 flex h-14 w-14 items-center justify-center rounded border border-gray-200 bg-white shadow-2xl shadow-red-300/40'
+          class='z-10 flex h-14 w-14 items-center justify-center rounded border border-gray-500 bg-white shadow-2xl shadow-red-300/40'
         >
           {{svg-jar 'open-book' class='flex-no-shrink text-red-600 w-6'}}
           <div
@@ -102,57 +102,64 @@
 
 </section>
 
-<section class='mb-12 bg-gradient-to-br from-black to-zinc-950 md:mb-32'>
+<section class='mb-12 bg-gradient-to-br from-zinc-50 to-zinc-100 md:mb-32 border-y border-zinc-500'>
   <div class='container space-y-12 py-24 md:space-y-24'>
     <div class='flex flex-wrap'>
-      <h2 class='mb-6 text-2xl font-light text-white md:mb-12 md:text-4xl'>We
-        build for the long term
+      <h2 class='mb-2 md:mb-12 text-2xl font-medium text-zinc-900 md:text-4xl'>We build for the long term
       </h2>
       <ul class='grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-6'>
-        <li class='rounded-lg border-4 border-zinc-800 bg-zinc-950 p-3 md:p-9'>
-          <div class='mb-2 text-base text-white md:text-xl'>Improved data
+        <li class='rounded-lg border border-zinc-500 bg-white p-3 md:p-9'>
+          <div class='mb-2 text-base text-zinc-900 md:text-xl'>Improved data
             quality</div>
-          <div class='text-xs text-zinc-200 md:text-sm'>Enhance data quality for
+          <div class='text-xs text-zinc-600 md:text-sm'>Enhance data quality for
             consistent accuracy and reliability, ensuring your information
             consistently meets the highest standards</div>
         </li>
-        <li class='rounded-lg border-4 border-zinc-800 bg-zinc-950 p-3 md:p-9'>
-          <div class='mb-2 text-base text-white md:text-xl'>Better data analysis</div>
-          <div class='text-xs text-zinc-200 md:text-sm'>Supercharge your data
+        <li class='rounded-lg border border-zinc-500 bg-white p-3 md:p-9'>
+          <div class='mb-2 text-base text-zinc-900 md:text-xl'>Better data analysis</div>
+          <div class='text-xs text-zinc-600 md:text-sm'>Supercharge your data
             analysis for sharper insights and smarter decision-making,
             propelling your organization ahead of the competition</div>
         </li>
-        <li class='rounded-lg border-4 border-zinc-800 bg-zinc-950 p-3 md:p-9'>
-          <div class='mb-2 text-base text-white md:text-xl'>Eliminated data
+        <li class='rounded-lg border border-zinc-500 bg-white p-3 md:p-9'>
+          <div class='mb-2 text-base text-zinc-900 md:text-xl'>Eliminated data
             silos</div>
-          <div class='text-xs text-zinc-200 md:text-sm'>Say goodbye to data
+          <div class='text-xs text-zinc-600 md:text-sm'>Say goodbye to data
             silos and welcome seamless data integration for more efficient
             operations</div>
         </li>
-        <li class='rounded-lg border-4 border-zinc-800 bg-zinc-950 p-3 md:p-9'>
-          <div class='mb-2 text-base text-white md:text-xl'>Reusable data</div>
-          <div class='text-xs text-zinc-200 md:text-sm'>Make your data an
+        <li class='rounded-lg border border-zinc-500 bg-white p-3 md:p-9'>
+          <div class='mb-2 text-base text-zinc-900 md:text-xl'>Reusable data</div>
+          <div class='text-xs text-zinc-600 md:text-sm'>Make your data an
             enduring asset, ready to fuel innovation and insights, time and time
             again</div>
         </li>
-        <li class='rounded-lg border-4 border-zinc-800 bg-zinc-950 p-3 md:p-9'>
-          <div class='mb-2 text-base text-white md:text-xl'>Sustainable data
+        <li class='rounded-lg border border-zinc-500 bg-white p-3 md:p-9'>
+          <div class='mb-2 text-base text-zinc-900 md:text-xl'>Sustainable data
             publishing</div>
-          <div class='text-xs text-zinc-200 md:text-sm'>Revolutionize your data
+          <div class='text-xs text-zinc-600 md:text-sm'>Revolutionize your data
             analysis for unparalleled insights and precision, enabling seamless
             integration and enhancing data quality</div>
         </li>
-        <li class='rounded-lg border-4 border-zinc-800 bg-zinc-950 p-3 md:p-9'>
-          <div class='mb-2 text-base text-white md:text-xl'>Data
+        <li class='rounded-lg border border-zinc-500 bg-white p-3 md:p-9'>
+          <div class='mb-2 text-base text-zinc-900 md:text-xl'>Data
             interoperability</div>
-          <div class='text-xs text-zinc-200 md:text-sm'>Enhance data quality and
+          <div class='text-xs text-zinc-600 md:text-sm'>Enhance data quality and
             streamline collaboration with effortless data interoperability,
             unlocking limitless possibilities for your organization</div>
         </li>
       </ul>
     </div>
 
-    <Hero::DataCycle />
+    <div class='flex flex-1 flex-col items-center justify-between'>
+      <h2 class='px-4 py-2 text-center text-xl text-gray-900 md:text-2xl'>Our data
+        cycle</h2>
+      <img
+        class='md:w-2/3'
+        src='/assets/vector/data-cycle.svg'
+        alt='Collect, Analyse, Publish, Integrate, Reuse'
+      />
+    </div>
   </div>
 
 </section>
@@ -170,13 +177,13 @@
         proudly received multiple prestigious awards. We don't just create; we
         innovate."</p>
       <LinkTo
-        class='rounded border border-gray-300 px-8 py-2 text-xs font-medium text-zinc-900 hover:border-red-500 hover:text-red-600 md:py-3 md:text-sm'
+        class='rounded border-2 border-black bg-gray-800 px-8 py-2 text-sm font-medium text-white hover:border-transparent hover:bg-gray-950'
         @route='projects.lblod'
       >Read the case study</LinkTo>
     </div>
 
     <div
-      class='flex h-full flex-1 items-end justify-end rounded-md border-2 border-zinc-200 bg-zinc-100 p-4 pb-0 md:p-8 md:pb-0'
+      class='flex h-full flex-1 items-end justify-end rounded-md border border-zinc-500 bg-gray-200 p-4 pb-0 md:p-8 md:pb-0'
     >
       <img
         class='w-full'

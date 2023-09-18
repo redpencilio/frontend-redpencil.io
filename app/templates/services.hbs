@@ -1,19 +1,13 @@
-<div class='bg-gradient-to-r from-black to-zinc-950'>
+<div class='mb-12 md:mb-32 bg-gradient-to-r from-gray-200 to-gray-50 border-b border-zinc-500'>
   <Navbar />
-  <div class='container pb-36 md:pb-48'>
-    <div class='flex flex-col items-center py-12 text-center md:pt-20'>
-      <h2 class='mb-3 text-4xl font-medium text-white lg:text-6xl'>Services</h2>
-      <p class='w-full text-base text-gray-500 lg:text-xl'>Software solutions
+  <PageHeader @title='Services' @text='Software solutions
         and consulting that transform data into knowledge and knowledge into
-        insight.</p>
-      {{svg-jar 'services-lines'}}
-    </div>
-  </div>
+        insight.' />
 </div>
 
-<section class='container -mt-52 mb-16'>
+<section class='container mb-16'>
   <h2
-    class='mb-6 border-b border-gray-600 text-xl font-light text-gray-100'
+    class='mb-6 border-b text-xl font-light text-black border-zinc-300'
   >Data strategy & architecture</h2>
   <div class='grid grid-cols-1 gap-3 md:gap-6 lg:grid-cols-2 xl:grid-cols-3'>
     <ServiceCard
@@ -37,7 +31,7 @@
 </section>
 
 <section class='container mb-24 md:mb-36'>
-  <h2 class='mb-6 border-b text-xl font-light text-black'>Application
+  <h2 class='mb-6 border-b text-xl font-light text-black border-zinc-300'>Application
     development</h2>
   <div class='grid grid-cols-1 gap-3 md:gap-6 lg:grid-cols-2 xl:grid-cols-3'>
     <ServiceCard

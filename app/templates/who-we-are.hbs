@@ -1,11 +1,10 @@
-<div class='relative mb-6 bg-gradient-to-r from-black to-zinc-950 pb-12'>
+<div class='pb-16 bg-gradient-to-r from-gray-200 to-gray-50 border-b border-zinc-500'>
   <Navbar />
-
   <PageHeader @title='Who we are' @text='Triving towards the web we want.' />
 </div>
 
-<section class='container relative z-10 -mt-20 mb-24'>
-  <ul class='grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4'>
+<section class='container relative z-10 -mt-16 mb-16 md:mb-24'>
+  <ul class='grid grid-cols-1 gap-2 md:gap-6 md:grid-cols-2 xl:grid-cols-4'>
     <FactCard @icon='plant' @title='2017' @description='Founded' />
     <FactCard @icon='book' @title='+250' @description='Repositories' />
     <FactCard @icon='code' @title='+15 M' @description='Lines of code' />
@@ -14,7 +13,7 @@
 </section>
 
 <section class='container mb-24 lg:mb-32'>
-  <h2 class='mb-4 text-2xl font-medium md:text-4xl'>Our story</h2>
+  <h2 class='mb-4 text-2xl font-medium text-zinc-950 md:text-4xl'>Our story</h2>
   <p class='w-full text-base text-gray-800 md:w-2/3 md:text-lg'>We were founded
     by 5 experienced technology professionals in 2017. The idea was to develop
     business-critical and user-oriented web-applications that have impact based
@@ -36,19 +35,19 @@
 </section>
 
 <section
-  class='mb-24 bg-gradient-to-br from-black to-zinc-950 py-24 md:py-32 lg:mb-32'
+  class='mb-24 bg-white lg:mb-32'
 >
   <div class='container'>
     <div class='flex flex-col'>
       <div class='mb-6 md:mb-12'>
-        <h2 class='text-2xl font-medium text-gray-100 md:text-4xl'>What are we
+        <h2 class='text-2xl font-medium text-zinc-950 md:text-4xl'>What are we
           all about?</h2>
-        <p class='text-lg text-gray-400 md:text-xl'>Some of the things we like</p>
+        <p class='text-lg text-gray-600 md:text-xl'>Some of the things we like</p>
       </div>
 
       <ul class='grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-6 xl:grid-cols-3'>
         <li
-          class='flex flex-col items-start justify-start rounded border-2 border-zinc-800 bg-zinc-950 px-5 py-16 md:px-10'
+          class='flex flex-col items-start justify-start rounded border border-zinc-500 bg-gray-100 px-5 py-16 md:px-10'
         >
           <div
             class='mb-3 flex h-12 w-12 items-center justify-center rounded bg-red-500/20 text-gray-900'
@@ -56,8 +55,8 @@
             {{svg-jar 'book' class='flex-no-shrink text-red-500 w-5'}}
           </div>
 
-          <h3 class='mb-3 text-base text-white md:text-xl'>Open source</h3>
-          <p class='text-gray-300'>We consider ourselves an Open source company.
+          <h3 class='mb-3 text-base font-medium text-zinc-900 md:text-xl'>Open source</h3>
+          <p class='text-gray-800'>We consider ourselves an Open source company.
             Whenever possible we prefer to use Open Source, we contribute to
             open source projects, and we publish our work under open source
             licenses when we can.
@@ -65,45 +64,45 @@
 
         </li>
         <li
-          class='flex flex-col items-start justify-start rounded border-2 border-zinc-800 bg-zinc-950 px-5 py-16 md:px-10'
+          class='flex flex-col items-start justify-start rounded border border-zinc-500 bg-gray-100 px-5 py-16 md:px-10'
         >
           <div
             class='mb-3 flex h-12 w-12 items-center justify-center rounded bg-red-500/20 text-gray-900'
           >
             {{svg-jar 'open-standard' class='flex-no-shrink fill-red-500 w-5'}}
           </div>
-          <h3 class='mb-3 text-base text-white md:text-xl'>Open standards</h3>
-          <p class='text-gray-300'>We prefer not to publish data using
+          <h3 class='mb-3 text-base font-medium text-zinc-900 md:text-xl'>Open standards</h3>
+          <p class='text-gray-800'>We prefer not to publish data using
             proprietary standards, as we think this is often inefficient. By
             instead adopting open standards and semantics, we make our data more
             powerful and interoperable.</p>
 
         </li>
         <li
-          class='flex flex-col items-start justify-start rounded border-2 border-zinc-800 bg-zinc-950 px-5 py-16 md:px-10'
+          class='flex flex-col items-start justify-start rounded border border-zinc-500 bg-gray-100 px-5 py-16 md:px-10'
         >
           <div
             class='mb-3 flex h-12 w-12 items-center justify-center rounded bg-red-500/20 text-gray-900'
           >
             {{svg-jar 'distributed' class='flex-no-shrink fill-red-500 w-5'}}
           </div>
-          <h3 class='mb-3 text-base text-white md:text-xl'>Distributed solutions</h3>
-          <p class='text-gray-300'>Too often, web services and applications rely
+          <h3 class='mb-3 text-base font-medium text-zinc-900 md:text-xl'>Distributed solutions</h3>
+          <p class='text-gray-800'>Too often, web services and applications rely
             on a single point of failure. By switching to decentralized models,
             we make our products faster and more reliable.
           </p>
 
         </li>
         <li
-          class='flex flex-col items-start justify-start rounded border-2 border-zinc-800 bg-zinc-950 px-5 py-16 md:px-10'
+          class='flex flex-col items-start justify-start rounded border border-zinc-500 bg-gray-100 px-5 py-16 md:px-10'
         >
           <div
             class='mb-3 flex h-12 w-12 items-center justify-center rounded bg-red-500/20 text-gray-900'
           >
             {{svg-jar 'research' class='flex-no-shrink fill-red-500 w-5'}}
           </div>
-          <h3 class='mb-3 text-base text-white md:text-xl'>Research</h3>
-          <p class='text-gray-300'>We prize innovation above everything else. We
+          <h3 class='mb-3 text-base font-medium text-zinc-900 md:text-xl'>Research</h3>
+          <p class='text-sm text-gray-800 md:text-base'>We prize innovation above everything else. We
             contribute to several research projects and invest substantially in
             research and development, including Open source projects.
           </p>
@@ -115,7 +114,7 @@
 </section>
 
 <section class='container mb-24 lg:mb-32'>
-  <h2 class='mb-4 text-2xl font-medium text-zinc-900 md:text-4xl'>The web we
+  <h2 class='mb-4 text-2xl font-medium text-zinc-950 md:text-4xl'>The web we
     want</h2>
   <p class='w-full text-base text-gray-800 md:w-2/3 md:text-lg'>
     The web is one of the most important inventions of all time. It is important
