@@ -27,6 +27,7 @@
     "format:hbs": "prettier **/*.hbs --write"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.21.3",
     "@ember/optional-features": "^2.0.0",
     "@ember/render-modifiers": "^1.0.2",
     "@ember/test-helpers": "^2.6.0",
@@ -35,7 +36,6 @@
     "@glimmer/tracking": "^1.0.4",
     "@tailwindcss/forms": "^0.4.0",
     "autoprefixer": "^10.4.12",
-    "babel-eslint": "^10.1.0",
     "body-scroll-lock": "^4.0.0-beta.0",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^2.6.3",
@@ -85,7 +85,8 @@
     "prettier-plugin-tailwindcss": "^0.5.4",
     "qunit": "^2.17.2",
     "qunit-dom": "^1.6.0",
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "^3.3.3",
+    "webpack": "^5.88.2"
   },
   "engines": {
     "node": "12.* || 14.* || >= 16"
