@@ -21,6 +21,6 @@ module.exports = {
         content: '1fr 100px 1fr',
       },
     },
-    plugins: [require('@tailwindcss/forms')],
   },
+  plugins: [require('@tailwindcss/forms')],
 };

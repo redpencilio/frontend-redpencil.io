@@ -1,12 +1,13 @@
 {
   "name": "frontend-redpencil",
-  "version": "0.5.0",
+  "version": "0.6.1",
   "private": true,
   "description": "Frontend of the redpencil.io website",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/redpencilio/frontend-redpencil.io.git"
   },
+  "license": "MIT",
   "author": "redpencil.io",
   "directories": {
     "doc": "doc",

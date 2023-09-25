@@ -35,27 +35,6 @@ trigger:
 ---
 kind: pipeline
 type: docker
-name: push-development-build
-steps:
-- name: push-development-build
-  image: plugins/docker
-  settings:
-    repo: ${DRONE_REPO_NAMESPACE/redpencilio/redpencil}/${DRONE_REPO_NAME}
-    tags: ${DRONE_BRANCH}
-    username:
-      from_secret: docker_username
-    password:
-      from_secret: docker_password
-    purge: true
-trigger:
-  branch:
-    - development
-  event:
-    exclude:
-      - pull_request
----
-kind: pipeline
-type: docker
 name: push-feature-build
 steps:
 - name: push-feature-build
@@ -94,7 +73,15 @@ trigger:
     - tag
 
 ---
+kind: secret
+name: docker_username
+data: 8XL6PXxFGcSuPN47NDW+2+rBvxwP41XLUU7qOitauYd8aPqGQTbh
+---
+kind: secret
+name: docker_password
+data: GwJgncGz6JAjNsPn0ppri5YWr6CtdVGvZ5uEdJzY/fVv1eGJ/ooJTuUKjvr+n1pC6s8gbxlKeluBJ6Jyj8+IhQ==
+---
 kind: signature
-hmac: 67501bb52cbdca5b49db5074d1dc65975d49d0a48f7f1f768c996c9913a12b7f
+hmac: 2da9756c096f1091b8975ef5ca5477700d50587374df70df01e049068a0ed57c
 
 ...

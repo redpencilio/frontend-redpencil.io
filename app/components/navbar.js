@@ -7,6 +7,8 @@ export default class NavbarComponent extends Component {
   @service router;
   @tracked isOpenMenu = false;
 
+  @tracked isOpenMenu = false;
+
   constructor() {
     super(...arguments);
     this.router.on('routeWillChange', this.closeMobileMenu);
