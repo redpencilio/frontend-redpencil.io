@@ -31,6 +31,30 @@ module.exports = function (defaults) {
                 },
               ],
             },
+            {
+              test: /\.(woff|woff2|eot|ttf|otf)$/, // Include font file extensions here
+              use: [
+                {
+                  loader: 'file-loader', // Use 'file-loader' for font files
+                  options: {
+                    outputPath: 'assets/fonts/', // Change the output path as needed
+                    name: '[name].[ext]',       // Define the file name pattern
+                  },
+                },
+              ],
+            },
+            {
+              test: /\.svg$/, // Include SVG file extension
+              use: [
+                {
+                  loader: 'file-loader', // Use 'file-loader' for SVG files
+                  options: {
+                    outputPath: 'assets/svg/', // Change the output path as needed
+                    name: '[name].[ext]',       // Define the file name pattern
+                  },
+                },
+              ],
+            },
           ],
         },
       },

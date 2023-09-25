@@ -7,10 +7,6 @@
   background-image: url('/assets/patterns/kaleidos-pattern.svg');
 }
 
-.bg-toevla{
-  background-image: url('/assets/vector/toevla-pattern.svg');
-}
-
 .bg-yellow {
   background-color: #fde257;
 }
@@ -19,44 +15,8 @@
   background-color: #1e7575;
 }
 
-.bg-lblod-card {
-  background-image: url('/assets/vector/lblod-pattern-small.svg');
-}
-
-.bg-kaleidos-card {
-  background-image: url('/assets/vector/kaleidos-pattern-small.svg');
-}
-
-.bg-semantic-web {
-  background-image: url('/assets/vector/semantic-web.svg');
-}
-
-.bg-linked-data {
-  background-image: url('/assets/vector/linked-data.svg');
-}
-
-.bg-open-standards {
-  background-image: url('/assets/vector/open-standards.svg');
-}
-
-.bg-node-pattern {
-  background-image: url('/assets/vector/node-pattern.svg');
-}
-
-.bg-data-centric {
-  background-image: url('/assets/vector/data-centric.svg');
-}
-
-.bg-hero {
-  background-image: url('/assets/vector/hero-nodes.svg');
-}
-
 .bg-logo-cloud {
   background-image: url('/assets/vector/logo-cloud.svg');
-}
-
-.bg-power-spa{
-  background-image: url('/assets/vector/power-spa.svg');
 }
 
 .bg-services-lines {
