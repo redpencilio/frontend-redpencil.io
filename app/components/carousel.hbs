@@ -83,11 +83,11 @@
         <button
           {{on 'click' (fn this.setIndex item)}}
           type='button'
-          class='h-2 w-10 rounded-full border bg-gray-200 duration-500 hover:bg-gray-300 focus:outline-white sm:w-12
+          class='h-2 w-10 rounded-full border border-zinc-500 bg-gray-400 duration-500 hover:bg-gray-300 focus:outline-white sm:w-12
             {{if
               (eq this.index item)
               "
-        relative w-28 bg-gray-50 duration-500 sm:w-36"
+        relative w-28 !bg-gray-50 duration-500 sm:w-36"
             }}'
         >
           <span class='sr-only'>slide number {{item}}</span>
