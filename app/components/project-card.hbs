@@ -1,21 +1,21 @@
 <div
-  class='w-full rounded border border-zinc-500 bg-gray-100 shadow-xl shadow-red-700/10'
+  class="w-full rounded border border-zinc-500 bg-gray-100 shadow-xl shadow-red-700/10"
 >
   <article
-    class='flex flex-col space-x-4 px-6 md:h-full lg:px-12 xl:flex-row xl:items-end'
+    class="flex flex-col space-x-4 px-6 md:h-full lg:px-12 xl:flex-row xl:items-end"
   >
-    <div class='w-full py-10 text-gray-900 lg:w-2/3 xl:w-1/3 xl:py-24'>
+    <div class="w-full py-10 text-gray-900 lg:w-2/3 xl:w-1/3 xl:py-24">
       <h3
-        class='mb-3 text-2xl font-medium text-black md:mb-6 md:text-3xl'
+        class="mb-3 text-2xl font-medium text-black md:mb-6 md:text-3xl"
       >{{@title}}</h3>
-      <p class='mb-8 font-medium text-gray-700'>{{@text}}</p>
+      <p class="mb-8 font-medium text-gray-700">{{@text}}</p>
       <LinkTo
-        class='rounded border-2 border-black bg-gray-800 px-8 py-2 text-sm font-medium text-white hover:border-transparent hover:bg-gray-950'
+        class="rounded border-2 border-black bg-gray-800 px-8 py-2 text-sm font-medium text-white hover:border-transparent hover:bg-gray-950"
         @route={{@linkTo}}
       >Learn more</LinkTo>
     </div>
-    <div class='flex h-full flex-1 items-end justify-end'>
-      <img class='w-full' src={{@illustration}} alt={{@title}} />
+    <div class="flex h-full flex-1 items-end justify-end">
+      <img class="w-full" src={{@illustration}} alt={{@title}} />
     </div>
   </article>
 </div>

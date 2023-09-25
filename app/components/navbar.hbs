@@ -1,91 +1,91 @@
 {{! DESKTOP NAV }}
 <nav
-  class='container relative z-10 hidden items-center justify-between py-5 lg:flex'
-  aria-label='desktop navigation'
+  class="container relative z-10 hidden items-center justify-between py-5 lg:flex"
+  aria-label="desktop navigation"
 >
-  <LinkTo @route='index'>
+  <LinkTo @route="index">
     <img
-      class='h-6 w-auto'
-      src='/assets/vector/rpio-logo.svg'
-      alt='redpencil.io'
+      class="h-6 w-auto"
+      src="/assets/vector/rpio-logo.svg"
+      alt="redpencil.io"
     />
   </LinkTo>
 
   <ul
-    class='flex items-center justify-between text-sm font-medium text-zinc-950'
+    class="flex items-center justify-between text-sm font-medium text-zinc-950"
   >
-    <li class='mx-6 hover:text-zinc-600'>
-      <LinkTo @route='services'>Services</LinkTo>
+    <li class="mx-6 hover:text-zinc-600">
+      <LinkTo @route="services">Services</LinkTo>
     </li>
-    <li class='mx-6 hover:text-zinc-600'>
-      <LinkTo @route='projects'>Projects</LinkTo>
+    <li class="mx-6 hover:text-zinc-600">
+      <LinkTo @route="projects">Projects</LinkTo>
     </li>
-    <li class='mx-6 hover:text-zinc-600'>
-      <LinkTo @route='who-we-are'>Who we are</LinkTo>
+    <li class="mx-6 hover:text-zinc-600">
+      <LinkTo @route="who-we-are">Who we are</LinkTo>
     </li>
-    <li class='mx-6 hover:text-zinc-600'>
-      <LinkTo @route='careers'>Careers</LinkTo>
+    <li class="mx-6 hover:text-zinc-600">
+      <LinkTo @route="careers">Careers</LinkTo>
     </li>
   </ul>
   <LinkTo
-    class='rounded border-2 border-zinc-900 bg-red-700 px-12 py-2 text-sm font-medium text-white shadow shadow-red-500/10 hover:border-transparent hover:bg-red-600'
-    @route='contact'
+    class="rounded border-2 border-zinc-900 bg-red-700 px-12 py-2 text-sm font-medium text-white shadow shadow-red-500/10 hover:border-transparent hover:bg-red-600"
+    @route="contact"
   >Contact</LinkTo>
 </nav>
 
 {{! MOBILE NAV }}
 <nav
-  class='relative z-50 flex w-full flex-col items-start lg:hidden'
-  aria-label='mobile navigation'
+  class="relative z-50 flex w-full flex-col items-start lg:hidden"
+  aria-label="mobile navigation"
 >
-  <div class='flex w-full items-center justify-between p-3'>
-    <LinkTo @route='index'>
+  <div class="flex w-full items-center justify-between p-3">
+    <LinkTo @route="index">
       <img
-        class='h-6 w-auto'
-        src='/assets/vector/rpio-logo.svg'
-        alt='redpencil.io'
+        class="h-6 w-auto"
+        src="/assets/vector/rpio-logo.svg"
+        alt="redpencil.io"
       />
     </LinkTo>
     <button
-      type='button'
+      type="button"
       class='"text-zinc-900 p-1'
-      {{on 'click' this.toggleMenu}}
+      {{on "click" this.toggleMenu}}
     >
       {{#if this.isOpenMenu}}
-        {{svg-jar 'close-line' fill='currentColor'}}
+        {{svg-jar "close-line" fill="currentColor"}}
       {{else}}
-        {{svg-jar 'menu-line' fill='currentColor'}}
+        {{svg-jar "menu-line" fill="currentColor"}}
       {{/if}}
     </button>
   </div>
 
   {{#if this.isOpenMenu}}
-    <div class='absolute top-0 w-full'>
+    <div class="absolute top-0 w-full">
       <div
-        class='absolute left-0 top-0 h-screen w-screen bg-gray-500/30'
-        {{on 'click' this.toggleMenu}}
+        class="absolute left-0 top-0 h-screen w-screen bg-gray-500/30"
+        {{on "click" this.toggleMenu}}
       ></div>
-      <div {{body-scroll-lock}} class='relative z-20 mt-10 p-3'>
+      <div {{body-scroll-lock}} class="relative z-20 mt-10 p-3">
         <ul
-          class='flex flex-col items-center rounded-lg border border-zinc-500 bg-white px-6 py-2 text-xl font-medium text-zinc-800'
+          class="flex flex-col items-center rounded-lg border border-zinc-500 bg-white px-6 py-2 text-xl font-medium text-zinc-800"
         >
-          <li class='flex w-full py-4'>
-            <LinkTo class='w-full' @route='index'>Homepage</LinkTo>
+          <li class="flex w-full py-4">
+            <LinkTo class="w-full" @route="index">Homepage</LinkTo>
           </li>
-          <li class='flex w-full py-4'>
-            <LinkTo class='w-full' @route='services'>Services</LinkTo>
+          <li class="flex w-full py-4">
+            <LinkTo class="w-full" @route="services">Services</LinkTo>
           </li>
-          <li class='flex w-full py-4'>
-            <LinkTo class='w-full' @route='projects'>Projects</LinkTo>
+          <li class="flex w-full py-4">
+            <LinkTo class="w-full" @route="projects">Projects</LinkTo>
           </li>
-          <li class='flex w-full py-4'>
-            <LinkTo class='w-full' @route='who-we-are'>Who we are</LinkTo>
+          <li class="flex w-full py-4">
+            <LinkTo class="w-full" @route="who-we-are">Who we are</LinkTo>
           </li>
-          <li class='flex w-full py-4'>
-            <LinkTo class='w-full' @route='careers'>Careers</LinkTo>
+          <li class="flex w-full py-4">
+            <LinkTo class="w-full" @route="careers">Careers</LinkTo>
           </li>
-          <li class='flex w-full py-4'>
-            <LinkTo class='w-full' @route='contact'>Contact</LinkTo>
+          <li class="flex w-full py-4">
+            <LinkTo class="w-full" @route="contact">Contact</LinkTo>
           </li>
         </ul>
       </div>

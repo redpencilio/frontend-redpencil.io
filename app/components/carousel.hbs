@@ -1,6 +1,6 @@
-<div class='relativ container z-30 -mt-48 mb-12 lg:mb-32'>
+<div class="relativ container z-30 -mt-48 mb-12 lg:mb-32">
   <div
-    class='relative flex h-[500px] items-center rounded-2xl border-2 border-zinc-800 bg-zinc-950 shadow-lg md:h-96'
+    class="relative flex h-[500px] items-center rounded-2xl border-2 border-zinc-800 bg-zinc-950 shadow-lg md:h-96"
   >
     {{#if (eq this.index 0)}}
       <CarouselSlide>
@@ -13,9 +13,9 @@
         </:text>
         <:image>
           <img
-            src='/assets/vector/open-standards.svg'
-            class='h-full object-cover'
-            alt='Open standards'
+            src="/assets/vector/open-standards.svg"
+            class="h-full object-cover"
+            alt="Open standards"
           />
         </:image>
       </CarouselSlide>
@@ -32,9 +32,9 @@
         </:text>
         <:image>
           <img
-            src='/assets/vector/spa.svg'
-            class='h-full object-cover'
-            alt='Single page applications'
+            src="/assets/vector/spa.svg"
+            class="h-full object-cover"
+            alt="Single page applications"
           />
         </:image>
       </CarouselSlide>
@@ -50,9 +50,9 @@
         </:text>
         <:image>
           <img
-            src='/assets/vector/data-centric.svg'
-            class='h-full object-cover'
-            alt='Data-centric architecture'
+            src="/assets/vector/data-centric.svg"
+            class="h-full object-cover"
+            alt="Data-centric architecture"
           />
         </:image>
       </CarouselSlide>
@@ -68,32 +68,32 @@
         </:text>
         <:image>
           <img
-            src='/assets/vector/linked-data.svg'
-            class='h-full object-cover'
-            alt='Linked Data'
+            src="/assets/vector/linked-data.svg"
+            class="h-full object-cover"
+            alt="Linked Data"
           />
         </:image>
       </CarouselSlide>
     {{/if}}
   </div>
 
-  <div class='flex w-full items-center justify-start py-2'>
-    <div class='relative flex items-center justify-center space-x-2'>
+  <div class="flex w-full items-center justify-start py-2">
+    <div class="relative flex items-center justify-center space-x-2">
       {{#each this.items as |item|}}
         <button
-          {{on 'click' (fn this.setIndex item)}}
-          type='button'
-          class='h-2 w-10 rounded-full border border-zinc-500 bg-gray-400 duration-500 hover:bg-gray-300 focus:outline-white sm:w-12
+          {{on "click" (fn this.setIndex item)}}
+          type="button"
+          class="h-2 w-10 rounded-full border border-zinc-500 bg-gray-400 duration-500 hover:bg-gray-300 focus:outline-white sm:w-12
             {{if
               (eq this.index item)
-              "
-        relative w-28 !bg-gray-50 duration-500 sm:w-36"
-            }}'
+              '
+        relative w-28 !bg-gray-50 duration-500 sm:w-36'
+            }}"
         >
-          <span class='sr-only'>slide number {{item}}</span>
+          <span class="sr-only">slide number {{item}}</span>
           {{#if (eq this.index item)}}
-            <div class='progress'>
-              <span class='sr-only'>current slide</span>
+            <div class="progress">
+              <span class="sr-only">current slide</span>
             </div>
           {{/if}}
         </button>

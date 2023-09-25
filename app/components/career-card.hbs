@@ -1,46 +1,46 @@
 {{#if @isLink}}
   <LinkTo
     @route={{@linkTo}}
-    class='relative rounded border border-zinc-500 bg-white p-4 shadow-lg hover:border-red-600 hover:shadow-2xl hover:shadow-red-600/20 md:p-6'
+    class="relative rounded border border-zinc-500 bg-white p-4 shadow-lg hover:border-red-600 hover:shadow-2xl hover:shadow-red-600/20 md:p-6"
   >
-    <div class='relative mb-6 flex justify-between text-zinc-950'>
-      <h3 class='text-base font-medium md:text-xl'>{{@title}}</h3>
+    <div class="relative mb-6 flex justify-between text-zinc-950">
+      <h3 class="text-base font-medium md:text-xl">{{@title}}</h3>
       <div
-        class='absolute right-0 top-0 flex items-center justify-center space-x-2 rounded-full px-3 py-1 font-bold text-green-600'
+        class="absolute right-0 top-0 flex items-center justify-center space-x-2 rounded-full px-3 py-1 font-bold text-green-600"
       >
-        <svg class='-ml-2 h-2 w-2' fill='currentColor' viewBox='0 0 8 8'>
-          <circle cx='4' cy='4' r='3' />
+        <svg class="-ml-2 h-2 w-2" fill="currentColor" viewBox="0 0 8 8">
+          <circle cx="4" cy="4" r="3" />
         </svg>
         <span>{{@status}}</span>
       </div>
     </div>
-    <ul class='flex flex-col space-y-2 md:flex-row md:space-x-6 md:space-y-0'>
-      <li class='flex space-x-2 text-gray-800'>
-        <svg class='w-5' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
-          <path fill='none' d='M0 0H24V24H0z' />
+    <ul class="flex flex-col space-y-2 md:flex-row md:space-x-6 md:space-y-0">
+      <li class="flex space-x-2 text-gray-800">
+        <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path fill="none" d="M0 0H24V24H0z" />
           <path
-            d='M15 3c.552 0 1 .448 1 1v2h5c.552 0 1 .448 1 1v13c0 .552-.448 1-1 1H3c-.552 0-1-.448-1-1V7c0-.552.448-1 1-1h5V4c0-.552.448-1 1-1h6zM8 8H6v11h2V8zm10 0h-2v11h2V8zm-4-3h-4v1h4V5z'
-            fill='currentColor'
+            d="M15 3c.552 0 1 .448 1 1v2h5c.552 0 1 .448 1 1v13c0 .552-.448 1-1 1H3c-.552 0-1-.448-1-1V7c0-.552.448-1 1-1h5V4c0-.552.448-1 1-1h6zM8 8H6v11h2V8zm10 0h-2v11h2V8zm-4-3h-4v1h4V5z"
+            fill="currentColor"
           />
         </svg>
         <span>{{@contract}}</span>
       </li>
-      <li class='flex space-x-2 text-gray-800'>
-        <svg class='w-5' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
-          <path fill='none' d='M0 0h24v24H0z' />
+      <li class="flex space-x-2 text-gray-800">
+        <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path fill="none" d="M0 0h24v24H0z" />
           <path
-            d='M21 19h2v2H1v-2h2V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v15h2V9h3a1 1 0 0 1 1 1v9zM7 11v2h4v-2H7zm0-4v2h4V7H7z'
-            fill='currentColor'
+            d="M21 19h2v2H1v-2h2V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v15h2V9h3a1 1 0 0 1 1 1v9zM7 11v2h4v-2H7zm0-4v2h4V7H7z"
+            fill="currentColor"
           />
         </svg>
         <span>{{@remoteOrLocal}}</span>
       </li>
-      <li class='flex space-x-2 text-gray-800'>
-        <svg class='w-5' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
-          <path fill='none' d='M0 0h24v24H0z' />
+      <li class="flex space-x-2 text-gray-800">
+        <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path fill="none" d="M0 0h24v24H0z" />
           <path
-            d='M16.95 11.95a6.996 6.996 0 0 0 1.858-6.582l2.495-1.07a.5.5 0 0 1 .697.46V19l-7 3-6-3-6.303 2.701a.5.5 0 0 1-.697-.46V7l3.129-1.341a6.993 6.993 0 0 0 1.921 6.29L12 16.9l4.95-4.95zm-1.414-1.414L12 14.07l-3.536-3.535a5 5 0 1 1 7.072 0z'
-            fill='currentColor'
+            d="M16.95 11.95a6.996 6.996 0 0 0 1.858-6.582l2.495-1.07a.5.5 0 0 1 .697.46V19l-7 3-6-3-6.303 2.701a.5.5 0 0 1-.697-.46V7l3.129-1.341a6.993 6.993 0 0 0 1.921 6.29L12 16.9l4.95-4.95zm-1.414-1.414L12 14.07l-3.536-3.535a5 5 0 1 1 7.072 0z"
+            fill="currentColor"
           />
         </svg>
         <span>{{@location}}</span>
@@ -48,57 +48,57 @@
     </ul>
   </LinkTo>
 {{else}}
-  <div class='-mt-20 mb-16 rounded border border-zinc-500 bg-white shadow-lg'>
-    <div class='p-6'>
-      <div class='relative sm:flex sm:items-baseline sm:justify-between'>
-        <div class='sm:w-0 sm:flex-1'>
+  <div class="-mt-20 mb-16 rounded border border-zinc-500 bg-white shadow-lg">
+    <div class="p-6">
+      <div class="relative sm:flex sm:items-baseline sm:justify-between">
+        <div class="sm:w-0 sm:flex-1">
           <h1
-            id='message-heading'
-            class='mb-3 text-lg font-medium text-zinc-950 md:text-3xl'
+            id="message-heading"
+            class="mb-3 text-lg font-medium text-zinc-950 md:text-3xl"
           >
             {{@title}}
           </h1>
           <ul
-            class='flex flex-col space-y-2 md:flex-row md:space-x-6 md:space-y-0'
+            class="flex flex-col space-y-2 md:flex-row md:space-x-6 md:space-y-0"
           >
-            <li class='flex space-x-2 text-gray-800'>
+            <li class="flex space-x-2 text-gray-800">
               <svg
-                class='w-5'
-                xmlns='http://www.w3.org/2000/svg'
-                viewBox='0 0 24 24'
+                class="w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
               >
-                <path fill='none' d='M0 0H24V24H0z' />
+                <path fill="none" d="M0 0H24V24H0z" />
                 <path
-                  d='M15 3c.552 0 1 .448 1 1v2h5c.552 0 1 .448 1 1v13c0 .552-.448 1-1 1H3c-.552 0-1-.448-1-1V7c0-.552.448-1 1-1h5V4c0-.552.448-1 1-1h6zM8 8H6v11h2V8zm10 0h-2v11h2V8zm-4-3h-4v1h4V5z'
-                  fill='currentColor'
+                  d="M15 3c.552 0 1 .448 1 1v2h5c.552 0 1 .448 1 1v13c0 .552-.448 1-1 1H3c-.552 0-1-.448-1-1V7c0-.552.448-1 1-1h5V4c0-.552.448-1 1-1h6zM8 8H6v11h2V8zm10 0h-2v11h2V8zm-4-3h-4v1h4V5z"
+                  fill="currentColor"
                 />
               </svg>
               <span>{{@contract}}</span>
             </li>
-            <li class='flex space-x-2 text-gray-800'>
+            <li class="flex space-x-2 text-gray-800">
               <svg
-                class='w-5'
-                xmlns='http://www.w3.org/2000/svg'
-                viewBox='0 0 24 24'
+                class="w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
               >
-                <path fill='none' d='M0 0h24v24H0z' />
+                <path fill="none" d="M0 0h24v24H0z" />
                 <path
-                  d='M21 19h2v2H1v-2h2V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v15h2V9h3a1 1 0 0 1 1 1v9zM7 11v2h4v-2H7zm0-4v2h4V7H7z'
-                  fill='currentColor'
+                  d="M21 19h2v2H1v-2h2V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v15h2V9h3a1 1 0 0 1 1 1v9zM7 11v2h4v-2H7zm0-4v2h4V7H7z"
+                  fill="currentColor"
                 />
               </svg>
               <span>{{@remoteOrLocal}}</span>
             </li>
-            <li class='flex space-x-2 text-gray-800'>
+            <li class="flex space-x-2 text-gray-800">
               <svg
-                class='w-5'
-                xmlns='http://www.w3.org/2000/svg'
-                viewBox='0 0 24 24'
+                class="w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
               >
-                <path fill='none' d='M0 0h24v24H0z' />
+                <path fill="none" d="M0 0h24v24H0z" />
                 <path
-                  d='M16.95 11.95a6.996 6.996 0 0 0 1.858-6.582l2.495-1.07a.5.5 0 0 1 .697.46V19l-7 3-6-3-6.303 2.701a.5.5 0 0 1-.697-.46V7l3.129-1.341a6.993 6.993 0 0 0 1.921 6.29L12 16.9l4.95-4.95zm-1.414-1.414L12 14.07l-3.536-3.535a5 5 0 1 1 7.072 0z'
-                  fill='currentColor'
+                  d="M16.95 11.95a6.996 6.996 0 0 0 1.858-6.582l2.495-1.07a.5.5 0 0 1 .697.46V19l-7 3-6-3-6.303 2.701a.5.5 0 0 1-.697-.46V7l3.129-1.341a6.993 6.993 0 0 0 1.921 6.29L12 16.9l4.95-4.95zm-1.414-1.414L12 14.07l-3.536-3.535a5 5 0 1 1 7.072 0z"
+                  fill="currentColor"
                 />
               </svg>
               <span>{{@location}}</span>
@@ -106,10 +106,10 @@
           </ul>
         </div>
         <div
-          class='absolute right-0 top-0 flex items-center justify-center space-x-2 rounded-full px-3 py-1 font-bold text-green-600'
+          class="absolute right-0 top-0 flex items-center justify-center space-x-2 rounded-full px-3 py-1 font-bold text-green-600"
         >
-          <svg class='-ml-2 h-2 w-2' fill='currentColor' viewBox='0 0 8 8'>
-            <circle cx='4' cy='4' r='3' />
+          <svg class="-ml-2 h-2 w-2" fill="currentColor" viewBox="0 0 8 8">
+            <circle cx="4" cy="4" r="3" />
           </svg>
           <span>{{@status}}</span>
         </div>
