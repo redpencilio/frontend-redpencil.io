@@ -12,7 +12,7 @@
   </LinkTo>
 
   <ul
-    class="flex items-center justify-between text-sm font-medium text-zinc-950"
+    class="flex items-center justify-between text-base font-medium text-zinc-900"
   >
     <li class="mx-6 hover:text-zinc-600">
       <LinkTo @route="services">Services</LinkTo>
@@ -28,7 +28,7 @@
     </li>
   </ul>
   <LinkTo
-    class="rounded border-2 border-zinc-900 bg-red-700 px-12 py-2 text-sm font-medium text-white shadow shadow-red-500/10 hover:border-transparent hover:bg-red-600"
+    class="rounded bg-red-700 px-12 py-2 text-sm font-medium text-white shadow shadow-red-500/10 hover:border-transparent hover:bg-red-600"
     @route="contact"
   >Contact</LinkTo>
 </nav>
@@ -62,7 +62,7 @@
   {{#if this.isOpenMenu}}
     <div class="absolute top-0 w-full">
       <div
-        class="absolute left-0 top-0 h-screen w-screen bg-gray-500/30"
+        class="absolute left-0 top-0 h-screen w-screen bg-zinc-500/30"
         {{on "click" this.toggleMenu}}
       ></div>
       <div {{body-scroll-lock}} class="relative z-20 mt-10 p-3">
