@@ -1,6 +1,6 @@
 <div class="relativ container z-30 -mt-48 mb-12 lg:mb-32">
   <div
-    class="relative flex h-[500px] items-center rounded-2xl border-2 border-zinc-800 bg-zinc-950 shadow-lg md:h-96"
+    class="relative flex h-[500px] items-center rounded-2xl border border-zinc-300 bg-white shadow-lg md:h-96"
   >
     {{#if (eq this.index 0)}}
       <CarouselSlide>
@@ -83,7 +83,7 @@
         <button
           {{on "click" (fn this.setIndex item)}}
           type="button"
-          class="h-2 w-10 rounded-full border border-zinc-500 bg-gray-400 duration-500 hover:bg-gray-300 focus:outline-white sm:w-12
+          class="h-2 w-10 rounded-full border border-zinc-300 bg-zinc-200 duration-500 hover:bg-white focus:outline-white sm:w-12
             {{if
               (eq this.index item)
               '

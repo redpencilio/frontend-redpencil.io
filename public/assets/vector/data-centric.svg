@@ -46,32 +46,32 @@
 <linearGradient id="paint5_linear_235_251" x1="579.248" y1="315.846" x2="640.369" y2="319.401" gradientUnits="userSpaceOnUse">
 <stop stop-color="#E2465F"/>
 <stop offset="0.0001" stop-color="#EA2828"/>
-<stop offset="0.588542" stop-opacity="0"/>
-<stop offset="1" stop-opacity="0.4"/>
+<stop offset="0.588542" stop-opacity="0.9"/>
+<stop offset="1" stop-opacity="0.9"/>
 </linearGradient>
 <linearGradient id="paint6_linear_235_251" x1="697.187" y1="295.687" x2="744.404" y2="298.433" gradientUnits="userSpaceOnUse">
 <stop stop-color="#E2465F"/>
 <stop offset="0.0001" stop-color="#EA2828"/>
-<stop offset="0.588542" stop-opacity="0"/>
-<stop offset="1" stop-opacity="0.4"/>
+<stop offset="0.588542" stop-opacity="0.9"/>
+<stop offset="1" stop-opacity="0.9"/>
 </linearGradient>
 <linearGradient id="paint7_linear_235_251" x1="723.9" y1="192.4" x2="771.117" y2="195.146" gradientUnits="userSpaceOnUse">
 <stop stop-color="#E2465F"/>
 <stop offset="0.0001" stop-color="#EA2828"/>
-<stop offset="0.588542" stop-opacity="0"/>
-<stop offset="1" stop-opacity="0.4"/>
+<stop offset="0.588542" stop-opacity="0.9"/>
+<stop offset="1" stop-opacity="0.9"/>
 </linearGradient>
 <linearGradient id="paint8_linear_235_251" x1="618.713" y1="122.648" x2="685.563" y2="126.536" gradientUnits="userSpaceOnUse">
 <stop stop-color="#E2465F"/>
 <stop offset="0.0001" stop-color="#EA2828"/>
-<stop offset="0.588542" stop-opacity="0"/>
-<stop offset="1" stop-opacity="0.4"/>
+<stop offset="0.588542" stop-opacity="0.9"/>
+<stop offset="1" stop-opacity="0.9"/>
 </linearGradient>
 <linearGradient id="paint9_linear_235_251" x1="534.81" y1="205.172" x2="583.681" y2="208.015" gradientUnits="userSpaceOnUse">
 <stop stop-color="#E2465F"/>
 <stop offset="0.0001" stop-color="#EA2828"/>
-<stop offset="0.588542" stop-opacity="0"/>
-<stop offset="1" stop-opacity="0.4"/>
+<stop offset="0.588542" stop-opacity="0.9"/>
+<stop offset="1" stop-opacity="0.9"/>
 </linearGradient>
 <clipPath id="clip0_235_251">
 <rect width="908" height="453" fill="white"/>
