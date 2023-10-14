@@ -30,6 +30,6 @@ export default class HeroCarouselComponent extends Component {
     const nextIndex = () => {
       this.index = (this.index + 1) % this.items.length;
     };
-    // this.intervalId = setInterval(nextIndex, this.duration);
+    this.intervalId = setInterval(nextIndex, this.duration);
   }
 }

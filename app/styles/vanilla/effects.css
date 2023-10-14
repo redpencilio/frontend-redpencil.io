@@ -1,14 +1,3 @@
-.progress {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  border-radius: 9999px;
-  background: linear-gradient(90deg, #942a2ae5 0%, #da0d0dd3 100%);
-  animation: grow 7s linear;
-}
-
 .animate-spin-slower {
     animation: spin 6s linear infinite;
 }
