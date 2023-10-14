@@ -5,26 +5,34 @@
 >
   <LinkTo @route="index">
     <img
-      class="h-6 w-auto"
+      class="h-8 w-auto"
       src="/assets/vector/rpio-logo.svg"
       alt="redpencil.io"
     />
   </LinkTo>
 
   <ul
-    class="flex items-center justify-between text-base font-medium text-zinc-900"
+    class="flex items-center justify-between space-x-12"
   >
-    <li class="mx-6 hover:text-zinc-600">
-      <LinkTo @route="services">Services</LinkTo>
+    <li>
+      <LinkTo @route="services" class="text-base font-medium text-zinc-900 hover:text-zinc-600">
+        Services
+      </LinkTo>
     </li>
-    <li class="mx-6 hover:text-zinc-600">
-      <LinkTo @route="projects">Projects</LinkTo>
+    <li>
+      <LinkTo @route="projects" class="text-base font-medium text-zinc-900 hover:text-zinc-600">
+        Projects
+      </LinkTo>
     </li>
-    <li class="mx-6 hover:text-zinc-600">
-      <LinkTo @route="who-we-are">Who we are</LinkTo>
+    <li>
+      <LinkTo @route="who-we-are" class="text-base font-medium text-zinc-900 hover:text-zinc-600">
+        Who we are
+      </LinkTo>
     </li>
-    <li class="mx-6 hover:text-zinc-600">
-      <LinkTo @route="careers">Careers</LinkTo>
+    <li>
+      <LinkTo @route="careers" class="text-base font-medium text-zinc-900 hover:text-zinc-600">
+        Careers
+      </LinkTo>
     </li>
   </ul>
   <LinkTo
