@@ -4,15 +4,15 @@
 <g filter="url(#filter0_d_18_732)">
 <circle cx="386" cy="159" r="70" fill="url(#paint1_linear_18_732)"/>
 </g>
-<rect x="353.714" y="123.831" width="41.6868" height="2.97763" rx="1.48881" fill="white"/>
-<rect x="353.714" y="142.441" width="41.6868" height="2.97763" rx="1.48881" fill="white"/>
-<rect x="353.714" y="177.003" width="41.6868" height="2.97763" rx="1.48881" fill="white"/>
-<rect x="353.714" y="129.786" width="23.821" height="2.97763" rx="1.48881" fill="white"/>
-<rect x="353.714" y="148.396" width="29.4656" height="2.97763" rx="1.48881" fill="white"/>
-<rect x="353.714" y="182.958" width="70.209" height="2.97763" rx="1.48881" fill="white"/>
-<rect x="353.714" y="135.74" width="58.0638" height="2.97763" rx="1.48881" fill="white"/>
-<rect x="353.714" y="154.352" width="58.0638" height="2.97763" rx="1.48881" fill="white"/>
-<rect x="353.714" y="188.914" width="58.0638" height="2.97763" rx="1.48881" fill="white"/>
+<rect x="353.714" y="123.831" width="41.6868" height="2.97763" rx="1.48881" fill="#FFDADA"/>
+<rect x="353.714" y="142.441" width="41.6868" height="2.97763" rx="1.48881" fill="#FFDADA"/>
+<rect x="353.714" y="177.003" width="41.6868" height="2.97763" rx="1.48881" fill="#FFDADA"/>
+<rect x="353.714" y="129.786" width="23.821" height="2.97763" rx="1.48881" fill="#FFDADA"/>
+<rect x="353.714" y="148.396" width="29.4656" height="2.97763" rx="1.48881" fill="#FFDADA"/>
+<rect x="353.714" y="182.958" width="70.209" height="2.97763" rx="1.48881" fill="#FFDADA"/>
+<rect x="353.714" y="135.74" width="58.0638" height="2.97763" rx="1.48881" fill="#FFDADA"/>
+<rect x="353.714" y="154.352" width="58.0638" height="2.97763" rx="1.48881" fill="#FFDADA"/>
+<rect x="353.714" y="188.914" width="58.0638" height="2.97763" rx="1.48881" fill="#FFDADA"/>
 </g>
 <defs>
 <filter id="filter0_d_18_732" x="274" y="47" width="224" height="224" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -25,9 +25,9 @@
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_18_732" result="shape"/>
 </filter>
 <linearGradient id="paint0_linear_18_732" x1="860.415" y1="164.915" x2="272" y2="448.162" gradientUnits="userSpaceOnUse">
-<stop/>
+<stop stop-color="#F4F4F5"/>
 <stop offset="0.864583" stop-color="#D82323"/>
-<stop offset="1"/>
+<stop offset="1" stop-color="#F4F4F5"/>
 </linearGradient>
 <linearGradient id="paint1_linear_18_732" x1="386" y1="89" x2="423.451" y2="244.468" gradientUnits="userSpaceOnUse">
 <stop stop-color="#FB5353"/>
