@@ -38,10 +38,6 @@ module.exports = function (defaults) {
               use: [
                 {
                   loader: 'file-loader', // Use 'file-loader' for font files
-                  options: {
-                    outputPath: 'assets/fonts/', // Change the output path as needed
-                    name: '[name].[ext]',       // Define the file name pattern
-                  },
                 },
               ],
             },
@@ -50,10 +46,6 @@ module.exports = function (defaults) {
               use: [
                 {
                   loader: 'file-loader', // Use 'file-loader' for SVG files
-                  options: {
-                    outputPath: 'assets/svg/', // Change the output path as needed
-                    name: '[name].[ext]',       // Define the file name pattern
-                  },
                 },
               ],
             },
