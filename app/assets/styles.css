@@ -6,9 +6,20 @@
 /* TYPOGRAPHY */
 @import "./vanilla/fontface.css";
 
-
 /* OTHER */
 @import "./vanilla/backgrounds.css";
 @import "./vanilla/effects.css";
 
-@import "./softer.css";
+@import "./tailwind-layers.css";
+
+* {
+  font-family: 'Poppins', sans-serif;
+  transition: all .05s ease-in-out;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:focus {
+  outline-color: red;
+  outline-style: solid;
+}
