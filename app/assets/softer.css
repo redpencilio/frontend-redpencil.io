@@ -1,0 +1,27 @@
+@layer components {
+  .r_border-b-light {
+    @apply border-b border-zinc-300;
+  }
+
+  .r_border-light {
+    @apply border border-zinc-300;
+  }
+
+  .r_focus-border-red {
+    @apply focus:ring-red-300 focus:outline-none focus:border-red-300;
+  }
+
+  h1.r_text-dark,h2.r_text-dark,h3.r_text-dark,h4.r_text-dark,h5.r_text-dark,h6.r_text-dark,h7.r_text-dark,
+  r_text-dark > h1, r_text-dark > h2, r_text-dark > h3, r_text-dark > h4, r_text-dark > h5, r_text-dark > h6, r_text-dark > h7
+  {
+    @apply text-zinc-900;
+  }
+  *.r_text-dark, r_text-dark > * {
+    @apply text-zinc-800;
+  }
+}
+
+:focus {
+  outline-color: red;
+  outline-style: solid;
+}

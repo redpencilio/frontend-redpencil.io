@@ -1,0 +1,14 @@
+/* TAILWIND */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* TYPOGRAPHY */
+@import "./vanilla/fontface.css";
+
+
+/* OTHER */
+@import "./vanilla/backgrounds.css";
+@import "./vanilla/effects.css";
+
+@import "./softer.css";
