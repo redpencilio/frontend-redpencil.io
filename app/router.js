@@ -12,8 +12,10 @@ Router.map(function () {
     this.route('lblod');
     this.route('kaleidos');
     this.route('toevla');
+    this.route('transportdata');
   });
   this.route('services');
+  this.route('data-portals');
   this.route('contact');
   this.route('careers', function () {
     this.route('full-stack-developer');

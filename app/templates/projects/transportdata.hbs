@@ -1,0 +1,192 @@
+<div
+  class="r_border-b-light bg-gradient-to-r from-zinc-200 to-zinc-50 pb-48"
+>
+  <Navbar />
+</div>
+
+<Projects::Header
+  @background="bg-zinc-800"
+  @title="Transportdata.be"
+  @text="Belgian National Access Point for Transport Data"
+/>
+
+<div class="container flex flex-col items-center r_text-dark">
+  <div class="w-full md:w-2/3">
+    <section class="mb-24">
+      <h2 class="mb-2 text-2xl text-zinc-950 md:mb-6 md:text-3xl">
+        Maintaining Belgium's Transport Data Portal
+      </h2>
+      <p class="mb-12 text-base leading-relaxed md:text-lg">
+        Transportdata.be serves as Belgium's National Access Point (NAP) for Intelligent Transport Systems (ITS),
+        providing crucial transport and traffic data to support mobility applications across the country.
+        Redpencil was awarded a 4-year maintenance and development contract by the National Geographic Institute
+        (NGI) to ensure the portal's continuous operation and evolution.
+        <br />
+        <br />
+        This CKAN-based data portal demonstrates our expertise in maintaining critical government infrastructure
+        while implementing modern data management practices and ensuring long-term sustainability.
+      </p>
+
+    </section>
+
+    <section class="mb-12 md:mb-24">
+      <h2 class="mb-2 text-2xl text-zinc-950 md:mb-6 md:text-3xl">
+        Technical Challenges & Solutions
+      </h2>
+      <p class="mb-6 text-lg leading-relaxed">
+        The project involves comprehensive modernization and ongoing maintenance of a critical national data infrastructure.
+      </p>
+      <ul class="divide-y divide-zinc-300 rounded-lg r_border-light bg-zinc-100">
+        <li class="p-6">
+          <h3 class="mb-2 text-xl text-zinc-950">Legacy System Modernization</h3>
+          <p class="text-sm text-zinc-800">
+            Upgrading from outdated components (Ubuntu 18.04, Python 2.7, CKAN 2.8) to modern, supported versions
+            while ensuring minimal downtime migration and data integrity.
+          </p>
+        </li>
+        <li class="p-6">
+          <h3 class="mb-2 text-xl text-zinc-950">Cloud Independence & Data Sovereignty</h3>
+          <p class="text-sm text-zinc-800">
+            Breaking free from vendor lock-in by migrating to a cloud-agnostic architecture using European providers.
+            This strategic move not only ensures Belgium retains full control over its critical transport data
+            but also future-proofs the infrastructure against changing geopolitical and regulatory landscapes.
+          </p>
+        </li>
+        <li class="p-6">
+          <h3 class="mb-2 text-xl text-zinc-950">Multi-Environment Architecture</h3>
+          <p class="text-sm text-zinc-800">
+            Implementing proper DevOps practices with Development, Staging, and Production environments,
+            ensuring safe deployment cycles and comprehensive testing procedures across the new cloud-agnostic infrastructure.
+          </p>
+        </li>
+        <li class="p-6">
+          <h3 class="mb-2 text-xl text-zinc-950">High Availability & Security</h3>
+          <p class="text-sm text-zinc-800">
+            Maintaining 95% uptime during business hours, implementing comprehensive backup strategies
+            (daily on-site, monthly off-site), and ensuring security monitoring and incident response.
+          </p>
+        </li>
+        <li class="p-6">
+          <h3 class="mb-2 text-xl text-zinc-950">DCAT Mobility Application Profile Implementation</h3>
+          <p class="text-sm text-zinc-800">
+            Implementing the DCAT Mobility Application Profile within CKAN to ensure transport data follows
+            European mobility standards, enabling better interoperability and automated discovery across
+            national and international transport data networks.
+          </p>
+        </li>
+        <li class="p-6">
+          <h3 class="mb-2 text-xl text-zinc-950">CKAN Plugin Refactoring</h3>
+          <p class="text-sm text-zinc-800">
+            Updating and refactoring multiple CKAN plugins including pages, ytp_request, spatial_metadata,
+            and custom Belgian NAP extensions to work with modern CKAN architecture.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="mb-12 md:mb-24">
+      <h2 class="mb-2 text-2xl text-zinc-950 md:mb-6 md:text-3xl">
+        Service Delivery Model
+      </h2>
+      <p class="mb-6 text-lg leading-relaxed">
+        Our maintenance contract combines fixed routine operations with flexible on-demand development,
+        ensuring both stability and adaptability.
+      </p>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+        <div class="bg-white border border-zinc-200 rounded-lg p-6">
+          <h3 class="text-xl font-medium text-zinc-900 mb-4">Fixed Services</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <span class="text-green-600 mr-2">•</span>
+              <span class="text-zinc-700">monitoring and incident response</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-600 mr-2">•</span>
+              <span class="text-zinc-700">Automated backup and disaster recovery</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-600 mr-2">•</span>
+              <span class="text-zinc-700">Security monitoring and vulnerability management</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-600 mr-2">•</span>
+              <span class="text-zinc-700">Bi-annual software update cycles</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-600 mr-2">•</span>
+              <span class="text-zinc-700">GitHub repository management</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white border border-zinc-200 rounded-lg p-6">
+          <h3 class="text-xl font-medium text-zinc-900 mb-4">On-Demand Services</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">•</span>
+              <span class="text-zinc-700">Custom CKAN plugin development</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">•</span>
+              <span class="text-zinc-700">User interface enhancements</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">•</span>
+              <span class="text-zinc-700">Metadata profile extensions</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">•</span>
+              <span class="text-zinc-700">API customizations and automations</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">•</span>
+              <span class="text-zinc-700">Analytics integration and reporting</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-12 md:mb-24">
+      <h2 class="mb-2 text-2xl text-zinc-950 md:mb-6 md:text-3xl">
+        Key Outcomes & Impact
+      </h2>
+      <p class="mb-6 text-lg leading-relaxed">
+        Our maintenance approach ensures transportdata.be remains a reliable, secure, and modern platform
+        for Belgium's transport data ecosystem.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="text-center bg-zinc-50 rounded-lg p-6">
+          <div class="text-3xl font-bold text-red-600 mb-2">95%</div>
+          <div class="text-zinc-700">Guaranteed uptime during business hours</div>
+        </div>
+        <div class="text-center bg-zinc-50 rounded-lg p-6">
+          <div class="text-3xl font-bold text-red-600 mb-2">4</div>
+          <div class="text-zinc-700">Years of continuous maintenance contracted</div>
+        </div>
+        <div class="text-center bg-zinc-50 rounded-lg p-6">
+          <div class="text-3xl font-bold text-red-600 mb-2">24h</div>
+          <div class="text-zinc-700">Maximum recovery time objective</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-12 md:mb-24">
+      <h2 class="mb-2 text-2xl text-zinc-950 md:mb-6 md:text-3xl">
+        Why This Project Matters
+      </h2>
+      <p class="text-lg leading-relaxed">
+        Transportdata.be exemplifies our approach to data portal maintenance: combining deep technical expertise
+        with government sector experience to deliver reliable, future-proof solutions. This project demonstrates
+        our ability to modernize legacy systems while maintaining critical service availability, implement
+        proper DevOps practices for government infrastructure, and provide flexible development capabilities
+        that evolve with changing requirements.
+        <br><br>
+        The success of this tender shows our commitment to open standards, transparent development practices,
+        and long-term partnership with public sector clients who depend on stable, secure data infrastructure.
+      </p>
+    </section>
+  </div>
+</div>
