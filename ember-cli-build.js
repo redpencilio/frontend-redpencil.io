@@ -4,11 +4,6 @@ const path = require('path');
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
-// Polyfill for Node.js compatibility with undici/ember-svg-jar
-if (typeof global.File === 'undefined') {
-  global.File = class File {};
-}
-
 function isProduction() {
   return EmberApp.env() === 'production';
 }
