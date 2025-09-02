@@ -3,7 +3,7 @@
 >
   <Navbar />
   <PageHeader
-    @title="Data Portals"
+    @title="Data Sharing and Data Portals"
     @text="Your Data, Discoverable and Actionable."
   />
 </div>
@@ -13,7 +13,7 @@
   <div class="text-center mb-12">
     <h2 class="text-2xl font-medium text-zinc-900 mb-4">We design and support data portals that fit your needs</h2>
     <p class="text-lg text-zinc-700 mb-8 max-w-4xl mx-auto">
-      Whether you want simple metadata catalogues, full-featured open data platforms, or resource-level portals where every dataset becomes a first-class citizen.
+      From entry-level data sharing through metadata catalogues, full-featured open data platforms, to resource-level portals where every dataset becomes a first-class citizen.
     </p>
     <LinkTo
       @route="contact"
@@ -35,26 +35,32 @@
   </div>
 </section>
 
-{{! Three Types of Data Portals Section }}
+{{! Four Levels of Data Sharing Section }}
 <section class="container mb-16">
-  <h2 class="mb-8 text-2xl font-medium text-zinc-900 text-center">The Three Types of Data Portals</h2>
-  <div class="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-3">
+  <h2 class="mb-8 text-2xl font-medium text-zinc-900 text-center">Four Levels of Data Sharing</h2>
+  <div class="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-2">
+    <ServiceCard
+      @illustration="/assets/vector/distributed-small.svg"
+      @title="Level 0: Entry-level data sharing"
+      @text="Skip the complexity, start sharing today. We'll connect your data directly to major European portals (data.europa.eu, data.gov.be, datavindplaats.vlaanderen) through a simple endpoint—no portal maintenance required. You get instant visibility across multiple platforms while we handle DCAT compliance behind the scenes. Perfect for: First-time data publishers, resource-constrained teams, or organizations wanting maximum impact with minimal technical overhead."
+    />
+
     <ServiceCard
       @illustration="/assets/vector/data-modeling.svg"
-      @title="Metadata-only portals"
-      @text="Think of these as catalogues: users discover what datasets exist, but the portal doesn't host the data itself. This is often the first step for organizations wanting visibility with minimal overhead. Best for: Quick wins, organizations with data already hosted elsewhere, or when interoperability matters most."
+      @title="Level 1: Metadata-only portals"
+      @text="Your data catalog without the data headaches. Create a professional storefront that showcases all your datasets while keeping them exactly where they are. Users discover what you offer, you avoid duplicate storage costs and sync nightmares. It's the smart way to look organized without reorganizing everything. Ideal for: Multi-department organizations, companies with legacy systems, or anyone needing quick wins without major infrastructure changes."
     />
 
     <ServiceCard
       @illustration="/assets/vector/open-data.svg"
-      @title="Dataset-based portals"
-      @text="These are the classic 'open data portals': the portal lists datasets, provides metadata, and offers downloads or APIs. CKAN is a well-known option here, and we can help you adapt and extend it for your needs. Best for: Governments, NGOs, and enterprises that need to share datasets with clear ownership and update cycles."
+      @title="Level 2: Dataset-based portals"
+      @text="The complete data sharing solution that works as hard as you do. Host, manage, and deliver your datasets through one branded platform with built-in APIs, user management, and automated workflows. We'll recommend the best technology stack for your specific needs—whether that's extending proven platforms or building custom solutions. Built for: Government agencies, established NGOs, and enterprises that need professional data publishing with full control and compliance features."
     />
 
     <ServiceCard
       @illustration="/assets/vector/linked-data.svg"
-      @title="Resource-based portals"
-      @text="Here, every resource—down to individual files, services, or linked entities—gets its own dedicated page and identifier. This approach unlocks true discoverability and supports linked data principles. Our own data.gift platform was built around this idea. Best for: Organizations that want to embrace linked open data, semantic interoperability, and fine-grained access to resources."
+      @title="Level 3: Resource-based portals"
+      @text="Future-proof your data strategy with intelligent connections. Every file, service, and data point gets its own web address and can link to related information automatically—transforming isolated datasets into a connected knowledge network. Built on our proven data.gift platform using cutting-edge linked data technology. Perfect for: Innovation-focused organizations, data-intensive enterprises, or government bodies building integrated digital ecosystems that need to scale."
     />
   </div>
 </section>
