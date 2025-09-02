@@ -2,6 +2,7 @@ import Controller from '@ember/controller';
 import { tracked } from '@glimmer/tracking';
 import { action } from '@ember/object';
 import { service } from '@ember/service';
+import ENV from 'frontend-redpencil/config/environment';
 
 export default class ContactController extends Controller {
   @service store;
@@ -21,7 +22,7 @@ export default class ContactController extends Controller {
       const newEmail = this.store.createRecord('email', {
         to: 'meettheteam@redpencil.io',
         subject: 'New form submission (rpio-website)',
-        from: 'meettheteam@redpencil.io',
+        from: ENV.mail.fromAddress,
         content: `
             name: ${this.name}
             email: ${this.email}
