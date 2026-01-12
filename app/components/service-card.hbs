@@ -1,13 +1,23 @@
 <article class="flex flex-col">
-  <div class="md:r_border-light flex-1 bg-zinc-200 py-6 md:bg-zinc-100">
-    <img class="h-64 w-full" src={{@illustration}} alt={{@title}} />
+  <div class="flex-1 py-6 md:r_border-light bg-zinc-200 md:bg-zinc-100">
+    <img class="w-full h-64" src={{@illustration}} alt={{@title}} />
   </div>
-  <div class="flex-1 bg-zinc-200 px-3 pb-8 pt-0 text-left md:bg-white md:pt-5">
+  <div class="flex-1 px-3 pt-0 pb-8 text-left bg-zinc-200 md:bg-white md:pt-5">
     <h3
-      class="text-zic-950 mb-3 text-center text-xl font-medium md:text-left"
+      class="mb-3 text-xl font-medium text-center text-zic-950 md:text-left"
     >{{@title}}</h3>
     <p
-      class="text-center text-sm text-zinc-800 md:text-left md:text-base"
+      class="text-sm text-center text-zinc-800 md:text-left md:text-base"
     >{{@text}}</p>
+    {{#if @benefits}}
+      <div class="mt-4">
+        <strong class="text-zinc-900">Benefits:</strong>
+        <div class="flex flex-wrap gap-2 mt-3">
+          {{#each @benefits as |benefit|}}
+            <span class="inline-block px-3 py-1 text-sm rounded-full bg-zinc-100 text-zinc-800">{{benefit}}</span>
+          {{/each}}
+        </div>
+      </div>
+    {{/if}}
   </div>
 </article>
