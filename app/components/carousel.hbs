@@ -1,4 +1,4 @@
-<div class="relative container z-30 -mt-48 mb-12 lg:mb-32">
+<div class="container relative z-30 -mt-48 mb-12 lg:mb-32">
   <div
     class="relative flex h-[500px] items-center rounded-2xl border border-zinc-300 bg-white shadow-lg md:h-96"
   >
@@ -92,7 +92,9 @@
         >
           <span class="sr-only">slide number {{item}}</span>
           {{#if (eq this.index item)}}
-            <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-red-700 to-red-500 rounded-lg animate-[grow_7s_linear]">
+            <div
+              class="absolute left-0 top-0 h-full w-full animate-[grow_7s_linear] rounded-lg bg-gradient-to-r from-red-700 to-red-500"
+            >
               <span class="sr-only">current slide</span>
             </div>
           {{/if}}
