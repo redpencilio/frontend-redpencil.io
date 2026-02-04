@@ -19,6 +19,7 @@ Router.map(function () {
   this.route('contact');
   this.route('careers', function () {
     this.route('full-stack-developer');
+    this.route('linked-data-ontologist');
     this.route('internship');
   });
   this.route('not-found', { path: '/*' });
