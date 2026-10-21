@@ -5,3 +5,6 @@
 }}
 
 <title>{{this.model.title}}</title>
+{{#if this.model.noindex}}
+  <meta name="robots" content="noindex, nofollow" />
+{{/if}}

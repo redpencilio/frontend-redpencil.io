@@ -17,6 +17,7 @@ Router.map(function () {
   this.route('services');
   this.route('data-portals');
   this.route('contact');
+  this.route('trefdag');
   this.route('careers', function () {
     this.route('full-stack-developer');
     this.route('linked-data-ontologist');

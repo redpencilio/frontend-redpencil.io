@@ -1,0 +1,414 @@
+{{!
+  Landing page for visitors who scan the QR code at Trefdag Vlaanderen Digitaal
+  (22 October 2026, Flanders Expo Gent). Placeholders are marked TODO(trefdag);
+  most of them live in controllers/trefdag.js.
+}}
+<div class="r_border-b-light bg-gradient-to-r from-zinc-200 to-zinc-50">
+  <Navbar />
+</div>
+
+<div lang="nl">
+  {{! 1. Hero }}
+  <section
+    class="r_border-b-light mb-12 bg-gradient-to-r from-zinc-200 to-zinc-50 md:mb-24"
+  >
+    <div class="container py-12 md:py-20">
+      <div class="w-full lg:w-2/3">
+        <p class="mb-4 text-sm font-medium text-red-700 md:text-base">
+          Trefdag Vlaanderen Digitaal 2026
+        </p>
+        <h1
+          class="mb-4 text-3xl font-medium leading-tight text-zinc-950 lg:text-6xl"
+        >
+          Uw data is van u.
+          <span class="block">Niet van uw leverancier.</span>
+        </h1>
+        <p class="mb-8 text-base text-zinc-700 lg:text-xl">
+          Met open standaarden zoals OSLO, DCAT-AP en SHACL houdt u de regie
+          over uw data, welk systeem u ook kiest.
+        </p>
+        <a
+          href="#contact"
+          class="inline-flex items-center space-x-2 rounded bg-red-700 px-8 py-3 text-base font-medium text-white shadow shadow-red-500/10 hover:bg-red-600"
+          {{on "click" this.scrollToContact}}
+        >
+          <span>Plan een gesprek</span>
+          {{svg-jar "arrow-right" class="h-4" aria-hidden="true"}}
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {{! 2. Wat we doen }}
+  <section class="container mb-16 md:mb-24" aria-labelledby="wat-we-doen">
+    <h2 id="wat-we-doen" class="mb-8 text-2xl font-medium text-zinc-900">Wat we
+      doen</h2>
+    <ul class="grid grid-cols-1 gap-6 md:grid-cols-3">
+      <li class="r_border-light rounded bg-zinc-100 p-6">
+        <div
+          class="mb-3 flex h-12 w-12 items-center justify-center rounded bg-red-500/20"
+        >
+          {{svg-jar
+            "distributed"
+            class="flex-no-shrink fill-red-700 w-5"
+            aria-hidden="true"
+          }}
+        </div>
+        <h3 class="mb-2 text-lg font-medium text-zinc-900">Linked data en
+          semantische interoperabiliteit</h3>
+        <p class="text-zinc-700">We beschrijven uw data zo dat de betekenis
+          meereist. Systemen en organisaties begrijpen elkaars gegevens, zonder
+          aparte koppeling per leverancier.</p>
+      </li>
+      <li class="r_border-light rounded bg-zinc-100 p-6">
+        <div
+          class="mb-3 flex h-12 w-12 items-center justify-center rounded bg-red-500/20"
+        >
+          {{svg-jar
+            "open-standard"
+            class="flex-no-shrink fill-red-700 w-5"
+            aria-hidden="true"
+          }}
+        </div>
+        <h3 class="mb-2 text-lg font-medium text-zinc-900">Open standaarden</h3>
+        <p class="text-zinc-700">We bouwen op OSLO, DCAT-AP en mobilityDCAT-AP.
+          Zo sluit uw data aan op Vlaamse en Europese portalen en blijft ze
+          herbruikbaar.</p>
+      </li>
+      <li class="r_border-light rounded bg-zinc-100 p-6">
+        <div
+          class="mb-3 flex h-12 w-12 items-center justify-center rounded bg-red-500/20"
+        >
+          {{svg-jar
+            "code"
+            class="flex-no-shrink fill-red-700 w-5"
+            aria-hidden="true"
+          }}
+        </div>
+        <h3 class="mb-2 text-lg font-medium text-zinc-900">Open source, geen
+          lock-in</h3>
+        <p class="text-zinc-700">Ons framework semantic.works bestaat uit
+          kleine, open microservices. U kunt elk onderdeel zelf beheren,
+          vervangen of door een andere partner laten overnemen.</p>
+      </li>
+    </ul>
+  </section>
+
+  {{! 3. Cases. The list is defined in controllers/trefdag.js; remove an entry there to hide a card. }}
+  {{#if this.cases.length}}
+    <section class="container mb-16 md:mb-24" aria-labelledby="cases">
+      <h2 id="cases" class="mb-8 text-2xl font-medium text-zinc-900">Waar we dit
+        al doen</h2>
+      <ul class="grid grid-cols-1 gap-6 lg:grid-cols-3">
+        {{#each this.cases as |case|}}
+          <li
+            class="flex flex-col rounded-lg bg-gradient-to-r from-zinc-50 to-zinc-100 p-6 md:p-8"
+          >
+            <h3
+              class="mb-3 text-xl font-medium text-zinc-900"
+            >{{case.title}}</h3>
+            <p
+              class="mb-6 flex-1 leading-relaxed text-zinc-700"
+            >{{case.text}}</p>
+            {{#if case.url}}
+              <a
+                href={{case.url}}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center space-x-2 font-medium text-red-700 hover:text-red-600"
+              >
+                <span>{{case.linkLabel}}</span>
+                {{svg-jar "external-link" class="h-4" aria-hidden="true"}}
+                <span class="sr-only">(opent in een nieuw venster)</span>
+              </a>
+            {{/if}}
+          </li>
+        {{/each}}
+      </ul>
+      <p class="mt-8 text-zinc-700">
+        Een gelijkaardige uitdaging in uw organisatie?
+        <a
+          href="#contact"
+          class="font-medium text-red-700 underline hover:text-red-600"
+          {{on "click" this.scrollToContact}}
+        >Laten we erover praten.</a>
+      </p>
+    </section>
+  {{/if}}
+
+  {{! 4. DiSHACLed }}
+  <section class="container mb-16 md:mb-24" aria-labelledby="dishacled">
+    <div class="rounded-lg bg-zinc-100 p-6 md:p-12">
+      <h2 id="dishacled" class="mb-2 text-2xl font-medium text-zinc-900">
+        Onderzoek: DiSHACLed
+      </h2>
+      <p class="mb-6 text-zinc-700 md:text-lg">
+        Samen met Sirus, inuits en imec (IDLab, UGent) onderzoeken we hoe
+        SHACL-shapes het werk met data eenvoudiger maken. Een shape beschrijft
+        hoe data eruitziet: welke velden, welke types, welke regels. Met die
+        beschrijvingen kunt u:
+      </p>
+      <ul class="mb-6 space-y-3 text-zinc-700 md:text-lg">
+        <li class="flex items-start space-x-3">
+          {{svg-jar
+            "check"
+            class="mt-1 h-4 w-4 flex-shrink-0 fill-red-700"
+            aria-hidden="true"
+          }}
+          <span><strong class="font-medium text-zinc-900">datasets vinden op hun
+              structuur</strong>, niet alleen op trefwoorden;</span>
+        </li>
+        <li class="flex items-start space-x-3">
+          {{svg-jar
+            "check"
+            class="mt-1 h-4 w-4 flex-shrink-0 fill-red-700"
+            aria-hidden="true"
+          }}
+          <span><strong class="font-medium text-zinc-900">tools van
+              verschillende leveranciers laten samenwerken</strong>, omdat ze
+            dezelfde afspraken over data lezen;</span>
+        </li>
+        <li class="flex items-start space-x-3">
+          {{svg-jar
+            "check"
+            class="mt-1 h-4 w-4 flex-shrink-0 fill-red-700"
+            aria-hidden="true"
+          }}
+          <span><strong class="font-medium text-zinc-900">formulieren
+              automatisch genereren</strong>, zodat ingevoerde data meteen
+            klopt.</span>
+        </li>
+      </ul>
+      <ul
+        class="mb-8 flex flex-col space-y-2 sm:flex-row sm:space-x-6 sm:space-y-0"
+      >
+        <li>
+          <a
+            href="https://github.com/DiSHACLed"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center space-x-2 font-medium text-red-700 hover:text-red-600"
+          >
+            <span>Code op GitHub</span>
+            {{svg-jar "external-link" class="h-4" aria-hidden="true"}}
+            <span class="sr-only">(opent in een nieuw venster)</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.imec-int.com/en/research-portfolio/dishacled"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center space-x-2 font-medium text-red-700 hover:text-red-600"
+          >
+            <span>Projectpagina bij imec (Engels)</span>
+            {{svg-jar "external-link" class="h-4" aria-hidden="true"}}
+            <span class="sr-only">(opent in een nieuw venster)</span>
+          </a>
+        </li>
+      </ul>
+      <div
+        class="flex flex-col space-y-4 border-t border-zinc-300 pt-6 sm:flex-row sm:items-center sm:space-x-6 sm:space-y-0"
+      >
+        {{! TODO(trefdag): VLAIO logo slot. Only use the official file; set vlaioLogo in controllers/trefdag.js. No imec logo unless official files are provided. }}
+        {{#if this.vlaioLogo}}
+          <img class="h-10 w-auto" src={{this.vlaioLogo}} alt="VLAIO" />
+        {{/if}}
+        <p class="text-sm text-zinc-700">
+          DiSHACLed is een imec.icon-onderzoeksproject met steun van imec en
+          VLAIO.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  {{! 6. Contact }}
+  <section
+    class="border-t border-zinc-300 bg-gradient-to-r from-zinc-200 to-zinc-50 py-12 md:py-24"
+    aria-labelledby="contact"
+  >
+    <div class="container">
+      <div class="flex flex-col lg:flex-row lg:space-x-24">
+        <div class="mb-10 lg:mb-0 lg:w-2/5">
+          <h2
+            id="contact"
+            tabindex="-1"
+            class="mb-4 scroll-mt-6 text-3xl font-medium text-zinc-900 focus:outline-none lg:text-4xl"
+          >Plan een gesprek</h2>
+          <p class="mb-8 text-zinc-700 md:text-lg">
+            Laat uw gegevens achter. We nemen persoonlijk contact met u op voor
+            een gesprek over uw data.
+          </p>
+
+          <div class="space-y-4">
+            {{! TODO(trefdag): set calendarUrl in controllers/trefdag.js to show the booking button }}
+            {{#if this.calendarUrl}}
+              <div>
+                <p class="mb-2 font-medium text-zinc-900">Liever meteen een
+                  moment kiezen?</p>
+                <a
+                  href={{this.calendarUrl}}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center space-x-2 rounded border-2 border-zinc-900 bg-white px-6 py-2 font-medium text-zinc-900 hover:bg-zinc-100"
+                >
+                  <span>Kies een moment in onze agenda</span>
+                  {{svg-jar "external-link" class="h-4" aria-hidden="true"}}
+                  <span class="sr-only">(opent in een nieuw venster)</span>
+                </a>
+              </div>
+            {{/if}}
+            <p class="text-zinc-700">
+              Of mail ons:
+              <a
+                href="mailto:{{this.contactEmail}}"
+                class="font-medium text-red-700 underline hover:text-red-600"
+              >{{this.contactEmail}}</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="lg:flex-1">
+          {{#if this.submitted}}
+            <div
+              class="rounded-lg border border-zinc-300 bg-white p-6 md:p-8"
+              role="status"
+              tabindex="-1"
+              {{focus-on-insert}}
+            >
+              <div class="mb-3 flex items-center space-x-3">
+                {{svg-jar
+                  "check"
+                  class="h-6 w-6 flex-shrink-0 fill-green-700"
+                  aria-hidden="true"
+                }}
+                <h3 class="text-xl font-medium text-zinc-900">Bedankt{{if
+                    this.submittedName
+                    (concat ", " this.submittedName)
+                  }}!</h3>
+              </div>
+              <p class="text-zinc-700">
+                We hebben uw bericht goed ontvangen.
+                {{#if this.submittedWantsMeeting}}
+                  We nemen snel contact met u op om een moment voor een gesprek
+                  af te spreken.
+                {{else}}
+                  We nemen snel persoonlijk contact met u op.
+                {{/if}}
+              </p>
+            </div>
+          {{else}}
+            <form
+              class="space-y-5 rounded-lg border border-zinc-300 bg-white p-6 md:p-8"
+              {{on "submit" this.sendForm}}
+            >
+              <div>
+                <label
+                  for="trefdag-name"
+                  class="mb-1 block text-sm font-medium text-zinc-900"
+                >Naam</label>
+                <input
+                  type="text"
+                  id="trefdag-name"
+                  name="name"
+                  autocomplete="name"
+                  required
+                  class="r_border-light r_focus-border-red block w-full rounded-md py-3"
+                />
+              </div>
+              <div>
+                <label
+                  for="trefdag-organisation"
+                  class="mb-1 block text-sm font-medium text-zinc-900"
+                >Organisatie</label>
+                <input
+                  type="text"
+                  id="trefdag-organisation"
+                  name="organisation"
+                  autocomplete="organization"
+                  required
+                  class="r_border-light r_focus-border-red block w-full rounded-md py-3"
+                />
+              </div>
+              <div>
+                <label
+                  for="trefdag-email"
+                  class="mb-1 block text-sm font-medium text-zinc-900"
+                >E-mailadres</label>
+                <input
+                  type="email"
+                  id="trefdag-email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                  class="r_border-light r_focus-border-red block w-full rounded-md py-3"
+                />
+              </div>
+              <div>
+                <label
+                  for="trefdag-message"
+                  class="mb-1 block text-sm font-medium text-zinc-900"
+                >Bericht
+                  <span
+                    class="font-normal text-zinc-600"
+                  >(optioneel)</span></label>
+                <textarea
+                  id="trefdag-message"
+                  name="message"
+                  rows="4"
+                  class="r_border-light r_focus-border-red block w-full rounded-md bg-zinc-50 p-3"
+                ></textarea>
+              </div>
+              <div class="flex items-start space-x-3">
+                <input
+                  type="checkbox"
+                  id="trefdag-meeting"
+                  name="meeting"
+                  class="mt-1 h-5 w-5 rounded border-zinc-500 text-red-700 focus:ring-red-700"
+                />
+                <label for="trefdag-meeting" class="text-zinc-900">Ik wil een
+                  gesprek inplannen</label>
+              </div>
+
+              <p class="text-sm text-zinc-700">
+                We gebruiken uw gegevens alleen om op dit gesprek op te volgen.
+                {{! TODO(trefdag): set privacyPolicyUrl in controllers/trefdag.js; the GDPR notice must link to it before go-live }}
+                {{#if this.privacyPolicyUrl}}
+                  Lees meer in onze
+                  <a
+                    href={{this.privacyPolicyUrl}}
+                    class="font-medium text-red-700 underline hover:text-red-600"
+                  >privacyverklaring</a>.
+                {{/if}}
+              </p>
+
+              {{#if this.error}}
+                <p
+                  class="rounded-md border border-red-700 bg-red-50 p-3 text-sm text-red-800"
+                  role="alert"
+                >
+                  Er ging iets mis bij het verzenden. Probeer het later opnieuw
+                  of mail ons op
+                  <a
+                    href="mailto:{{this.contactEmail}}"
+                    class="font-medium underline"
+                  >{{this.contactEmail}}</a>.
+                </p>
+              {{/if}}
+
+              <button
+                type="submit"
+                class="w-full rounded-md bg-red-700 py-4 text-base font-medium text-white shadow shadow-red-500/10 hover:bg-red-600 disabled:opacity-70"
+                disabled={{this.isSending}}
+              >
+                {{if this.isSending "Bezig met verzenden…" "Verstuur"}}
+              </button>
+            </form>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<Footer />

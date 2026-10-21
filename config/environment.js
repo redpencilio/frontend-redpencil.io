@@ -24,6 +24,10 @@ module.exports = function (environment) {
     mail: {
       fromAddress: '{{FROM_ADDRESS}}',
     },
+    plausible: {
+      domain: '{{PLAUSIBLE_DOMAIN}}',
+      apiHost: '{{PLAUSIBLE_APIHOST}}',
+    },
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
