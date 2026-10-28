@@ -6,7 +6,7 @@
     <div class="relative mb-6 flex justify-between text-zinc-950">
       <h3 class="text-base font-medium md:text-xl">{{@title}}</h3>
       <div
-        class="absolute right-0 top-0 flex items-center justify-center space-x-2 rounded-full px-3 py-1 font-bold text-green-600"
+        class="absolute right-0 top-0 flex items-center justify-center space-x-2 rounded-full px-3 py-1 font-bold {{if @paused "text-zinc-400" "text-green-600"}}"
       >
         <svg class="-ml-2 h-2 w-2" fill="currentColor" viewBox="0 0 8 8">
           <circle cx="4" cy="4" r="3" />
@@ -106,7 +106,7 @@
           </ul>
         </div>
         <div
-          class="absolute right-0 top-0 flex items-center justify-center space-x-2 rounded-full px-3 py-1 font-bold text-green-600"
+          class="absolute right-0 top-0 flex items-center justify-center space-x-2 rounded-full px-3 py-1 font-bold {{if @paused "text-zinc-400" "text-green-600"}}"
         >
           <svg class="-ml-2 h-2 w-2" fill="currentColor" viewBox="0 0 8 8">
             <circle cx="4" cy="4" r="3" />
